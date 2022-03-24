@@ -3,7 +3,7 @@ body {
   margin: 0 !important;
 }
 .div-img {
-  width: 100vw;
+  width: 100%;
   height: 750px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/images/WE1.jpg");
@@ -100,14 +100,14 @@ li {
 
 .btn-wantR {
   width: 332px;
-  height: 70px;
+  height: 56px;
   background: #058070;
   border-radius: 6px;
   border: none;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 35px;
+  line-height: 32px;
   color: #ffffff;
 }
 
@@ -439,8 +439,8 @@ li {
 @media all and (max-width: 768px) {
   li {
     font-size: calc(1.125rem * var(--smaller));
-    width: 58px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
   }
 
   li span {
@@ -455,8 +455,8 @@ li {
     display: block;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 41px;
+    font-size: 18px;
+    line-height: 26px;
     color: #ffffff;
   }
   .container-title {
@@ -466,7 +466,7 @@ li {
   .title {
     font-weight: bold;
     font-size: 1.8em;
-    line-height: 50px;
+    line-height: 38px;
     color: #ffffff;
   }
   .hr-item {
@@ -485,7 +485,7 @@ li {
     font-style: normal;
     font-weight: 900;
     font-size: 17px;
-    line-height: 59px;
+    line-height: 26px;
     color: #ffffff;
   }
   .container-countdown {
@@ -499,29 +499,28 @@ li {
     bottom: -30px;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 23px;
     color: #ffffff;
   }
   .container-button {
-    margin-top: 80px;
-    padding-left: 0px;
+    margin-top: 60px;
+    padding-left: 24px;
     display: flex;
-    justify-content: center;
     align-items: center;
     padding-bottom: 30px;
   }
 
   .btn-wantR {
-    width: 300px;
-    height: 45px;
+    width: 275px;
+    height: 32px;
     background: #058070;
     border-radius: 6px;
     border: none;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 35px;
+    font-size: 14px;
+    line-height: 16px;
     color: #ffffff;
   }
   .div-img {
@@ -543,7 +542,7 @@ li {
   }
   .green {
     width: 77px;
-    border: 3px solid #058070;
+    border: 2px solid #058070;
     opacity: 1;
   }
   .video-container {
@@ -560,7 +559,7 @@ li {
   .bar {
     position: relative;
     left: 8px;
-    height: 580px;
+    height: 685px;
     border-left: 3px solid #1c2656;
   }
   .topics {
@@ -568,7 +567,7 @@ li {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     margin-left: 30px;
     color: #000000;
@@ -582,17 +581,18 @@ li {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     color: #058070;
+    margin-top: 5px;
   }
   .topic-one {
     display: block;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     color: #000000;
     margin-bottom: 20px;
   }
@@ -602,8 +602,8 @@ li {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
   }
   .date-topic-finish {
     display: block;
@@ -611,28 +611,51 @@ li {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     color: #058070;
     margin-top: 6px;
   }
+  .square {
+    position: absolute;
+    left: -10px;
+    width: 14px;
+    height: 14px;
+    background: #058070;
+    border-radius: 3px;
+  }
+  .square-big {
+    position: absolute;
+    left: -12px;
+    margin-top: 85px;
+    width: 18px;
+    height: 18px;
+    background: #058070;
+    border-radius: 3px;
+  }
   .square-big-two {
-    margin-top: 295px;
+    margin-top: 320px;
+    width: 18px;
+    height: 18px;
   }
   .square-big-three {
-    margin-top: 460px;
+    margin-top: 530px;
+    width: 18px;
+    height: 18px;
   }
   .square-finish {
-    margin-top: 570px;
+    margin-top: 650px;
+    width: 14px;
+    height: 14px;
   }
   .description-task {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 18px;
     color: #000000;
-    margin-top: 50px;
+    margin-top: 90px;
   }
   .hotel-name {
     display: block;
@@ -640,8 +663,8 @@ li {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 18px;
     color: #000000;
     margin-top: 21px;
   }
@@ -650,13 +673,13 @@ li {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 18px;
     color: #058070;
   }
   .registration {
-    width: 323px;
-    height: 28px;
+    width: 100%;
+    height: 32px;
     background: #1c2656;
     border-radius: 3px;
     font-family: "Roboto";
@@ -665,6 +688,8 @@ li {
     font-size: 12px;
     line-height: 14px;
     color: #ffffff;
+    margin-top: 30px;
+    border: none;
   }
   .container-topics {
     width: 256px;
@@ -693,21 +718,30 @@ li {
     line-height: 29px;
     color: #000000;
   }
+  .img-speaker {
+    width: 50%;
+  }
   .hotel-description {
     display: block;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 45px;
+    line-height: 26px;
     color: #000000;
+  }
+  .map-size{
+    height: 250px;
+  }
+  .map {
+    margin-top: 40px;
   }
   .description-item-footer {
     display: block;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     color: #000000;
     margin-left: 10px;
@@ -715,10 +749,11 @@ li {
   .description-container-items {
     display: flex;
     width: 336px;
+    margin-top: 20px;
   }
   .btn-confirm-reservation {
-    width: 300px;
-    height: 50px;
+    width: 100%;
+    height: 32px;
     background: #058070;
     border-radius: 3px;
     font-family: "Roboto";
@@ -730,8 +765,8 @@ li {
     border: none;
   }
   .green-footer {
-    width: 70px;
-    border: 2px solid #058070;
+    width: 100px;
+    border: 1.5px solid #058070;
     opacity: 1;
   }
   .margin-title {
@@ -745,5 +780,28 @@ li {
     align-items: center;
 
     margin-top: 50px;
+  }
+  .margin-container-item {
+    margin-top: 40px;
+  }
+  .container-logos {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .img-logo {
+    margin: 0 10px;
+  }
+  .anka {
+    width: 80%;
+  }
+  .inter {
+    width: 50%;
+  }
+  .drv {
+    width: 50%;
+    margin-top: 10px;
   }
 }
