@@ -528,9 +528,9 @@ li {
     color: #ffffff;
   }
   .div-img {
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    background-image: url("./assets/images/world-class-design-buenos-aires-BAVISIT0418\ 1.png");
+    background-image: url("./assets/images/WE1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -676,5 +676,76 @@ li {
   .container-topics-finish {
     width: 220px;
     margin-left: 30px;
+  }
+  .name-speaker {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 45px;
+    color: #000000;
+  }
+  
+  .about-speaker {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .hotel-description {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 45px;
+    color: #000000;
+  }
+  .description-item-footer {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: #000000;
+    margin-left: 10px;
+  }
+  .description-container-items {
+    display: flex;
+    width: 336px;
+  }
+  .btn-confirm-reservation {
+    width: 300px;
+    height: 50px;
+    background: #058070;
+    border-radius: 3px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    border: none;
+  }
+  .green-footer {
+    width: 70px;
+    border: 2px solid #058070;
+    opacity: 1;
+  }
+  .margin-title {
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .title-footer {
+    display: flex;
+    align-items: center;
+
+    margin-top: 50px;
   }
 }
