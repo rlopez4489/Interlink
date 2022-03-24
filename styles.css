@@ -423,7 +423,8 @@ li {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-right: 80px;
+
+  margin-top: 50px;
 }
 
 .img-logo {
@@ -789,19 +790,19 @@ li {
     width: 100%;
     align-items: flex-end;
     justify-content: center;
-  
+    margin-top: 20px;
   }
   .img-logo {
     margin: 0 10px;
   }
   .anka {
-    width: 80px;
+    width: 100px;
   }
   .inter {
-    width: 98px;
+    width: 110px;
   }
   .drv {
-    width: 80px;
+    width: 100px;
     margin-top: 10px;
   }
 }
