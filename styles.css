@@ -489,14 +489,11 @@ li {
     color: #ffffff;
   }
   .container-countdown {
+    width: 320px;
     padding-left: 24px;
     margin-top: 40px;
   }
-  .container-item-countdown {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+
   .label-date {
     position: absolute;
     bottom: -30px;
