@@ -460,7 +460,7 @@ li {
     color: #ffffff;
   }
   .container-title {
-    width: 350px;
+    width: 326px;
     padding-left: 24px;
   }
   .title {
@@ -528,7 +528,7 @@ li {
     color: #ffffff;
   }
   .div-img {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-image: url("./assets/images/WE1.jpg");
     background-size: cover;
