@@ -787,7 +787,7 @@ li {
   .container-logos {
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   
   }
@@ -795,13 +795,13 @@ li {
     margin: 0 10px;
   }
   .anka {
-    width: 80%;
+    width: 80px;
   }
   .inter {
-    width: 50%;
+    width: 98px;
   }
   .drv {
-    width: 50%;
+    width: 80px;
     margin-top: 10px;
   }
 }
