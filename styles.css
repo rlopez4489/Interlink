@@ -796,13 +796,15 @@ li {
     margin: 0 10px;
   }
   .anka {
-    width: 100px;
+    width: 80px;
+
   }
   .inter {
-    width: 110px;
+    width: 103.6px;
+   
   }
   .drv {
-    width: 100px;
-    margin-top: 10px;
+    width: 80px;
+
   }
 }
