@@ -765,7 +765,7 @@ li {
     border: none;
   }
   .green-footer {
-    width: 100px;
+    width: 80px;
     border: 1.5px solid #058070;
     opacity: 1;
   }
@@ -773,7 +773,7 @@ li {
     margin-top: 0;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 20px;
   }
   .title-footer {
     display: flex;
