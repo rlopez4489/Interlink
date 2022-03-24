@@ -777,10 +777,7 @@ li {
     font-size: 20px;
   }
   .title-footer {
-    display: flex;
-    align-items: center;
-
-    margin-top: 50px;
+    display: none;
   }
   .margin-container-item {
     margin-top: 40px;
@@ -790,7 +787,7 @@ li {
     width: 100%;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .img-logo {
     margin: 0 10px;
