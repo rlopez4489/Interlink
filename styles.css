@@ -780,6 +780,8 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border: 1px solid red;
+    width: 320px;
   }
   .img-speaker {
     width: 120px;
