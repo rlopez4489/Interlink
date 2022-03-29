@@ -581,6 +581,27 @@ li {
       font-size: 30px;
   }
 }
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  color: #000000;
+}
+.copyright a {
+  display: inline;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  color: #000000;
+  padding-bottom: 20px;
+}
 @media all and (max-width: 1366px) {
 }
 
@@ -1010,6 +1031,26 @@ li {
   position: fixed;
   bottom: 50px;
   right: 15px;
- 
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.copyright a {
+  display: inline;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  padding-bottom: 20px;
 }
 }
