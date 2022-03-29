@@ -812,7 +812,7 @@ li {
   }
   .description-container-items {
     display: flex;
-    width: 336px;
+    width: 320px;
     margin-top: 20px;
   }
   .btn-confirm-reservation {
