@@ -365,14 +365,81 @@ li {
 .description-hotel-container {
   margin-top: 23px;
 }
-
+.email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 45px;
+  color: #000000;
+}
+.email-dir {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 45px;
+  color: #000000;
+  padding-left: 5px;
+}
+.email-dir-a {
+  display: inline;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 45px;
+  color: #000000;
+}
+.email-dir-a:hover {
+  color: #000000;
+}
+.tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 45px;
+  color: #000000;
+}
+.tel-number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 45px;
+  color: #000000;
+  padding-left: 5px;
+}
+.tel-number-a {
+  display: inline;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 45px;
+  color: #000000;
+  padding-left: 5px;
+}
+.tel-number-a:hover {
+  color: #000000;
+}
 .map {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 53px;
 }
-
+.contact {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 65px;
+  margin-top: 50px;
+  color: #000000;
+}
 .title-footer {
   display: flex;
   align-items: center;
@@ -763,6 +830,7 @@ li {
     color: #000000;
     margin-top: 20px !important;
   }
+
   .mobile-margin-speaker {
     margin-left: 10px;
   }
@@ -871,4 +939,36 @@ li {
   .where-is {
     margin-top: 40px;
   }
+  .contact {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    margin-top: 50px;
+    color: #000000;
+}
+.margin-icon-contact {
+  margin-top: 20px;
+}
+.email-dir-a {
+  display: inline;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 45px;
+  color: #000000;
+}
+.tel-number-a {
+  display: inline;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 45px;
+  color: #000000;
+  padding-left: 5px;
+}
 }
