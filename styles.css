@@ -466,10 +466,10 @@ li {
 
 @media all and (max-width: 800px) {
   main {
-    padding: 0 0 0 10px;
+    padding: 0 10px;
   }
   footer {
-    padding: 0 0 0 10px;
+    padding: 0 10px;
   }
   li {
     font-size: calc(1.125rem * var(--smaller));
@@ -765,7 +765,6 @@ li {
   }
   .mobile-margin-speaker {
     margin-left: 10px;
-    width: 200px;
   }
   .about-speaker {
     font-family: "Roboto";
