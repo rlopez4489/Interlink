@@ -766,6 +766,7 @@ li {
   }
   .mobile-margin-speaker {
     margin-left: 10px;
+    width: 200px;
   }
   .about-speaker {
     font-family: "Roboto";
