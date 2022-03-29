@@ -1010,4 +1010,10 @@ li {
   color: #000000;
   padding-left: 5px;
 }
+.whatsapp-button{
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+ 
+}
 }
