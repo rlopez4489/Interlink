@@ -42,13 +42,15 @@ a:hover {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 80px;
-  line-height: 76px;
+  line-height: 80px;
   color: #ffffff;
+  letter-spacing: 0.03em;
 }
 .hr-item {
   width: 342px;
   height: 0px;
   border: 3px solid #ffffff;
+  background-color: white;
   opacity: 1;
   margin-top: 24px;
 }
@@ -136,6 +138,7 @@ li {
 .green {
   width: 199px;
   border: 3px solid #058070;
+  background-color: #058070;
   opacity: 1;
 }
 
@@ -188,16 +191,18 @@ li {
 .rebote {
   animation: rebote 1.6s infinite ease-in;
 }
-@keyframes rebote{
-  20%, 50%, 70%{
+@keyframes rebote {
+  20%,
+  50%,
+  70% {
     transform: translateY(0%);
   }
-  40%{
+  40% {
     transform: translateY(-20px);
-  }  
-  60%{ 
+  }
+  60% {
     transform: translateY(-10px);
-  }   
+  }
 }
 .registration {
   width: 464px;
@@ -221,7 +226,7 @@ li {
 .bar {
   position: relative;
   left: 100px;
-  height: 848px;
+  height: 890px;
   border-left: 3px solid #1c2656;
 }
 
@@ -325,7 +330,7 @@ li {
   height: 18px;
   background: #058070;
   border-radius: 3px;
-  margin-top: 832px;
+  margin-top: 875px;
 }
 
 .topic-finish {
@@ -464,6 +469,7 @@ li {
 .green-footer {
   width: 370px;
   border: 2px solid #058070;
+  background-color: #058070;
   opacity: 1;
 }
 .margin-title {
@@ -542,7 +548,7 @@ li {
   border: 1px solid #9a9a9a;
   border-radius: 0.25em;
 }
-.whatsapp-button{
+.whatsapp-button {
   position: fixed;
   bottom: 80px;
   right: 35px;
@@ -558,27 +564,36 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
-  box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
   animation: effect 5s infinite ease-in;
 }
 
+.icon-lkdin {
+  display: inline;
+}
+.img-link-logo {
+  width: auto;
+}
+
 @keyframes effect {
-  20%, 100% {
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
+  20%,
+  100% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
-  0%, 10%{
-      width: 60px;
-      height: 60px;
-      font-size: 40px;
+  0%,
+  10% {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
   }
-  5%{
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
+  5% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
 }
 .copyright {
@@ -648,6 +663,7 @@ li {
     width: 120px;
     height: 0px;
     border: 2px solid #ffffff;
+    background-color: white;
     margin-left: 0;
     margin-top: 20px;
   }
@@ -698,7 +714,7 @@ li {
     line-height: 16px;
     color: #ffffff;
   }
-  
+
   .div-img {
     width: 100vw;
     height: 100%;
@@ -735,7 +751,7 @@ li {
   .bar {
     position: relative;
     left: 8px;
-    height: 720px;
+    height: 746px;
     border-left: 3px solid #1c2656;
   }
   .topics {
@@ -794,7 +810,7 @@ li {
   }
   .square {
     position: absolute;
-    left: -10px;
+    left: -9px;
     width: 14px;
     height: 14px;
     background: #058070;
@@ -802,7 +818,7 @@ li {
   }
   .square-big {
     position: absolute;
-    left: -12px;
+    left: -11px;
     margin-top: 66px;
     width: 18px;
     height: 18px;
@@ -812,17 +828,20 @@ li {
   .square-big-two {
     margin-top: 340px;
     width: 18px;
+    left: -11px;
     height: 18px;
   }
   .square-big-three {
     margin-top: 582px;
     width: 18px;
+    left: -11px;
     height: 18px;
   }
   .square-finish {
-    margin-top: 710px;
+    margin-top: 734px;
     width: 14px;
     height: 14px;
+    left: -9px;
   }
   .description-task {
     font-family: "Roboto";
@@ -906,8 +925,8 @@ li {
     width: 320px;
   }
   .img-speaker {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
   .hotel-description {
     display: block;
@@ -1004,53 +1023,53 @@ li {
     line-height: 28px;
     margin-top: 50px;
     color: #000000;
-}
-.margin-icon-contact {
-  margin-top: 20px;
-}
-.email-dir-a {
-  display: inline;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 45px;
-  color: #000000;
-}
-.tel-number-a {
-  display: inline;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 45px;
-  color: #000000;
-  padding-left: 5px;
-}
-.whatsapp-button{
-  position: fixed;
-  bottom: 50px;
-  right: 15px;
-}
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
-}
-.copyright a {
-  display: inline;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
-  padding-bottom: 20px;
-}
+  }
+  .margin-icon-contact {
+    margin-top: 20px;
+  }
+  .email-dir-a {
+    display: inline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 45px;
+    color: #000000;
+  }
+  .tel-number-a {
+    display: inline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 45px;
+    color: #000000;
+    padding-left: 5px;
+  }
+  .whatsapp-button {
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .copyright a {
+    display: inline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    padding-bottom: 20px;
+  }
 }
