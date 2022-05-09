@@ -10,9 +10,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
 .portada {
-  margin: 0 50px;
+  width: 95%;
 }
 .nav {
   display: flex;
@@ -63,7 +65,7 @@ h1 {
 }
 .container {
   position: relative;
-  padding-left: 12px;
+  padding-left: 18px;
 }
 .container-hr {
   position: absolute;
