@@ -57,3 +57,53 @@ function StartWriter(i) {
 setTimeout(function () {
   StartWriter(0);
 }, 1000);
+
+// counter
+document.addEventListener("DOMContentLoaded", () => {
+  function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+      current = start,
+      range = end - start,
+      increment = end > start ? 1 : -1,
+      step = Math.abs(Math.floor(duration / range)),
+      timer = setInterval(() => {
+        current += increment;
+        obj.textContent = current;
+        if (current == end) {
+          clearInterval(timer);
+        }
+      }, step);
+  }
+  counter("count1", 0, 100, 3000);
+  counter("count2", 100, 150, 2500);
+  counter("count3", 0, 75, 3000);
+  counter("count4", 0, 62, 3000);
+  counter("count5", 100, 35, 2500);
+  counter("count6", 0, 750, 3000);
+});
+
+
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
+  // allowDropdown: false,
+  // autoHideDialCode: false,
+  // autoPlaceholder: "off",
+  // dropdownContainer: document.body,
+  // excludeCountries: ["us"],
+  // formatOnDisplay: false,
+  // geoIpLookup: function(callback) {
+  //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+  //     var countryCode = (resp && resp.country) ? resp.country : "";
+  //     callback(countryCode);
+  //   });
+  // },
+  // hiddenInput: "full_number",
+  // initialCountry: "auto",
+  // localizedCountries: { 'de': 'Deutschland' },
+  // nationalMode: false,
+  // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+  // placeholderNumberType: "MOBILE",
+  // preferredCountries: ['cn', 'jp'],
+   separateDialCode: true,
+  utilsScript: "build/js/utils.js",
+});

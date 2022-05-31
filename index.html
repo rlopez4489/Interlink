@@ -9,42 +9,669 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="build/css/intlTelInput.css">
   <title>InterlinkFBC</title>
+
 </head>
 
 <body>
   <header class="header">
-    <section class="portada">
-      <nav class="nav">
-        <img src="./assets/images/home/BLANCO Y NEGRO LOGO 1.svg" alt="logo InterlinkFBC">
-        <div class="items">
-          <li class="item">Home</li>
-          <li class="item">Servicios</li>
-          <li class="item">Franquicias</li>
-          <li class="item">Visas de inversionistas</li>
-          <li class="item">Blog</li>
-          <li class="item">FaQs</li>
-          <li class="item">Cursos</li>
-          <li class="item">Contacto</li>
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-expand-xxl navbar-light nav-bg">
+        <a class="navbar-brand ms-4" href="#"><img src="./assets/images/home/BLANCO Y NEGRO LOGO 1.svg" alt=""></a>
+        <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active item" aria-current="page" href="#">Home</a>
+              <a class="nav-link item" href="#">Servicios</a>
+              <a class="nav-link item" href="#">Franquicias</a>
+              <a class="nav-link item" href="#">Visas de inversionistas</a>
+              <a class="nav-link item" href="#">Blog</a>
+              <a class="nav-link item" href="#">FaQs</a>
+              <a class="nav-link item" href="#">Cursos</a>
+              <a class="nav-link item" href="#">Contacto</a>
+
+            </div>
+          </div>
         </div>
-        <img src="/assets/images/home/Mexico.svg" alt="Bandera Mexico">
+        <a class="navbar-brand me-4" href="#"><img src="./assets/images/home/Mexico.svg" alt=""></a>
       </nav>
-      <div class="container">
-        <div class="container-hr">
+      <div class="d-flex mt-5 ms-4">
+        <div>
           <hr>
         </div>
-        <h1 class="titulo-portada">Invierte en el mejor modelo de <br /> negocios en Estados Unidos.</h1>
-        <div class="wrapper">
-          <div class="centeredBox"> 
-            <span id="typewriter" data-array=""></span>
-            <span class="cursor"></span>
+        <div class="d-flex flex-column mt-3">
+          <h1 class="titulo-portada ms-3">Invierte en el mejor modelo de <br /> negocios en Estados Unidos.</h1>
+          <div class="wrapper ms-3">
+            <div class="centeredBox">
+              <span id="typewriter" data-array=""></span>
+              <span class="cursor"></span>
+            </div>
           </div>
         </div>
       </div>
-      <button><a href="">Contáctanos</a></button>
-      
-    </section>
+      <button class="btn-contact ms-4"><a href="">Contáctanos</a></button>
+      <div class="container-icons-social-network ms-4">
+        <div class="box-icon"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
+        <div class="box-icon"> <i style="color: white;" class="fa-brands fa-google-plus-g"></i></div>
+        <div class="box-icon"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
+        <div class="box-icon"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
+        <div class="box-icon"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
+      </div>
+    </div>
   </header>
+  <main>
+    <section class="clients">
+      <div class="container position-relative pt-5 pb-5">
+        <div class="container-subtitle-carousel-client">
+          <hr class="hr-main">
+          <div>
+            <span class="d-block title-carousel-clients">Conoce experiencias reales</span>
+            <h3 class="subtitle-carousel-clients">Nuestros clientes</h3>
+          </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/images/home/Buen Rostro 1 1.png" class="d-block w-100" alt="buen rostro">
+                </div>
+                <div class="col">
+
+                  <div class="container-description-client">
+                    <span class="d-block title-name-client">Familia Buenrostro y Aceves.</span>
+                    <p class="text-description-client mt-2">Provienen de México y en conjunto decidieron que parte de
+                      ellos emigraría hacia Estados Unidos
+                      buscando mejorar la calidad de vida de sus hijos.</p>
+
+                    <p class="text-description-client"> Iniciaron su proceso totalmente decididos y la primera
+                      franquicia que les ofrecimos fue la que
+                      decidieron comprar y en menos de tres meses estaban abriendo sus locales.</p>
+
+                    <p class="text-description-client"> Nos invitaron como padrinos a la inauguración de su franquicia.
+                      Actualmente están operando en Texas.</p>
+                    <a class="see-more" href="">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/images/home/Buen Rostro 1 1.png" class="d-block w-100" alt="buen rostro">
+                </div>
+                <div class="col">
+
+                  <div class="container-description-client">
+                    <span class="d-block title-name-client">Familia Buenrostro y Aceves.</span>
+                    <p class="text-description-client mt-2">Provienen de México y en conjunto decidieron que parte de
+                      ellos emigraría hacia Estados Unidos
+                      buscando mejorar la calidad de vida de sus hijos.</p>
+
+                    <p class="text-description-client"> Iniciaron su proceso totalmente decididos y la primera
+                      franquicia que les ofrecimos fue la que
+                      decidieron comprar y en menos de tres meses estaban abriendo sus locales.</p>
+
+                    <p class="text-description-client"> Nos invitaron como padrinos a la inauguración de su franquicia.
+                      Actualmente están operando en Texas.</p>
+                    <a class="see-more" href="">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/images/home/Buen Rostro 1 1.png" class="d-block w-100" alt="buen rostro">
+                </div>
+                <div class="col">
+
+                  <div class="container-description-client">
+                    <span class="d-block title-name-client">Familia Buenrostro y Aceves.</span>
+                    <p class="text-description-client mt-2">Provienen de México y en conjunto decidieron que parte de
+                      ellos emigraría hacia Estados Unidos
+                      buscando mejorar la calidad de vida de sus hijos.</p>
+
+                    <p class="text-description-client"> Iniciaron su proceso totalmente decididos y la primera
+                      franquicia que les ofrecimos fue la que
+                      decidieron comprar y en menos de tres meses estaban abriendo sus locales.</p>
+
+                    <p class="text-description-client"> Nos invitaron como padrinos a la inauguración de su franquicia.
+                      Actualmente están operando en Texas.</p>
+                    <a class="see-more" href="">Ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container-fluid">
+        <div class="d-flex ms-3">
+          <hr class="hr-main">
+          <div>
+            <span class="d-block title-carousel-clients">¿No sabes cómo empezar?</span>
+            <h3 class="subtitle-carousel-clients">Opciones de inversión en el mercado</h3>
+          </div>
+        </div>
+        <div class="d-flex justify-content-md-around mt-5">
+          <div class="row">
+            <div class="col">
+              <div class="box-service">
+                <img src="./assets/images/home/iconos-servicios/Franchise.png" alt="Franchise">
+                <span class="title-service">Adquiere una <br> franquicia</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box-service">
+                <img src="./assets/images/home/iconos-servicios/Hierarchy.png" alt="Hierarchy">
+                <span class="title-service">Expande su <br> negocio</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box-service">
+                <img src="./assets/images/home/iconos-servicios/Handshake.png" alt="Handshake">
+                <span class="title-service">Traspaso de <br> negocio existente</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box-service">
+                <img src="./assets/images/home/iconos-servicios/Small Business.png" alt="small Business">
+                <span class="title-service">Empieza un <br> negocio de cero</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+          <button class="btn-services"><a href="">Explore nuestros servicios</a></button>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 position-relative">
+            <img class="ms-4 img-fluid" src="./assets/images/home/pexels-ketut-subiyanto-4245923 1.png"
+              alt="Personas hablando">
+            <div class="card-visa-write">
+              <span class="text-card-visa-write">¿Quieres saber cuál es la visa adecuada para ti según la inversión que
+                vayas a realizar? </span>
+              <button class="btn-card-visa-write">Escribanos</button>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="d-flex ms-3">
+              <hr class="hr-main mt-2">
+              <div>
+                <h3 class="subtitle-carousel-clients">Diferentes tipos de visados <br>
+                  para aplicar según su inversión</h3>
+              </div>
+            </div>
+            <div class="card-visa-type">
+              <h4 class="title-visa pt-2">Visa E-2</h4>
+              <p class="title-description-visa pt-2">Permite que un inversor se radique en EE.UU junto a su familia
+                mediante
+                la inversión en una empresa
+                nueva o existente. Dicha inversión debe ser sustancial y activa. No hay un número exacto,<br> pero se
+                recomienda un mínimo de $120.000 USD y $150.000 USD <br> en adelante. </p>
+            </div>
+            <div class="card-visa-type">
+              <h4 class="title-visa pt-2">Visa EB-5</h4>
+              <p class="title-description-visa pt-2">Permite que un inversor se radique en EE.UU junto a su familia
+                mediante
+                Permite a los inversionistas elegibles convertirse en residentes permanentes junto a su familia en
+                Estados Unidos, es decir, obtendrán una green card. Ésta visa, es la única que establece un monto
+                específico de cuánto dinero hay que invertir para obtenerla. </p>
+            </div>
+            <div class="card-visa-type">
+              <h4 class="title-visa pt-2">Visa E-1</h4>
+              <p class="title-description-visa pt-2">Permite que un inversor se radique en EE.UU junto a su familia
+                Se conoce como la visa de Comerciantes del Tratado de no - inmigrantes. Será otorgada a aquellos
+                empresarios o individuos que realicen intercambios comerciales entre Estados Unidos y un país que posea
+                Tratado de Libre Comercio y Navegación con USA.
+            </div>
+            <div class="card-visa-type">
+              <h4 class="title-visa pt-2">Visa L-1</h4>
+              <p class="title-description-visa pt-2">Esta pensada para que las empresas multinacionales transfieran a
+                ejecutivos, gerentes y personal con conocimientos especializados a la sucursal localizada en Estados
+                Unidos, dichas personas deben cumplir como requisito el haber estado trabajando al menos un año
+                consecutivo en la empresa/ compañía. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news-letter">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="img-book-container">
+              <img src="./assets/images/home/Mockups-EBOOK-solo_libro 1.png" alt="Book">
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="form-newsletter-container">
+              <span class="title-form-newsletter">Subscríbete para recibir nuestro E-book</span>
+              <h5 class="subtitle-form-newsletter">Aprende todo sobre las franquicias</h5>
+              <form action="">
+                <div class="mb-3 d-flex" style="width: 92%;">
+                  <input placeholder="Nombre" type="email" class="form-control w-75 me-2" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+                  <input placeholder="Apellido" type="password" class="form-control w-75" id="exampleInputPassword1">
+                </div>
+                <div class="input-group" style="width: 92%;">
+                  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-paper-plane"></i></span>
+                  <input type="email" class="form-control" id="inputGroupFile04"
+                    aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                  <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Envíar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7 mt-5">
+            <div class="d-flex ms-3">
+              <hr class="hr-main">
+              <div>
+                <span class="d-block title-carousel-clients">Sobre nosotros</span>
+                <h3 class="subtitle-carousel-clients">¿Quiénes somos y qué hacemos?</h3>
+              </div>
+            </div>
+            <div class="container-aboutUs-description ms-5">
+              <p>Somos asesores expertos en franquicias y negocios con sede en San Antonio, Texas.</p>
+              <br>
+              <p> Nuestra meta es promover y
+                apoyar el emprendimiento de los inversionistas. Llevamos las oportunidades de negocio a nuestros
+                clientes
+                a
+                través de asesoría personalizada.</p>
+              </br>
+              <p> Planeamos, analizamos, y presentamos opciones de inversión a la medida de
+                sus necesidades, experiencias, metas, y preferencia de industria.</p>
+              </br>
+              <p>Buscamos opciones de inversión en todo
+                Estados Unidos. 100% Bilingües.</p>
+            </div>
+            <div class="container-counter m-5 d-flex justify-content-between">
+              <div>
+                <div class="number-item">+<span id="count1"></span></div>
+                <div class="label-counter-item">Clientes <br> sastifechos</div>
+              </div>
+              <div>
+                <div class="number-item">+<span id="count2"></span></div>
+                <div class="label-counter-item">Visas<br> aprobadas</div>
+              </div>
+              <div>
+                <div class="number-item">+<span id="count3"></span></div>
+                <div class="label-counter-item">Empresas <br> creadas</div>
+              </div>
+              <div>
+                <div class="number-item">+<span id="count4"></span></div>
+                <div class="label-counter-item">Franquicias <br> exitosas</div>
+              </div>
+              <div>
+                <div class="number-item">+<span id="count5"></span></div>
+                <div class="label-counter-item">Industrias <br> diferentes</div>
+              </div>
+              <div>
+                <div class="number-item">+<span id="count6"></span></div>
+                <div class="label-counter-item">Franquicias <br> para elegir</div>
+              </div>
+            </div>
+            <div>
+              <span class="label-counter-final ms-5">¡Deseamos que usted mismo compruebe ésta elección!</span>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img class="img-fluid" src="/assets/images/home/about-us.png" alt="Reunión">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="help-you">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex ms-3">
+              <hr class="hr-main">
+              <div>
+                <h3 class="subtitle-carousel-clients m-2">¿A quienes ayudamos?</h3>
+              </div>
+            </div>
+            <p class="ms-4">Además de ayudarlo a invertir, lo conectamos con <br> nuestra red de profesionales para que
+              junto a su <br>
+              inversión, su migración sea certera.</p>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-start">
+              <div class="d-flex me-3">
+                <img src="/assets/images/home/Transaction.png" alt="Transaction">
+                <span class="item-transaction ms-3">Inversionistas <br> extranjeros.</span>
+              </div>
+              <div class="d-flex ms-5">
+                <img src="/assets/images/home/USA Map.png" alt="Usa map">
+                <span class="item-transaction ms-3">Americanos o hispanos <br> viviendo en USA que <br> deseen
+                  emprender.</span>
+              </div>
+            </div>
+            <button class="btn-meet-reservation">
+              <a href="">Reserve una llamada ahora</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-team">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-fluid ms-4" src="/assets/images/home/JAIME-2.png" alt="Jaime Sanchez">
+          </div>
+          <div class="col">
+            <div class="d-flex ms-4">
+              <hr class="hr-main">
+              <div>
+                <span class="d-block title-carousel-clients">Conoce más</span>
+                <h3 class="subtitle-carousel-clients">Nuestro equipo</h3>
+              </div>
+            </div>
+            <div class="ms-5">
+              <span class="title-name">Jaime Sánchez</span>
+              <p class="description-jaime">CEO de Interlink, fundó la empresa con el objetivo claro de ayudar a los <br>
+                inversionitas a emprender
+                sus
+                negocios y asesorarlos
+                para que logren sus <br> metas de manera exitosa. Jaime es licenciado en
+                Economía por la Universidad <br> de Texas, y dueño de su propia franquicia, lo que le permite tener un
+                gran <br>
+                conocimiento sobre la industria.</p>
+            </div>
+            <i class="fa-brands ms-5 fa-linkedin icon-lkdin"></i>
+            <div class="d-flex ms-4 justify-content-between mt-1">
+              <div>
+                <img class="img-fluid" src="/assets/images/home/ABRIL--1.png" alt="Abril Manali">
+                <span class="name-employee">Abril Manali</span>
+              </div>
+              <div>
+                <img class="img-fluid" src="/assets/images/home/CAMILA--2.png" alt="Camila Cordara">
+                <span class="name-employee">Camila Cordara</span>
+              </div>
+              <div>
+                <img class="img-fluid" src="/assets/images/home/SOL --2-1.png" alt="Sol Orbe">
+                <span class="name-employee">Sol Orbe</span>
+              </div>
+              <div>
+                <img class="img-fluid" src="/assets/images/home/SOL --2-1.png" alt="Sol Orbe">
+                <span class="name-employee">Agustina Zunini</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container-fluid">
+        <div class="d-flex ms-4">
+          <hr class="hr-main">
+          <div>
+            <span class="d-block title-carousel-clients">Aprende más</span>
+            <h3 class="subtitle-carousel-clients">¿Qué hay de nuevo en Interlink FBC?</h3>
+          </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide ms-4 mt-3" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-around">
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-around">
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-around">
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/images/home/pexels-yan-krukov-7794005 2.png" class="d-block w-100" alt="meet">
+                  <span class="title-news-item">Negocios para la visa E-2</span>
+                  <span class="by-news-item">By - Interlink FBC | 20 de Marzo 2022</span>
+                  <p class="description-news-item">Aprenderás sobre los negocios que te <br> ayudarán a adquirir dicho
+                    visado para vivir <br>
+                    legalmente en
+                    Estados Unidos junto a tu <br> familia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="contact">
+    <div class="mt-5 container-fluid">
+      <div class="row">
+        <div class="col-lg-7 pe-0 ps-0">
+          <div class="first-section">
+            <div class="d-flex ms-5">
+              <hr class="hr-main mt-3">
+              <div>
+                <h3 class="subtitle-carousel-clients">¿Quiere comenzar a planear su <br> proyecto de inversión en USA?
+                </h3>
+              </div>
+            </div>
+            <div class="ms-5 mt-5">
+              <span class="subtitle-footer ms-4">¡Manos a la obra, escribanos!</span>
+            </div>
+          </div>
+          <div class="first-section-b">
+            <div class="ms-5 pt-5">
+              <span class="contact-hour">Horarios de atención: <br> Lunes a viernes - 9:00 hs a 18:00 hs | UTC/GTM
+                -6</span>
+            </div>
+            <div class="ms-5 pt-4">
+              <span class="contact-hour">Nuestra oficina: <br> 11302 Sir Winston Street - Suite 3. San Antonio, TX -
+                78216.</span>
+            </div>
+            <div class="follow">
+              <span class="contact-hour d-block ms-5">¡Síguenos en nuestras redes!</span>
+              <div class="d-flex ms-5 mt-3">
+                <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
+                <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google-plus-g"></i></div>
+                <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
+                <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
+                <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col ps-0 pe-0">
+          <div style="position:relative">
+            <div class="second-section"></div>
+            <div class="first-section-b"></div>
+            <div class="container-form">
+              <form class="mt-4">
+                <div class="d-flex">
+                  <div class="me-3 ms-2">
+                    <label for="exampleInputEmail1" class="label-form">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="fullname">
+                  </div>
+                  <div class="me-2">
+                    <label for="exampleInputEmail1" class="label-form">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="fullname">
+                  </div>
+                </div>
+                <div class="me-2 ms-2 mt-4">
+                  <label for="exampleInputEmail1" class="label-form">País del cuál es ciudadano</label>
+                  <select class="form-select label-form" aria-label="Default select example">
+                    <option selected>Selecciona un país</option>
+                    <option value="1">Mexico</option>
+                    <option value="2">Argentina</option>
+                    <option value="3">Colombia</option>
+                  </select>
+                </div>
+                <div class="me-2 ms-2 mt-4">
+                  <label for="phone" class="label-form">Ingrese su número de teléfono</label>
+                  <input class="form-control" id="phone" name="phone" type="tel">
+                  <label class="message-info-form"> Revise que su número este escrito correctamente</label>
+                </div>
+                <div class="me-2 ms-2 mt-4">
+                  <label for="help you" class="label-form">¿Cómo podemos ayudarlo?</label>
+                  <select class="form-select label-form" aria-label="Default select example">
+                    <option selected>Quiero invertir en una franquicia</option>
+                  </select>
+                </div>
+                <div class="form-group me-2 ms-2 mt-4">
+                  <label class="label-form" for="exampleFormControlTextarea1">Déjenos su mensaje</label>
+                  <input class="form-control text-area-form" id="exampleFormControlTextarea1">
+                </div>
+                <div class="d-flex justify-content-end me-2 mt-4">
+                  <button class="btn-send-form mt-2" type="submit">Enviar</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2022 Interlink - Sitio Web. All Rights Reserved. Partner-Digital</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="build/js/intlTelInput.js"></script>
 </body>
 <script src="app.js"></script>
+
 </html>
