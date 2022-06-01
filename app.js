@@ -59,29 +59,36 @@ setTimeout(function () {
 }, 1000);
 
 // counter
-document.addEventListener("DOMContentLoaded", () => {
-  function counter(id, start, end, duration) {
-    let obj = document.getElementById(id),
-      current = start,
-      range = end - start,
-      increment = end > start ? 1 : -1,
-      step = Math.abs(Math.floor(duration / range)),
-      timer = setInterval(() => {
-        current += increment;
-        obj.textContent = current;
-        if (current == end) {
-          clearInterval(timer);
-        }
-      }, step);
-  }
-  counter("count1", 0, 100, 3000);
-  counter("count2", 100, 150, 2500);
-  counter("count3", 0, 75, 3000);
-  counter("count4", 0, 62, 3000);
-  counter("count5", 100, 35, 2500);
-  counter("count6", 0, 750, 3000);
-});
 
+function counter(id, start, end, duration) {
+  let obj = document.getElementById(id),
+    current = start,
+    range = end - start,
+    increment = end > start ? 1 : -1,
+    step = Math.abs(Math.floor(duration / range)),
+    timer = setInterval(() => {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) {
+        clearInterval(timer);
+      }
+    }, step);
+}
+function callback(entries, observer) {
+  if (entries[0].isIntersecting) {
+    //verificamos si actualmente es visible
+    counter("count1", 0, 100, 3000);
+    counter("count2", 0, 150, 2500);
+    counter("count3", 0, 75, 3000);
+    counter("count4", 0, 62, 2500);
+    counter("count5", 0, 35, 2000);
+    counter("count6", 0, 750, 3000);
+  }
+}
+var observer = new IntersectionObserver(callback, {});
+
+const element = document.querySelector("#holamundo");
+observer.observe(element);
 
 var input = document.querySelector("#phone");
 window.intlTelInput(input, {
@@ -104,6 +111,6 @@ window.intlTelInput(input, {
   // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
   // placeholderNumberType: "MOBILE",
   // preferredCountries: ['cn', 'jp'],
-   separateDialCode: true,
+  separateDialCode: true,
   utilsScript: "build/js/utils.js",
 });

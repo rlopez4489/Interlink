@@ -81,14 +81,12 @@
             <h3 class="subtitle-carousel-clients">Nuestros clientes</h3>
           </div>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -164,13 +162,11 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -331,7 +327,7 @@
               <p>Buscamos opciones de inversión en todo
                 Estados Unidos. 100% Bilingües.</p>
             </div>
-            <div class="container-counter m-5 d-flex justify-content-between">
+            <div id="holamundo" class="container-counter m-5 d-flex justify-content-between">
               <div>
                 <div class="number-item">+<span id="count1"></span></div>
                 <div class="label-counter-item">Clientes <br> sastifechos</div>
@@ -561,16 +557,6 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </section>
@@ -621,16 +607,17 @@
               <form class="mt-4">
                 <div class="d-flex">
                   <div class="me-3 ms-2">
-                    <label for="exampleInputEmail1" class="label-form">Nombre y apellido</label>
+                    <label for="fullname" class="label-form">Nombre y apellido</label>
                     <input type="text" class="form-control" id="fullname">
                   </div>
                   <div class="me-2">
-                    <label for="exampleInputEmail1" class="label-form">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="fullname">
+                    <label for="exampleFormControlInput1">Correo electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="name@example.com">
                   </div>
                 </div>
                 <div class="me-2 ms-2 mt-4">
-                  <label for="exampleInputEmail1" class="label-form">País del cuál es ciudadano</label>
+                  <label for="select country" class="label-form">País del cuál es ciudadano</label>
                   <select class="form-select label-form" aria-label="Default select example">
                     <option selected>Selecciona un país</option>
                     <option value="1">Mexico</option>
