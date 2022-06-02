@@ -4,7 +4,7 @@ var typeWriterElement = document.getElementById("typewriter");
 // The TextArray:
 var textArray = [
   "Somos asesores expertos en inversión",
-  "Buscamos las franquicias más rentables de USA",
+  "Buscamos los modelos de negocios más rentables de USA",
   "Construimos tu plan de negocio y tu sociedad",
 ];
 
@@ -16,12 +16,12 @@ function delWriter(text, i, cb) {
   if (i >= 0) {
     typeWriterElement.innerHTML = text.substring(0, i--);
     // generate a random Number to emulate backspace hitting.
-    var rndBack = 10 + Math.random() * 100;
+    var rndBack = 10 + Math.random() * 50;
     setTimeout(function () {
       delWriter(text, i, cb);
     }, rndBack);
   } else if (typeof cb == "function") {
-    setTimeout(cb, 1000);
+    setTimeout(cb, 800);
   }
 }
 
@@ -30,7 +30,7 @@ function typeWriter(text, i, cb) {
   if (i < text.length + 1) {
     typeWriterElement.innerHTML = text.substring(0, i++);
     // generate a random Number to emulate Typing on the Keyboard.
-    var rndTyping = 250 - Math.random() * 200;
+    var rndTyping = 250 - Math.random() * 300;
     setTimeout(function () {
       typeWriter(text, i++, cb);
     }, rndTyping);
