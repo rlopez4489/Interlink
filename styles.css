@@ -402,6 +402,14 @@ hr {
   align-items: center;
   background-color: rgba(28, 38, 86, 0.05);
 }
+.description-help {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
 .item-transaction {
   font-family: "Roboto";
   font-style: normal;
@@ -526,7 +534,7 @@ hr {
   color: #ffffff;
 }
 .container-form {
-  position: absolute;  
+  position: absolute;
   width: 500px;
   height: 673px;
   background: #ffffff;
@@ -718,7 +726,7 @@ hr {
   color: #fff;
   border: none;
 }
-.btn-container-lets{
+.btn-container-lets {
   display: flex;
   justify-content: center;
   align-items: center;
