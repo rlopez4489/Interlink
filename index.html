@@ -20,51 +20,91 @@
 </head>
 
 <body>
-  <header class="header">
+  <header>
     <div class="container">
-
       <nav class="navbar navbar-expand-lg navbar-expand-xxl navbar-light nav-bg">
-        <a class="navbar-brand" href="#"><img src="./assets/images/home/BLANCO Y NEGRO LOGO 1.svg" alt="InterlinkFBC"
-            width="250px"></a>
+        <a class="navbar-brand" href="index.html"><img src="./assets/images/home/INTERLINK FBC_CUADRO 1.png"
+            alt="InterlinkFBC" width="250px"></a>
         <div class="container-fluid">
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active item" aria-current="page" href="#">Home</a>
-              <a class="nav-link item" href="#">Servicios</a>
-              <a class="nav-link item" href="#">Franquicias</a>
-              <a class="nav-link item" href="#">Visas de inversionistas</a>
-              <a class="nav-link item" href="#">Blog</a>
-              <a class="nav-link item" href="#">FaQs</a>
-              <a class="nav-link item" href="#">Cursos</a>
-              <a class="nav-link item" href="#">Contacto</a>
+              <li class="nav-item dropdown active">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Home
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="about-us.html">Nosotros</a></li>
+                  <li><a class="dropdown-item" href="services.html">Servicios</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Recursos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
+                  <li><a class="dropdown-item" href="#">Visas de inversionista</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">FaQs</a></li>
+                  <li><a class="dropdown-item" href="#">Cursos</a></li>
+                </ul>
+              </li>
+              <a class="nav-link" href="#">Contacto</a>
+
 
             </div>
           </div>
         </div>
         <a class="navbar-brand" href="#"><img src="./assets/images/home/Spain.png" alt="Spain" width="35px"></a>
       </nav>
-      <div class="d-flex title-margin">
-        <div>
-          <hr class="hr-main mt-4">
-        </div>
-        <div class="d-flex flex-column mt-3">
-          <h1 class="titulo-portada">Invierte en el modelo de negocio <br> indicado para ti.</h1>
-          <div class="wrapper">
-            <div class="centeredBox">
-              <span id="typewriter" data-array=""></span>
-              <span class="cursor"></span>
+    </div>
+    <section class="header">
+      <div class="container d-flex align-items-center">
+
+
+        <div class="d-flex title-margin">
+          <div>
+            <hr class="hr-main mt-4">
+          </div>
+          <div class="d-flex flex-column mt-3">
+            <h1 class="titulo-portada">Te ayudamos a invertir en el <br> negocio indicado para ti en USA</h1>
+            <div class="wrapper">
+              <div class="centeredBox">
+                <span id="typewriter" data-array=""></span>
+                <span class="cursor"></span>
+              </div>
             </div>
+            <div class="d-flex btn-container-header">
+              <div class="d-flex flex-column align-items-center">
+                <button class="btn-contact me-3">Quiero invertir</button>
+                <div class="d-flex  mt-4">
+                  <div class="box-icon"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="box-icon"> <i style="color: white;" class="fa-brands fa-google-plus-g"></i></div>
+                  <div class="box-icon"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
+                  <div class="box-icon"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
+                  <div class="box-icon"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <button class="btn-want-to">Quiero una LLC o Plan de negocio</button>
+              </div>
+            </div>
+
+
           </div>
         </div>
-      </div>
-      <button class="btn-contact"><a href="">Contáctanos</a></button>
 
-    </div>
+
+      </div>
+    </section>
   </header>
   <main>
 
@@ -77,18 +117,17 @@
             <h3 class="subtitle-carousel-clients">Nuestros clientes</h3>
           </div>
         </div>
-        <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" style="border: 1px solid red; height: 380px;">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="pause">
               <div class="row">
                 <div class="col">
-                  <img src="./assets/images/home/Buen Rostro 1 1.png" class="d-block w-100" alt="buen rostro">
+                  <img src="./assets/images/home/Buen Rostro 1 1.png" class="img-fluid" alt="buen rostro">
                 </div>
                 <div class="col">
 
@@ -110,6 +149,27 @@
                 </div>
               </div>
             </div>
+            <div class="carousel-item" data-bs-interval="pause">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/images/home/clients/Carrillo_1.png" class="img-fluid" alt="buen rostro">
+                </div>
+                <div class="col">
+
+                  <div class="container-description-client">
+                    <span class="d-block title-name-client">Claudia Carrillo</span>
+                    <p class="text-description-client mt-2">Claudia es mexicana y junto a su esposo y su bebé viven
+                      en
+                      Austin. <br> <br> Durante años trabajó en una compañía norteamericana hasta que decidió emprender y
+                      adquirir
+                      una franquicia en el área que a ella le apasiona, el diseño de interiores. <br><br>
+                      En menos de cuatro meses, renunció a su antiguo trabajo y logró ser dueña de su propia empresa.
+                    </p>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -120,8 +180,8 @@
         <div class="d-flex mt-4">
           <hr class="hr-main">
           <div>
-            <span class="d-block title-carousel-clients">¿No sabes cómo empezar?</span>
-            <h3 class="subtitle-carousel-clients">Opciones de inversión en el mercado </h3>
+            <span class="d-block title-carousel-clients">¿Cómo te podemos ayudar?</span>
+            <h3 class="subtitle-carousel-clients">Te brindamos asesoría integral </h3>
           </div>
         </div>
         <div class="d-flex justify-content-md-around mt-5">
@@ -187,7 +247,7 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-md-5 position-relative d-flex justify-content-center">
+          <div class="col-6 position-relative d-flex justify-content-center">
             <div>
               <img class="img-fluid" src="./assets/images/home/pexels-ketut-subiyanto-4245923 1.png"
                 alt="Personas hablando">
@@ -198,42 +258,41 @@
               <button class="btn-card-visa-write">Escribanos</button>
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-6">
             <div class="d-flex">
               <hr class="hr-main">
               <div>
-                <span class="d-block title-carousel-clients">Diferentes tipos de visados para aplicar</span>
-                <h3 class="subtitle-carousel-clients">según tu inversión</h3>
+                <h3 class="subtitle-carousel-clients">¿Eres extranjero y quieres <br> invertir?</h3>
+                <span class="d-block title-carousel-clients">Diferentes visados al que puedes aplicar para <br> vivir
+                  como inversor en USA.</span>
               </div>
             </div>
             <div class="card-visa-type">
               <h4 class="title-visa pt-2">Visa E-2</h4>
-              <p class="title-description-visa pt-2 mb-0">Permite que un inversor se radique en EE.UU junto a su familia
+              <p class="title-description-visa pt-2 mb-0">Un inversor puede radicarse en EE.UU junto a su familia
                 mediante la inversión en una empresa nueva o existente. Dicha inversión debe ser sustancial y activa.
               </p>
-              <span class="see-more">Ver más</span>
+              <span class="see-more">+ info</span>
             </div>
             <div class="card-visa-type">
               <h4 class="title-visa pt-2">Visa EB-5</h4>
-              <p class="title-description-visa pt-2 mb-0">Permite a los inversionistas elegibles convertirse en
-                residentes
+              <p class="title-description-visa pt-2 mb-0">Los inversionistas elegibles pueden convertirse en residentes
                 permanentes junto a su familia en Estados Unidos, es decir, obtendrán una green card. </p>
-              <span class="see-more">Ver más</span>
+              <span class="see-more">+ info</span>
             </div>
             <div class="card-visa-type">
               <h4 class="title-visa pt-2">Visa E-1</h4>
               <p class="title-description-visa pt-2 mb-0">Será otorgada a aquellos empresarios o individuos que realicen
                 intercambios comerciales entre Estados Unidos y un país que posea Tratado de Libre Comercio y Navegación
                 con USA.</p>
-              <span class="see-more">Ver más</span>
+              <span class="see-more">+ info</span>
             </div>
             <div class="card-visa-type">
               <h4 class="title-visa pt-2">Visa L-1</h4>
               <p class="title-description-visa pt-2 mb-0">Esta pensada para que las empresas multinacionales transfieran
-                a
-                ejecutivos, gerentes y personal con conocimientos especializados a la sucursal localizada en Estados
-                Unidos. </p>
-              <span class="see-more">Ver más</span>
+                a ejecutivos, gerentes y personal con conocimientos especializados a una sucursal localizada en Estados
+                Unidos.</p>
+              <span class="see-more">+ info</span>
             </div>
           </div>
         </div>
@@ -354,91 +413,96 @@
         </div>
       </div>
     </section>
-    <section class="letsGo">
+    <section class="choose-me">
       <div class="container">
-        <div>
-          <div class="row">
-            <div class="col">
-              <div class="d-flex">
-                <hr class="hr-main">
-                <div>
-                  <span class="d-block title-carousel-clients">Anímate y da el primer paso</span>
-                  <h3 class="subtitle-carousel-clients"> Una nueva experiencia te espera.</h3>
-                </div>
+        <div class="d-flex">
+          <hr class="hr-main">
+          <div>
+            <span class="d-block title-carousel-clients">¿Por qué elegirnos?</span>
+            <h3 class="subtitle-carousel-clients"> Conocemos los buenos negocios</h3>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-3 col-sm-12 mt-1">
+            <div class="card-motive">
+              <div class="mb-2 img-motive">
+                <img src="/assets/images/home/Training.png" alt="Training">
               </div>
-              <div class="container-cards-lets">
-                <div class="card-container-lets">
-                  <img src="/assets/images/home/Phone.png" alt="Phone">
-                  <span class="title-card-lets"><strong>Hablemos</strong></span>
-                  <span class="description-card-lets">Deseamos conocer más <br> sobre usted y sus <br> objetivos.</span>
-                </div>
-                <div class="card-container-lets">
-                  <img src="/assets/images/home/Small Business.png" alt="Phone">
-                  <span class="title-card-lets"><strong>Emprende en USA</strong></span>
-                  <span class="description-card-lets">Lo guiaremos al modelo de <br> negocio que funcione bien <br> para
-                    usted.</span>
-                </div>
-                <div class="card-container-lets">
-                  <img src="/assets/images/home/Chat Message Sent.png" alt="Phone">
-                  <span class="title-card-lets"><strong>Concreta tus objetivos</strong> </span>
-                  <span class="description-card-lets">Podrá ser dueño de tu propio <br> negocio yvivirás junto a tu <br>
-                    familia en un gran país.</span>
-                </div>
+              <div class="d-flex">
+                <span class="description-motive"> Estamos <b>capacitados</b> <br> para <b>evaluar</b> y <b>analizar</b>
+                  los <br>
+                  negocios más
+                  rentables
+                  de USA.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 mt-1">
+            <div class="card-motive">
+              <div class="mb-2 img-motive">
+                <img src="/assets/images/home/Process Improvement.png" alt="Process">
+              </div>
+              <div class="d-flex">
+                <span class="description-motive"> Contamos con un proceso <br> <b>sistematizado pero adaptable <br> a
+                    cada
+                    inversionista</b>, que nos <br> permite guiarlos con eficiencia.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 mt-1">
+            <div class="card-motive">
+              <div class="mb-2 img-motive">
+                <img src="/assets/images/home/Contact.png" alt="Contact">
+              </div>
+              <div class="d-flex">
+                <span class="description-motive"><b>+6 años de experiencia</b> en el <br> que hemos desarrollado una
+                  <br>
+                  <b>red
+                    estratégica de contactos</b> <br> que te respaldarán.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 mt-1">
+            <div class="card-motive">
+              <div class="mb-2 img-motive">
+                <img src="/assets/images/home/Reception.png" alt="Process">
+              </div>
+              <div class="d-flex">
+                <span class="description-motive"> Hemos logrado que <b>todos <br> nuestros clientes inviertan en <br> el
+                    negocio</b> indicado acorde a <br> sus preferencias.
+                </span>
               </div>
             </div>
           </div>
         </div>
-        <div class="btn-container-lets">
-          <button class="btn-call-lets" type="button">Reserve una llamada ahora</button>
-        </div>
       </div>
-
     </section>
   </main>
   <footer class="contact">
-    <div class="mt-5 container">
+    <div class="mt-5 container d-flex justify-content-end">
       <div class="first-section">
         <div class="d-flex">
           <hr class="hr-main mt-3">
           <div>
-            <h3 class="subtitle-carousel-clients">Comienza hoy a planear tu <br> proyecto de inversión en USA
+            <h3 class="subtitle-carousel-clients">Anímate y da el primer paso
             </h3>
+            <span class="d-block title-carousel-clients">Una nueva experiencia te espera.</span>
           </div>
         </div>
         <div class="ms-3 mt-5">
-          <span class="subtitle-footer">¡Manos a la obra, escribanos!</span>
+          <span class="subtitle-footer">Escríbanos</span>
         </div>
       </div>
     </div>
     <section class="first-section-b">
       <div class="container">
         <div class="row position-relative">
-          <div class="col">
 
-            <div class="first-section-b">
-              <div class="pt-5">
-                <span class="contact-hour">Horarios de atención: <br> Lunes a viernes - 9:00 hs a 18:00 hs | UTC/GTM
-                  -6</span>
-              </div>
-              <div class="pt-4">
-                <span class="contact-hour">Nuestra oficina: <br> 11302 Sir Winston Street - Suite 3. San Antonio, TX -
-                  78216.</span>
-              </div>
-              <div class="follow">
-                <span class="contact-hour d-block ms-5">¡Síguenos en nuestras redes!</span>
-                <div class="d-flex ms-5 mt-3">
-                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google-plus-g"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
-                </div>
-              </div>
-            </div>
-
-          </div>
           <div class="col ps-0 pe-0">
-            <div class="d-flex justify-content-end">
+            <div class="d-flex">
               <div class="container-form">
                 <form class="mt-4">
                   <div class="d-flex">
@@ -485,11 +549,36 @@
 
             </div>
           </div>
+          <div class="col">
+
+            <div class="first-section-b2">
+              <div class="pt-5">
+                <span class="contact-hour">Horarios de atención: <br> Lunes a viernes - 9:00 hs a 18:00 hs | UTC/GTM
+                  -6</span>
+              </div>
+              <div class="pt-4">
+                <span class="contact-hour">Email: <br> contacto@interlinktx.com</span>
+              </div>
+              <div class="pt-4">
+                <span class="contact-hour">Teléfono: <br> +1 210 4635037</span>
+              </div>
+              <div class="follow">
+                <div class="d-flex ms-5 mt-3">
+                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google-plus-g"></i></div>
+                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
+                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
+                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
         </div>
 
         <div class="copyright">
-          <span>© 2022 Interlink - Sitio Web. All Rights Reserved. Partner-Digital</span>
+          <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
         </div>
       </div>
     </section>

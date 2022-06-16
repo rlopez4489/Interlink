@@ -1,0 +1,236 @@
+.about-us {
+  margin-top: 60px;
+}
+.hr-main {
+  border: none;
+  border-left: 6px solid #058070 !important;
+  height: 80px !important;
+  width: 1px !important;
+  opacity: 1 !important;
+  margin-right: 12px;
+  margin-top: 0;
+}
+.title-carousel-clients {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #1e4e62;
+}
+.subtitle-carousel-clients {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+
+  color: #000000;
+}
+.container-aboutUs-description {
+  margin-top: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+.number-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+  border-bottom: 3px solid #058070;
+}
+.label-counter-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 5px;
+}
+.label-counter-final {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  color: #058070;
+}
+.our-team {
+  margin-top: 120px;
+  height: 608px;
+  background-color: rgba(28, 38, 86, 0.05);
+  display: flex;
+  align-items: center;
+}
+.title-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #1e4e62;
+  margin-top: 19px;
+  display: block;
+}
+.description-jaime {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 16px;
+}
+.icon-lkdin {
+  font-size: 32px;
+  color: #058070;
+}
+.name-employee {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1e4e62;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+}
+.icon-lkdin {
+  font-size: 20px;
+}
+.container-img-team {
+  margin: 3px;
+}
+.description-oportunity {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+.btn-know-services {
+  width: 404px;
+  height: 48px;
+  background: #058070;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  border: none;
+}
+.size {
+  font-size: 38px;
+}
+.first-section {
+  padding-top: 43px;
+  padding-bottom: 98px;
+  height: 295px;
+}
+.subtitle-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #1e4e62;
+}
+.second-section {
+  height: 295px;
+}
+.contact {
+  margin-top: 100px;
+}
+.first-section-b {
+  background: #1c2656;
+}
+.contact-hour {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.container-form {
+  position: absolute;
+  width: 500px;
+  height: 673px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  bottom: -55px;
+}
+.follow {
+  margin-top: 80px;
+}
+.box-icon-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #058070;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+.copyright {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #c9c9c9;
+  margin-top: 120px;
+  padding-bottom: 30px;
+}
+
+.btn-send-form {
+  width: 125px;
+  height: 38px;
+  background: #058070;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+.label-form {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.message-info-form {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.65px;
+  color: #058070;
+}
+
+.text-area-form {
+  height: 175px;
+}
+.oportunity{
+    margin-top: 115px;
+}
