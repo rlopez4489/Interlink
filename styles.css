@@ -219,8 +219,8 @@ hr {
   margin-left: 10px;
 }
 .container-description-client {
-  margin-top: 90px;
-  margin-left: 20px;
+  margin-top: 120px;
+  margin-left: 30px;
 }
 .container-subtitle-carousel-client {
   display: flex;
@@ -247,6 +247,19 @@ hr {
   text-align: left;
   margin-top: 10px;
   margin-left: 12px;
+}
+.see-more-info{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #058070;
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+  margin-right: 12px;
+  padding-bottom: 10px;
 }
 .box-service {
   width: 250px;
@@ -533,7 +546,6 @@ hr {
 .first-section {
   padding-top: 43px;
   padding-bottom: 98px;
-  height: 295px;
 }
 .subtitle-footer {
   font-family: "Roboto";
@@ -814,6 +826,9 @@ hr {
 .carousel-fade .active.carousel-item-end {
   transition: opacity 0s 0s !important;
 }
+.carousel-size{
+  height: 400px !important;
+}
 @media (min-width: 1367px) {
   .header {
     width: 100%;
@@ -822,6 +837,22 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
+  }
+  .carousel-size{
+    height: 450px !important;
+  }
+  .card-visa-write {
+    position: absolute;
+    bottom: -40px;
+    width: 90%;
+    height: 145px;
+    background: #1c2656;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 }
