@@ -52,12 +52,56 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 38px;
   line-height: 53px;
   text-align: center;
   color: #000000;
-  text-align: center;
 }
-.description-investor-visa{
-    margin-top: 250px;
+.description-investor-visa {
+  margin-top: 250px;
+  height: 432px;
+  background: rgba(28, 38, 86, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-objetives {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+.visa-descriptions {
+  margin-top: 114px;
+}
+.descriptions-visa-type {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  color: #000000;
+}
+.question-description-visa {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1e4e62;
+}
+.btn-write-us {
+  width: 567px;
+  height: 44px;
+  background: #058070;
+  border-radius: 3px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
 }

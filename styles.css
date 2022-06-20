@@ -32,9 +32,6 @@ a {
   align-items: center;
   justify-content: center;
 }
-.dropdown-toggle::after {
-  display: none !important;
-}
 
 .btn-container-header {
   margin-top: 56px;
@@ -68,26 +65,12 @@ a {
 .nav-item {
   margin-right: 20px;
 }
-.navbar-nav li:hover > .dropdown-menu {
-  display: block;
-}
+
 .navbar-light .navbar-nav .nav-link {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-.navbar-nav .nav-link.active,
-.border-green {
-  border-bottom: 3px solid #058070;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.navbar-nav .nav-link:hover {
-  border-bottom: 3px solid #058070;
-}
-.dropdown-item:hover {
-  background-color: #058070 !important;
-  color: #fff !important;
-}
+
 li {
   list-style: none;
 }
@@ -117,7 +100,7 @@ h1 {
 .titulo-portada {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 2.9em;
   line-height: 50px;
   color: #ffffff;
@@ -169,13 +152,15 @@ hr {
   width: 280px;
   margin-top: 26px;
 }
+.container-here {
+  margin-top: 80px;
+}
 .carousel-indicators [data-bs-target] {
   background-color: #bebebe !important;
 }
 .clients {
   background: rgba(28, 38, 86, 0.05);
   margin-top: 80px;
-  margin-bottom: 56px;
 }
 
 .carousel-indicators {
@@ -226,15 +211,17 @@ hr {
   display: flex;
   position: absolute;
   right: 0;
-  top: 45px;
+  top: 48px;
   left: 400px;
   justify-content: center;
   align-items: center;
   z-index: 200;
 }
 .services {
-  margin-top: 71px;
-  margin-bottom: 72px;
+  margin-top: 144px;
+}
+.section-visa-types {
+  margin-top: 144px;
 }
 .see-more {
   font-family: "Roboto";
@@ -248,7 +235,7 @@ hr {
   margin-top: 10px;
   margin-left: 12px;
 }
-.see-more-info{
+.see-more-info {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
@@ -301,16 +288,21 @@ hr {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .title-visa {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 23px;
   color: #000000;
   margin-top: 15px;
   margin-left: 22px;
+  margin-bottom: 3px;
 }
 .title-description-visa {
   font-family: "Roboto";
@@ -319,7 +311,7 @@ hr {
   font-size: 18px;
   line-height: 23px;
   color: #000000;
-  margin-left: 30px;
+  margin-left: 22px;
 }
 .card-visa-write {
   position: absolute;
@@ -364,7 +356,7 @@ hr {
 .news-letter {
   height: 424px;
   background-color: rgba(28, 38, 86, 0.05);
-  margin-top: 200px;
+  margin-top: 144px;
   display: flex;
   align-items: center;
 }
@@ -377,6 +369,7 @@ hr {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
+  justify-content: center;
 }
 .title-form-newsletter {
   font-family: "Roboto";
@@ -465,7 +458,7 @@ hr {
   border-radius: 3px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   border: none;
@@ -544,8 +537,7 @@ hr {
   color: #000000;
 }
 .first-section {
-  padding-top: 43px;
-  padding-bottom: 98px;
+  padding-bottom: 63px;
 }
 .subtitle-footer {
   font-family: "Roboto";
@@ -580,23 +572,25 @@ hr {
 .contact-hour {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   color: #ffffff;
 }
 .container-form {
   position: absolute;
-  width: 500px;
-  height: 673px;
+  width: auto;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   bottom: -55px;
+  padding-bottom: 20px;
 }
 .follow {
   margin-top: 80px;
 }
+
 .box-icon-follow {
   display: flex;
   justify-content: center;
@@ -650,13 +644,15 @@ hr {
   letter-spacing: 0.65px;
   color: #058070;
 }
-
+.margin-colums {
+  margin-left: 30px;
+}
 .text-area-form {
-  height: 175px;
+  height: 100px;
 }
 
 .maincontainer {
-  width: 250px;
+  width: auto;
   height: 186px;
   float: left; /* stack each div horizontally */
   margin: 10px;
@@ -679,7 +675,7 @@ hr {
 .maincontainer > .back {
   position: absolute;
   transform: perspective(600px) rotateY(180deg);
-  width: 250px;
+  width: auto;
   height: 186px;
   backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
   transition: transform 0.5s linear 0s;
@@ -705,7 +701,10 @@ hr {
   transform: perspective(600px) rotateY(0deg);
 }
 .here {
-  margin-top: 89px;
+  margin-top: 144px;
+}
+.img-here {
+  max-height: 550px;
 }
 .here-description {
   margin-left: 15px;
@@ -717,9 +716,7 @@ hr {
   color: #000000;
   margin-bottom: 40px;
 }
-.container-here {
-  margin-top: 60px;
-}
+
 .letsGo {
   margin-top: 120px;
   height: 454px;
@@ -826,7 +823,7 @@ hr {
 .carousel-fade .active.carousel-item-end {
   transition: opacity 0s 0s !important;
 }
-.carousel-size{
+.carousel-size {
   height: 400px !important;
 }
 @media (min-width: 1367px) {
@@ -839,12 +836,12 @@ hr {
     display: flex;
     justify-content: center;
   }
-  .carousel-size{
+  .carousel-size {
     height: 450px !important;
   }
   .card-visa-write {
     position: absolute;
-    bottom: -40px;
+    bottom: 90px;
     width: 90%;
     height: 145px;
     background: #1c2656;
