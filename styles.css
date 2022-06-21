@@ -584,7 +584,7 @@ hr {
 }
 .container-form {
   position: absolute;
-  width: auto;
+  width: 612px;
   height: auto;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
