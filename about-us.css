@@ -176,14 +176,14 @@ li {
 }
 .btn-know-services {
   width: 404px;
-  height: 44px;
+  height: 32px;
   background: #058070;
   border-radius: 3px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 19px;
   color: #ffffff;
   border: none;
 }
