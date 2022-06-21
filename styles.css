@@ -20,6 +20,11 @@ a {
 .portada {
   width: 95%;
 }
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent !important;
+}
 .nav-bg {
   background-color: transparent;
   display: flex;
@@ -249,8 +254,8 @@ hr {
   padding-bottom: 10px;
 }
 .box-service {
-  width: 250px;
-  height: 186px;
+  width: 270px;
+  height: 216px;
   background: #f4f4f7;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
@@ -652,15 +657,20 @@ hr {
 }
 
 .maincontainer {
-  width: auto;
-  height: 186px;
-  float: left; /* stack each div horizontally */
-  margin: 10px;
+  width: 270px;
+  height: 216px;
 }
 
 .back p {
-  font-size: 16px;
   padding: 0 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #000000;
 }
 
 /* style the maincontainer class with all child div's of class .front */
@@ -675,8 +685,8 @@ hr {
 .maincontainer > .back {
   position: absolute;
   transform: perspective(600px) rotateY(180deg);
-  width: auto;
-  height: 186px;
+  width: 270px;
+  height: 216px;
   backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
   transition: transform 0.5s linear 0s;
   background: #f4f4f7;
@@ -703,9 +713,7 @@ hr {
 .here {
   margin-top: 144px;
 }
-.img-here {
-  max-height: 550px;
-}
+
 .here-description {
   margin-left: 15px;
   font-family: "Roboto";
@@ -851,5 +859,17 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .maincontainer {
+    width: 306px;
+    height: 216px;
+  }
+  .maincontainer > .back {
+    width: 306px;
+    height: 216px;
+  }
+  .box-service {
+    width: 306px;
+    height: 216px;
   }
 }
