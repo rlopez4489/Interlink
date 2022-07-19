@@ -1,0 +1,244 @@
+.header-business {
+  position: relative;
+}
+.box-header-business {
+  position: absolute;
+  top: 75px;
+  right: 300px;
+  width: 687px;
+  height: 538px;
+  background: #1c2656;
+  border-radius: 6px;
+}
+.description-header-business {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-left: 70px;
+  margin-right: 40px;
+  margin-top: 56px;
+}
+.title-margin {
+  margin-top: 37px;
+  margin-left: 54px;
+}
+.criterion {
+  margin-top: 50px;
+}
+.box-criterion {
+  width: auto;
+  height: 296px;
+  background: #f4f4f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.title-criterion {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 10px;
+}
+.description-criterion {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  margin: 15px 14px 0 14px;
+}
+.container-img-criterion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 80px;
+}
+.btn-criterion {
+  width: 404px;
+  height: 48px;
+  background: #058070;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  border: none;
+}
+.section-send {
+  margin-top: 80px;
+}
+.description-section-send {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.container-card-want-know {
+  width: 110%;
+  height: 190px;
+  background: #1c2656;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  position: absolute;
+  bottom: 25px;
+  left: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-card-want-know {
+  width: 479px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.btn-write-us-want-know {
+  width: 446px;
+  height: 44px;
+  background: #058070;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  margin-top: 26px;
+}
+.where-investor {
+  margin-top: 177px;
+}
+.where-investor-description {
+  width: 544px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.card-type-investor {
+  width: 100%;
+  height: 94px;
+  background: #f4f4f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-type-investor {
+  width: 278px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-left: 35px;
+}
+.talking-section {
+  margin-top: 80px;
+  height: 238px;
+  background: rgba(28, 38, 86, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-talking {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 53px;
+  color: #000000;
+}
+.subtitle-talking {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 18px;
+  color: #1e4e62;
+}
+.btn-talking {
+  width: 446px;
+  height: 44px;
+  background: #058070;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  border: none;
+  margin-top: 46px;
+}
+.footer-business {
+  background: #1c2656;
+  height: 571px;
+  margin-top: 66px;
+}
+.bg-footer {
+  background-image: url("/assets/images/home/world.png");
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.title-footer-business {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.subtitle-footer-business {
+  margin-top: 7px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 46px;
+  color: #ffffff;
+}
+.copyright-business {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #c9c9c9;
+  align-items: flex-end;
+  margin-top: 90px;
+}
