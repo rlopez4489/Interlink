@@ -1086,6 +1086,7 @@ hr {
   .container-description-client {
     margin-top: 20px;
     margin-left: 0px;
+    height: auto;
   }
   .card-visa-write {
     position: absolute;
@@ -1110,9 +1111,10 @@ hr {
     height: 216px;
   }
   .text-description-client {
-    height: 280px;
+    height: 240px;
     font-size: 19px;
     line-height: 23px;
+    margin-left: 0px;
   }
   .see-more {
     margin-top: 0px;
@@ -1170,7 +1172,7 @@ hr {
   .title-name-client {
     font-size: 22px;
     line-height: 17px;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .title-service {
     display: inline-block;
@@ -1371,5 +1373,6 @@ hr {
   .container-btn-see-more{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
   }
 }
