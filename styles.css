@@ -1110,7 +1110,7 @@ hr {
     height: 216px;
   }
   .text-description-client {
-    height: 352px;
+    height: 280px;
     font-size: 19px;
     line-height: 23px;
   }
@@ -1367,5 +1367,9 @@ hr {
   }
   .hidden-title{
     display: none;
+  }
+  .container-btn-see-more{
+    display: flex;
+    justify-content: center;
   }
 }
