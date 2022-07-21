@@ -44,7 +44,15 @@ a {
   background-color: transparent;
   display: flex;
 }
-
+.container-header-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
 .navbar-nav {
   margin-left: 50px;
 }
@@ -974,7 +982,7 @@ hr {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.8em;
     line-height: 30px;
     color: #ffffff;
   }
@@ -997,29 +1005,29 @@ hr {
     margin-top: 0;
   }
   .btn-contact {
-    width: 150px;
-    height: 34px;
+    width: 170px;
+    height: 40px;
     background: #058070;
     border-radius: 3px;
     border: none;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 17px;
     color: #ffffff;
   }
   .btn-want-to {
-    width: 85px;
-    height: 34px;
+    width: 110px;
+    height: 40px;
     background: #ffffff;
     border-radius: 3px;
     border: none;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 17px;
     color: #000000;
   }
   .box-icon {
@@ -1039,7 +1047,7 @@ hr {
   }
   .header {
     width: 100%;
-    height: 40vh;
+    height: 270px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1375,5 +1383,21 @@ hr {
   .icon-services-size {
     width: 35px;
     height: 35px;
+  }
+  .container-header-text {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+  .btn-container-header {
+    margin-top: 18px;
+  }
+  .container-icon-network{
+    display: flex;
+    margin-top: 12px;
   }
 }
