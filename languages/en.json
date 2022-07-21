@@ -1,0 +1,9 @@
+{
+    "nav":{
+        "home" : "Home",
+        "us": "Us",
+        "services": "Services",
+        "resources": "Resources",
+        "contact": "Contact"
+    }
+}

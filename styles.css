@@ -29,16 +29,25 @@ a {
 /* The element to apply the animation to */
 .contain img {
   width: 100vw;
-  animation-delay: 1s;
-  animation-name: zoomIn;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
 }
 
 .dropdown-item:active {
   color: #fff;
   text-decoration: none;
   background-color: transparent !important;
+}
+.flag {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flags__item {
+  width: 30px;
+}
+.flags__img {
+  cursor: pointer;
+  display: block;
 }
 .nav-bg {
   background-color: transparent;
@@ -204,13 +213,21 @@ hr {
 .carousel-indicators {
   bottom: -52px !important;
 }
-
 .title-carousel-clients {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+  color: #000000;
+}
+
+.title-carousel-clients-help {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000;
 }
 .subtitle-carousel-clients {
@@ -239,6 +256,7 @@ hr {
   line-height: 23px;
   color: #000000;
   margin-left: 10px;
+  margin-top: 0.5rem;
 }
 .container-description-client {
   margin-top: 120px;
@@ -432,6 +450,7 @@ hr {
   margin-top: 174px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .img-book-container {
   display: flex;
@@ -448,9 +467,11 @@ hr {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 24px;
+  line-height: 28px;
   color: #1e4e62;
+  margin-left: 12px;
+  padding-right: 15px;
 }
 .form-newsletter {
   margin-top: 3rem;
@@ -459,9 +480,10 @@ hr {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 53px;
+  font-size: 32px;
+  line-height: 38px;
   color: #000000;
+  margin-left: 12px;
 }
 .about-us {
   margin-top: 80px;
@@ -522,7 +544,7 @@ hr {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   color: #058070;
 }
 .card-help-you {
@@ -947,10 +969,16 @@ hr {
   display: flex;
   margin-top: 44px;
 }
+.footer-color-mobile {
+  display: none;
+}
+.color-bg-attention {
+  display: none;
+}
 @media (min-width: 1367px) {
   .header {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1038,8 +1066,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 21px;
-    height: 21px;
+    width: 24px;
+    height: 24px;
     background: rgb(103, 109, 109);
     border-radius: 3px;
     margin-right: 11px;
@@ -1051,7 +1079,7 @@ hr {
   }
   .header {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1062,20 +1090,7 @@ hr {
     height: 450px !important;
   }
   .subtitle-carousel-clients {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 1.2;
-    color: #000000;
-  }
-  .title-carousel-clients {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 25px;
-    color: #000000;
+    margin-bottom: 0px;
   }
   .container-subtitle-carousel-client {
     display: flex;
@@ -1135,7 +1150,8 @@ hr {
     height: 240px;
     font-size: 19px;
     line-height: 23px;
-    margin-left: 0px;
+    margin-left: 12px;
+    margin-top: 0.8rem;
   }
   .see-more {
     margin-top: 0px;
@@ -1143,28 +1159,19 @@ hr {
     height: 44px;
     font-size: 20px;
     line-height: 23px;
+    margin-left: 0px;
   }
   .services {
     margin-top: 0px;
   }
-  .title-form-newsletter {
-    font-size: 22px;
-    line-height: 25px;
-    color: #1e4e62;
-  }
-  .subtitle-form-newsletter {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 1.2;
-    color: #000000;
-  }
+
   .img-book-container {
     display: flex;
-    width: 200px;
-    height: 259px;
-    justify-content: center;
+    width: 150px;
+    height: 209px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -95px;
   }
 
   .description-help {
@@ -1177,9 +1184,7 @@ hr {
     width: auto;
     margin-top: 50px;
   }
-  .img-here {
-    display: none;
-  }
+
   .bar-color {
     width: 100%;
   }
@@ -1194,25 +1199,19 @@ hr {
   .title-name-client {
     font-size: 22px;
     line-height: 17px;
-    margin-left: 0px;
+    margin-left: 12px;
   }
   .title-service {
-    display: inline-block;
-    font-size: 17px;
-    line-height: 21px;
     margin-top: 12px;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   .description {
-    font-size: 19px;
-    line-height: 23px;
     margin-top: 14px;
     height: auto;
     margin-bottom: 10px;
   }
   .btn-see-more {
-    font-size: 18px;
-    line-height: 15px;
+    display: none;
   }
 
   .maincontainer {
@@ -1246,9 +1245,7 @@ hr {
     width: 550px;
     height: 250px !important;
   }
-  .contain-text-card-visa {
-    display: none;
-  }
+
   .contain-text-card-visa-mobile {
     display: flex;
   }
@@ -1273,39 +1270,40 @@ hr {
   }
   .card-visa-type {
     width: 100%;
-    height: 100%;
+    height: auto;
     background: #ffffff;
-    border: none;
-    box-shadow: none;
-    border-radius: none;
+    border: 1px solid #f4f4f7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding: 0px 0px 0px 0px;
-    margin-top: 30px;
+    margin-top: 10px;
+    padding: 20px 8px;
   }
   .news-letter {
-    height: 371px;
-    background-color: transparent;
-    margin-top: 164px;
+    background-color: rgba(28, 38, 86, 0.05);
+    height: 425px;
+    margin-top: 180px;
     display: flex;
     align-items: center;
   }
-  input::placeholder {
-    font-size: 12px;
-  }
+
   .desktop-v {
-    display: none;
+    display: none !important;
   }
   .mobile-v {
     display: flex;
     justify-content: center;
   }
   .form-newsletter-container {
-    align-items: center;
+    margin-top: 80px;
   }
   .btn-outline-secondary {
-    font-size: 12px !important;
+    background: rgba(28, 38, 86, 0.08) !important;
+    border-radius: 0px 6px 6px 0px !important;
+    border: none !important;
   }
   .contain img {
     width: 100vw;
@@ -1313,14 +1311,14 @@ hr {
   }
   .help-you {
     height: auto;
-    margin-top: 160px;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     background-color: transparent;
   }
   .color-strong {
-    font-size: 19px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .btn-desktop-resevation {
     display: none;
@@ -1333,9 +1331,12 @@ hr {
   .card-help-you {
     width: 100%;
     height: 73px;
-    margin-top: 5px;
+    margin-top: 10px;
     justify-content: flex-start;
     padding-left: 10px;
+  }
+  .first-card-help-you {
+    margin-top: 35px;
   }
   .first-card-visa {
     margin-top: 50px;
@@ -1347,16 +1348,10 @@ hr {
   .btn-mobile-resevation {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-  }
-  .btn-meet-reservation {
-    width: 267px;
-    height: 44px;
-    font-size: 18px;
-    line-height: 21px;
+    margin-top: 30px;
   }
   .here {
-    margin-top: 84px;
+    margin-top: 68px;
   }
   .hidden-title {
     display: none;
@@ -1364,20 +1359,19 @@ hr {
   .container-btn-see-more {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 62px;
   }
-  .icon-services-size {
-    width: 35px;
-    height: 35px;
+  .text-card-visa-write {
+    width: 100%;
   }
   .container-header-text {
     position: absolute;
-    top: 25px;
+    top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
   .btn-container-header {
     margin-top: 18px;
@@ -1395,36 +1389,92 @@ hr {
   }
   .here-description {
     width: 100%;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 23px;
-    color: #000000;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .choose-me {
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .footer-color {
     display: none;
   }
 
+  .color-bg-attention {
+    background-color: #1c2656;
+    display: flex;
+  }
+  .footer-color-mobile {
+    display: flex;
+    margin-top: 40px;
+  }
+  .img-here {
+    margin-bottom: 20px;
+  }
+  .desktop-v-visa-types {
+    display: none !important;
+  }
+  .subtitle-form-newsletter {
+    margin-top: 5px;
+  }
+
+  .box-check-green {
+    margin-left: 12px;
+  }
+  .box-check-blue {
+    margin-left: 12px;
+  }
+  .card-motive {
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    border: 1px solid #f4f4f7;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12px;
+  }
   .description-motive {
+    margin-top: 0px;
+    width: auto;
+  }
+  .contact-hour {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .box-icon-follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: #058070;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  .follow {
+    margin-top: 25px;
+  }
+  .copyright {
+    text-align: center;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 23px;
-    color: #000000;
-    width: 100%;
-    margin-left: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #c9c9c9;
     margin-top: 30px;
   }
-  .color-bg-attention {
-    background-color: #1c2656;
+  .first-section-b2 {
+    margin-left: 12px;
   }
-  .footer-color-mobile{
-    margin-top: 40px;
+  .container-form {
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding-bottom: 20px;
+    margin-left: 12px;
   }
 }
