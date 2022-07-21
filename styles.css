@@ -929,10 +929,10 @@ hr {
   flex-direction: row;
   height: 70px !important;
 }
-.title-card-help-you{
+.title-card-help-you {
   width: 100px;
 }
-.btn-mobile-resevation{
+.btn-mobile-resevation {
   display: none;
 }
 @media (min-width: 1367px) {
@@ -1073,7 +1073,7 @@ hr {
   .hr-main {
     border: none;
     border-left: 4px solid #000000 !important;
-    height: 81px !important;
+    height: 110px !important;
     width: 1px !important;
     opacity: 1 !important;
     margin-right: 12px;
@@ -1124,7 +1124,7 @@ hr {
     line-height: 23px;
   }
   .services {
-    margin-top: 44px;
+    margin-top: 0px;
   }
   .title-form-newsletter {
     font-size: 14px;
@@ -1176,26 +1176,23 @@ hr {
   }
   .title-service {
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     margin-top: 12px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   .description {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 23px;
     margin-top: 14px;
     height: auto;
     margin-bottom: 10px;
   }
   .btn-see-more {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 15px;
   }
-  .icon-services-size {
-    width: 30px;
-    height: 30px;
-  }
+
   .maincontainer {
     width: 100%;
     height: 100%;
@@ -1208,16 +1205,16 @@ hr {
     box-sizing: border-box;
   }
   .btn-services {
-    width: 180px;
-    height: 34px;
+    width: 264px;
+    height: 44px;
     background: #058070;
     border-radius: 3px;
     border: none;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 20px;
+    line-height: 23px;
     color: #ffffff;
   }
   .section-visa-types {
@@ -1350,15 +1347,15 @@ hr {
     height: 40px !important;
   }
 
-  .title-card-help-you{
+  .title-card-help-you {
     width: 150px;
   }
-  .btn-mobile-resevation{
+  .btn-mobile-resevation {
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
-  .btn-meet-reservation{
+  .btn-meet-reservation {
     width: 180px;
     height: 34px;
     font-size: 12px;
@@ -1367,12 +1364,16 @@ hr {
   .here {
     margin-top: 84px;
   }
-  .hidden-title{
+  .hidden-title {
     display: none;
   }
-  .container-btn-see-more{
+  .container-btn-see-more {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+  }
+  .icon-services-size {
+    width: 35px;
+    height: 35px;
   }
 }
