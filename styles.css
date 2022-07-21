@@ -1087,6 +1087,15 @@ hr {
     margin-right: 12px;
     margin-top: 0;
   }
+  .hr-main-us {
+    border: none;
+    border-left: 4px solid #000000 !important;
+    height: 75px !important;
+    width: 1px !important;
+    opacity: 1 !important;
+    margin-right: 12px;
+    margin-top: 0;
+  }
   .carousel-size {
     margin-top: 0px;
     height: 600px !important;
@@ -1184,8 +1193,8 @@ hr {
   }
   .title-service {
     display: inline-block;
-    font-size: 18px;
-    line-height: 17px;
+    font-size: 17px;
+    line-height: 21px;
     margin-top: 12px;
     margin-left: 5px;
   }
