@@ -943,6 +943,10 @@ hr {
 .btn-mobile-resevation {
   display: none;
 }
+.container-icon-network {
+  display: flex;
+  margin-top: 44px;
+}
 @media (min-width: 1367px) {
   .header {
     width: 100%;
@@ -1109,7 +1113,7 @@ hr {
     position: absolute;
     bottom: -30px;
     width: 93%;
-    height: 122px;
+    height: 180px;
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
@@ -1247,34 +1251,10 @@ hr {
   .contain-text-card-visa-mobile {
     display: flex;
   }
-  .box-check-green {
-    width: 20px;
-    height: 20px;
-    background: #058070;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 14px;
-  }
-  .box-check-blue {
-    width: 20px;
-    height: 20px;
-    background: #1c2656;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 14px;
-    margin-right: 14px;
-  }
+
   .title-description-visa {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #000000;
+    font-size: 19px;
+    line-height: 23px;
     margin-top: 14px;
     height: 30px;
   }
@@ -1292,7 +1272,7 @@ hr {
   }
   .card-visa-type {
     width: 100%;
-    height: auto;
+    height: 100%;
     background: #ffffff;
     border: none;
     box-shadow: none;
@@ -1300,12 +1280,8 @@ hr {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 0px 16px;
+    padding: 50px 16px 0px 16px;
     margin-top: 30px;
-  }
-  .size-icon-chek {
-    color: #ffffff;
-    font-size: 12px;
   }
   .news-letter {
     height: 371px;
@@ -1405,8 +1381,12 @@ hr {
   .btn-container-header {
     margin-top: 18px;
   }
-  .container-icon-network{
+  .container-icon-network {
     display: flex;
     margin-top: 12px;
+  }
+  .title-visa {
+    font-size: 22px;
+    line-height: 25px;
   }
 }
