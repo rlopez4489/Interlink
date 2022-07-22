@@ -1,9 +1,15 @@
 {
-    "nav":{
-        "home" : "Home",
-        "us": "Us",
-        "services": "Services",
-        "resources": "Resources",
-        "contact": "Contact"
-    }
+  "nav": {
+    "home": "Home",
+    "us": "Us",
+    "services": "Services",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "We know which are the best business opportunities in the USA",
+    "subtitle": "Invest accompanied and with knowledge",
+    "btn1": "Schedule a consultation",
+    "btn2": "Contact Us"
+  }
 }

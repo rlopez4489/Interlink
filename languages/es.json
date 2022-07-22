@@ -1,9 +1,15 @@
 {
-    "nav":{
-        "home" : "Home",
-        "us": "Nosotros",
-        "services": "Servicios",
-        "resources": "Recursos",
-        "contact": "Contacto"
-    }
+  "nav": {
+    "home": "Home",
+    "us": "Nosotros",
+    "services": "Servicios",
+    "resources": "Recursos",
+    "contact": "Contacto"
+  },
+  "header": {
+    "title": "Sabemos cuáles son las mejores oportunidades de negocio en USA",
+    "subtitle": "Invierta acompañado y con conocimiento",
+    "btn1": "Agende una consulta",
+    "btn2": "Contáctenos"
+  }
 }

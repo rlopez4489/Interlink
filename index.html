@@ -33,24 +33,27 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" data-section="nav" data-value="home" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" data-section="nav" data-value="us" href="#">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" data-section="nav" data-value="services" href="#">Servicios</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                <a class="nav-link dropdown-toggle" data-section="nav" data-value="resources" href="#" id="navbarDropdownMenuLink" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
+                  Recursos
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-section="nav" data-value="contact" href="#">Contacto</a>
               </li>
             </ul>
           </div>
@@ -74,15 +77,15 @@
               <hr class="hr-main-header">
             </div>
             <div class="d-flex flex-column">
-              <h1 class="titulo-portada">We know <b>which are</b> the <b>best business opportunities</b> in the <strong>
+              <h1 data-section="header" data-value="title" class="titulo-portada">We know <b>which are</b> the <b>best business opportunities</b> in the <strong>
                   USA</strong>
               </h1>
               <div class="centeredBox">
-                <span><b>Invest accompanied and with knowlede</b></span>
+                <span data-section="header" data-value="subtitle"><b>Invest accompanied and with knowlede</b></span>
               </div>
               <div class="d-flex btn-container-header">
                 <div class="d-flex flex-column">
-                  <button class="btn-contact me-3">Agende una consulta</button>
+                  <button data-section="header" data-value="btn1" class="btn-contact me-3">Agende una consulta</button>
                   <div class="container-icon-network">
                     <div class="box-icon"> <a target="_blank" href="https://www.linkedin.com/company/interlinkfbc/"> <i
                           class="fa-brands fa-linkedin-in size-icon"></i></a>
@@ -96,7 +99,7 @@
                   </div>
                 </div>
                 <div class="d-flex">
-                  <button class="btn-want-to">Contáctenos</button>
+                  <button data-section="header" data-value="btn2" class="btn-want-to">Contáctenos</button>
                 </div>
               </div>
             </div>
@@ -857,8 +860,8 @@
                       <input type="text" class="form-control" id="fullname">
                     </div>
                     <div class="me-4">
-                      <label for="exampleFormControlInput1">Correo electronico</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1"
+                      <label for="exampleFormControlInput2">Correo electronico</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput2"
                         placeholder="name@example.com">
                     </div>
                   </div>
@@ -883,8 +886,8 @@
                     </select>
                   </div>
                   <div class="form-group me-4 ms-lg-4 mt-4">
-                    <label class="label-form" for="exampleFormControlTextarea1">Déjenos su mensaje</label>
-                    <input class="form-control text-area-form" id="exampleFormControlTextarea1">
+                    <label class="label-form" for="exampleFormControlTextarea2">Déjenos su mensaje</label>
+                    <input class="form-control text-area-form" id="exampleFormControlTextarea2">
                   </div>
                   <div class="d-flex justify-content-end me-4 mt-4">
                     <button class="btn-send-form mt-2" type="submit">Enviar</button>
