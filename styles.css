@@ -1509,7 +1509,11 @@ hr {
     display: flex;
   }
   .img-size-flag {
-    width: 262px;
+    width: 250px;
     height: auto;
   }
+  .navbar-light .navbar-toggler {
+    color: transparent !important;
+    border-color: transparent !important; 
+}
 }
