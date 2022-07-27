@@ -7,9 +7,102 @@
     "contact": "Contacto"
   },
   "header": {
-    "title": "Sabemos cuáles son las mejores oportunidades de negocio en USA",
+    "title": "Sabemos<b>cuáles son</b> las <b>mejores oportunidades</b> de <strong>negocio</strong> en <strong>USA</strong>",
     "subtitle": "Invierta acompañado y con conocimiento",
     "btn1": "Agende una consulta",
     "btn2": "Contáctenos"
+  },
+  "clientSection": {
+    "title": "Nuestros clientes",
+    "subtitle": "Conoce experiencias reales",
+    "buenRostroTitle": "Familia Buenrostro y Aceves.",
+    "buenRostroDescription": "Provienen de México y en conjunto decidieron que parte de ellos emigraría hacia Estados Unidos buscando mejorar la calidad de vida de sus hijos. <br> <br> Iniciaron su proceso totalmente decididos y la primera franquicia que les ofrecimos fue la que decidieron comprar y en menos de tres meses estaban abriendo sus locales.",
+    "carrilloTitle": "Claudia Carrillo",
+    "carrilloDescription": "Claudia es mexicana y junto con su familia viven en Austin.<br> <br>Durante años trabajó en una compañía norteamericana hasta que decidió emprender y adquirir una franquicia sobre diseño de interiores, área que le apasiona. En menos de cuatro meses, renunció a su antiguo trabajo y logró ser dueña de su propia empresa.",
+    "reyesTitle": "Eduardo Reyes",
+    "descriptionReyes": "Es ciudadano mexicano que reside en Texas y trabajaba en un banco de renombre, pero deseaba convertirse en dueño de un negocio propio.<br> <br>Luego de una ardua búsqueda, cumplió su propósito y en menos de un año de iniciar con su franquicia, ya se encuentra operando dos territorios y liderando un gran equipo de trabajo.",
+    "alonsoTitle": "Alonso Gonzales",
+    "alonsoDescription": "Llegó a Interlink FBC con la idea de convertirse en dueño de una de las innumerables franquicias con las cuales trabajamos.<br> <br>Emprendió junto con su hermano en Dallas y adquirieron una franquicia de remodelación. Actualmente, posee varios territorios y más de 10 empleados.",
+    "negreTitle": "Familia Negre",
+    "descriptionNegre": "Pablo y Candela, son una pareja de Argentina que han decidido cambiar el rumbo de sus vidas.<br> <br>Él trabajaba en el ámbito judicial y ella tenía su propio negocio, pero buscaban emigrar a EE.UUcon una visa E-2, así decidieron adquirir una franquicia de limpieza residencial y se mudaron a Austin.",
+    "whatchVideo": "Ver video en YouTube"
+  },
+  "services": {
+    "title": "¿Cómo te podemos ayudar?",
+    "subtitle": "Te brindamos asesoría integral",
+    "titleCard1": "Adquiriendo tu franquicia",
+    "descriptionCard1": "Modelo que brinda un sistema de apoyo en todos los aspectos claves del negocio. Le ofrece un camino menos obstaculizado.",
+    "titleCard2": "Expandiendo tu negocio a USA",
+    "descriptionCard2": "Accederá a nuevos clientes y podrá escuchar nuevas necesidades para mejorar sus ganacias en una moneda más segura.",
+    "titleCard3": "Adquiriendo un negocio existente",
+    "descriptionCard3": "Podrá acceder a un negocio que ya esté en funcionamiento, cómo beneficio ya tendrá clientes y proveedores para seguir operando.",
+    "titleCard4": "Comenzando tu negocio de cero",
+    "descriptionCard4": "Tendrá total flexibilidad para aplicar sus ideas, estrategias y habilidades.",
+    "btnServices": "Explore nuestros servicios"
+  },
+  "visa_types": {
+    "title": "¿Eres extranjero y quieres invertir?",
+    "subtitle": "Diferentes visados al que puedes aplicar para vivir como inversor en USA",
+    "visaE2": "Visa E-2",
+    "visaE2Description": "Un inversor puede radicarse en EE.UU junto a su familia mediante la inversión en una empresa nueva o existente. Dicha inversión debe ser sustancial y activa.",
+    "visaEb5": "Visa EB5",
+    "visaEb5Description": "Los inversionistas elegibles pueden convertirse en residentes permanentes  junto a su familia en Estados Unidos, es decir, obtendrán una green card",
+    "visaE1": "Visa E-1",
+    "visaE1Description": "Será otorgada a aquellos empresarios o individuos que realicen intercambios comerciales entre Estados Unidos y un país que posea Tratado de Libre Comercio y Navegación con USA.",
+    "visaL1": "Visa L-1",
+    "visaL1Description": "Esta pensada para que las empresas multinacionales transfieran a ejecutivos, gerentes y personal con conocimientos especializados a una sucursal localizada en Estados Unidos.",
+    "cardVisaTypeTitle": "Quieres saber cuál es la visa adecuada para <b>ti según la inversión que vayas a realizar</b>?",
+    "btnWriteUs": "Escríbenos",
+    "btn-more-info": "+ info"
+  },
+  "newsletter": {
+    "title": "Subscríbete para recibir nuestro E-book",
+    "subtitle": "Aprende todo sobre las franquicias",
+    "formName": "Nombre",
+    "formSurname": "Apellido",
+    "exampleMail": "contacto@interlinktx.com",
+    "btnSend": "Enviar"
+  },
+  "helpYou": {
+    "title": "¿A quiénes ayudamos?",
+    "subtitleStrong": "Te ayudamos a invertir",
+    "subtitle": "en negocios rentables en USA y <b>te conectamos con nuestra red de profesionales</b> para que obtenga orientación y guía honesta en su proyecto.",
+    "titleCard1": "Inversionistas extranjeros.",
+    "titleCard2": "Americanos ",
+    "titleCard3": "Extranjeros viviendo en USA",
+    "titleCardMobile": "Americanos y extranjeros viviendo en USA",
+    "btnReservation": "Reserve una llamada gratuita"
+  },
+  "here": {
+    "title": "Estamos aquí para asesorarte",
+    "subtitle": "Emprendemos este viaje contigo",
+    "step1": "Te guiaremos <strong>a largo de todo el proceso de adquisición</strong> del negocioque desees incursionar",
+    "step2": "<b>Lo educaremos para que conozca en profundidad</b> sobre los negocios en Estados Unidos.",
+    "step3": "Comenzaremos por conocer su experiencia, sus circunstancias actuales, inclinaciones de gestión y suspreferencias de ubicación e industrias",
+    "step4": "Implementamos nuestros <b>diversos recursos y nuestra red estratégica de contactos</b> para encontrar esa oportunidad de inversión, asegurándonos de que cumplamos con todas sus necesidades."
+  },
+  "chooseMe": {
+    "title": "¿Por qué elegirnos?",
+    "subtitle": "Te ayudamos a invertir en el negocio indicado para ti en USA",
+    "card1": "Estamos capacitados para evaluar y analizar los negocios más rentables de todo Estados Unidos.",
+    "card2": "Contamos con un proceso sistematizado pero adaptable a cada inversionista, que nos permite guiarlos con eficiencia.",
+    "card3": " +6 años de experiencia en el que hemos desarrollado una red estratégica de contactos que te respaldarán en este gran proyecto.",
+    "card4": "Hemos logrado que todos nuestros clientes inviertan en el negocio indicado acorde a sus preferencias."
+  },
+  "footer": {
+    "title": "Anímate y da el primer paso",
+    "subtitle": "Te esperan nuevas oportunidades",
+    "attentionHour": "Horarios de atención:",
+    "hours" :"Lunes a viernes - 9:00 hs a 18:00 hs",
+    "phone": "Teléfono: <br> +1 210 4635037",
+    "labelName": "Nombre y apellido",
+    "labelEmail": "Correo electrónico",
+    "labelCountry": "País del cuál es ciudadano",
+    "labelPhone": "Ingrese su número de teléfono",
+    "messagePhone": "Revise que su número este escrito correctamente",
+    "labelHelp": "¿Cómo podemos ayudarlo?",
+    "labelMessage": "Déjenos su mensaje",
+    "option1": "Quiero invertir en una franquicia",
+    "btnSend": "Enviar"
   }
 }

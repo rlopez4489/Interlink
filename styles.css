@@ -16,7 +16,10 @@ a {
   position: relative;
   display: flex;
 }
-
+.img-size-flag {
+  width: 262px;
+  height: auto;
+}
 @keyframes zoomIn {
   from {
     transform: scale(1);
@@ -35,6 +38,10 @@ a {
   color: #fff;
   text-decoration: none;
   background-color: transparent !important;
+}
+.container-flags {
+  position: absolute;
+  right: 0;
 }
 .flag {
   width: 75px;
@@ -174,6 +181,15 @@ hr {
   margin-right: 12px;
   margin-top: 0;
 }
+.hr-main-us {
+  border: none;
+  border-left: 4px solid #000000 !important;
+  height: 75px !important;
+  width: 1px !important;
+  opacity: 1 !important;
+  margin-right: 12px;
+  margin-top: 0;
+}
 .hr-main-header {
   border: none;
   border-left: 8px solid #ffffff !important;
@@ -221,7 +237,9 @@ hr {
   line-height: 28px;
   color: #000000;
 }
-
+.hidden-title-mobile {
+  display: none;
+}
 .title-carousel-clients-help {
   font-family: "Roboto";
   font-style: normal;
@@ -266,7 +284,7 @@ hr {
   display: flex;
   position: absolute;
   right: 0;
-  top: 48px;
+  top: 0px;
   left: 400px;
   justify-content: center;
   align-items: center;
@@ -473,6 +491,9 @@ hr {
   margin-left: 12px;
   padding-right: 15px;
 }
+.mobile-vertical-bar {
+  display: none !important;
+}
 .form-newsletter {
   margin-top: 3rem;
 }
@@ -586,6 +607,7 @@ hr {
   line-height: 21px;
   color: #000000;
   border: 0.2px solid rgba(0, 0, 0, 0.27);
+  margin-top: 15px;
 }
 .our-team {
   margin-top: 150px;
@@ -797,7 +819,9 @@ hr {
   padding: 24px 16px 20px 16px;
   box-sizing: border-box;
 }
-
+.mobile-v-visa-types {
+  display: none !important;
+}
 .description {
   font-family: "Roboto";
   font-style: normal;
@@ -960,7 +984,7 @@ hr {
   height: 70px !important;
 }
 .title-card-help-you {
-  width: 100px;
+  width: 117px;
 }
 .btn-mobile-resevation {
   display: none;
@@ -1105,11 +1129,12 @@ hr {
     opacity: 1 !important;
     margin-right: 12px;
     margin-top: 0;
+    top: 48px;
   }
   .hr-main-us {
     border: none;
     border-left: 4px solid #000000 !important;
-    height: 75px !important;
+    height: 70px !important;
     width: 1px !important;
     opacity: 1 !important;
     margin-right: 12px;
@@ -1476,5 +1501,15 @@ hr {
     border-radius: 6px;
     padding-bottom: 20px;
     margin-left: 12px;
+  }
+  .mobile-v-visa-types {
+    display: block !important;
+  }
+  .hidden-title-mobile {
+    display: flex;
+  }
+  .img-size-flag {
+    width: 262px;
+    height: auto;
   }
 }

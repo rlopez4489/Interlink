@@ -7,9 +7,102 @@
     "contact": "Contact"
   },
   "header": {
-    "title": "We know which are the best business opportunities in the USA",
+    "title": "We know <b>which are</b> the <b>best business opportunities</b> in the <strong>USA</strong>",
     "subtitle": "Invest accompanied and with knowledge",
     "btn1": "Schedule a consultation",
     "btn2": "Contact Us"
+  },
+  "clientSection": {
+    "title": "Our clients",
+    "subtitle": "Get to know about real experiences",
+    "buenRostroTitle": "The Buenrostro and Aceves family",
+    "buenRostroDescription": "They come from Mexico and together they decided that part of them would emigrate to the United States seeking to improve the quality of life of their children.<br> <br>They started their process totally determined and the first franchise we offered them was the one they decided to buy and in less than three months they were opening their stores.",
+    "carrilloTitle": "Claudia Carrillo",
+    "carrilloDescription": "Claudia es mexicana y junto con su familia viven en Austin.<br> <br>Durante años trabajó en una compañía norteamericana hasta que decidió emprender y adquirir una franquicia sobre diseño de interiores, área que le apasiona. En menos de cuatro meses, renunció a su antiguo trabajo y logró ser dueña de su propia empresa.",
+    "reyesTitle": "Eduardo Reyes",
+    "descriptionReyes": "Es ciudadano mexicano que reside en Texas y trabajaba en un banco de renombre, pero deseaba convertirse en dueño de un negocio propio.<br> <br>Luego de una ardua búsqueda, cumplió su propósito y en menos de un año de iniciar con su franquicia, ya se encuentra operando dos territorios y liderando un gran equipo de trabajo.",
+    "alonsoTitle": "Alonso Gonzales",
+    "alonsoDescription": "Llegó a Interlink FBC con la idea de convertirse en dueño de una de las innumerables franquicias con las cuales trabajamos.<br> <br>Emprendió junto con su hermano en Dallas y adquirieron una franquicia de remodelación. Actualmente, posee varios territorios y más de 10 empleados.",
+    "negreTitle": "Familia Negre",
+    "descriptionNegre": "Pablo y Candela, son una pareja de Argentina que han decidido cambiar el rumbo de sus vidas.<br> <br>Él trabajaba en el ámbito judicial y ella tenía su propio negocio, pero buscaban emigrar a EE.UUcon una visa E-2, así decidieron adquirir una franquicia de limpieza residencial y se mudaron a Austin.",
+    "whatchVideo": "Watch video on YouTube"
+  },
+  "services": {
+    "title": " How can we help?",
+    "subtitle": "We provide comprehensive advisory",
+    "titleCard1": "Acquiring your franchise",
+    "descriptionCard1": "Model that provides a support system in all key aspects of the business. It offers you a path less hindered.",
+    "titleCard2": "Expanding your business to the USA",
+    "descriptionCard2": "You will access new clients and you will be able to listen to new needs to improve your profits in a safer currency.",
+    "titleCard3": "Acquiring an existing business",
+    "descriptionCard3": "You will be able to access a business that is already in operation, as a benefit you will already have clients and suppliers to continue operating.",
+    "titleCard4": "Starting a business from scratch",
+    "descriptionCard4": "You will have full flexibility to apply your ideas, strategies and skills.",
+    "btnServices": "Explore our services"
+  },
+  "visa_types": {
+    "title": "Are you a foreigner and want to invest?",
+    "subtitle": "Different visas to which you can apply to live as an investor in the USA",
+    "visaE2": "Visa E-2",
+    "visaE2Description": "An investor can settle in the US with his family by investing in a new or existing company. Such investment must be substantial and active.",
+    "visaEb5": "Visa EB5",
+    "visaEb5Description": "Eligible investors can become permanent residents with their family in the United States, that is, they will obtain a green card",
+    "visaE1": "Visa E-1",
+    "visaE1Description": "It will be granted to those entrepreneurs or individuals who carry out commercial exchanges between the United States and a country that has a Free Trade and Navigation Agreement with the United States.",
+    "visaL1": "Visa L-1",
+    "visaL1Description": "It is designed for multinational companies to transfer executives, managers and personnel with specialized knowledge to a branch located in the United States.",
+    "cardVisaTypeTitle": "Do you want to know which is the right visa <b>for you according to the investment you are going to make</b>?",
+    "btnWriteUs": "Write Us",
+    "btn-more-info": "+ info"
+  },
+  "newsletter": {
+    "title": "Subscribe to receive our E-book",
+    "subtitle": "Learn all about franchises",
+    "formName": "First name",
+    "formSurname": "Last name",
+    "exampleMail": "contacto@interlinktx.com",
+    "btnSend": "Send"
+  },
+  "helpYou": {
+    "title": "Who do we help?",
+    "subtitleStrong": "We help you invest in profitable businesses",
+    "subtitle": "in the USA and <b>we connect you with our network of professionals</b> so that you can obtain honest guidance and direction in your project.",
+    "titleCard1": "Foreign investors",
+    "titleCard2": "Americans",
+    "titleCard3": "Foreigners living in the USA",
+    "titleCardMobile": "Americans and foreigners living in the USA",
+    "btnReservation": "Book a free call"
+  },
+  "here": {
+    "title": "We are here to advise you",
+    "subtitle": "We start this journey with you",
+    "step1": "We will guide you throughout the entire process of acquiring the business you want to enter.",
+    "step2": "<b>We will educate you so that you know in depth</b> about doing business in the United States.",
+    "step3": "We'll start by learning about your experience, your current circumstances, management inclinations, and your location and industry preferences.",
+    "step4": "We deploy our <b>various resources and strategic network of contacts</b>  to find that investment opportunity, making sure we meet all your needs."
+  },
+  "chooseMe": {
+    "title": "Why choose us?",
+    "subtitle": "We help you invest in the right business for you in the USA",
+    "card1": "We are <b>trained</b> to <b>evaluate and analyze</b> the most profitable businesses in the entire United States.",
+    "card2": "We have a <b>systematized process that is adaptable to each investor</b>, which allows us to guide them efficiently.",
+    "card3": "<b>More than 6 years of experience</b> in which we have developed a strategic network of contacts that will support you in this great project.",
+    "card4": "We have achieved that all <b>our clients invest in the indicated business</b> according to their preferences."
+  },
+  "footer": {
+    "title": "Go ahead and take the first step",
+    "subtitle": "New opportunities await you",
+    "attentionHour": "Business Hours:",
+    "hours" : "Monday-Friday from 9:00am to 6:00pm",
+    "phone": "Phone number: <br> +1 210 4635037",
+    "labelName": "First and Last name",
+    "labelEmail": "Email",
+    "labelCountry": "Country of which you are a citizen",
+    "labelPhone": "Enter your phone number",
+    "messagePhone": "Check that your number is spelled correctly",
+    "labelHelp": "How can we help?",
+    "labelMessage": "Leave us your message",
+    "option1": "I want to invest in a franchise",
+    "btnSend": "Send"
   }
 }
