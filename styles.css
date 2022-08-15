@@ -395,6 +395,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin-right: 14px;
+  flex-shrink: 0;
 }
 .box-check-blue {
   width: 31px;
@@ -405,6 +406,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin-right: 14px;
+  flex-shrink: 0;
 }
 .title-visa {
   font-family: "Roboto";
@@ -1010,7 +1012,6 @@ hr {
   background-color: #1c2656 !important;
 }
 @media (min-width: 1367px) {
-
   .carousel-size {
     height: 450px !important;
   }
@@ -1511,11 +1512,11 @@ hr {
   }
   .navbar-light .navbar-toggler {
     color: transparent !important;
-    border-color: transparent !important; 
-}
-.general-footer {
-  height: auto;
-  margin-top: 80px;
-  background: #1c2656;
-}
+    border-color: transparent !important;
+  }
+  .general-footer {
+    height: auto;
+    margin-top: 80px;
+    background: #1c2656;
+  }
 }

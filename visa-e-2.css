@@ -1,0 +1,149 @@
+.header-visa-e-2 {
+  width: 100%;
+  height: 468px;
+  background-image: url("./assets/images/visa-e2/header.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.card-header-visa-e2 {
+  width: 698px;
+  height: 227px;
+  background: #ffffff;
+  border: 1px solid #f4f4f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+}
+.hr-main-black {
+  border: none;
+  border-left: 4px solid #000 !important;
+  width: 5px !important;
+  opacity: 1 !important;
+  height: 80px !important;
+  background: #000;
+}
+.titulo-portada-visa-e2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+.subtitle-header-visa-e2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+.item-visa-e2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+.btn-want-learn {
+  width: 184px;
+  height: 48px;
+  background: #ffffff;
+  border: 0.5px solid #bebebe;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.firts-section-visa-e2 {
+  margin-top: 162px;
+}
+.second-section-visa-e2 {
+  margin-top: 144px;
+  background: rgba(28, 38, 86, 0.03);
+  border: none;
+  height: 508px;
+  display: flex;
+  align-items: center;
+}
+.third-section {
+  margin-top: 144px;
+}
+.btn-help-you {
+  width: 304px;
+  height: 48px;
+  background: #058070;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 5px;
+}
+.faqs-visa-e2 {
+  margin-top: 144px;
+}
+.title-scheduled-visa-e2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+}
+.subtitle-scheduled-visa-e2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+.scheduled-section-visa-e2 {
+  margin-top: 144px;
+  height: 274px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(28, 38, 86, 0.03);
+}
+.btn-scheduled-visa-e2 {
+  width: 196px;
+  height: 48px;
+  background: #058070;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+}
+.btn-contact-visa-e2 {
+  width: 184px;
+  height: 48px;
+  background: #ffffff;
+  border: 0.5px solid #bebebe;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
