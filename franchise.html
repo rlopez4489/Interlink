@@ -22,60 +22,80 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-expand-xxl navbar-light nav-bg">
-                <a class="navbar-brand" href="index.html"><img src="./assets/images/home/INTERLINK FBC_CUADRO 1.png"
-                    alt="InterlinkFBC" width="250px"></a>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-        
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about-us.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="services.html">Servicios</a>
-                      </li>
-                      <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Recursos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
-                          <li><a class="dropdown-item" href="investor-visa.html">Visas de inversionista</a></li>
-                          <li><a class="dropdown-item" href="#">Blog</a></li>
-                          <li><a class="dropdown-item" href="#">FaQs</a></li>
-                          <li><a class="dropdown-item" href="#">Cursos</a></li>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="/assets/images/home/INTERLINK FBC_CUADRO 1.png"
+                            class="d-inline-block align-top img-size-flag" alt="">
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" data-section="nav" data-value="home"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="us" href="about-us.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="services"
+                                    href="services.html">Servicios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-section="nav" data-value="resources" href="#"
+                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Recursos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
+                                    <li><a class="dropdown-item" href="investor-visa.html">Visas de inversionista</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">FaQs</a></li>
+                                    <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="services" href="contact.html">Contacto</a>
+                            </li>
+                            <li class="nav-item container-flags">
+                                <div class="flag" id="flags">
+                                    <div class="flags__item" data-language="es">
+                                        <img class="flags__img" src="/assets/images/home/spain.svg" alt="spain">
+                                    </div>
+                                    <div class="flags__item" data-language="en">
+                                        <img class="flags__img" src="/assets/images/home/us.svg" alt="England">
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contacto</a>
-                      </li>
                     </div>
-                  </div>
                 </div>
-                <a class="navbar-brand" href="#"><img src="./assets/images/home/Spain.png" alt="Spain" width="35px"></a>
-              </nav>
+            </nav>
         </div>
         <section class="header-franchise">
-            <div class="container d-flex align-items-center">
-                <div class="d-flex title-margin align-items-center">
-                    <div>
-                        <hr class="hr-main-white mt-4">
-                    </div>
-                    <div class="d-flex flex-column mt-3 ms-4">
-                        <h1 class="titulo-portada">¿Quieres adquirir la franquicia <br>
-                            indicada para ti?
-                        </h1>
-                        <div>
-                            <button class="btn-play-video">Reproducir video</button>
+            <div class="container">
+                <div class="container-card-header-franchise">
+                    <div class="card-header-franchise">
+                        <div class="d-flex title-margin ms-3 me-lg-5 me-3 ms-lg-5">
+                            <div>
+                                <hr class="hr-main-white mt-4">
+                            </div>
+                            <div class="d-flex flex-column mt-3 ms-4">
+                                <h1 class="titulo-portada-franchise">¿Quieres invertir en una franquicia rentable en
+                                    USA?
+                                </h1>
+                                <span class="subtitle-header-franchise mt-3">Buscamos, analizamos y empatamos las
+                                    mejores
+                                    franquicias de USA con tus metas,
+                                    objetivos personales y profesionales.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,6 +103,95 @@
         </section>
     </header>
     <main>
+        <section class="why-franchise">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="d-flex">
+                            <hr class="hr-main">
+                            <div>
+                                <span class="d-block title-carousel-clients">¿Por qué elegir una franquicia en
+                                    USA?</span>
+                                <h3 class="subtitle-carousel-clients"> Invertir con seguridad</h3>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="d-flex align-items-center ms-4 container-title-card-franchise">
+                                    <div class="box-check-green"><i class="fa-solid fa-check size-icon-chek"></i></div>
+                                    <h4 data-section="visa_types" data-value="visaE2" class="title-visa">
+                                        <strong>Reguladas por la ley</strong>
+                                    </h4>
+                                </div>
+                                <p class="description-card-franchise ms-4 mt-4">Las franquicias están reguladas por
+                                    organismos
+                                    gubernamentales. Esto permite generar
+                                    un <b>panorama</b> mucho <b>más previsible</b> y de <b>mayor claridad</b> a la hora
+                                    de elegir y operar.
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="d-flex align-items-center ms-4 container-title-card-franchise">
+                                    <div class="box-check-green"><i class="fa-solid fa-check size-icon-chek"></i></div>
+                                    <h4 data-section="visa_types" data-value="visaE2" class="title-visa">
+                                        <strong>“FDD” | Franchise <br> Disclosure Document</strong>
+                                    </h4>
+                                </div>
+                                <p class="description-card-franchise ms-4 mt-4">El comprador <b>podrá acceder</b> al
+                                    <b>desgloce
+                                        de la inversión</b>, verá los márgenes de ganancia, costos, entre otros temas,
+                                    permitiéndole obtener información antes de adquirir la franquicia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="d-flex align-items-center ms-4 container-title-card-franchise">
+                                    <div class="box-check-green"><i class="fa-solid fa-check size-icon-chek"></i></div>
+                                    <h4 data-section="visa_types" data-value="visaE2" class="title-visa">
+                                        <strong>Soporte en la operatoria</strong>
+                                    </h4>
+                                </div>
+                                <p class="description-card-franchise ms-4 mt-4">Las franquicias, te <b>brindarán
+                                        soporte</b> en
+                                    todas las áreas claves para que tu negocio crezca, tendrás asesores que te guiarán,
+                                    call centers internos, marketing y diseño listo para publicar, capacitaciones, entre
+                                    varias cuestiones más.
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="d-flex align-items-center ms-4 container-title-card-franchise">
+                                    <div class="box-check-green"><i class="fa-solid fa-check size-icon-chek"></i></div>
+                                    <h4 data-section="visa_types" data-value="visaE2" class="title-visa">
+                                        <strong>Curva de aprendizaje</strong>
+                                    </h4>
+                                </div>
+                                <p class="description-card-franchise ms-4 mt-4">Para que una empresa logre convertirse
+                                    en una franquicia, ésta tiene que haber atravesado por una <b>larga curva de
+                                        aprendizaje</b> que le permitió sistematizar y automatizar todos y cada uno de
+                                    sus
+                                    procesos empresariales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="position-relative d-flex justify-content-sm-center justify-content-lg-end">
+                            <img src="/assets/images/franchise/FRANQUICIAS---IM1.jpg" class="img-fluid" alt="Building">
+                            <div class="card-write-us-franchise">
+                                <span class="description-card-franchise">Contamos con un portfolio de <b>+35 indutrias y
+                                        +750
+                                        franquicias </b> diferentes en el que podrás incursionar.</span>
+                                <strong class="color-green mt-3">Busquemos juntos la franquicia indicada para
+                                    ti.</strong>
+                                <button class="btn-write-us-description mt-2">Escríbenos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <section class="brands">
             <div class="container">
                 <div class="row">
@@ -104,166 +213,88 @@
                 </div>
             </div>
         </section>
-        <section class="why-franchise">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="d-flex">
-                            <hr class="hr-main">
-                            <div>
-                                <span class="d-block title-carousel-clients">Invertir con seguridad</span>
-                                <h3 class="subtitle-carousel-clients"> ¿Por qué las franquicias son más rentables y
-                                    seguras?</h3>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="description-why">Para que una empresa logre convertirse en una franquicia, ésta
-                                tiene que haber atravesado
-                                por una larga curva de aprendizaje que le permitió sistematizar y automatizar todos y
-                                cada uno de sus procesos empresariales. <br> <br>
-
-                                Contamos con un portafolio de <b>+35 indutrias</b> y <b>+750</b> franquicias diferentes
-                                en el que
-                                podrás incursionar para que inviertas en la indicada.
-
-
-                            </p>
-                        </div>
-                        <div class="ms-3 mt-5">
-                            <span class="question">¿Quieres recibir más información sobre las franquicias?</span>
-                        </div>
-                        <div class="ms-3 mt-4">
-                            <button class="btn-write-us">Escríbenos</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="mt-5">
-                            <div class="card-item-franchise">
-                                <div class="container-header">
-                                    <div class="container-img-item"><img src="/assets/images/franchise/Law Book.png"
-                                            alt="Law book"> </div>
-                                    <div><span class="title-item-franchise">Reguladas por la ley</span></div>
-                                </div>
-                                <div>
-                                    <p class="description-items-why">A diferencia de otros modelos de negocios, las
-                                        franquicias se encuentran
-                                        reguladas por ley y por organismos gubernamentales. Esto permite generar un
-                                        panorama mucho más previsible y de mayor claridad a la hora de elegir y de
-                                        operar.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-item-franchise">
-                                <div class="card-item-franchise">
-                                    <div class="container-header">
-                                        <div class="container-img-item"><img src="/assets/images/franchise/Document.png"
-                                                alt="Law book"> </div>
-                                        <div><span class="title-item-franchise">“FDD” </span></div>
-                                    </div>
-                                    <div>
-                                        <p class="description-items-why">Documento legal circular que protege al
-                                            comprador de franquicias, ya que les permite ver sus números, acceder al
-                                            desglose de la inversión, entender los márgenes de ganancias y los costos.
-                                            Esto genera mayores grados de confianza en nuestros clientes, porque tienen
-                                            toda la información necesaria incluso, antes de haber adquirido la
-                                            franquicia.
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-item-franchise">
-                                <div class="card-item-franchise">
-                                    <div class="container-header">
-                                        <div class="container-img-item"><img
-                                                src="/assets/images/franchise/Service.png  " alt="Law book"> </div>
-                                        <div><span class="title-item-franchise">Excelente soporte para su
-                                                operatoria</span></div>
-                                    </div>
-                                    <div>
-                                        <p class="description-items-why">Las franquicias en EE.UU te brindarán soporte
-                                            en todas y cada una de las áreas claves para que tu negocio crezca y
-                                            produzca, tendrás asesores personalizados que te guiarán, call centers
-                                            internos, marketing y diseño listo para publicar, capacitación continua,
-                                            entre varias cuestiones más.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section>
+        <section class="how-help-you">
             <div class="container">
                 <div class="row position-relative">
-                    <div class="col">
-                        <img src="/assets/images/franchise/pexels-yan-krukov-7793723 1.png" alt="Meet"
-                            class="img-fluid">
+                    <div class="col-sm-12 col-lg-6">
+                        <img src="/assets/images/franchise/FRANQUICIAS---IM2.jpg" alt="Meet" class="img-fluid">
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="d-flex align-items-center second-col-help-you">
                             <div class="d-flex">
                                 <hr class="hr-main mb-0">
                             </div>
                             <div class="d-flex flex-column">
-                                <h3 class="subtitle-carousel-clients"> Estamos para ayudarlo</h3>
-                                <span class="d-block title-carousel-clients">¿Cómo lo hacemos?</span>
+                                <h3 class="subtitle-carousel-clients">¿Cómo lo hacemos?</h3>
+                                <span class="d-block title-carousel-clients">Estamos para asesorarlo</span>
                             </div>
                         </div>
                         <div>
-                            <p class="ms-3 description-help-you">Nos tomamos el tiempo de crear un perfil de cada uno de
-                                nuestros clientes. El mismo está
-                                compuesto por varios instrumentos: exámenes psicométricos, cuestionarios sobre
-                                industrias y una lista de indicadores y de cuestiones que son innegociables para ellos.
-                                <br> <br>
-                                Además, tenemos una serie de conversaciones donde hablamos sobre sus metas tanto a nivel
-                                personal como a nivel laboral/profesional.
+                            <p class="ms-3 description-help-you">Nos tomamos el tiempo de <b>crear un perfil de cada uno
+                                    de
+                                    nuestros clientes.</b> El mismo está compuesto por varios instrumentos: exámenes
+                                psicométricos, cuestionarios sobre industrias y una lista de indicadores y de cuestiones
+                                que son innegociables para ellos. <br><br>
+                                Además, tenemos una serie de <b>conversaciones donde
+                                    hablamos sobre sus metas</b> tanto a nivel personal como a nivel
+                                laboral/profesional. <br><br>
+                                A partir de la recopilación y análisis, basándonos en lo mencionado comenzamos con
+                                nuestro
+                                proceso.
+
                             </p>
                         </div>
                     </div>
                     <div
                         class="position-absolute d-flex justify-content-center align-items-lg-center position-carousel">
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="d-flex">
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">01.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-green"><span class="number-ind">01</span></div>
                                                 <span class="title-card-carousel">Consultas iniciales</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Consiste en una serie de reuniones
-                                                    y <br> entrevistas, donde conversaremos <br>
-                                                    sobre sus metas, objetivos, y <br> necesidades.</p>
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Consiste en una serie de
+                                                    reuniones
+                                                    y entrevistas, donde conversaremos
+                                                    sobre sus metas, objetivos, y necesidades.</p>
                                             </div>
                                         </div>
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">02.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-blue"><span class="number-ind">02</span></div>
                                                 <span class="title-card-carousel">Capacitación</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Le brindamos capacitación
-                                                    empresarial <br> para que pueda comprender la <br> dinámica
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Le brindamos capacitación
+                                                    empresarial para que pueda comprender la dinámica
                                                     empresarial
                                                     norteamericana</p>
                                             </div>
                                         </div>
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">03.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-green"><span class="number-ind">03</span></div>
                                                 <span class="title-card-carousel">Presentación</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Realizaremos análisis de mercados
-                                                    <br>
-                                                    territoritoriales para presentarles las <br> mejores oportunidades
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Realizaremos análisis de
+                                                    mercados
+
+                                                    territoritoriales para presentarles las mejores oportunidades
                                                     de
-                                                    inversión <br> en USA.
+                                                    inversión en USA.
                                                 </p>
                                             </div>
                                         </div>
@@ -272,39 +303,41 @@
                                 <div class="carousel-item">
                                     <div class="d-flex">
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">04.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-green"><span class="number-ind">04</span></div>
                                                 <span class="title-card-carousel">Consultas iniciales</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Consiste en una serie de reuniones
-                                                    y <br> entrevistas, donde conversaremos <br>
-                                                    sobre sus metas, objetivos, y <br> necesidades.</p>
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Consiste en una serie de
+                                                    reuniones
+                                                    y entrevistas, donde conversaremos
+                                                    sobre sus metas, objetivos, y necesidades.</p>
                                             </div>
                                         </div>
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">05.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-blue"><span class="number-ind">05</span></div>
                                                 <span class="title-card-carousel">Capacitación</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Le brindamos capacitación
-                                                    empresarial <br> para que pueda comprender la <br> dinámica
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Le brindamos capacitación
+                                                    empresarial para que pueda comprender la dinámica
                                                     empresarial
                                                     norteamericana</p>
                                             </div>
                                         </div>
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">06.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-green"><span class="number-ind">06</span></div>
                                                 <span class="title-card-carousel">Presentación</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Realizaremos análisis de mercados
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Realizaremos análisis de
+                                                    mercados
                                                     <br>
-                                                    territoritoriales para presentarles las <br> mejores oportunidades
+                                                    territoritoriales para presentarles las mejores oportunidades
                                                     de
-                                                    inversión <br> en USA.
+                                                    inversión en USA.
                                                 </p>
                                             </div>
                                         </div>
@@ -313,58 +346,51 @@
                                 <div class="carousel-item">
                                     <div class="d-flex">
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">07.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-green"><span class="number-ind">07</span></div>
                                                 <span class="title-card-carousel">Consultas iniciales</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Consiste en una serie de reuniones
-                                                    y <br> entrevistas, donde conversaremos <br>
-                                                    sobre sus metas, objetivos, y <br> necesidades.</p>
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Consiste en una serie de
+                                                    reuniones
+                                                    y entrevistas, donde conversaremos
+                                                    sobre sus metas, objetivos, y necesidades.</p>
                                             </div>
                                         </div>
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">08.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-blue"><span class="number-ind">08</span></div>
                                                 <span class="title-card-carousel">Capacitación</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Le brindamos capacitación
-                                                    empresarial <br> para que pueda comprender la <br> dinámica
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Le brindamos capacitación
+                                                    empresarial para que pueda comprender la dinámica
                                                     empresarial
                                                     norteamericana</p>
                                             </div>
                                         </div>
                                         <div class="card-carousel">
-                                            <div class="d-flex align-items-end">
-                                                <span class="number-ind">09.</span>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <div class="box-check-green"><span class="number-ind">09</span></div>
                                                 <span class="title-card-carousel">Presentación</span>
                                             </div>
-                                            <div>
-                                                <p class="description-card-carousel">Realizaremos análisis de mercados
-                                                    <br>
-                                                    territoritoriales para presentarles las <br> mejores oportunidades
+                                            <div class="ms-5 mt-3">
+                                                <p class="description-card-carousel ms-3">Realizaremos análisis de
+                                                    mercados territoritoriales para presentarles las mejores
+                                                    oportunidades
                                                     de
-                                                    inversión <br> en USA.
+                                                    inversión en USA.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
                     </div>
+
                 </div>
+            </div>
             </div>
         </section>
         <section class="faqs">
@@ -374,9 +400,8 @@
                         <hr class="hr-main mb-0">
                     </div>
                     <div class="d-flex flex-column">
-                        <h3 class="subtitle-carousel-clients">¿Tienes dudas sobre las franquicias?</h3>
-                        <span class="d-block title-carousel-clients">Respondemos preguntas frecuentes de <br>
-                            nuestros clientes</span>
+                        <h3 class="subtitle-carousel-clients">Saldamos sus dudas desde un inicio</h3>
+                        <span class="d-block title-carousel-clients">Preguntas frecuentes sobre las franquicias</span>
                     </div>
                 </div>
                 <div>
@@ -385,18 +410,18 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    ¿Cuál es la franquicia más rentable?
+                                    ¿Cuál es la franquicia más rentable de USA?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Depende de cuestiones, primero de cuantos empleados vas a tener en función de que
+                                    tan agresivos deseas iniciar, cuáles serán tus costos fijos, qué industrias elegiste
+                                    y cuál es tu punto de equilibrio y de ramp up. Asimismo, la rentabilidad variará en
+                                    función de que tan involucrado estés como dueño dentro del negocio, que tan
+                                    tenazmente ejerzas tu liderazgo, funciones y que tan amplia sea tu curva de
+                                    aprendizaje.
                                 </div>
                             </div>
                         </div>
@@ -404,18 +429,21 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    ¿Cuánto dinero tengo que invertir para adquirir una franquicia?
+                                    ¿Cuánto dinero tengo que invertir para adquirir una franquicia en USA?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Los montos de inversión que aconsejamos no van de la mano con las franquicias, es
+                                    decir, existen franquicias desde los 60,000 USD, pero pueden ser adquiridas por
+                                    residentes de Estados Unidos, si usted lo que se busca es aplicar a una visa de
+                                    inversionista, es necesario que el monto a invertir sea sustancial, con esto nos
+                                    referimos a que debe generar un impacto positivo en la economía norteamericana. No
+                                    existe un número específico para el monto de inversión dentro de la ley, pero,
+                                    aconsejamos iniciar en un piso de entre 100,000 USD a 120,000 USD para que el
+                                    proyecto y su aplicación a la visa de inversionista sea viable.
+
                                 </div>
                             </div>
                         </div>
@@ -429,12 +457,12 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Por supuesto, eligiendo este modelo de negocios hará que la solicitud de su visa sea
+                                    vista con otros “ojos”, ya que es un modelo probado y que ya se encuentra en
+                                    funcionamiento. Recomendamos que inviertan en una franquicia en primera instancia y
+                                    luego, cuando ya conozcan cómo funcionan los negocios en USA y tengan su visa de
+                                    inversionista, diversifiquen sus inversiones en otros modelos de negocios.
+
                                 </div>
                             </div>
                         </div>
@@ -448,12 +476,16 @@
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Interlink FBC tiene un proceso que, si bien está sistematizado, es extremadamente
+                                    personalizado. Siempre decimos que armamos un traje a medida. Ahora bien, ¿Cómo lo
+                                    hacemos?.
+                                    Nuestros asesores se toman el tiempo de crear un perfil de cada uno de nuestros
+                                    clientes. El perfil está compuesto por varios instrumentos: exámenes psicométricos,
+                                    cuestionarios sobre industrias y una lista de indicadores y de cuestiones que son
+                                    innegociables para ellos. Además, vamos a tener una serie de conversaciones donde
+                                    vamos a hablar sobre tus metas tanto a nivel personal como a nivel
+                                    laboral/profesional.
+
                                 </div>
                             </div>
                         </div>
@@ -461,18 +493,17 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    ¿Cómo se si la franquicia es buena?
+                                    ¿Cómo se cuál es la mejor franquicia en USA?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Así como en la bolsa de valores o en cualquier otro modelo de inversión, hay
+                                    opciones buenas y malas. Incluso, dentro de las buenas opciones, no todas son
+                                    compatibles con lo que específicamente estás buscando. Por eso, la mejor franquicia
+                                    será la indicada para ti, esto se evalúa con una serie de indicadores y exámenes que
+                                    realizaremos al inicio del proceso.
                                 </div>
                             </div>
                         </div>
@@ -486,12 +517,13 @@
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    En términos generales, las franquicias en EEUU te brindarán soporte en todas y cada
+                                    una de las áreas claves para que tu negocio crezca y produzca, tendrás asesores
+                                    personalizados que te guiarán, call centers internos que efectuarán la primera parte
+                                    de las ventas, entre varias cuestiones más que harán que tu curva de aprendizaje sea
+                                    menos empinada, asimismo están reguladas por organismos gubernamentales
+                                    permitiéndole al comprador tener un panorama mucho más previsible y de mayor
+                                    claridad a la hora de elegir y operar.
                                 </div>
                             </div>
                         </div>
@@ -499,134 +531,190 @@
                             <h2 class="accordion-header" id="headingSeven">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    ¿Cuánto dura el proceso?
+                                    ¿Cuánto dura el proceso de adquisición de una franquicia?
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    En promedio de 3 a 6 meses para llegar a un punto de adquisición, pero el lapso
+                                    temporal dependerá de cuánto tiempo le dediquen ustedes al proyecto. Nosotros nos
+                                    acomodaremos a sus tiempos.
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item item-accordion">
+                            <h2 class="accordion-header" id="headingEigth">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEigth" aria-expanded="false" aria-controls="collapseEigth">
+                                    ¿Cuánto dinero puedo ganar con una franquicia?
+                                </button>
+                            </h2>
+                            <div id="collapseEigth" class="accordion-collapse collapse" aria-labelledby="headingEigth"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Esta es una de las preguntas más complejas para responder debido a que el monto de
+                                    inversión no se corresponde de manera lineal con el monto a ganar. El monto a
+                                    percibir dependerá de tu modelo empresarial y de los costos asociados que el mismo
+                                    atraiga. Sin embargo, para tranquilidad de nuestros clientes, siempre analizamos en
+                                    conjunto las cifras financieras de las franquicias, para que puedan tener una idea
+                                    de cuánto dinero podrá ganar. Parte de nuestro trabajo es entender cuánto dinero
+                                    quieres ganar y empatarlo con una franquicia que cumpla tus expectativas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item item-accordion">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    ¿Puedo sustentar a mi familia con una franquicia en USA?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sí, hay un alto porcentaje de nuestros clientes que, al emigrar a EEUU, la
+                                    franquicia se convierte en su principal y único ingreso familiar y viven de la
+                                    misma. Igualmente, una de nuestras recomendaciones sería que la familia debe de
+                                    tener un “presupuesto de vida”, es decir, dinero líquido disponible para mantener a
+                                    su familia en EEUU los primeros 6 a 9 meses, para así darle el tiempo necesario al
+                                    negocio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item item-accordion">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    ¿Cuánto tiempo se tarda en operar la franquicia y que esta esté en funcionamiento?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    El punto de adquisición y de operación de una franquicia son distintos. Adquirir
+                                    significa comprar, operar significa poner en marcha el negocio. Dicha puesta en
+                                    marcha dependerá de varios factores, dos de los principales son, por un lado, la
+                                    liquidez de dinero que tengas para empezar a comprar los equipos, suplementos o
+                                    herramientas necesarias para abrir la franquicia. Por otro lado, dependerá de la
+                                    industria, ejemplo: si adquieres una franquicia de un centro médico, se debe buscar
+                                    un local amplio, emprender reformas, contratar a albañiles, pintores, plomeros,
+                                    equiparlo, luego decorarlo y por último contratar un staff médico. Esto puede
+                                    demorar hasta 6 o 9 meses. Pero si adquieres una franquicia que solamente precisa
+                                    una oficina comercial normal y dos empleados, el negocio podría iniciar en menos de
+                                    dos meses. Entender sus tiempos ideales es parte de nuestro proceso, por eso mismo,
+                                    estos temas deben evaluarse en conjunto con nuestros asesores.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item item-accordion">
+                            <h2 class="accordion-header" id="headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEleven" aria-expanded="false"
+                                    aria-controls="collapseEleven">
+                                    ¿Hay franquicias que no sean buenas para aplicar a una visa E-2?
+                                </button>
+                            </h2>
+                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sí, hay franquicias cuyos modelos empresariales no son óptimos para una visa E-2 en
+                                    tanto no logran adecuarse a los requerimientos que dicha visa exige. En el mundo de
+                                    las franquicias, este tipo de modelo que no se condice con una visa E-2 se llaman
+                                    “modelos de propietario operador”, básicamente implica que no vas a precisar
+                                    empleados y probablemente tampoco precises oficinas, por lo tanto, puedes operar en
+                                    modalidad home office, por lo que no vas a tener un contrato de arrendamiento. Es
+                                    decir, que dos de los requisitos claves de la visa E-2, nómina y contratos de
+                                    arrendamientos, no estarán disponibles.
+                                    Incluso hay franquicias que no trabajarán contigo si estás aplicando a una visa E-2.
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="search-franchise">
+            <div class="container">
+                <h3 class="search-franchise-title">Busquemos juntos la franquicia indicada para ti</h3>
+                <h5 class="search-franchise-subtitle mt-3">Sabemos cuáles son las mejores franquicias de USA</h5>
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn-scheduled me-3">
+                        Agende una consulta
+                    </button>
+                    <button class="btn-contact-franchise">
+                        Contáctenos
+                    </button>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="contact">
-        <div class="mt-5 container d-flex justify-content-end">
-            <div class="first-section" style="width: 50%;">
-                <div class="d-flex">
-                    <hr class="hr-main mt-3">
-                    <div>
-                        <h3 class="subtitle-carousel-clients">Hablemos sobre tu <br> proyecto
-                        </h3>
-                        <span class="d-block title-carousel-clients">¡Escríbenos, estamos para guiarte!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="first-section-b">
-            <div class="container">
-                <div class="row position-relative">
+    <footer class="general-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <div class="bg-world">
+                        <span class="contact-hour"><b> Horarios de atención:</b></span>
+                        <div class="pb-3 bar-color"> <span class="contact-hour">
+                                Lunes a
+                                viernes - 9:00 hs a 18:00 hs | TX</span></div>
 
-                    <div class="col ps-0 pe-0">
-                        <div class="d-flex">
-                            <div class="container-form">
-                                <form class="mt-4">
-                                    <div class="d-flex">
-                                        <div class="me-3 ms-2">
-                                            <label for="fullname" class="label-form">Nombre y apellido</label>
-                                            <input type="text" class="form-control" id="fullname">
-                                        </div>
-                                        <div class="me-2">
-                                            <label for="exampleFormControlInput1">Correo electronico</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="me-2 ms-2 mt-4">
-                                        <label for="select country" class="label-form">País del cuál es
-                                            ciudadano</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
-                                            <option selected>Selecciona un país</option>
-                                            <option value="1">Mexico</option>
-                                            <option value="2">Argentina</option>
-                                            <option value="3">Colombia</option>
-                                        </select>
-                                    </div>
-                                    <div class="me-2 ms-2 mt-4">
-                                        <label for="phone" class="label-form">Ingrese su número de teléfono</label>
-                                        <input class="form-control" id="phone" name="phone" type="tel">
-                                        <label class="message-info-form"> Revise que su número este escrito
-                                            correctamente</label>
-                                    </div>
-                                    <div class="me-2 ms-2 mt-4">
-                                        <label for="help you" class="label-form">¿Cómo podemos ayudarlo?</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
-                                            <option selected>Quiero invertir en una franquicia</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group me-2 ms-2 mt-4">
-                                        <label class="label-form" for="exampleFormControlTextarea1">Déjenos su
-                                            mensaje</label>
-                                        <input class="form-control text-area-form" id="exampleFormControlTextarea1">
-                                    </div>
-                                    <div class="d-flex justify-content-end me-2 mt-4">
-                                        <button class="btn-send-form mt-2" type="submit">Enviar</button>
-                                    </div>
-                                </form>
-
-                            </div>
-
+                        <div class="pt-4">
+                            <span class="contact-hour"><b> Email:</b> <br> contacto@interlinktx.com</span>
                         </div>
-                    </div>
-                    <div class="col">
-
-                        <div class="first-section-b2">
-                            <div class="pt-5">
-                                <span class="contact-hour">Horarios de atención: <br> Lunes a viernes - 9:00 hs a 18:00
-                                    hs | UTC/GTM
-                                    -6</span>
-                            </div>
-                            <div class="pt-4">
-                                <span class="contact-hour">Email: <br> contacto@interlinktx.com</span>
-                            </div>
-                            <div class="pt-4">
-                                <span class="contact-hour">Teléfono: <br> +1 210 4635037</span>
-                            </div>
-                            <div class="follow">
-                                <div class="d-flex ms-5 mt-3">
-                                    <div class="box-icon-follow"> <i style="color: white;"
-                                            class="fa-brands fa-linkedin-in"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white;"
-                                            class="fa-brands fa-google-plus-g"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-youtube"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-facebook-f"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-instagram"></i></div>
+                        <div class="pt-4">
+                            <span class="contact-hour"><b> Teléfono: </b><br> +1 210 4635037</span>
+                        </div>
+                        <div class="follow">
+                            <div class="d-flex ms-1 mt-3">
+                                <div class="box-icon-follow"> <i style="color: white;"
+                                        class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white"
+                                        class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white"
+                                        class="fa-brands fa-instagram"></i>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="container-newslleter-footer">
+                        <span class="subtitle-newsletter-footer">Subscríbete para recibir nuestro E-book</span>
+                        <h5 class="title-newletter-footer">Aprende todo sobre las franquicias</h5>
+                    </div>
+                    <form class="mt-4">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="input-group mt-lg-3">
+                            <button data-section="newsletter" data-value="btnSend" class="btn btn-outline-secondary"
+                                type="button" id="inputGroupFileAddon04"> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="ejemplo@gmail.com">
 
-                <div class="copyright">
-                    <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
-
+            <div class="copyright">
+                <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
+            </div>
+        </div>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

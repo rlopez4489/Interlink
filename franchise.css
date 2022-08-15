@@ -1,34 +1,103 @@
 .header-franchise {
   width: 100%;
-  height: 90vh;
+  height: 468px;
   background-image: url("./assets/images/franchise/slider_3\ 1.png");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
+.container-card-header-franchise {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
-.btn-play-video {
-  width: 248px;
-  height: 44px;
-  background: #058070;
-  border-radius: 3px;
+.card-header-franchise {
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  width: 679px;
+  height: 226px;
+  background: #1c2656;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+.title-box-franchise {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.titulo-portada-franchise {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.subtitle-header-franchise {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
-  line-height: 23px;
-  color: #fff;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.btn-write-us-description {
+  width: 184px;
+  height: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  background: #058070;
+  border-radius: 3px;
+  color: #ffffff;
   border: none;
 }
 
+.description-card-franchise {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+.container-title-card-franchise {
+  height: 50px;
+}
+.card-write-us-franchise {
+  width: 514px;
+  height: 187px;
+  background: #ffffff;
+  border: 1px solid #f4f4f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  right: 0;
+  bottom: -100px;
+  padding: 0 32px;
+}
 .hr-main-white {
   border: none;
   border-left: 4px solid #fff !important;
   width: 5px !important;
   opacity: 1 !important;
-  height: 178px !important;
+  height: 80px !important;
   background: #ffffff;
 }
 
@@ -42,7 +111,10 @@
 }
 
 .why-franchise {
-  margin-top: 100px;
+  margin-top: 180px;
+}
+.how-help-you {
+  margin-top: 140px;
 }
 .description-why {
   font-family: "Roboto";
@@ -122,55 +194,173 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000;
   margin-top: 46px;
 }
-.second-col-help-you {
-  padding-top: 120px;
-}
+
 .card-carousel {
-  width: auto;
+  width: 381px;
   height: 199px;
-  background: #1c2656;
+  background: #ffffff;
+  border: 1px solid #f4f4f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  padding: 27px 16px 27px 6px;
   margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .number-ind {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 35px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
   color: #ffffff;
 }
 .title-card-carousel {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
 }
 .description-card-carousel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  color: #ffffff;
-  margin-top: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
 }
 .position-carousel {
-  bottom: -25px;
+  bottom: -100px;
 }
 .faqs {
-  margin-top: 130px;
+  margin-top: 230px;
 }
 .item-accordion {
   margin-top: 14px;
   border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
+.accordion-button {
+  font-family: "Roboto" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 21px !important;
+  color: #000000 !important;
+  background: rgba(240, 240, 240, 0.28) !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 6px !important;
+  border: none !important;
+  padding-left: 150px !important;
+  width: 984.91px !important;
+}
+.accordion-item {
+  background-color: #fff;
+  border: none !important;
+  font-family: "Roboto" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21px !important;
+  color: #000000 !important;
+  width: 984.91px !important;
+}
 
+.search-franchise {
+  margin-top: 90px;
+  background: rgba(28, 38, 86, 0.03);
+  height: 274px;
+  border: 0.2px solid rgba(0, 0, 0, 0.27);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-franchise-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  text-align: center;
+}
+.search-franchise-subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+.btn-scheduled {
+  width: 196px;
+  height: 48px;
+  background: #058070;
+  border-radius: 3px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.btn-contact-franchise {
+  width: 184px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 0.5px solid #BEBEBE;
+  border-radius: 3px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+@media (max-width: 700px) {
+
+  .card-header-franchise {
+    position:inherit;
+    right: 0;
+    bottom: 0px;
+    width: auto;
+    height: 100%;
+    background: #1c2656;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+  }
+  .container-card-header-franchise {
+    width: 100%;
+    height: 80%;
+    position: inherit;
+    margin-top: 110px;
+  }
+  .card-write-us-franchise {
+    width: 90%;
+    height: 187px;
+    background: #ffffff;
+    border: 1px solid #f4f4f7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+
+    bottom: -50px;
+    padding: 0 32px;
+  }
+}

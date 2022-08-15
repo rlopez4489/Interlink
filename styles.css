@@ -56,6 +56,10 @@ a {
   cursor: pointer;
   display: block;
 }
+.header {
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
 .nav-bg {
   background-color: transparent;
   display: flex;
@@ -355,6 +359,7 @@ hr {
   line-height: 21px;
   color: #000000;
   margin-top: 12px;
+  height: 40px;
 }
 .btn-services {
   width: 404px;
@@ -509,24 +514,7 @@ hr {
 .about-us {
   margin-top: 80px;
 }
-.container-aboutUs-description {
-  margin-top: 45px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
-  color: #000000;
-}
-.number-item {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 41px;
-  color: #000000;
-  border-bottom: 3px solid #058070;
-}
+
 .label-counter-item {
   font-weight: 400;
   font-size: 18px;
@@ -609,13 +597,7 @@ hr {
   border: 0.2px solid rgba(0, 0, 0, 0.27);
   margin-top: 15px;
 }
-.our-team {
-  margin-top: 150px;
-  height: 608px;
-  background-color: rgba(28, 38, 86, 0.05);
-  display: flex;
-  align-items: center;
-}
+
 .title-name {
   font-family: "Roboto";
   font-style: normal;
@@ -630,29 +612,12 @@ hr {
   width: 550px;
   height: 516px;
 }
-.description-jaime {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  margin-top: 5px;
-}
+
 .icon-lkdin {
   font-size: 32px;
   color: #058070;
 }
-.name-employee {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #1e4e62;
-  display: block;
-  text-align: center;
-  margin-top: 8px;
-}
+
 .news {
   margin-top: 107px;
 }
@@ -807,6 +772,14 @@ hr {
 .text-area-form {
   height: 100px;
 }
+.color-green {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #058070;
+}
 
 .maincontainer {
   width: 100%;
@@ -954,13 +927,7 @@ hr {
   margin-top: 30px;
   height: 81px;
 }
-.carousel-item {
-  transition: transform 0s ease-in-out !important;
-}
-.carousel-fade .active.carousel-item-start,
-.carousel-fade .active.carousel-item-end {
-  transition: opacity 0s 0s !important;
-}
+
 .carousel-size {
   height: 400px !important;
 }
@@ -999,16 +966,51 @@ hr {
 .color-bg-attention {
   display: none;
 }
+.general-footer {
+  height: 571px;
+  margin-top: 80px;
+  background: #1c2656;
+}
+.bg-world {
+  background-image: url("/assets/images/home/world.png");
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 90px;
+}
+.subtitle-newsletter-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.title-newletter-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.container-newslleter-footer {
+  margin-top: 90px;
+}
+.btn-outline-secondary {
+  color: #a4a4a4 !important;
+  background-color: #edeef2 !important;
+}
+.btn-outline-secondary:hover {
+  color: #ffffff !important;
+  background-color: #1c2656 !important;
+}
 @media (min-width: 1367px) {
-  .header {
-    width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-  }
+
   .carousel-size {
     height: 450px !important;
   }
@@ -1102,13 +1104,8 @@ hr {
     font-size: 12px;
   }
   .header {
-    width: 100%;
-    height: 350px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
   }
   .carousel-size {
     height: 450px !important;
@@ -1515,5 +1512,10 @@ hr {
   .navbar-light .navbar-toggler {
     color: transparent !important;
     border-color: transparent !important; 
+}
+.general-footer {
+  height: auto;
+  margin-top: 80px;
+  background: #1c2656;
 }
 }

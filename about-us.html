@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="build/css/intlTelInput.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,57 +20,70 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-
-            <nav class="navbar navbar-expand-lg navbar-expand-xxl navbar-light nav-bg">
-                <a class="navbar-brand" href="index.html"><img src="./assets/images/home/INTERLINK FBC_CUADRO 1.png"
-                    alt="InterlinkFBC" width="250px"></a>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-        
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about-us.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="services.html">Servicios</a>
-                      </li>
-                      <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Recursos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
-                          <li><a class="dropdown-item" href="investor-visa.html">Visas de inversionista</a></li>
-                          <li><a class="dropdown-item" href="#">Blog</a></li>
-                          <li><a class="dropdown-item" href="#">FaQs</a></li>
-                          <li><a class="dropdown-item" href="#">Cursos</a></li>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="/assets/images/home/INTERLINK FBC_CUADRO 1.png"
+                            class="d-inline-block align-top img-size-flag" alt="">
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" data-section="nav" data-value="home"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="us" href="about-us.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="services" href="services.html">Servicios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-section="nav" data-value="resources" href="#"
+                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Recursos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Franquicias</a></li>
+                                    <li><a class="dropdown-item" href="#">Visas de inversionista</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">FaQs</a></li>
+                                    <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="services" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item container-flags">
+                                <div class="flag" id="flags">
+                                    <div class="flags__item" data-language="es">
+                                        <img class="flags__img" src="/assets/images/home/spain.svg" alt="spain">
+                                    </div>
+                                    <div class="flags__item" data-language="en">
+                                        <img class="flags__img" src="/assets/images/home/us.svg" alt="England">
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contacto</a>
-                      </li>
                     </div>
-                  </div>
                 </div>
-                <a class="navbar-brand" href="#"><img src="./assets/images/home/Spain.png" alt="Spain" width="35px"></a>
-              </nav>
+            </nav>
         </div>
     </header>
     <main>
         <section class="about-us">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="d-flex ms-3">
                             <hr class="hr-main">
                             <div>
@@ -78,57 +92,72 @@
                             </div>
                         </div>
                         <div class="container-aboutUs-description">
-                            <p>Somos asesores expertos en <strong>franquicias</strong> y <strong>negocios</strong> con
+                            <p><strong class="color-green"> Somos asesores expertos en franquicias y negocios</strong>
+                                con
                                 sede en San Antonio, Texas.</p>
 
                             <p> Nuestra meta es promover y
-                                apoyar el <strong>emprendimiento de los inversionistas.</strong> Llevamos las
-                                <strong>oportunidades de negocio</strong> a
+                                apoyar el emprendimiento de los inversionistas. Llevamos las
+                                oportunidades de negocio a
                                 nuestros
                                 clientes
                                 a
-                                través de <strong>asesoría personalizada.</strong>
+                                través de asesoría personalizada.
                             </p>
 
-                            <p> Planeamos, analizamos, y presentamos <strong>opciones de inversión</strong> a la medida
+                            <p><strong class="color-green">Planeamos, analizamos, y presentamos</strong> opciones de
+                                inversión a la medida
                                 de
                                 sus necesidades, experiencias, metas, y preferencia de industria.</p>
 
                             <p>Buscamos opciones de inversión en todo
                                 Estados Unidos. 100% Bilingües.</p>
                         </div>
-                        <div id="holamundo" class="container-counter d-flex justify-content-between">
-                            <div>
-                                <div class="number-item">+<span id="count1"></span></div>
-                                <div class="label-counter-item">Clientes <br> sastifechos</div>
+                        <div id="holamundo" class="container-counter">
+                            <div class="row">
+                                <div class="col">
+                                    <div>
+                                        <div class="number-item-green">+<span id="count1"></span></div>
+                                        <div class="label-counter-item">Clientes sastifechos</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <div class="number-item">+<span id="count2"></span></div>
+                                        <div class="label-counter-item">Visas de inversión <br> aprobadas</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <div class="number-item-green">+<span id="count3"></span></div>
+                                        <div class="label-counter-item">Industrias diferentes</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <div class="number-item">+<span id="count2"></span></div>
-                                <div class="label-counter-item">Visas<br> aprobadas</div>
+
+                            <div class="row mt-4">
+                                <div class="col">
+                                    <div>
+                                        <div class="number-item">+<span id="count4"></span></div>
+                                        <div class="label-counter-item">Franquicias para elegir</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <div class="number-item-green">+<span id="count5"></span></div>
+                                        <div class="label-counter-item">Franquicias exitosas</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <div class="number-item">+<span id="count6"></span></div>
+                                        <div class="label-counter-item">Empresas creadas</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <div class="number-item">+<span id="count3"></span></div>
-                                <div class="label-counter-item">Empresas <br> creadas</div>
-                            </div>
-                            <div>
-                                <div class="number-item">+<span id="count4"></span></div>
-                                <div class="label-counter-item">Franquicias <br> exitosas</div>
-                            </div>
-                            <div>
-                                <div class="number-item">+<span id="count5"></span></div>
-                                <div class="label-counter-item">Industrias <br> diferentes</div>
-                            </div>
-                            <div>
-                                <div class="number-item">+<span id="count6"></span></div>
-                                <div class="label-counter-item">Franquicias <br> para elegir</div>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="label-counter-final">¡Deseamos que usted mismo compruebe ésta
-                                elección!</span>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-12 col-lg-6 d-flex justify-content-center">
                         <img class="img-fluid" src="/assets/images/home/NOSOTROS 2 1.png" alt="Reunión">
                     </div>
                 </div>
@@ -137,12 +166,12 @@
         <section class="our-team">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-sm-12 col-lg-5">
                         <img class="img-fluid"
                             src="/assets/images/team/Jaime Sánchez - Publireportaje - EDITADA 2 1.png"
                             alt="Jaime Sanchez">
                     </div>
-                    <div class="col-lg-7 ps-0">
+                    <div class="col-sm-12 col-lg-7 ps-0">
                         <div>
                             <div class="d-flex ms-1">
                                 <hr class="hr-main">
@@ -155,16 +184,17 @@
                                 <span class="title-name">Jaime Sánchez <i
                                         class="fa-brands ms-1 fa-linkedin icon-lkdin"></i></span>
                                 <p class="description-jaime">CEO de Interlink, fundó la empresa con el objetivo claro de
-                                    ayudar a los <br>
-                                    inversionitas a emprender
-                                    sus
-                                    negocios y asesorarlos
-                                    para que logren sus <br> metas de manera exitosa. Licenciado en
-                                    Economía por la Universidad <br> de Texas, y dueño de su propia franquicia, lo que
+                                    <strong class="color-green"> ayudar a los
+                                        inversionitas a emprender
+                                        sus
+                                        negocios y asesorarlos
+                                        para que logren sus metas de manera exitosa.</strong> Jaime es licenciado en
+                                    Economía por la Universidad de Texas, y dueño de su propia franquicia, lo que
                                     le
                                     permite tener un
-                                    gran <br>
-                                    conocimiento sobre la industria.</p>
+                                    gran
+                                    conocimiento sobre la industria.
+                                </p>
                             </div>
 
                             <div class="container-imgs-team ms-1">
@@ -201,31 +231,36 @@
         <section class="oportunity">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="d-flex">
                             <hr class="hr-main">
                             <div>
                                 <h3 class="subtitle-carousel-clients size">Obtén la oportunidad correcta</h3>
                                 <div class="container-description-oportunity">
                                     <p class="description-oportunity">
-                                        Todos nuestro equipo se mantiene actualizados para brindarte las mejores
-                                        herrmientas, con la finalidad de brindarte opciones de inversión acorde a tus
-                                        necesidades y metas.</p>
-                                    <p class="description-oportunity">Estamos comprometidos a guiarte para que tu
-                                        aterrizaje
-                                        en
-                                        Estados Unidos, lo hagas con conocimiento e información certera.</p>
+                                        Todo nuestro equipo se mantiene actualizado para
+                                        brindarte las mejores herramientas, con la finalidad de abrir tu
+                                        panorama sobre
+                                        las diferentes <strong class="color-green"> opciones de inversión acorde a tus
+                                            necesidades y metas.</strong></p>
+                                    <p class="description-oportunity mt-4"><b>Estamos comprometidos a guiarte para que
+                                            tu
+                                            aterrizaje
+                                            en
+                                            Estados Unidos, lo hagas con conocimiento e información certera.</b></p>
                                 </div>
                                 <div class="mt-5">
-                                    <button class="btn-know-services">Explora nuestros servicios</button>
+                                    <button class="btn-know-services">Explore nuestros servicios</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="d-flex justify-content-end">
-                            <img height="356px" src="/assets/images/team/Team - Publireportaje - EDITADA 1.png"
-                                class="img-fluid" alt="Team">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/OSxtznAW1yU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -233,124 +268,71 @@
             </div>
         </section>
     </main>
-    <footer class="contact">
+    <footer class="general-footer">
         <div class="container">
             <div class="row">
-                <div class="col"></div>
-                <div class="col">
-                    <div class="first-section">
-                        <div class="d-flex mt-4 margin-colums">
-                            <hr class="hr-main">
-                            <div>
-                                <h3 class="subtitle-carousel-clients mt-0 mb-0"> Anímate y da el primer paso</h3>
-                                <span class="d-block title-carousel-clients">Una nueva experiencia te espera.</span>
-                            </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="bg-world">
+                        <span class="contact-hour"><b> Horarios de atención:</b></span>
+                        <div class="pb-3 bar-color"> <span class="contact-hour">
+                                Lunes a
+                                viernes - 9:00 hs a 18:00 hs | TX</span></div>
+
+                        <div class="pt-4">
+                            <span class="contact-hour"><b> Email:</b> <br> contacto@interlinktx.com</span>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <section class="first-section-b">
-            <div class="container">
-                <div class="row position-relative">
-
-                    <div class="col ps-0 pe-0">
-                        <div class="d-flex">
-                            <div class="container-form">
-                                <form class="mt-4">
-                                    <div class="d-flex">
-                                        <div class="me-3 ms-4">
-                                            <label for="fullname" class="label-form">Nombre y apellido</label>
-                                            <input type="text" class="form-control" id="fullname">
-                                        </div>
-                                        <div class="me-4">
-                                            <label for="exampleFormControlInput1">Correo electronico</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="me-4 ms-4 mt-4">
-                                        <label for="select country" class="label-form">País del cuál es
-                                            ciudadano</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
-                                            <option selected>Selecciona un país</option>
-                                            <option value="1">Mexico</option>
-                                            <option value="2">Argentina</option>
-                                            <option value="3">Colombia</option>
-                                        </select>
-                                    </div>
-                                    <div class="me-4 ms-4 mt-4">
-                                        <label for="phone" class="label-form">Ingrese su número de teléfono</label><br>
-                                        <input style="width:565px" class="form-control" id="phone" name="phone"
-                                            type="tel">
-                                        <label class="message-info-form"> Revise que su número este escrito
-                                            correctamente</label>
-                                    </div>
-                                    <div class="me-4 ms-4 mt-4">
-                                        <label for="help you" class="label-form">¿Cómo podemos ayudarlo?</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
-                                            <option selected>Quiero invertir en una franquicia</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group me-4 ms-4 mt-4">
-                                        <label class="label-form" for="exampleFormControlTextarea1">Déjenos su
-                                            mensaje</label>
-                                        <input class="form-control text-area-form" id="exampleFormControlTextarea1">
-                                    </div>
-                                    <div class="d-flex justify-content-end me-4 mt-4">
-                                        <button class="btn-send-form mt-2" type="submit">Enviar</button>
-                                    </div>
-                                </form>
-
-                            </div>
-
+                        <div class="pt-4">
+                            <span class="contact-hour"><b> Teléfono: </b><br> +1 210 4635037</span>
                         </div>
-                    </div>
-                    <div class="col">
-
-                        <div class="first-section-b2 ms-5">
-                            <div class="pt-5">
-                                <span class="contact-hour"><b> Horarios de atención:</b></span>
-                                <div class="pb-3" style="border-bottom: 4px solid #058070;width: 360px;"> <span
-                                        class="contact-hour">
-                                        Lunes a
-                                        viernes - 9:00 hs a 18:00 hs | TX</span></div>
-
-                            </div>
-                            <div class="pt-4">
-                                <span class="contact-hour"><b> Email:</b> <br> contacto@interlinktx.com</span>
-                            </div>
-                            <div class="pt-4">
-                                <span class="contact-hour"><b> Teléfono: </b><br> +1 210 4635037</span>
-                            </div>
-                            <div class="follow">
-                                <div class="d-flex ms-1 mt-3">
-                                    <div class="box-icon-follow"> <i style="color: white;"
-                                            class="fa-brands fa-linkedin-in"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white;"
-                                            class="fa-brands fa-google"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-youtube"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-facebook-f"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-instagram"></i></div>
+                        <div class="follow">
+                            <div class="d-flex ms-1 mt-3">
+                                <div class="box-icon-follow"> <i style="color: white;"
+                                        class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white"
+                                        class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white"
+                                        class="fa-brands fa-instagram"></i>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="container-newslleter-footer">
+                        <span class="subtitle-newsletter-footer">Subscríbete para recibir nuestro E-book</span>
+                        <h5 class="title-newletter-footer">Aprende todo sobre las franquicias</h5>
+                    </div>
+                    <form class="mt-4">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="input-group mt-lg-3">
+                            <button data-section="newsletter" data-value="btnSend" class="btn btn-outline-secondary"
+                                type="button" id="inputGroupFileAddon04"> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="ejemplo@gmail.com">
 
-                <div class="copyright">
-                    <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
+            <div class="copyright">
+                <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
+            </div>
+        </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

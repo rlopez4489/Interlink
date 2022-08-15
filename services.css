@@ -68,19 +68,29 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .btn-see-experences {
-  width: 404px;
+  width: 336px;
   height: 48px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  color: #fff;
-  border: none;
-  background: #058070;
+  font-size: 18px;
+  line-height: 21px;
+  background: #ffffff;
+  border: 0.5px solid #bebebe;
   border-radius: 3px;
+  color: #000000;
+}
+.attention-details {
+  margin-top: 80px;
+}
+.contact-us-services {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  height: 372px;
+  background: rgba(28, 38, 86, 0.03);
 }

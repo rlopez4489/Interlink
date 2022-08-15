@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="investor-visa.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="investor-visa.css">
     <link rel="stylesheet" href="build/css/intlTelInput.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,385 +22,317 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-expand-xxl navbar-light nav-bg">
-                <a class="navbar-brand" href="index.html"><img src="./assets/images/home/INTERLINK FBC_CUADRO 1.png"
-                    alt="InterlinkFBC" width="250px"></a>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-        
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about-us.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="services.html">Servicios</a>
-                      </li>
-                      <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Recursos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
-                          <li><a class="dropdown-item" href="investor-visa.html">Visas de inversionista</a></li>
-                          <li><a class="dropdown-item" href="#">Blog</a></li>
-                          <li><a class="dropdown-item" href="#">FaQs</a></li>
-                          <li><a class="dropdown-item" href="#">Cursos</a></li>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="/assets/images/home/INTERLINK FBC_CUADRO 1.png"
+                            class="d-inline-block align-top img-size-flag" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" data-section="nav" data-value="home"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="us" href="about-us.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="services"
+                                    href="services.html">Servicios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-section="nav" data-value="resources" href="#"
+                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Recursos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
+                                    <li><a class="dropdown-item" href="investor-visa.html">Visas de inversionista</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">FaQs</a></li>
+                                    <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-section="nav" data-value="services" href="contact.html">Contacto</a>
+                            </li>
+                            <li class="nav-item container-flags">
+                                <div class="flag" id="flags">
+                                    <div class="flags__item" data-language="es">
+                                        <img class="flags__img" src="/assets/images/home/spain.svg" alt="spain">
+                                    </div>
+                                    <div class="flags__item" data-language="en">
+                                        <img class="flags__img" src="/assets/images/home/us.svg" alt="England">
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contacto</a>
-                      </li>
                     </div>
-                  </div>
                 </div>
-                <a class="navbar-brand" href="#"><img src="./assets/images/home/Spain.png" alt="Spain" width="35px"></a>
-              </nav>
+            </nav>
         </div>
-        <section class="header-visa position-relative">
-            <div class="container d-flex align-items-center">
-                <div class="d-flex title-margin align-items-center">
-                    <div>
-                        <hr class="hr-main-visa mt-4">
+        <section class="header-investor">
+            <div class="container">
+                <div class="container-card-header-investor">
+                    <div class="card-header-investor">
+                        <div class="d-flex title-margin ms-3 me-lg-5 me-3 ms-lg-5">
+                            <div>
+                                <hr class="hr-main-white mt-4">
+                            </div>
+                            <div class="d-flex flex-column mt-3 ms-4">
+                                <h1 class="titulo-portada-investor">Invertir para obtener una visa de inversionista
+                                </h1>
+                                <span class="subtitle-header-investor mt-3">La visa de inversor ofrece una excelente
+                                    oportunidad para quienes deseen vivir y emprender en Estados Unidos.</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex flex-column mt-3 ms-4">
-
-                        <h1 class="titulo-portada">Ayudamos a que inviertas <br>
-                            con seguridad y conocimiento.
-                        </h1>
-                        <span class="title-hr-visa">La visa de inversor ofrece una excelente oportunidad <br> para
-                            quienes deseen vivir y emprender en Estados <br> Unidos.</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-cards-visa">
-                <div class="container d-flex">
-                    <div class="card-visa-investor-type">Visa EB-5</div>
-                    <div class="card-visa-investor-type">Visa E-2</div>
-                    <div class="card-visa-investor-type">Visa E-1</div>
-                    <div class="card-visa-investor-type">Visa L-1</div>
                 </div>
             </div>
         </section>
     </header>
     <main>
-        <section class="description-investor-visa">
-            <div class="container">
-                <span class="d-block title-invertor-visa">Somos especialistas en la búsqueda del modelo de negocio <br>
-                    que hará
-                    viable la aplicación de la visa de inversionista.</span>
-                <div class="d-flex justify-content-center flex-column mt-5">
-                    <div class="d-flex align-items-center ms-1">
-                        <img class="me-3" width="32px" height="32px" src="/assets/images/home/Chat Message Sent.svg"
-                            alt="icono">
-                        <span class="text-objetives">Le proporcionamos a nuestros clientes <b>opciones de inversión
-                                personalizadas</b> conforme
-                            a sus
-                            necesidades, metas y <br> objetivos personales como así también conveniencias
-                            migratorias.</span>
-                    </div>
-                    <div class="d-flex align-items-center ms-1 mt-3"><img class="me-3" width="32px" height="32px"
-                            src="/assets/images/home/Chat Message Sent.svg" alt="icono">
-                        <span class="text-objetives"><b>Lo conectamos con nuestra red de profesionales</b>, como
-                            abogados migratorios,
-                            contadores,
-                            realtors, banqueros, etc para <br> que conjunto a ellos se recopile toda la información
-                            necesaria
-                            que será sometida a la aplicación de visado, con la <br> finalidad de que cumpla con las
-                            leyes,
-                            normas y condiciones del departamento de migración de Estados Unidos.</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="visa-descriptions">
+        <section class="visa-descriptions-e2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="d-flex mt-4">
                             <hr class="hr-main mb-0">
                             <div>
-                                <h3 class="subtitle-carousel-clients">Visa E-2</h3>
+                                <h3 class="subtitle-carousel-clients">Visa de inversionista E-2</h3>
                             </div>
                         </div>
 
-                        <p class="descriptions-visa-type ms-4">Su obtención es relativamente fácil y rápida, ofrece una
-                            excelente oportunidad <br> para todos
-                            aquellos
-                            inversionistas extranjeros que deseen vivir en Estados <br> Unidos y desarrollar un negocio
-                            o
-                            empresa. <br> <br> Para
-                            aplicar a la visa E-2 como inversor deberá ser ciudadano de un país que <br> tenga un
-                            Tratado de
-                            Libre
-                            Comercio y Navegación con Estados Unidos. <br><br> La inversión a realizar debe ser
-                            sustancial y
-                            activa,
-                            no hay
-                            un número exacto, pero <br> se recomienda que sea entre los $120.000 USD y $150.000 USD,
-                            dichos
-                            fondos <br> deben
-                            ser destinados irrevocablemente al negocio o emprendimiento comercial, <br> asimismo el
-                            negocio
-                            debe
-                            generar
-                            ingresos significativamente mayores a los <br> necesarios solo para sustentar al inversor y
-                            a su
-                            familia. <br><br>
+                        <p class="descriptions-visa-type ms-4">
+                            Su obtención es relativamente fácil y rápida, ofrece una excelente oportunidad para todos
+                            aquellos inversionistas extranjeros que deseen vivir en Estados Unidos y desarrollar un
+                            negocio o empresa. <br><br>
+                            Para aplicar a la visa E-2 como inversor deberá ser ciudadano de un país
+                            que tenga un <a
+                                href="https://www.uscis.gov/es/trabajar-en-estados-unidos/trabajadores-temporales-no-inmigrantes/e-2-inversionistas-por-tratado-comercial"
+                                target="_blank"><strong>Tratado de Libre Comercio y Navegación</strong></a> con Estados
+                            Unidos. <br><br>
+                            La inversión a realizar debe ser sustancial y activa, no hay un número exacto, pero se
+                            recomienda que sea
+                            entre los $120.000 y $150.000 USD, dichos fondos deben ser destinados irrevocablemente al
+                            negocio o emprendimiento comercial, asimismo el negocio debe generar ingresos
+                            significativamente mayores a los necesarios solo para sustentar al inversor y a su familia.
 
-                            Por último, debe venir a Estados Unidos para dirigir y desarrollar el <br> emprendimiento.
-                            <br><br>
-                            Como beneficio, usted podrá estar acompañado de su cónyuge e hijos menores <br>
-                            de 21 años (solteros), su conyúge podrá obtener una autorización de empleo y los <br>
-                            niños podrán acceder a la educación privada o pública de USA.
                         </p>
-                        <div class="ms-3 mt-5">
-                            <span class="question-description-visa">¿Quieres saber cuál es el mejor modelo de
-                                negocios para solicitar ésta visa?</span>
-                        </div>
+
                         <div class="ms-3 mt-4">
-                            <button class="btn-write-us">Escríbenos</button>
+                            <button class="btn-write-us">Aprende más</button>
                         </div>
                     </div>
 
-                    <div class="col-lg-5"><img class="img-fluid mt-5"
-                            src="/assets/images/investor-visa/pexels-yan-krukov-7793723 4.png" alt="Meet">
+                    <div class="col-sm-12 col-lg-6 d-flex justify-content-lg-end">
+                        <img class="img-fluid"
+                            src="/assets/images/investor-visa/VISA-DE-INVERSIONISTA-E2---IM-1.jpg" alt="Meet">
                     </div>
                 </div>
-                <div class="row d-flex align-items-center mt-5">
-                    <div class="col-lg-5"><img class="img-fluid"
-                            src="/assets/images/investor-visa/pexels-yan-krukov-7793723 4.png" alt="Meet">
+            </div>
+        </section>
+        <section class="visa-e5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6"><img class="img-fluid"
+                            src="/assets/images/investor-visa/visa-de-inversionista-eb5.jpg" alt="Meet">
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-sm-12 col-lg-6">
                         <div>
-                            <div class="d-flex mt-4">
+                            <div class="d-flex">
                                 <hr class="hr-main mb-0">
                                 <div>
-                                    <h3 class="subtitle-carousel-clients">Visa EB-5</h3>
+                                    <h3 class="subtitle-carousel-clients">Visa de inversionista E-5</h3>
                                 </div>
                             </div>
                             <div>
-                                <p class="descriptions-visa-type ms-4 ">Es la única visa que establece un monto de
-                                    inversión
-                                    específico, la misma le <br> permite
+                                <p class="descriptions-visa-type ms-4 ">
+                                    Es la única visa que establece un monto de inversión específico, la misma le permite
                                     al
-                                    inversor aplicante y a sus dependientes obtener la green card, es decir, <br> ser
+                                    inversor aplicante y a sus dependientes obtener la green card, es decir, ser
                                     residentes
-                                    permanentes de USA, en principio, es otorgada con una base <br> condicional de dos
-                                    años.
-                                    <br><br> El
-                                    fin de este programa es estimular en mayor parte la economía de Estados <br> Unidos,
+                                    permanentes de USA, en principio, es otorgada con una base condicional de dos años.
+                                    <br><br>
+                                    El fin de este <a
+                                        href="https://www.uscis.gov/es/trabajar-en-estados-unidos/trabajadores-permanentes/eb-5-programa-de-inversionistas-inmigrantes/inversionistas-eb-5"
+                                        target="_blank"><strong>programa</strong></a> es estimular en mayor parte la
+                                    economía de Estados Unidos,
                                     el
-                                    solicitante deberá cumplir ciertos términos: <br><br> - Haber establecido una nueva
-                                    empresa
-                                    comercial. <br> - Arriesgado su capital, a la fecha se requiere +$500.000 USD. <br>
-                                    -
-                                    Crear 10
-                                    puestos de trabajo a tiempo completo. <br> - Como inversionista debes tener la
-                                    intención
+                                    solicitante deberá cumplir ciertos términos: <br> <br>
+                                    <span class="little-square-green"></span>Haber establecido una nueva empresa
+                                    comercial. <br>
+                                    <span class="little-square-blue"></span>Arriesgado su capital, a la fecha se
+                                    requiere +$500.000 USD. <br>
+                                    <span class="little-square-green"></span>Crear 10 puestos de trabajo a tiempo
+                                    completo. <br>
+                                    <span class="little-square-blue"></span>Como inversionista debes tener la intención
                                     de
-                                    permanecer en USA. <br> - Dirigir la empresa.
-
-
+                                    permanecer en USA. <br>
+                                    <span class="little-square-green"></span>Dirigir la empresa.
                                 </p>
+                                <div class="ms-3 mt-4">
+                                    <button class="btn-eb5">Aprende más</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex align-items-center mt-5">
-                    <div class="col-lg-7">
-                        <div class="d-flex mt-4">
+            </div>
+        </section>
+        <section class="visa-e1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="d-flex">
                             <hr class="hr-main mb-0">
                             <div>
-                                <h3 class="subtitle-carousel-clients">Visa E-1</h3>
+                                <h3 class="subtitle-carousel-clients">Visa de inversionista E-1</h3>
                             </div>
                         </div>
-                        <p class="descriptions-visa-type ms-4">Se conoce como la visa de Comerciantes del Tratado de no
-                            -
-                            inmigrantes. <br><br>
+                        <p class="descriptions-visa-type ms-4">
+                            Se conoce como la visa de Comerciantes del Tratado de no - inmigrantes. <br><br>
 
-                            Será otorgada a aquellos empresarios o individuos que realicen intercambios <br> comerciales
+                            Será otorgada a <a
+                                href="https://www.uscis.gov/es/trabajar-en-estados-unidos/trabajadores-temporales-no-inmigrantes/e-1-comerciantes-por-tratado-comercial"
+                                target="_blank"><strong>aquellos empresarios o individuos que realicen intercambios
+                                    comerciales</strong></a>
                             entre Estados Unidos y su país de orígen. <br><br>
 
-                            Usted califica si: <br><br> - Es un ejecutivo o un gerente o un especialista empleado por
-                            esa
-                            compañía. <br> - Posee al menos el 50% de las acciones. <br> - Es ciudadano de un país con
-                            tratado que
-                            ya está en los EE. UU, usted será un <br> candidato inmediato para ser titular de visa E-1.
+                            Usted califica si: <br>
+                            <span class="little-square-green"></span>Es un ejecutivo o un gerente o un especialista
+                            empleado por esa
+                            compañía. <br>
+                            <span class="little-square-blue"></span>Posee al menos el 50% de las acciones. <br>
+                            <span class="little-square-green"></span>Es ciudadano de un país con tratado que
+                            ya está en los EE. UU, usted será un candidato inmediato para ser titular de visa E-1.
                         </p>
+                        <div class="ms-3 mt-4">
+                            <button class="btn-eb5">Aprende más</button>
+                        </div>
                     </div>
-                    <div class="col-lg-5">
-                        <img class="img-fluid" src="/assets/images/investor-visa/pexels-yan-krukov-7793723 4.png"
+                    <div class="col-sm-12 col-lg-6">
+                        <img class="img-fluid" src="/assets/images/investor-visa/VISA-E1.jpg" alt="Meet">
+                    </div>
+                </div>
+        </section>
+        <section class="visa-l1">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-sm-12 col-lg-6"><img class="img-fluid" src="/assets/images/investor-visa/visa-l1.jpg"
                             alt="Meet">
                     </div>
-                    <div class="row d-flex align-items-center mt-5">
-                        <div class="col-lg-5"><img class="img-fluid"
-                                src="/assets/images/investor-visa/pexels-yan-krukov-7793723 4.png" alt="Meet">
-                        </div>
-                        <div class="col-lg-7">
-                            <div>
-                                <div class="d-flex mt-4">
-                                    <hr class="hr-main mb-0">
-                                    <div>
-                                        <h3 class="subtitle-carousel-clients">Visa L-1</h3>
-                                    </div>
-                                </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div>
+                            <div class="d-flex">
+                                <hr class="hr-main mb-0">
                                 <div>
-                                    <p class="descriptions-visa-type ms-4 ">Se divide en dos, L-1A y L-1B, están
-                                        disponibles para personas transferidas dentro <br> de una misma empresa en
-                                        posiciones
-                                        gerenciales o que tengan conocimiento <br> especializado. <br><br>
+                                    <h3 class="subtitle-carousel-clients">Visa de inversionista L-1</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="descriptions-visa-type ms-4 ">
+                                    Se divide en dos, <a
+                                        href="https://www.uscis.gov/es/trabajar-en-estados-unidos/trabajadores-temporales-no-inmigrantes/l-1a-transferencia-de-ejecutivos-o-gerentes-dentro-de-una-misma-empresa"
+                                        target="_blank"><strong>L-1A y L-1B</strong></a>, están disponibles para
+                                    personas transferidas dentro
+                                    de una misma empresa en posiciones gerenciales o que tengan conocimiento
+                                    especializado. <br> <br>
 
-                                        Pueden ser otorgadas cuando un empleador requiere que un empleado calificado
-                                        <br>
-                                        pueda trabajar y vivir en Estados Unidos. <br><br> Para calificar usted debe:
-                                        <br><br> - Haber
-                                        trabajado para una organización elegible en el extranjero por un período <br> de
-                                        un
-                                        año continuo y dentro de los tres años previos a su admisión en EE.UU. <br> -
-                                        Entrar a
-                                        Estados Unidos con la intención de rendir servicios en capacidad <br> ejecutiva
-                                        o
-                                        gerencial en una sucursar del mismo empleador.
-                                    </p>
+                                    Pueden ser otorgadas cuando un <b>empleador requiere que un empleado calificado</b>
+                                    pueda
+                                    trabajar y vivir en Estados Unidos. <br><br>
+                                    Para calificar usted debe: <br>
+                                    <span class="little-square-green"></span> Haber trabajado para
+                                    una organización elegible en el extranjero por un período de un año continuo y
+                                    dentro de los tres años previos a su admisión en EE.UU. <br>
+                                    <span class="little-square-blue"></span>Entrar a Estados Unidos con
+                                    la intención de rendir servicios en capacidad ejecutiva o gerencial en una sucursar
+                                    del mismo empleador.
+                                </p>
+                                <div class="ms-3 mt-4">
+                                    <button class="btn-eb5">Aprende más</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
+
     </main>
-    <footer class="contact">
+    <footer class="general-footer">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="first-section">
-                        <div class="d-flex">
-                            <hr class="hr-main mt-3">
-                            <div>
-                                <h3 class="subtitle-carousel-clients">Busquemos el modelo de <br> negocio idóneo
-                                </h3>
-                                <span class="d-block title-carousel-clients">Déjenos su mensaje en el formulario</span>
-                            </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="bg-world">
+                        <span class="contact-hour"><b> Horarios de atención:</b></span>
+                        <div class="pb-3 bar-color"> <span class="contact-hour">
+                                Lunes a
+                                viernes - 9:00 hs a 18:00 hs | TX</span></div>
+
+                        <div class="pt-4">
+                            <span class="contact-hour"><b> Email:</b> <br> contacto@interlinktx.com</span>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-
-                </div>
-            </div>
-        </div>
-
-
-        <section class="first-section-b">
-            <div class="container">
-                <div class="row position-relative">
-
-                    <div class="col ps-0 pe-0">
-                        <div class="first-section-b2 ms-4">
-                            <div class="pt-5">
-                                <span class="contact-hour">Horarios de atención: <br> Lunes a viernes - 9:00 hs a 18:00
-                                    hs | UTC/GTM
-                                    -6</span>
-                            </div>
-                            <div class="pt-4">
-                                <span class="contact-hour">Email: <br> contacto@interlinktx.com</span>
-                            </div>
-                            <div class="pt-4">
-                                <span class="contact-hour">Teléfono: <br> +1 210 4635037</span>
-                            </div>
-                            <div class="follow">
-                                <div class="d-flex ms-1 mt-3">
-                                    <div class="box-icon-follow"> <i style="color: white;"
-                                            class="fa-brands fa-linkedin-in"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white;"
-                                            class="fa-brands fa-google-plus-g"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-youtube"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-facebook-f"></i></div>
-                                    <div class="box-icon-follow"> <i style="color: white"
-                                            class="fa-brands fa-instagram"></i></div>
+                        <div class="pt-4">
+                            <span class="contact-hour"><b> Teléfono: </b><br> +1 210 4635037</span>
+                        </div>
+                        <div class="follow">
+                            <div class="d-flex ms-1 mt-3">
+                                <div class="box-icon-follow"> <i style="color: white;"
+                                        class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white"
+                                        class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="box-icon-follow"> <i style="color: white"
+                                        class="fa-brands fa-instagram"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-
-                        <div class="d-flex">
-                            <div class="container-form">
-                                <form class="mt-4">
-                                    <div class="d-flex">
-                                        <div class="me-3 ms-4">
-                                            <label for="fullname" class="label-form">Nombre y apellido</label>
-                                            <input type="text" class="form-control" id="fullname">
-                                        </div>
-                                        <div class="me-4">
-                                            <label for="exampleFormControlInput1">Correo electronico</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="me-4 ms-4 mt-4">
-                                        <label for="select country" class="label-form">País del cuál es
-                                            ciudadano</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
-                                            <option selected>Selecciona un país</option>
-                                            <option value="1">Mexico</option>
-                                            <option value="2">Argentina</option>
-                                            <option value="3">Colombia</option>
-                                        </select>
-                                    </div>
-                                    <div class="me-4 ms-4 mt-4">
-                                        <label for="phone" class="label-form">Ingrese su número de teléfono</label>
-                                        <input class="form-control" id="phone" name="phone" type="tel">
-                                        <label class="message-info-form"> Revise que su número este escrito
-                                            correctamente</label>
-                                    </div>
-                                    <div class="me-4 ms-4 mt-4">
-                                        <label for="help you" class="label-form">¿Cómo podemos ayudarlo?</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
-                                            <option selected>Quiero invertir en una franquicia</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group me-4 ms-4 mt-4">
-                                        <label class="label-form" for="exampleFormControlTextarea1">Déjenos su
-                                            mensaje</label>
-                                        <input class="form-control text-area-form" id="exampleFormControlTextarea1">
-                                    </div>
-                                    <div class="d-flex justify-content-end me-4 mt-4">
-                                        <button class="btn-send-form mt-2" type="submit">Enviar</button>
-                                    </div>
-                                </form>
-
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="container-newslleter-footer">
+                        <span class="subtitle-newsletter-footer">Subscríbete para recibir nuestro E-book</span>
+                        <h5 class="title-newletter-footer">Aprende todo sobre las franquicias</h5>
+                    </div>
+                    <form class="mt-4">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nombre">
                             </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="input-group mt-lg-3">
+                            <button data-section="newsletter" data-value="btnSend" class="btn btn-outline-secondary"
+                                type="button" id="inputGroupFileAddon04"> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="ejemplo@gmail.com">
 
                         </div>
-
-
-
-
-
-                    </div>
-
-                </div>
-
-                <div class="copyright">
-                    <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
+                    </form>
                 </div>
             </div>
-        </section>
-
+            <div class="copyright">
+                <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
+            </div>
+        </div>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
