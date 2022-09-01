@@ -16,6 +16,34 @@ flagsElements?.addEventListener("click", (e) => {
   changeLanguage(e.target.parentElement.dataset.language);
 });
 
+const button = document.querySelector('.btn-up');
+
+const displayButton = () => {
+  window.addEventListener('scroll', () => {
+    console.log(window.scrollY);
+  
+    if (window.scrollY > 100) {
+      button.style.display = "block";
+    } else {
+      button.style.display = "none";
+    }
+  });
+};
+
+const scrollToTop = () => {
+  button.addEventListener("click", () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    }); 
+    console.log(event);
+  });
+};
+
+displayButton();
+scrollToTop();
+
 function counter(id, start, end, duration) {
   let obj = document.getElementById(id),
     current = start,
