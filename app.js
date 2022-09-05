@@ -16,12 +16,12 @@ flagsElements?.addEventListener("click", (e) => {
   changeLanguage(e.target.parentElement.dataset.language);
 });
 
-const button = document.querySelector('.btn-up');
+const button = document.querySelector(".btn-up");
 
 const displayButton = () => {
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     console.log(window.scrollY);
-  
+
     if (window.scrollY > 100) {
       button.style.display = "block";
     } else {
@@ -35,8 +35,8 @@ const scrollToTop = () => {
     window.scroll({
       top: 0,
       left: 0,
-      behavior: 'smooth'
-    }); 
+      behavior: "smooth",
+    });
     console.log(event);
   });
 };
@@ -44,57 +44,10 @@ const scrollToTop = () => {
 displayButton();
 scrollToTop();
 
-function counter(id, start, end, duration) {
-  let obj = document.getElementById(id),
-    current = start,
-    range = end - start,
-    increment = end > start ? 1 : -1,
-    step = Math.abs(Math.floor(duration / range)),
-    timer = setInterval(() => {
-      current += increment;
-      obj.textContent = current;
-      if (current == end) {
-        clearInterval(timer);
-      }
-    }, step);
-}
-function callback(entries, observer) {
-  if (entries[0].isIntersecting) {
-    //verificamos si actualmente es visible
-    counter("count1", 0, 100, 3000);
-    counter("count2", 0, 150, 2500);
-    counter("count3", 0, 75, 3000);
-    counter("count4", 0, 62, 2500);
-    counter("count5", 0, 35, 2000);
-    counter("count6", 0, 750, 3000);
-  }
-}
-var observer = new IntersectionObserver(callback, {});
 
-const element = document.querySelector("#holamundo");
-observer.observe(element);
 
-var input = document.querySelector("#phone");
-window.intlTelInput(input, {
-  // allowDropdown: false,
-  // autoHideDialCode: false,
-  // autoPlaceholder: "off",
-  // dropdownContainer: document.body,
-  // excludeCountries: ["us"],
-  // formatOnDisplay: false,
-  // geoIpLookup: function(callback) {
-  //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-  //     var countryCode = (resp && resp.country) ? resp.country : "";
-  //     callback(countryCode);
-  //   });
-  // },
-  // hiddenInput: "full_number",
-  // initialCountry: "auto",
-  // localizedCountries: { 'de': 'Deutschland' },
-  // nationalMode: false,
-  // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-  // placeholderNumberType: "MOBILE",
-  // preferredCountries: ['cn', 'jp'],
-  separateDialCode: true,
-  utilsScript: "build/js/utils.js",
+const phoneInputField = document.querySelector("#phone");
+const phoneInput = window.intlTelInput(phoneInputField, {
+  utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });

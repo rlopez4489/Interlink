@@ -2,7 +2,7 @@
   width: 100%;
   height: 468px;
   background-image: url("./assets/images/franchise/Franquicias---keywords-franquicias-en-USA.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -102,7 +102,7 @@
 }
 
 .brands {
-  height: 153px;
+  height: 200px;
   background: rgba(28, 38, 86, 0.03);
   margin-top: 82px;
   display: flex;
@@ -111,7 +111,7 @@
 }
 
 .why-franchise {
-  margin-top: 180px;
+  margin-top: 140px;
 }
 .how-help-you {
   margin-top: 140px;
@@ -197,7 +197,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  margin-top: 46px;
+  margin-top: 26px;
 }
 
 .card-carousel {
@@ -238,7 +238,9 @@
   color: #000000;
 }
 .position-carousel {
-  bottom: -100px;
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
 }
 .faqs {
   margin-top: 230px;
@@ -258,8 +260,10 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1) !important;
   border-radius: 6px !important;
   border: none !important;
-  padding-left: 150px !important;
-  width: 984.91px !important;
+  width: 100% !important;
+}
+.accordion {
+  width: 100% !important;
 }
 .accordion-item {
   background-color: #fff;
@@ -270,11 +274,7 @@
   font-size: 18px !important;
   line-height: 21px !important;
   color: #000000 !important;
-  width: 984.91px !important;
-}
-
-.accordion-body {
-  padding-left: 150px !important;
+  width: 100% !important;
 }
 
 .search-franchise {
@@ -332,6 +332,63 @@
   line-height: 21px;
   color: #000000;
 }
+
+.slider {
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 80s linear infinite;
+  display: flex;
+  width: calc(250px * 18);
+}
+
+.slider .slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slider .slide {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
 @media (max-width: 700px) {
   .card-header-franchise {
     position: inherit;
@@ -365,5 +422,26 @@
 
     bottom: -50px;
     padding: 0 32px;
+  }
+  .position-carousel {
+    position: relative;
+    bottom: 0;
+  }
+  .accordion-button {
+    width: 100% !important;
+    padding-left: 20px !important;
+  }
+  .accordion-item {
+    width: 100% !important;
+  }
+
+  .accordion-body {
+    padding-left: 20px !important;
+  }
+  .faqs {
+    margin-top: 80px;
+  }
+  .how-help-you {
+    margin-top: 80px;
   }
 }

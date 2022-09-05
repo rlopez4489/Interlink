@@ -34,7 +34,7 @@ li {
 }
 .container-counter {
   width: auto;
-  margin-left: 32px;
+  margin-left: 0px;
   margin-top: 70px;
 }
 .container-aboutUs-description {
@@ -54,9 +54,17 @@ li {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
-  text-align: center;
   color: #000000;
-  border-bottom: 3px solid #000000;
+}
+.green {
+  color: #058070;
+}
+.border-number-item {
+  width: 80px;
+  border-top: 5px solid #000000;
+}
+.border-color-green {
+  border-top: 5px solid #058070;
 }
 
 .number-item-green {
@@ -65,16 +73,14 @@ li {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
-  text-align: center;
   color: #000000;
   border-bottom: 3px solid #058070;
 }
 
 .label-counter-item {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
   margin-top: 5px;
 }
 .label-counter-final {
@@ -101,7 +107,7 @@ li {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: #1e4e62;
+  color: #000000;
   margin-top: 30px;
   display: block;
 }
@@ -152,8 +158,8 @@ li {
   color: #000000;
 }
 .btn-know-services {
-  width: 404px;
-  height: 38px;
+  width: 304px;
+  height: 48px;
   background: #058070;
   border-radius: 3px;
   font-family: "Roboto";
@@ -230,7 +236,6 @@ li {
   line-height: 23px;
   color: #c9c9c9;
   margin-top: 120px;
-  padding-bottom: 30px;
 }
 
 .btn-send-form {

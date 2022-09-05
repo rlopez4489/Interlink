@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about-us.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" href="about-us.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -116,44 +115,50 @@
                             <p>Buscamos opciones de inversión en todo
                                 Estados Unidos. 100% Bilingües.</p>
                         </div>
-                        <div id="holamundo" class="container-counter">
-                            <div class="row">
+                        <div class="container-counter ms-4">
+                            <div class="row ms-1">
                                 <div class="col">
-                                    <div>
-                                        <div class="number-item-green">+<span id="count1"></span></div>
+                                    <div class="d-flex flex-column">
+                                        <div class="number-item">+<span id="count1"></span></div>
+                                        <div class="border-number-item"></div>
                                         <div class="label-counter-item">Clientes sastifechos</div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div>
-                                        <div class="number-item">+<span id="count2"></span></div>
+                                    <div class="d-flex flex-column">
+                                        <div class="number-item green">+<span id="count2"></span></div>
+                                        <div class="border-number-item border-color-green"></div>
                                         <div class="label-counter-item">Visas de inversión <br> aprobadas</div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div>
-                                        <div class="number-item-green">+<span id="count3"></span></div>
+                                    <div class="d-flex flex-column">
+                                        <div class="number-item">+<span id="count3"></span></div>
+                                        <div class="border-number-item"></div>
                                         <div class="label-counter-item">Industrias diferentes</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row mt-4">
+                            <div class="row ms-1 mt-4">
                                 <div class="col">
-                                    <div>
-                                        <div class="number-item">+<span id="count4"></span></div>
+                                    <div class="d-flex flex-column">
+                                        <div class="number-item green">+<span id="count4"></span></div>
+                                        <div class="border-number-item border-color-green"></div>
                                         <div class="label-counter-item">Franquicias para elegir</div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div>
-                                        <div class="number-item-green">+<span id="count5"></span></div>
+                                    <div class="d-flex flex-column">
+                                        <div class="number-item">+<span id="count5"></span></div>
+                                        <div class="border-number-item"></div>
                                         <div class="label-counter-item">Franquicias exitosas</div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div>
-                                        <div class="number-item">+<span id="count6"></span></div>
+                                    <div class="d-flex flex-column">
+                                        <div class="number-item green">+<span id="count6"></span></div>
+                                        <div class="border-number-item border-color-green"></div>
                                         <div class="label-counter-item">Empresas creadas</div>
                                     </div>
                                 </div>
@@ -161,7 +166,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6 d-flex justify-content-center">
-                        <img class="img-fluid" src="/assets/images/home/NOSOTROS 2 1.png" alt="Reunión">
+                        <img class="img-fluid" src="/assets/images/home/NOSOTROS---IM1.jpg" alt="Reunión">
                     </div>
                 </div>
             </div>
@@ -200,7 +205,7 @@
                                 </p>
                             </div>
 
-                            <div class="container-imgs-team ms-1">
+                            <div class="container-imgs-team ms-4">
                                 <div class="container-img-team">
                                     <img class="img-fluid" src="/assets/images/team/Abril Manali 1 - gmail 1.png"
                                         alt="Abril Manali">
@@ -252,8 +257,8 @@
                                             en
                                             Estados Unidos, lo hagas con conocimiento e información certera.</b></p>
                                 </div>
-                                <div class="mt-5">
-                                    <button class="btn-know-services">Explore nuestros servicios</button>
+                                <div class="mt-4">
+                                    <button class="btn-know-services mt-1">Explore nuestros servicios</button>
                                 </div>
                             </div>
                         </div>
@@ -270,6 +275,7 @@
 
             </div>
         </section>
+        <button id="btnUp" class="btn-up"><i class="fa-solid fa-angle-up"></i></button>
     </main>
     <footer class="general-footer">
         <div class="container">
@@ -340,8 +346,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="build/js/intlTelInput.js"></script>
 </body>
 <script src="app.js"></script>
+<script src="counter.js"></script>
 
 </html>

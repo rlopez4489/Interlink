@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="build/css/intlTelInput.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <link rel="stylesheet" href="styles.css">
 
   <title>InterlinkFBC</title>
 
@@ -383,8 +383,8 @@
                   saber cuál es la visa adecuada para <b>ti según la inversión
                     que
                     vayas a realizar</b>?</span>
-                <button data-section="visa_types" data-value="btnWriteUs"
-                  class="btn-card-visa-write"><a href="#form">Escribanos</a></button>
+                <button data-section="visa_types" data-value="btnWriteUs" class="btn-card-visa-write"><a
+                    href="#form">Escribanos</a></button>
               </div>
             </div>
           </div>
@@ -532,8 +532,7 @@
                       USA.
                     </p>
                   </div>
-                  <span class="see-more-info"><a
-                    href="visa-e-1.html">+ info</a></span>
+                  <span class="see-more-info"><a href="visa-e-1.html">+ info</a></span>
                 </div>
               </div>
               <div class="col-sm-12 col-lg-6">
@@ -548,8 +547,7 @@
                       gerentes y personal con conocimientos especializados a una sucursal localizada en Estados Unidos.
                     </p>
                   </div>
-                  <span class="see-more-info"><a
-                    href="visa-l-1.html">+ info</a></span>
+                  <span class="see-more-info"><a href="visa-l-1.html">+ info</a></span>
                 </div>
               </div>
             </div>
@@ -565,8 +563,8 @@
                   saber cuál es la visa adecuada para <b>ti según la inversión
                     que
                     vayas a realizar</b>?</span>
-                <button data-section="visa_types" data-value="btnWriteUs"
-                  class="btn-card-visa-write"><a href="#form">Escribanos</a></button>
+                <button data-section="visa_types" data-value="btnWriteUs" class="btn-card-visa-write"><a
+                    href="#form">Escribanos</a></button>
               </div>
             </div>
           </div>
@@ -755,9 +753,9 @@
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-lg-3 col-sm-12 mt-2">
+          <div class="col-lg-3 col-md-auto col-sm-12 mt-2">
             <div class="card-motive">
-              <div class="mb-2 img-motive">
+              <div class="mb-2 ms-2 img-motive">
                 <img src="/assets/images/home/Frame 20.png" alt="Training">
               </div>
               <div class="d-flex">
@@ -769,9 +767,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-12 mt-2">
+          <div class="col-lg-3 col-md-auto col-sm-12 mt-2">
             <div class="card-motive">
-              <div class="mb-2 img-motive">
+              <div class="mb-2 ms-2 img-motive">
                 <img src="/assets/images/home/Frame 21.png" alt="Training">
               </div>
               <div class="d-flex">
@@ -782,9 +780,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-12 mt-2">
+          <div class="col-lg-3 col-md-auto col-sm-12 mt-2">
             <div class="card-motive">
-              <div class="mb-2 img-motive">
+              <div class="mb-2 ms-2 img-motive">
                 <img src="/assets/images/home/Frame 22.png" alt="Training">
               </div>
               <div class="d-flex">
@@ -795,9 +793,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-12 mt-2">
+          <div class="col-lg-3 col-md-auto col-sm-12 mt-2">
             <div class="card-motive">
-              <div class="mb-2 img-motive">
+              <div class="mb-2 ms-2 img-motive">
                 <img src="/assets/images/home/Frame 23.png" alt="Training">
               </div>
               <div class="d-flex">
@@ -811,7 +809,7 @@
         </div>
       </div>
     </section>
-    <button id="btnUp" class="btn-up">top</button>
+    <button id="btnUp" class="btn-up"><i class="fa-solid fa-angle-up"></i></button>
   </main>
   <footer id="form">
     <section class="footer-color">
@@ -823,19 +821,22 @@
                 <form class="mt-4">
                   <div class="d-flex">
                     <div class="me-3 ms-4">
-                      <label data-section="footer" data-value="labelName" for="fullname" class="label-form">Nombre y
+                      <label data-section="footer" data-value="labelName" for="fullname" class="label-form mb-2">Nombre
+                        y
                         apellido</label>
                       <input type="text" class="form-control" id="fullname">
                     </div>
                     <div class="me-4">
-                      <label data-section="footer" data-value="labelEmail" for="exampleFormControlInput1">Correo
+                      <label class="label-form mb-2" data-section="footer" data-value="labelEmail"
+                        for="exampleFormControlInput1">Correo
                         electronico</label>
                       <input type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="name@example.com">
                     </div>
                   </div>
                   <div class="me-4 ms-4 mt-4">
-                    <label for="select country" data-section="footer" data-value="labelCountry" class="label-form">País
+                    <label for="select country" data-section="footer" data-value="labelCountry"
+                      class="label-form mb-2">País
                       del cuál es ciudadano</label>
                     <select class="form-select label-form" aria-label="Default select example">
                       <option selected>Selecciona un país</option>
@@ -845,14 +846,17 @@
                     </select>
                   </div>
                   <div class="me-4 ms-4 mt-4">
-                    <label data-section="footer" data-value="labelPhone" for="phone" class="label-form">Ingrese su
+                    <label data-section="footer" data-value="labelPhone" for="phone"
+                      class="d-block label-form mb-2">Ingrese
+                      su
                       número de teléfono</label>
-                    <input class="form-control" id="phone" name="phone" type="tel">
+                    <input class="form-control" id="phone" type="tel" name="phone">
                     <label data-section="footer" data-value="messagePhone" class="message-info-form"> Revise que su
                       número este escrito correctamente</label>
                   </div>
                   <div class="me-4 ms-4 mt-4">
-                    <label data-section="footer" data-value="labelHelp" for="help you" class="label-form">¿Cómo podemos
+                    <label data-section="footer" data-value="labelHelp" for="help you" class="label-form mb-2">¿Cómo
+                      podemos
                       ayudarlo?</label>
                     <select class="form-select label-form" aria-label="Default select example">
                       <option data-section="footer" data-value="option1" selected>Quiero invertir en una franquicia
@@ -866,7 +870,7 @@
                     </select>
                   </div>
                   <div class="form-group me-4 ms-4 mt-4">
-                    <label data-section="footer" data-value="labelMessage" class="label-form"
+                    <label data-section="footer" data-value="labelMessage" class="label-form mb-2"
                       for="exampleFormControlTextarea1">Déjenos su mensaje</label>
                     <input class="form-control text-area-form" id="exampleFormControlTextarea1">
                   </div>
@@ -911,11 +915,18 @@
               </div>
               <div class="follow">
                 <div class="d-flex ms-1 mt-3">
-                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
+                  <div class="box-icon-follow"><a target="_blank"
+                      href="https://www.linkedin.com/company/interlinkfbc/"><i style="color: white;"
+                        class="fa-brands fa-linkedin-in"></a></i></div>
+                  <div class="box-icon-follow"><a
+                      href="https://www.google.com/maps/place/Interlink+-+Franchise+Consultants+in+EEUU./@29.5520254,-98.5109184,15z/data=!4m5!3m4!1s0x0:0xf81bf85d0476e2d6!8m2!3d29.5520254!4d-98.5109184"><i
+                        style="color: white;" class="fa-brands fa-google"></i></a></div>
+                  <div class="box-icon-follow"><a a target="_blank" href="https://www.youtube.com/c/INTERLINKFBC"><i
+                        style="color: white" class="fa-brands fa-youtube"></i></a></div>
                   <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
+                  <div class="box-icon-follow"><a target="_blank"
+                      href="https://instagram.com/interlink_fbc?igshid=YmMyMTA2M2Y="><i style="color: white"
+                        class="fa-brands fa-instagram"></i></a></div>
                 </div>
               </div>
             </div>
@@ -1007,11 +1018,18 @@
               </div>
               <div class="follow">
                 <div class="d-flex ms-1 mt-3">
-                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
+                  <div class="box-icon-follow"><a target="_blank"
+                      href="https://www.linkedin.com/company/interlinkfbc/"><i style="color: white;"
+                        class="fa-brands fa-linkedin-in"></a></i></div>
+                  <div class="box-icon-follow"><a
+                      href="https://www.google.com/maps/place/Interlink+-+Franchise+Consultants+in+EEUU./@29.5520254,-98.5109184,15z/data=!4m5!3m4!1s0x0:0xf81bf85d0476e2d6!8m2!3d29.5520254!4d-98.5109184"><i
+                        style="color: white;" class="fa-brands fa-google"></i></a></div>
+                  <div class="box-icon-follow"><a a target="_blank" href="https://www.youtube.com/c/INTERLINKFBC"><i
+                        style="color: white" class="fa-brands fa-youtube"></i></a></div>
                   <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
-                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
+                  <div class="box-icon-follow"><a target="_blank"
+                      href="https://instagram.com/interlink_fbc?igshid=YmMyMTA2M2Y="><i style="color: white"
+                        class="fa-brands fa-instagram"></i></a></div>
                 </div>
               </div>
             </div>
@@ -1022,14 +1040,12 @@
         </div>
       </div>
     </section>
-    
+
   </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="build/js/intlTelInput.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 <script src="app.js"></script>
 
 </html>
