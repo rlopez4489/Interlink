@@ -1,0 +1,110 @@
+.header-blog {
+  width: 100%;
+  height: 468px;
+  background-image: url("./assets/images/blog/2.jpg");
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.container-card-header-blog {
+  position: relative;
+  height: 100%;
+}
+.card-header-blog {
+  position: absolute;
+  bottom: -5%;
+  right: 0;
+  width: 692px;
+  height: 414px;
+  background: #1c2656;
+  border-radius: 6px;
+}
+.titulo-portada-blog {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.subtitle-header-blog {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+.title-paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.header-paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.read-more {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.first-section-blog {
+  margin-top: 80px;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+}
+.tab-name {
+  width: 100px;
+  height: 25px;
+  background: #058070;
+  border-radius: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-title-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+.date-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #747474;
+}
+.description-card-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4d4d4d;
+}

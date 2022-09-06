@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="courses.css">
-    <link rel="stylesheet" href="build/css/intlTelInput.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+
     <title>InterlinkFBC</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -56,9 +55,9 @@
                                     <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
                                     <li><a class="dropdown-item" href="investor-visa.html">Visas de inversionista</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item active" href="#">Blog</a></li>
                                     <li><a class="dropdown-item" href="faqs.html">FaQs</a></li>
-                                    <li><a class="dropdown-item active" href="#">Cursos</a></li>
+                                    <li><a class="dropdown-item" href="#">Cursos</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -80,24 +79,74 @@
                 </div>
             </nav>
         </div>
-        <section class="header-courses">
-            <div class="container d-flex justify-content-center position-relative">
-                <div class="title-courses">Próximamente</div>
-                <div class="follow-container">
-                    <span class="subtitle-courses">¡Siguenos en nuestras redes!</span>
-                    <div class="d-flex ms-1 mt-3">
-                        <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i>
+    </header>
+    <main>
+        <section class="header-blog">
+            <div class="container">
+                <div class="container-card-header-blog">
+                    <div class="card-header-blog">
+                        <div class="d-flex title-margin ms-3 me-lg-5 me-3 ms-lg-5">
+                            <div>
+                                <hr class="hr-main-white mt-4">
+                            </div>
+                            <div class="d-flex flex-column mt-3 ms-4">
+                                <span class="subtitle-header-blog mt-3">Guía completa</span>
+                                <h1 class="titulo-portada-blog mb-2">Negocios para la visa E-2
+                                </h1>
+                                <span class="title-paragraph mt-4">By - Interlink FBC | 20 de Marzo 2022
+                                </span>
+                                <p class="header-paragraph mt-3">Aprenderás sobre los negocios que te ayudarán a
+                                    adquirir
+                                    dicho visado para vivir
+                                    legalmente en Estados Unidos junto a tu familia. <br><br>
+                                    Cuando uno escoge un negocio en el
+                                    formato de franquicia para aplicar a la visa de inversionista E-2 está escogiendo un
+                                    camino más seguro y menos obstaculizado, aunque esto no implica que sea el único
+                                    modo para acceder a una visa E-2. Existen 3 modelos de negocios para la visa E-2...
+                                </p>
+                                <span class="read-more">Leer más</span>
+                            </div>
                         </div>
-                        <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i></div>
-                        <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
-                        <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
-                        <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
                     </div>
                 </div>
             </div>
         </section>
-    </header>
-
+        <section class="first-section-blog">
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Todos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Negocios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Franquicias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Visa en USA</a>
+                    </li>
+                </ul>
+                <div class="row mt-5">
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card-item">
+                            <img src="assets/images/blog/pexels-yan-krukov-7794005 8.png" alt="">
+                            <span class="tab-name mt-2">Negocios</span>
+                            <span class="card-title-item mt-2">Negocios para la visa E-2</span>
+                            <span class="date-item mt-3">By - Interlink FBC | 20 de Marzo 2022
+                            </span>
+                            <p class="description-card-item mt-3">Aprenderás sobre los negocios que te ayudarán a adquirir dicho visado para vivir
+                                legalmente en Estados Unidos junto a tu familia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4"></div>
+                    <div class="col-sm-12 col-lg-4"></div>
+                </div>
+            </div>
+        </section>
+        <button id="btnUp" class="btn-up"><i class="fa-solid fa-angle-up"></i></button>
+    </main>
     <footer class="general-footer">
         <div class="container">
             <div class="row">
@@ -167,8 +216,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="build/js/intlTelInput.js"></script>
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="app.js"></script>
 </body>
 
-</html
+</html>

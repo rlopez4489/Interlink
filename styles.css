@@ -1022,7 +1022,14 @@ hr {
   margin-top: 80px;
   background: #1c2656;
 }
-
+.hr-main-white {
+  border: none;
+  border-left: 4px solid #fff !important;
+  width: 5px !important;
+  opacity: 1 !important;
+  height: 80px !important;
+  background: #ffffff;
+}
 .subtitle-newsletter-footer {
   font-family: "Roboto";
   font-style: normal;
@@ -1050,6 +1057,117 @@ hr {
   color: #ffffff !important;
   background-color: #1c2656 !important;
 }
+
+.wa-icon {
+  position: fixed;
+  display: flex;
+  z-index: 98;
+  bottom: 105px;
+  right: 30px;
+  border-radius: 50%;
+  box-shadow: 0 1px 15px rgb(32 33 36 / 28%);
+}
+
+#wa-chat-widget {
+  display: none;
+  position: fixed;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px rgb(32 33 36 / 28%);
+  bottom: 180px;
+  right: 30px;
+  overflow: hidden;
+  z-index: 99;
+  animation-name: wa-chat-animation;
+  animation-duration: 1s;
+  /* width: 20%; */
+  opacity: 100;
+}
+
+#wa-chat-widget:target {
+  display: block;
+}
+
+.wa-chat-widget-header {
+  display: flex;
+  background: rgb(7, 94, 84);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 94, 84, 1) 0%,
+    rgba(18, 140, 126, 1) 85%
+  );
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.wa-chat-widget-header img {
+  max-width: 2.5rem;
+}
+
+.wa-chat-widget-header a.close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.wa-chat-widget-profile {
+  padding: 0 1rem 0 1rem;
+}
+
+.wa-chat-widget-body {
+  padding: 20px 20px 20px 10px;
+  background-color: rgb(230, 221, 212);
+}
+
+.wa-chat-widget-body {
+  padding: 20px 20px 20px 10px;
+  background-color: rgb(230, 221, 212);
+}
+
+.wa-chat-widget-body .message {
+  padding: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 8px 8px;
+  box-shadow: rgb(0 0 0 / 13%) 0px 1px 0.5px;
+}
+
+.wa-chat-widget-body .message .profile-name {
+  color: #787878;
+}
+
+.wa-chat-widget-body .message .wcw-message {
+  margin-top: 0.5rem;
+}
+
+.wa-chat-widget-send form {
+  display: flex;
+  margin: 0;
+  background-color: rgb(230, 221, 212);
+}
+
+.wa-chat-widget-send input {
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.wa-chat-widget-send button {
+  background-color: #075e54;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  fill: #ffffff;
+}
+
+@keyframes wa-chat-animation {
+  from {
+    opacity: 0;
+  }
+}
+
 @media (min-width: 1367px) {
   .carousel-size {
     height: 450px !important;

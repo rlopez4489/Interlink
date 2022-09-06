@@ -22,10 +22,12 @@
 .subtitle-header-contact {
   color: #ffffff;
 }
-
+.description{
+  margin-top: 0;
+}
 .maincontainer {
-  height: 100%;
-  padding: 24px 60px 0px 23px;
+  height: 208px;
+  padding: 24px 20px 0px 23px;
 }
 .title-hr-contact {
   font-family: "Roboto";
