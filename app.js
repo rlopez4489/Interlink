@@ -20,8 +20,6 @@ const button = document.querySelector(".btn-up");
 
 const displayButton = () => {
   window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
-
     if (window.scrollY > 100) {
       button.style.display = "block";
     } else {
@@ -43,8 +41,6 @@ const scrollToTop = () => {
 
 displayButton();
 scrollToTop();
-
-
 
 const phoneInputField = document.querySelector("#phone");
 const phoneInput = window.intlTelInput(phoneInputField, {

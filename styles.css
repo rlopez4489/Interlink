@@ -262,7 +262,7 @@ hr {
 .clients {
   background: rgba(28, 38, 86, 0.05);
   margin-top: 80px;
-  height: 542px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -849,7 +849,7 @@ hr {
   font-size: 16px;
   line-height: 150%;
   color: #000000;
-  margin-top: 14px;
+  margin-top: 0px;
   height: 96px;
 }
 .btn-see-more {
@@ -1059,6 +1059,8 @@ hr {
 }
 
 .wa-icon {
+  width: 60px;
+  height: 60px;
   position: fixed;
   display: flex;
   z-index: 98;
@@ -1193,6 +1195,9 @@ hr {
 }
 
 @media (max-width: 700px) {
+  .size-mobile {
+    height: 300px;
+  }
   .titulo-portada {
     width: 300px;
     font-family: "Roboto";
@@ -1302,7 +1307,6 @@ hr {
   .container-description-client {
     margin-top: 20px;
     margin-left: 0px;
-    height: auto;
   }
   .card-visa-write {
     position: absolute;
@@ -1328,12 +1332,11 @@ hr {
   }
   .text-description-client {
     height: 240px;
-    font-size: 19px;
-    line-height: 23px;
     margin-left: 12px;
     margin-top: 0.8rem;
   }
   .see-more {
+    position: relative;
     margin-top: 0px;
     width: 227px;
     height: 44px;
@@ -1342,24 +1345,30 @@ hr {
     margin-left: 0px;
   }
   .services {
-    margin-top: 0px;
+    margin-top: 60px;
+    height: auto;
   }
 
   .img-book-container {
     display: flex;
-    width: 150px;
-    height: 209px;
+    width: 201px;
+    height: 279px;
     margin-bottom: 10px;
     position: absolute;
     top: -95px;
+  }
+  .color-green {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    color: #058070;
   }
 
   .description-help {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 19px;
-    line-height: 23px;
+
     color: #000000;
     width: auto;
     margin-top: 50px;
@@ -1370,7 +1379,7 @@ hr {
   }
   .clients {
     background: transparent;
-    margin-top: 0px;
+    margin-top: 30px;
   }
   .position-relative {
     padding-top: 0px;
@@ -1384,12 +1393,21 @@ hr {
   .title-service {
     margin-top: 12px;
     margin-left: 0px;
+    font-size: 22px;
+    line-height: 25px;
   }
   .description {
-    margin-top: 14px;
+    margin-top: 0px;
     height: auto;
     margin-bottom: 10px;
   }
+  .title-carousel-clients-help {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    color: #000000;
+  }
+
   .btn-see-more {
     display: none;
   }
@@ -1431,8 +1449,6 @@ hr {
   }
 
   .title-description-visa {
-    font-size: 19px;
-    line-height: 23px;
     margin-top: 14px;
     height: auto;
   }
@@ -1462,12 +1478,16 @@ hr {
     margin-top: 10px;
     padding: 20px 8px;
   }
+  .container-here {
+    margin-top: 14px;
+  }
   .news-letter {
     background-color: rgba(28, 38, 86, 0.05);
-    height: 425px;
+    height: auto;
     margin-top: 180px;
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
   }
 
   .desktop-v {
@@ -1478,7 +1498,7 @@ hr {
     justify-content: center;
   }
   .form-newsletter-container {
-    margin-top: 80px;
+    margin-top: 200px;
   }
   .btn-outline-secondary {
     background: rgba(28, 38, 86, 0.08) !important;
@@ -1491,21 +1511,16 @@ hr {
   }
   .help-you {
     height: auto;
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     background-color: transparent;
   }
-  .color-strong {
-    font-size: 16px;
-    line-height: 24px;
-  }
+
   .btn-desktop-resevation {
     display: none;
   }
   .title-card-help-you {
-    font-size: 19px;
-    line-height: 23px;
     width: auto;
   }
   .card-help-you {
@@ -1531,7 +1546,7 @@ hr {
     margin-top: 30px;
   }
   .here {
-    margin-top: 68px;
+    margin-top: 38px;
   }
   .hidden-title {
     display: none;
@@ -1539,7 +1554,7 @@ hr {
   .container-btn-see-more {
     display: flex;
     justify-content: center;
-    margin-top: 62px;
+    margin-top: 10px;
   }
   .text-card-visa-write {
     width: 100%;
@@ -1572,7 +1587,7 @@ hr {
     margin-bottom: 10px;
   }
   .choose-me {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .footer-color {
     display: none;
@@ -1597,10 +1612,10 @@ hr {
   }
 
   .box-check-green {
-    margin-left: 12px;
+    margin-left: 0px;
   }
   .box-check-blue {
-    margin-left: 12px;
+    margin-left: 0px;
   }
   .card-motive {
     width: auto;
@@ -1617,6 +1632,7 @@ hr {
   .description-motive {
     margin-top: 0px;
     width: auto;
+    font-family: "Roboto";
   }
   .contact-hour {
     font-size: 16px;
@@ -1649,13 +1665,13 @@ hr {
     margin-left: 12px;
   }
   .container-form {
-    width: auto;
+    width: 100%;
     height: auto;
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     padding-bottom: 20px;
-    margin-left: 12px;
+    margin-left: 0px;
   }
   .mobile-v-visa-types {
     display: block !important;
@@ -1675,5 +1691,15 @@ hr {
     height: auto;
     margin-top: 80px;
     background: #1c2656;
+  }
+  .btn-up {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .wa-icon {
+    width: 40px;
+    height: 40px;
+    bottom: 90px;
   }
 }
