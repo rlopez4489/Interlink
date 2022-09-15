@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-button{
+button {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
@@ -720,6 +720,7 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 40px;
+  margin-left: 12px;
 }
 
 .first-section-b2 {
@@ -730,13 +731,20 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
+.contact-hour-attention {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
 .contact-hour {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 21px;
   color: #ffffff;
 }
 .bar-color {
@@ -756,7 +764,7 @@ hr {
 }
 .footer-color {
   background-color: #1c2656;
-  height: 570px;
+  height: 528px;
   position: relative;
   margin-top: 244px;
   display: flex;
