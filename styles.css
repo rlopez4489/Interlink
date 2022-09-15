@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+button{
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -251,7 +255,7 @@ hr {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgb(12, 12, 12);
+  background-color: rgba(151, 151, 165, 1);
   color: white;
   border: none;
   font-size: 30px;
@@ -1058,7 +1062,7 @@ hr {
   background-color: #1c2656 !important;
 }
 
-.whatsapp-button{
+.whatsapp-button {
   position: fixed;
   bottom: 105px;
   right: 15px;
@@ -1074,31 +1078,31 @@ hr {
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
-  -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
-  box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
   animation: effect 5s infinite ease-in;
 }
 
 @keyframes effect {
-  20%, 100% {
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
+  20%,
+  100% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
-  0%, 10%{
-      width: 55px;
-      height: 55px;
-      font-size: 35px;
+  0%,
+  10% {
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
   }
-  5%{
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
+  5% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
 }
-
-
 
 @media (min-width: 1367px) {
   .carousel-size {
@@ -1574,8 +1578,7 @@ hr {
   }
   .card-motive {
     width: auto;
-    height:auto;
-
+    height: auto;
   }
   .description-motive {
     padding: 10px 10px;
