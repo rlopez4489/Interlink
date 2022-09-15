@@ -188,121 +188,143 @@
                 </div>
             </div>
         </section>
+        <button id="btnUp" class="btn-up"><i class="fa-solid fa-angle-up"></i></button>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=12102189709&text=Hola" class="whatsapp-button"><i
+                class="fab fa-whatsapp"></i></a>
     </main>
     <footer>
         <section class="footer-color">
             <div class="container position-form">
-              <div class="row">
-                <div class="col-sm-12 col-lg-6">
-                  <div class="d-flex">
-                    <div class="container-form">
-                      <form class="mt-4">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="d-flex">
-                          <div class="w-100 me-3 ms-4">
-                            <label data-section="footer" data-value="labelName" for="fullname" class="label-form mb-2">Nombre y
-                              apellido</label>
-                            <input type="text" class="form-control" id="fullname">
-                          </div>
-                          <div class="w-100 me-4">
-                            <label class="label-form mb-2" data-section="footer" data-value="labelEmail" for="exampleFormControlInput1">Correo
-                              electronico</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                              placeholder="name@example.com">
-                          </div>
+                            <div class="container-form">
+                                <form class="mt-4">
+                                    <div class="d-flex">
+                                        <div class="w-100 me-3 ms-4">
+                                            <label data-section="footer" data-value="labelName" for="fullname"
+                                                class="label-form mb-2">Nombre y
+                                                apellido</label>
+                                            <input type="text" class="form-control" id="fullname">
+                                        </div>
+                                        <div class="w-100 me-4">
+                                            <label class="label-form mb-2" data-section="footer" data-value="labelEmail"
+                                                for="exampleFormControlInput1">Correo
+                                                electronico</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="me-4 ms-4 mt-4">
+                                        <label for="select country" data-section="footer" data-value="labelCountry"
+                                            class="label-form mb-2">País
+                                            del cuál es ciudadano</label>
+                                        <select class="form-select label-form" aria-label="Default select example">
+                                            <option selected>Selecciona un país</option>
+                                            <option value="1">Mexico</option>
+                                            <option value="2">Argentina</option>
+                                            <option value="3">Colombia</option>
+                                        </select>
+                                    </div>
+                                    <div class="me-4 ms-4 mt-4">
+                                        <label data-section="footer" data-value="labelPhone" for="phone"
+                                            class="d-block label-form mb-2">Ingrese
+                                            su
+                                            número de teléfono</label>
+                                        <input class="form-control" id="phone" type="tel" name="phone">
+                                        <label data-section="footer" data-value="messagePhone"
+                                            class="message-info-form"> Revise que su
+                                            número este escrito correctamente</label>
+                                    </div>
+                                    <div class="me-4 ms-4 mt-4">
+                                        <label data-section="footer" data-value="labelHelp" for="help you"
+                                            class="label-form mb-2">¿Cómo podemos
+                                            ayudarlo?</label>
+                                        <select class="form-select label-form" aria-label="Default select example">
+                                            <option data-section="footer" data-value="option1" selected>Quiero invertir
+                                                en una franquicia
+                                            </option>
+                                            <option data-section="footer" data-value="option2">Quiero invertir y vivir
+                                                en Estados Unidos
+                                            </option>
+                                            <option data-section="footer" data-value="option3">Quiero un plan de
+                                                negocios
+                                            </option>
+                                            <option data-section="footer" data-value="option4">Necesito más información
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group me-4 ms-4 mt-4">
+                                        <label data-section="footer" data-value="labelMessage" class="label-form mb-2"
+                                            for="exampleFormControlTextarea1">Déjenos su mensaje</label>
+                                        <input class="form-control text-area-form" id="exampleFormControlTextarea1">
+                                    </div>
+                                    <div class="d-flex justify-content-end me-4 mt-4">
+                                        <button data-section="footer" data-value="btnSend" class="btn-send-form mt-2"
+                                            type="submit">Enviar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+
                         </div>
-                        <div class="me-4 ms-4 mt-4">
-                          <label for="select country" data-section="footer" data-value="labelCountry" class="label-form mb-2">País
-                            del cuál es ciudadano</label>
-                          <select class="form-select label-form" aria-label="Default select example">
-                            <option selected>Selecciona un país</option>
-                            <option value="1">Mexico</option>
-                            <option value="2">Argentina</option>
-                            <option value="3">Colombia</option>
-                          </select>
-                        </div>
-                        <div class="me-4 ms-4 mt-4">
-                          <label data-section="footer" data-value="labelPhone" for="phone" class="d-block label-form mb-2">Ingrese
-                            su
-                            número de teléfono</label>
-                          <input class="form-control" id="phone" type="tel" name="phone">
-                          <label data-section="footer" data-value="messagePhone" class="message-info-form"> Revise que su
-                            número este escrito correctamente</label>
-                        </div>
-                        <div class="me-4 ms-4 mt-4">
-                          <label data-section="footer" data-value="labelHelp" for="help you" class="label-form mb-2">¿Cómo podemos
-                            ayudarlo?</label>
-                          <select class="form-select label-form" aria-label="Default select example">
-                            <option data-section="footer" data-value="option1" selected>Quiero invertir en una franquicia
-                            </option>
-                            <option data-section="footer" data-value="option2">Quiero invertir y vivir en Estados Unidos
-                            </option>
-                            <option data-section="footer" data-value="option3">Quiero un plan de negocios
-                            </option>
-                            <option data-section="footer" data-value="option4">Necesito más información
-                            </option>
-                          </select>
-                        </div>
-                        <div class="form-group me-4 ms-4 mt-4">
-                          <label data-section="footer" data-value="labelMessage" class="label-form mb-2"
-                            for="exampleFormControlTextarea1">Déjenos su mensaje</label>
-                          <input class="form-control text-area-form" id="exampleFormControlTextarea1">
-                        </div>
-                        <div class="d-flex justify-content-end me-4 mt-4">
-                          <button data-section="footer" data-value="btnSend" class="btn-send-form mt-2"
-                            type="submit">Enviar</button>
-                        </div>
-                      </form>
-      
                     </div>
-      
-                  </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="first-section">
+                            <div class="d-flex mt-4 margin-colums">
+                                <hr class="hr-main">
+                                <div>
+                                    <h3 data-section="footer" data-value="title"
+                                        class="subtitle-carousel-clients mt-0 mb-0"> Anímate y da
+                                        el primer paso</h3>
+                                    <span data-section="footer" data-value="subtitle"
+                                        class="d-block title-carousel-clients">Una nueva
+                                        experiencia te espera.</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="first-section-b2 ms-5">
+                            <div class="pt-5">
+                                <span data-section="footer" data-value="attentionHour" class="contact-hour"><b> Horarios
+                                        de
+                                        atención:</b></span>
+                                <div class="pb-3 bar-color"> <span data-section="footer" data-value="hours"
+                                        class="contact-hour">
+                                        Lunes a
+                                        viernes - 9:00 hs a 18:00 hs</span></div>
+
+                            </div>
+                            <div class="pt-4">
+                                <span class="contact-hour"><b> Email:</b> <br> contacto@interlinktx.com</span>
+                            </div>
+                            <div class="pt-4">
+                                <span data-section="footer" data-value="phone" class="contact-hour"><b> Teléfono:
+                                    </b><br> +1 210
+                                    4635037</span>
+                            </div>
+                            <div class="follow">
+                                <div class="d-flex ms-1 mt-3">
+                                    <div class="box-icon-follow"> <i style="color: white;"
+                                            class="fa-brands fa-linkedin-in"></i></div>
+                                    <div class="box-icon-follow"> <i style="color: white;"
+                                            class="fa-brands fa-google"></i></div>
+                                    <div class="box-icon-follow"> <i style="color: white"
+                                            class="fa-brands fa-youtube"></i></div>
+                                    <div class="box-icon-follow"> <i style="color: white"
+                                            class="fa-brands fa-facebook-f"></i></div>
+                                    <div class="box-icon-follow"> <i style="color: white"
+                                            class="fa-brands fa-instagram"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-lg-6">
-                  <div class="first-section">
-                    <div class="d-flex mt-4 margin-colums">
-                      <hr class="hr-main">
-                      <div>
-                        <h3 data-section="footer" data-value="title" class="subtitle-carousel-clients mt-0 mb-0"> Anímate y da
-                          el primer paso</h3>
-                        <span data-section="footer" data-value="subtitle" class="d-block title-carousel-clients">Una nueva
-                          experiencia te espera.</span>
-                      </div>
-                    </div>
-      
-                  </div>
-                  <div class="first-section-b2 ms-5">
-                    <div class="pt-5">
-                      <span data-section="footer" data-value="attentionHour" class="contact-hour"><b> Horarios de
-                          atención:</b></span>
-                      <div class="pb-3 bar-color"> <span data-section="footer" data-value="hours" class="contact-hour">
-                          Lunes a
-                          viernes - 9:00 hs a 18:00 hs</span></div>
-      
-                    </div>
-                    <div class="pt-4">
-                      <span class="contact-hour"><b> Email:</b> <br> contacto@interlinktx.com</span>
-                    </div>
-                    <div class="pt-4">
-                      <span data-section="footer" data-value="phone" class="contact-hour"><b> Teléfono: </b><br> +1 210
-                        4635037</span>
-                    </div>
-                    <div class="follow">
-                      <div class="d-flex ms-1 mt-3">
-                        <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
-                        <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i></div>
-                        <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
-                        <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
-                        <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="copyright">
+                    <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
                 </div>
-              </div>
-              <div class="copyright">
-                <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
-              </div>
             </div>
-          </section>
+        </section>
         <section class="footer-color-mobile">
             <div class="container">
                 <div class="row">
