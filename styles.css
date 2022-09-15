@@ -719,7 +719,7 @@ hr {
   -o-background-size: cover;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 90px;
+  margin-top: 40px;
 }
 
 .first-section-b2 {
@@ -752,7 +752,7 @@ hr {
   padding-bottom: 20px;
 }
 .follow {
-  margin-top: 80px;
+  margin-top: 24px;
 }
 .footer-color {
   background-color: #1c2656;
@@ -781,10 +781,10 @@ hr {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 12px;
+  line-height: 15px;
   color: #c9c9c9;
-  margin-top: 90px;
+  margin-top: 25px;
 }
 
 .btn-send-form {
@@ -1022,7 +1022,7 @@ hr {
   display: none;
 }
 .general-footer {
-  height: 571px;
+  height: 380px;
   margin-top: 80px;
   background: #1c2656;
 }
@@ -1051,7 +1051,7 @@ hr {
   color: #ffffff;
 }
 .container-newslleter-footer {
-  margin-top: 90px;
+  margin-top: 40px;
 }
 .btn-outline-secondary {
   color: #a4a4a4 !important;
@@ -1610,7 +1610,7 @@ hr {
     font-size: 12px;
     line-height: 15px;
     color: #c9c9c9;
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .first-section-b2 {
     margin-left: 12px;
