@@ -85,10 +85,10 @@
   color: #000000;
 }
 .attention-details {
-  margin-top: 80px;
+  margin-top: 144px;
 }
 .contact-us-services {
-  margin-top: 100px;
+  margin-top: 144px;
   display: flex;
   align-items: center;
   height: 372px;
@@ -119,4 +119,20 @@
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+}
+@media (max-width: 700px) {
+  .our-services {
+    margin-top: 60px;
+  }
+  .maincontainer {
+    margin-top: 30px;
+  }
+  .contact-us-services {
+    height: auto;
+    padding: 30px 0px;
+    margin-top: 60px;
+  }
+  .attention-details {
+    margin-top: 60px;
+  }
 }

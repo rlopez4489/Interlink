@@ -77,6 +77,16 @@
 .container-title-card-franchise {
   height: 50px;
 }
+.card-container-write {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .card-write-us-franchise {
   width: 514px;
   height: 187px;
@@ -85,11 +95,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   display: flex;
-  justify-content: center;
-  position: absolute;
   flex-direction: column;
-  right: 0;
-  bottom: -100px;
+  justify-content: center;
   padding: 0 32px;
 }
 .hr-main-white {
@@ -389,6 +396,23 @@
     transform: translateX(calc(-250px * 9));
   }
 }
+
+@media (max-width: 1366px) {
+  .card-header-franchise {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    width: 679px;
+    height: 226px;
+    background: #1c2656;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+  }
+  .why-franchise {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 700px) {
   .card-header-franchise {
     position: inherit;
@@ -401,6 +425,16 @@
     display: flex;
     align-items: center;
   }
+  .header-franchise {
+    width: 100%;
+    height: 120px;
+    background-image: url("./assets/images/franchise/Franquicias---keywords-franquicias-en-USA.jpg");
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
   .container-card-header-franchise {
     width: 100%;
     height: 80%;
@@ -409,7 +443,7 @@
   }
   .card-write-us-franchise {
     width: 90%;
-    height: 187px;
+    height: auto;
     background: #ffffff;
     border: 1px solid #f4f4f7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -418,10 +452,8 @@
     justify-content: center;
     position: absolute;
     flex-direction: column;
-    right: 0;
-
-    bottom: -50px;
-    padding: 0 32px;
+    bottom: 50px;
+    padding: 10px 32px;
   }
   .position-carousel {
     position: relative;
@@ -443,5 +475,8 @@
   }
   .how-help-you {
     margin-top: 80px;
+  }
+  .brands {
+    margin-top: 120px;
   }
 }
