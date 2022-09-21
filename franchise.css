@@ -341,7 +341,7 @@
 }
 
 .slider {
-  height: 250px;
+  height: auto;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -372,7 +372,7 @@
 .slider .slide-track {
   animation: scroll 80s linear infinite;
   display: flex;
-  width: calc(250px * 18);
+  width: calc(150px * 18);
 }
 
 .slider .slide-track:hover {
@@ -380,12 +380,11 @@
 }
 
 .slider .slide {
-  height: 250px;
-  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 10px;
+  width: auto;
 }
 
 @keyframes scroll {
@@ -393,7 +392,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 9));
+    transform: translateX(calc(-150px * 9));
   }
 }
 

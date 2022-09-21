@@ -1,8 +1,7 @@
 .header-investor {
   width: 100%;
   height: 468px;
-  background-image: url("./assets/images/investor-visa/pexels-cottonbro-4569340\ 1.png");
-  background-attachment: fixed;
+  background-image: url("./assets/images/investor-visa/4.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -114,7 +113,7 @@
 .visa-descriptions-e2 {
   margin-top: 114px;
   background: rgba(28, 38, 86, 0.03);
-  border:none;
+  border: none;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -186,4 +185,20 @@
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+}
+@media (max-width: 1366px) {
+  .card-header-investor {
+    bottom: 70px;
+  }
+  .visa-descriptions-e2 {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .header-investor {
+    height: 100px;
+  }
+  .hr-main{
+    height: 70px !important;
+  }
 }
