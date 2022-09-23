@@ -13,9 +13,10 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <title>InterlinkFBC</title>
 
 </head>
@@ -867,20 +868,22 @@
                       podemos
                       ayudarlo?</label>
                     <select class="form-select label-form" aria-label="Default select example">
-                      <option data-section="footer" data-value="option1" selected>Quiero invertir en una franquicia
+                      <option data-section="footer" data-value="option1" selected>Quiero invertir
+                        en una franquicia
                       </option>
-                      <option data-section="footer" data-value="option2">Quiero invertir y vivir en Estados Unidos
+                      <option data-section="footer" data-value="option2">Quiero invertir y vivir
+                        en Estados Unidos
                       </option>
-                      <option data-section="footer" data-value="option3">Quiero un plan de negocios
+                      <option data-section="footer" data-value="option3">Quiero un plan de
+                        negocios
                       </option>
                       <option data-section="footer" data-value="option4">Necesito más información
                       </option>
                     </select>
                   </div>
                   <div class="form-group me-4 ms-4 mt-4">
-                    <label data-section="footer" data-value="labelMessage" class="label-form mb-2"
-                      for="exampleFormControlTextarea1">Déjenos su mensaje</label>
-                    <input class="form-control text-area-form" id="exampleFormControlTextarea1">
+                    <label for="exampleFormControlTextarea1">Déjenos su mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                   <div class="d-flex justify-content-end me-4 mt-4">
                     <button data-section="footer" data-value="btnSend" class="btn-send-form mt-2"
@@ -907,38 +910,29 @@
             </div>
             <div class="first-section-b2 ms-5">
               <div class="pt-5">
-                <span data-section="footer" data-value="attentionHour" class="contact-hour"><b> Horarios de
+                <span data-section="footer" data-value="attentionHour" class="contact-hour"><b> Horarios
+                    de
                     atención:</b></span>
-                <div class="pb-3 bar-color"> <span data-section="footer" data-value="hours"
-                    class="contact-hour-attention">
+                <div class="pb-3 bar-color"> <span data-section="footer" data-value="hours" class="contact-hour">
                     Lunes a
                     viernes - 9:00 hs a 18:00 hs</span></div>
 
               </div>
               <div class="pt-4">
-                <span class="contact-hour"><b> Email:</b> <br><span
-                    class="contact-hour-attention">contacto@interlinktx.com</span></span>
+                <span class="contact-hour"><b> Email:</b> <br> contacto@interlinktx.com</span>
               </div>
               <div class="pt-4">
-                <span data-section="footer" data-value="phone" class="contact-hour"><b> Teléfono: </b><br><span
-                    class="contact-hour-attention">+1 (210) 463
-                    -5037</span></span>
+                <span data-section="footer" data-value="phone" class="contact-hour"><b> Teléfono:
+                  </b><br> +1 210
+                  4635037</span>
               </div>
               <div class="follow">
                 <div class="d-flex ms-1 mt-3">
-                  <div class="box-icon-follow"><a target="_blank"
-                      href="https://www.linkedin.com/company/interlinkfbc/"><i style="color: white;"
-                        class="fa-brands fa-linkedin-in"></a></i></div>
-                  <div class="box-icon-follow"><a target="_blank"
-                      href="https://www.google.com/maps/place/Interlink+-+Franchise+Consultants+in+EEUU./@29.5520254,-98.5109184,15z/data=!4m5!3m4!1s0x0:0xf81bf85d0476e2d6!8m2!3d29.5520254!4d-98.5109184"><i
-                        style="color: white;" class="fa-brands fa-google"></i></a></div>
-                  <div class="box-icon-follow"><a target="_blank" href="https://www.youtube.com/c/INTERLINKFBC"><i
-                        style="color: white" class="fa-brands fa-youtube"></i></a></div>
-                  <div class="box-icon-follow"><a target="_blank" href="https://www.facebook.com/Interlinkfbc"> <i
-                        style="color: white" class="fa-brands fa-facebook-f"></i></a></div>
-                  <div class="box-icon-follow"><a target="_blank"
-                      href="https://instagram.com/interlink_fbc?igshid=YmMyMTA2M2Y="><i style="color: white"
-                        class="fa-brands fa-instagram"></i></a></div>
+                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i></div>
+                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i></div>
+                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-facebook-f"></i></div>
+                  <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-instagram"></i></div>
                 </div>
               </div>
             </div>
@@ -985,7 +979,7 @@
                   </div>
                   <div class="ms-3 me-3 mt-4">
                     <label for="phone" class="label-form">Ingrese su número de teléfono</label>
-                    <input class="form-control" name="phone" type="tel">
+                    <input class="form-control" id="phone" type="tel" name="phone">
                     <label class="message-info-form"> Revise que su número este escrito correctamente</label>
                   </div>
                   <div class="ms-3 me-3 mt-4">
@@ -995,8 +989,8 @@
                     </select>
                   </div>
                   <div class="form-group ms-3 me-3 mt-4">
-                    <label class="label-form" for="exampleFormControlTextarea2">Déjenos su mensaje</label>
-                    <input class="form-control text-area-form" id="exampleFormControlTextarea2">
+                    <label for="exampleFormControlTextarea1">Déjenos su mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                   <div class="d-flex justify-content-end ms-3 me-3 mt-4">
                     <button class="btn-send-form mt-2" type="submit">Enviar</button>

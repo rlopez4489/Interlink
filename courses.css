@@ -8,9 +8,6 @@
   justify-content: center;
 }
 .title-courses {
-  display: flex;
-  text-align: center;
-  align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -30,18 +27,37 @@
   position: absolute;
   bottom: -3%;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  right: 0;
+  left: 0;
 }
 .general-footer {
   margin-top: 0;
+  height: 320px;
+  position: relative;
+}
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  right: 0;
+  left: 0;
 }
 @media (max-width: 700px) {
-  .header-courses {
-    height: 200px;
-  }
   .follow-container {
     position: absolute;
-    bottom: 0;
+    bottom: -3%;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    left: 0;
   }
   .title-courses {
     display: flex;

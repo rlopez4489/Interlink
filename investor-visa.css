@@ -196,9 +196,10 @@
 }
 @media (max-width: 700px) {
   .header-investor {
-    height: 100px;
+    height: 430px;
+    background-image: url("./assets/images/investor-visa/4_mobile.jpg");
   }
   .hr-main{
-    height: 70px !important;
+    height: 50px !important;
   }
 }
