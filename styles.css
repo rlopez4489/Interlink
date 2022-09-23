@@ -126,7 +126,7 @@ a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   color: #000000;
 }
@@ -352,7 +352,7 @@ hr {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   display: flex;
   align-items: center;
@@ -384,17 +384,26 @@ hr {
   margin-right: 12px;
 }
 .box-icon-help-you {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   background: #1c2656;
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.img-size-icon-help-you {
+.box-icon-help-you-green {
   width: 40px;
   height: 40px;
+  background: #058070;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-size-icon-help-you {
+  width: 30px;
+  height: 30px;
 }
 .box-service {
   width: 270px;
@@ -427,8 +436,8 @@ hr {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 21px;
   color: #ffffff;
 }
 .card-visa-type {
@@ -650,7 +659,7 @@ hr {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   color: #000000;
   border: 0.2px solid rgba(0, 0, 0, 0.27);
@@ -1126,6 +1135,7 @@ hr {
   }
 }
 
+
 @media (min-width: 1367px) {
   .carousel-size {
     height: 450px !important;
@@ -1321,8 +1331,6 @@ hr {
     margin-top: 0px;
     width: 227px;
     height: 44px;
-    font-size: 20px;
-    line-height: 23px;
     margin-left: 0px;
   }
   .services {
@@ -1414,8 +1422,6 @@ hr {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
     color: #ffffff;
   }
   .section-visa-types {
