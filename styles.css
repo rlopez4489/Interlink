@@ -1209,7 +1209,7 @@ hr {
   }
   .hr-main-header {
     border: none;
-    border-left: 3px solid #ffffff !important;
+    border-left: 4px solid #ffffff !important;
     height: 112px !important;
     width: 1px !important;
     opacity: 1 !important;
