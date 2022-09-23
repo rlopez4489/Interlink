@@ -101,7 +101,7 @@ li {
   margin-top: 45px;
 }
 .container-description-oportunity {
-  width: 520px;
+  width: auto;
   margin-top: 10px;
 }
 .description-jaime {
@@ -113,7 +113,7 @@ li {
   margin-top: 16px;
 }
 .icon-lkdin {
-  font-size: 32px;
+  font-size: 28px;
   color: #058070;
 }
 .name-employee {
@@ -127,9 +127,7 @@ li {
   text-align: center;
   margin-top: 8px;
 }
-.icon-lkdin {
-  font-size: 20px;
-}
+
 .container-img-team {
   margin: 3px;
 }

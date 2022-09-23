@@ -339,7 +339,7 @@ hr {
   z-index: 200;
 }
 .services {
-  margin-top: 144px;
+  margin-top: 110px;
 }
 .icon-services-size {
   width: 55px;
@@ -979,7 +979,7 @@ hr {
   left: 0;
 }
 .choose-me {
-  margin-top: 120px;
+  margin-top: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1012,6 +1012,7 @@ hr {
 .img-motive {
   margin-top: 30px;
   height: 81px;
+  margin-left: 10px;
 }
 
 .carousel-size {
@@ -1095,7 +1096,7 @@ hr {
 
 .whatsapp-button {
   position: fixed;
-  bottom: 105px;
+  bottom: 90px;
   right: 15px;
   z-index: 99;
   background-color: #25d366;
@@ -1135,7 +1136,9 @@ hr {
   }
 }
 
-
+.zsiq_floatmain{
+  bottom: 160px !important;
+}
 @media (min-width: 1367px) {
   .carousel-size {
     height: 450px !important;
@@ -1160,6 +1163,7 @@ hr {
     height: 216px;
   }
 }
+
 
 @media (max-width: 1366px) {
   .card-motive {
