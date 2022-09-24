@@ -121,7 +121,7 @@ li {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: #1e4e62;
+  color: #000;
   display: block;
   text-align: center;
   margin-top: 8px;
@@ -196,16 +196,7 @@ li {
 .follow {
   margin-top: 24px;
 }
-.box-icon-follow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: #058070;
-  border-radius: 3px;
-  margin-right: 20px;
-}
+
 .copyright {
   text-align: center;
   font-family: "Roboto";
@@ -346,9 +337,7 @@ li {
   .title-name {
     margin-top: 5px;
   }
-  .box-icon-follow {
-    margin-right: 10px;
-  }
+
   .subtitle-newsletter-footer {
     font-size: 20px;
     line-height: 23px;
@@ -356,5 +345,9 @@ li {
   .title-newletter-footer {
     font-size: 30px;
     line-height: 33px;
+  }
+  .name-employee {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
