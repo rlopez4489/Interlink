@@ -1,18 +1,6 @@
 .header-franchise {
   width: 100%;
-  background-image: url("./assets/images/franchise/Franquicias---keywords-franquicias-en-USA.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
 }
-.container-card-header-franchise {
-  width: 100%;
-  height: 468px;
-  position: relative;
-  border: 3px solid blue;
-}
-
 .card-header-franchise {
   position: absolute;
   right: 0;
