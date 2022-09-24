@@ -176,7 +176,24 @@
 }
 
 @media (max-width: 700px) {
-  .hr-main{
+  .hr-main {
     height: 50px !important;
+  }
+  .visa-descriptions-e2 {
+    margin-top: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: transparent;
+  }
+  .description-investor-visa {
+    margin-top: 30px;
+  }
+  .btn-write-us {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .btn-eb5 {
+    font-size: 16px;
+    line-height: 21px;
   }
 }
