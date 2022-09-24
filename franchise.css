@@ -394,28 +394,7 @@
 }
 
 @media (max-width: 700px) {
-  .card-header-franchise {
-    position: inherit;
-    right: 0;
-    bottom: 0px;
-    width: auto;
-    height: 100%;
-    background: #1c2656;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-  }
-  .header-franchise {
-    width: 100%;
-    height: 430px;
-    background-image: url("./assets/images/franchise/Franquicias---keywords-franquicias-en-USA_mobile.jpg");
-  }
-  .container-card-header-franchise {
-    width: 100%;
-    height: 80%;
-    position: inherit;
-    margin-top: 110px;
-  }
+
   .card-write-us-franchise {
     width: 90%;
     height: auto;
@@ -455,6 +434,9 @@
     margin-top: 120px;
   }
   .description-card-franchise {
+    margin-top: 20px;
+  }
+  .why-franchise {
     margin-top: 20px;
   }
 }
