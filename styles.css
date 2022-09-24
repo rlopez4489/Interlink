@@ -9,6 +9,10 @@ body {
   margin: 0;
   padding: 0;
 }
+textarea {
+  width: 100% !important;
+  height: 107px !important;
+}
 a {
   text-decoration: none !important;
   display: block !important;
@@ -276,6 +280,7 @@ hr {
 
 .carousel-indicators {
   bottom: -52px !important;
+  margin-bottom: 0px !important;
 }
 .title-carousel-clients {
   font-family: "Roboto";
@@ -1015,9 +1020,6 @@ hr {
   margin-left: 10px;
 }
 
-.carousel-size {
-  height: 400px !important;
-}
 .size-icon {
   color: #ffffff;
 }
@@ -1136,8 +1138,17 @@ hr {
   }
 }
 
-.zsiq_floatmain{
+.zsiq_floatmain {
   bottom: 160px !important;
+  right: 8px !important; 
+}
+.zsiq_theme1 .zsiq_flt_rel {
+  width: 55px !important;
+  height: 55px !important;
+}
+.zsiq_theme1 .siqico-chat:before {
+  font-size: 25px !important;
+  line-height: 50px !important;
 }
 @media (min-width: 1367px) {
   .carousel-size {
@@ -1164,7 +1175,6 @@ hr {
   }
 }
 
-
 @media (max-width: 1366px) {
   .card-motive {
     width: auto;
@@ -1176,6 +1186,14 @@ hr {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+  }
+  .subtitle-newsletter-footer {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .title-newletter-footer {
+    font-size: 30px;
+    line-height: 33px;
   }
   .description-motive {
     font-family: "Roboto";
@@ -1223,28 +1241,10 @@ hr {
   .btn-contact {
     width: 170px;
     height: 40px;
-    background: #058070;
-    border-radius: 3px;
-    border: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ffffff;
   }
   .btn-want-to {
     width: 110px;
     height: 40px;
-    background: #ffffff;
-    border-radius: 3px;
-    border: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
   }
   .box-icon {
     display: flex;
@@ -1264,9 +1264,6 @@ hr {
   .header {
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
-  }
-  .carousel-size {
-    height: 450px !important;
   }
   .subtitle-carousel-clients {
     margin-bottom: 0px;
@@ -1298,6 +1295,7 @@ hr {
   .carousel-size {
     margin-top: 0px;
     height: 600px !important;
+    position: relative !important;
   }
   .container-description-client {
     margin-top: 20px;
@@ -1319,14 +1317,14 @@ hr {
     padding-left: 16px;
   }
   .carousel-indicators {
-    display: none !important;
+    bottom: 0 !important;
   }
   .box-service {
     width: 306px;
     height: 216px;
   }
   .text-description-client {
-    height: 240px;
+    height: 220px;
     margin-left: 12px;
     margin-top: 0.8rem;
   }
@@ -1449,8 +1447,8 @@ hr {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 15px;
+    font-size: 16px;
+    line-height: 21px;
     color: #058070;
     display: block;
     text-align: right;
@@ -1523,7 +1521,7 @@ hr {
     margin-top: 35px;
   }
   .first-card-visa {
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .size-vertical-bar {
     height: 50px !important;
@@ -1619,16 +1617,7 @@ hr {
     font-size: 16px;
     line-height: 19px;
   }
-  .box-icon-follow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    background: #058070;
-    border-radius: 3px;
-    margin-right: 10px;
-  }
+
   .follow {
     margin-top: 25px;
   }
@@ -1678,13 +1667,14 @@ hr {
     width: 40px;
     height: 40px;
     font-size: 20px;
+    right: 18px;
   }
   .whatsapp-button {
     position: fixed;
     bottom: 80px;
     right: 15px;
-    width: 40px !important;
-    height: 40px !important;
+    width: 48px !important;
+    height: 48px !important;
     font-size: 20px;
   }
   .img-motive {
@@ -1697,5 +1687,23 @@ hr {
   }
   .img-motive > img {
     width: 37px;
+  }
+  .box-icon-follow {
+    margin-right: 10px;
+  }
+  .zsiq_theme1 div.zsiq_cnt {
+    display: none !important;
+  }
+  .zsiq_theme1 .zsiq_flt_rel {
+    width: 52px !important;
+    height: 52px !important;
+  }
+  .zsiq_theme1 .siqico-chat:before {
+    font-size: 25px !important;
+    line-height: 45px !important;
+  }
+  .zsiq_floatmain {
+    bottom: 140px !important;
+    right: 7px !important; 
   }
 }
