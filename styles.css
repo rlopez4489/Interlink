@@ -1641,7 +1641,7 @@ hr {
     line-height: 15px;
     color: #c9c9c9;
     margin-top: 30px;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
   .first-section-b2 {
     margin-left: 12px;

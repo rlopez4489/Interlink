@@ -4,8 +4,7 @@
 
 .hr-main {
   border: none;
-  border-left: 6px solid #058070 !important;
-  height: 80px !important;
+  height: 70px !important;
   width: 1px !important;
   opacity: 1 !important;
   margin-right: 12px;
@@ -346,5 +345,16 @@ li {
   }
   .title-name {
     margin-top: 5px;
+  }
+  .box-icon-follow {
+    margin-right: 10px;
+  }
+  .subtitle-newsletter-footer {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .title-newletter-footer {
+    font-size: 30px;
+    line-height: 33px;
   }
 }
