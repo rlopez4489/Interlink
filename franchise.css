@@ -11,6 +11,7 @@
   width: 100%;
   height: 100%;
   position: relative;
+  border: 1px solid red;
 }
 
 .card-header-franchise {
@@ -405,11 +406,11 @@
   margin-top: 0;
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .card-header-franchise {
     position: absolute;
     right: 0;
-    bottom: -5%;
+    bottom: 0;
     width: 679px;
     height: 226px;
     background: #1c2656;
