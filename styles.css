@@ -1060,14 +1060,7 @@ hr {
   margin-top: 80px;
   background: #1c2656;
 }
-.hr-main-white {
-  border: none;
-  border-left: 4px solid #fff !important;
-  width: 5px !important;
-  opacity: 1 !important;
-  height: 80px !important;
-  background: #ffffff;
-}
+
 .subtitle-newsletter-footer {
   font-family: "Roboto";
   font-style: normal;
@@ -1660,7 +1653,7 @@ hr {
   }
   .general-footer {
     height: auto;
-    margin-top: 80px;
+    margin-top: 30px;
     background: #1c2656;
   }
   .btn-up {

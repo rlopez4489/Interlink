@@ -1,22 +1,10 @@
 .header-investor {
   width: 100%;
-  height: 468px;
-  background-image: url("./assets/images/investor-visa/4.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
 }
-.container-card-header-investor {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
 .card-header-investor {
   position: absolute;
   right: 0;
-  bottom: -10%;
+  bottom: -30px;
   width: 679px;
   height: 226px;
   background: #1c2656;
@@ -186,19 +174,8 @@
   line-height: 21px;
   color: #000000;
 }
-@media (max-width: 1366px) {
-  .card-header-investor {
-    bottom: 70px;
-  }
-  .visa-descriptions-e2 {
-    margin-top: 0px;
-  }
-}
+
 @media (max-width: 700px) {
-  .header-investor {
-    height: 430px;
-    background-image: url("./assets/images/investor-visa/4_mobile.jpg");
-  }
   .hr-main{
     height: 50px !important;
   }
