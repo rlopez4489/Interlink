@@ -90,4 +90,8 @@
   .footer-color {
     margin-top: 20px;
   }
+  .hr-main-header {
+    border-left: 4px solid #fff !important;
+    background: #fff;
+  }
 }
