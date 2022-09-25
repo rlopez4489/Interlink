@@ -1,11 +1,5 @@
 .header-visa-e-2 {
   width: 100%;
-  height: 468px;
-  background-image: url("./assets/images/visa-e2/5.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
 }
 .card-header-visa-e2 {
   width: 698px;
@@ -15,8 +9,16 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   position: absolute;
-  bottom: -10%;
+  bottom: -30px;
   left: 0;
+}
+.hr-main-black-header {
+  border: none;
+  border-left: 4px solid #000 !important;
+  width: 5px !important;
+  opacity: 1 !important;
+  height: 80px !important;
+  background: #000;
 }
 .hr-main-black {
   border: none;
@@ -25,6 +27,22 @@
   opacity: 1 !important;
   height: 80px !important;
   background: #000;
+}
+.titulo-portada-visa-e2-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+.subtitle-header-visa-e2-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
 }
 .titulo-portada-visa-e2 {
   font-family: "Roboto";
@@ -148,9 +166,30 @@
   color: #000000;
 }
 @media (max-width: 700px) {
-  .header-visa-e-2 {
-    height: 430px;
-    background-image: url("./assets/images/visa-e2/5_mobile.jpg");
+  .card-header-visa-e2 {
+    width: 100%;
+    height: 227px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+  }
+  .titulo-portada-visa-e2-header {
+    color: #ffffff;
+  }
+  .subtitle-header-visa-e2-header {
+    color: #ffffff;
+  }
+  .hr-main-black-header {
+    border: none;
+    border-left: 4px solid #fff !important;
+    width: 5px !important;
+    opacity: 1 !important;
+    height: 80px !important;
+    background: #fff;
   }
   .firts-section-visa-e2 {
     margin-top: 60px;
@@ -171,5 +210,11 @@
   }
   .scheduled-section-visa-e2 {
     margin-top: 60px;
+    height: auto;
+    padding: 20px 0px;
+  }
+  .title-scheduled-visa-e2 {
+    font-size: 30px;
+    line-height: 33px;
   }
 }
