@@ -1071,9 +1071,10 @@ hr {
   display: none;
 }
 .general-footer {
-  height: 380px;
-  margin-top: 80px;
+  height: auto;
+  margin-top: 60px;
   background: #1c2656;
+  padding-bottom: 15px;
 }
 
 .subtitle-newsletter-footer {
@@ -1670,6 +1671,7 @@ hr {
     height: auto;
     margin-top: 30px;
     background: #1c2656;
+    padding-bottom: 15px;
   }
   .btn-up {
     width: 40px;

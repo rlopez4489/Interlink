@@ -25,7 +25,8 @@
 }
 .follow-container {
   position: absolute;
-  bottom: -3%;
+  bottom: 0;
+  top: 0;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -36,16 +37,6 @@
 }
 .general-footer {
   margin-top: 0;
-  height: 320px;
-  position: relative;
-}
-.copyright {
-  position: absolute;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
-  right: 0;
-  left: 0;
 }
 @media (max-width: 700px) {
   .follow-container {

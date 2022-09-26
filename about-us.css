@@ -197,17 +197,6 @@ li {
   margin-top: 24px;
 }
 
-.copyright {
-  text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #c9c9c9;
-  margin-top: 25px;
-}
-
 .btn-send-form {
   width: 125px;
   height: 38px;
@@ -256,11 +245,7 @@ li {
   -o-background-size: cover;
   background-size: cover;
 }
-.general-footer {
-  height: 370px;
-  margin-top: 144px;
-  background: #1c2656;
-}
+
 .bg-world {
   background-image: url("/assets/images/home/world.png");
   -webkit-background-size: cover;
