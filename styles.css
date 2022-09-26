@@ -1160,10 +1160,6 @@ hr {
   line-height: 50px !important;
 }
 @media (min-width: 1367px) {
-  .carousel-size {
-    height: 450px !important;
-  }
-
   .card-visa-write {
     position: absolute;
     bottom: -30px;
@@ -1303,7 +1299,7 @@ hr {
   }
   .carousel-size {
     margin-top: 0px;
-    height: 600px !important;
+    height: 620px !important;
     position: relative !important;
   }
   .container-description-client {
