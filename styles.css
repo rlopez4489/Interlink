@@ -1714,4 +1714,9 @@ hr {
     bottom: 140px !important;
     right: 7px !important; 
   }
+  .contact-hour-terms {
+    font-size: 12px;
+    line-height: 15px;
+    
+  }
 }
