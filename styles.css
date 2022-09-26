@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .navbar-nav li:hover > ul.dropdown-menu {
   display: block !important;
 }
@@ -20,10 +16,6 @@ html {
   transform: rotate(-90deg) !important;
 } 
 
-button {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-}
 body {
   margin: 0;
   padding: 0;
