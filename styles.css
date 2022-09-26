@@ -782,6 +782,14 @@ hr {
   line-height: 21px;
   color: #ffffff;
 }
+.contact-hour-terms {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
 .bar-color {
   border-bottom: 4px solid #058070;
   width: 360px;
