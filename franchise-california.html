@@ -28,7 +28,7 @@
         <div class="container">
             <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <img src="/assets/images/home/INTERLINK FBC_CUADRO 1.png"
                             class="d-inline-block align-top img-size-flag" alt="">
                     </a>
@@ -40,8 +40,8 @@
                     <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" data-section="nav" data-value="home"
-                                    href="index.html">Home</a>
+                                <a class="nav-link" aria-current="page" data-section="nav" data-value="home"
+                                    href="/">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-section="nav" data-value="us" href="about-us.html">Nosotros</a>
@@ -51,20 +51,32 @@
                                     href="services.html">Servicios</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-section="nav" data-value="resources" href="#"
-                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Recursos
-                                </a>
+                                <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                  aria-haspopup="true" aria-expanded="false"> Recursos </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
-                                    <li><a class="dropdown-item" href="investor-visa.html">Visas de inversionista</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Blog</a></li>
-                                    <li><a class="dropdown-item" href="faqs.html">FaQs</a></li>
-                                    <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
+                                      href="franchise.html">Franquicias</a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="franchise-texas.html">Franquicias en Texas</a></li>
+                                      <li><a class="dropdown-item" href="franchise-california.html">Franquicias en California</a></li>
+                                      <li><a class="dropdown-item" href="franchise-florida.html">Franquicias en Florida</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="investor-visa.html">Visas de
+                                      inversionista</a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="visa-e-1.html">Visa E-2</a></li>
+                                      <li><a class="dropdown-item" href="visa-e-2.html">Visa EB-5</a></li>
+                                      <li><a class="dropdown-item" href="visa-e-5.html">Visa L-1</a></li>
+                                      <li><a class="dropdown-item" href="visa-l-1.html">Visa E-1</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                  <li><a class="dropdown-item" href="faqs.html">FaQs</a></li>
+                                  <li><a class="dropdown-item" href="courses.html">Cursos</a></li>
+                  
                                 </ul>
-                            </li>
+                              </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-section="nav" data-value="services"
                                     href="contact.html">Contacto</a>
