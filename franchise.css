@@ -319,7 +319,7 @@
   background: #ffffff;
   border: 0.5px solid #bebebe;
   border-radius: 3px;
-  border: 0.5px solid #BEBEBE;
+  border: 0.5px solid #bebebe;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -393,7 +393,14 @@
   margin-right: 12px;
   margin-top: 0;
 }
-
+.hr-main-header {
+  border: none;
+  border-left: 4px solid #000 !important;
+  width: 5px !important;
+  opacity: 1 !important;
+  height: 80px !important;
+  background: #000;
+}
 @media (max-width: 700px) {
   .card-header-franchise {
     position: absolute;
@@ -461,6 +468,10 @@
   }
   .search-franchise {
     margin-top: 30px;
+  }
+  .hr-main-header {
+    border-left: 4px solid #fff !important;
+    background: #fff;
   }
   .general-footer {
     margin-top: 30px;
