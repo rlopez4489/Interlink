@@ -1,6 +1,10 @@
 .header-visa-e-2 {
   width: 100%;
 }
+.item-visa-e2 > a {
+  text-decoration: underline !important;
+  display: inline !important;
+}
 .card-header-visa-e2 {
   width: 698px;
   height: 227px;
