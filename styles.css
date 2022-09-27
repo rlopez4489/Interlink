@@ -2,19 +2,19 @@
   display: block !important;
 }
 .dropdown-submenu {
-  position:relative !important;
+  position: relative !important;
 }
 .dropdown-submenu > .dropdown-menu {
   top: 0 !important;
   left: 100% !important;
-  margin-top:-6px !important;
+  margin-top: -6px !important;
 }
 
 /* rotate caret on hover */
 .dropdown-menu > li > a:hover:after {
   text-decoration: underline !important;
   transform: rotate(-90deg) !important;
-} 
+}
 
 body {
   margin: 0;
@@ -71,7 +71,6 @@ a {
 .dropdown-menu {
   margin-top: 0;
 }
-
 
 .flag {
   width: 75px;
@@ -1149,7 +1148,7 @@ hr {
 
 .zsiq_floatmain {
   bottom: 160px !important;
-  right: 8px !important; 
+  right: 8px !important;
 }
 .zsiq_theme1 .zsiq_flt_rel {
   width: 55px !important;
@@ -1159,6 +1158,7 @@ hr {
   font-size: 25px !important;
   line-height: 50px !important;
 }
+
 @media (min-width: 1367px) {
   .card-visa-write {
     position: absolute;
@@ -1710,11 +1710,36 @@ hr {
   }
   .zsiq_floatmain {
     bottom: 140px !important;
-    right: 7px !important; 
+    right: 7px !important;
   }
   .contact-hour-terms {
     font-size: 12px;
     line-height: 15px;
-    
   }
+  .navbar-nav {
+    margin-left: 0px;
+  }
+  .container-flags {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .navbar-light .navbar-nav .nav-link{
+    margin-top: 10px;
+  }
+  .dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0.25rem;
+}
 }
