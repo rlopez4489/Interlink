@@ -98,4 +98,10 @@
     border-left: 4px solid #fff !important;
     background: #fff;
   }
+  .header-btn{
+    width: 275px;
+  }
+  .mobile-btn{
+    width: 190px;
+  }
 }
