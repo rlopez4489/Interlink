@@ -24,7 +24,7 @@ const changeLanguage = async (language) => {
       return (location.href = "./en/visa-e-2.html");
     } else if (location.pathname === "/visa-e-1.html") {
       return (location.href = "./en/visa-e-1.html");
-    } else if (location.pathname === "/visa-e-5.html") {
+    } else if (location.pathname === "/visa-eb-5.html") {
       return (location.href = "./en/visa-eb-5.html");
     } else if (location.pathname === "/visa-l-1.html") {
       return (location.href = "./en/visa-l-1.html");
@@ -61,7 +61,7 @@ const changeLanguage = async (language) => {
     } else if (location.pathname === "/en/visa-e-1.html") {
       return (location.href = "/visa-e-1.html");
     } else if (location.pathname === "/en/visa-eb-5.html") {
-      return (location.href = "/visa-e-5.html");
+      return (location.href = "/visa-eb-5.html");
     } else if (location.pathname === "/en/visa-l-1.html") {
       return (location.href = "/visa-l-1.html");
     } else if (location.pathname === "/en/blog.html") {
