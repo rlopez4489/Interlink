@@ -851,26 +851,68 @@
     <a target="_blank" href="https://api.whatsapp.com/send?phone=12102189709&text=Hola" class="whatsapp-button"><i
         class="fab fa-whatsapp"></i></a>
   </main>
-  <footer id="form">
+  <footer>
     <section class="footer-color">
       <div class="container position-form">
         <div class="row">
           <div class="col-sm-12 col-lg-6">
             <div class="d-flex">
               <div class="container-form">
-                <form class="mt-4">
+                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003 method='POST'
+                  onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4219874000039954003()'
+                  accept-charset='UTF-8' class="mt-4">
+                  <input style="display: none;" name="xnQsjsdp" type="text"
+                    value="c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e" />
+                  <input id="zc_gad" name="zc_gad" type="hidden" value="" />
+                  <input style="display: none;" name="xmIwtLD" type="text"
+                    value="7167e9c0f82d3b54c23962ed6580835b3fb4e2fe6443a7fb96a6ee079cd353e1" />
+                  <input style="display: none;" name="actionType" type="text" value="TGVhZHM=" />
+                  <input style="display: none;" name="returnURL" type="text"
+                    value="https://www.interlinkfbc.com/gracias/" />
+                  <!-- Do not remove this code. -->
+                  <input id="ldeskuid" style="display: none;" name="ldeskuid" type="text" />
+                  <input id="LDTuvid" style="display: none;" name="LDTuvid" type="text" />
+                  <!-- Do not remove this code. -->
+                  <div class="zcwf_row">
+                    <div class="zcwf_col_lab" style="font-size: 12px; font-family: Arial; display: none;"><label
+                        for="LEADCF5">Lead Origin<span style="color: red;">*</span></label></div>
+                    <div class="zcwf_col_fld"><select id="LEADCF5" class="zcwf_col_fld_slt" style="display: none;"
+                        name="LEADCF5">
+                        <option value="-None-">-None-</option>
+                        <option value="Adwords Campaign">Adwords Campaign</option>
+                        <option selected="selected" value="Sitio Web">Sitio Web</option>
+                        <option value="Event / Tradeshow">Event / Tradeshow</option>
+                        <option value="Organic Lead - SEO">Organic Lead - SEO</option>
+                        <option value="Referral">Referral</option>
+                        <option value="Social Media">Social Media</option>
+                      </select>
+                      <select id="Lead_Status" class="zcwf_col_fld_slt" style="display: none;" name="Lead Status">
+                        <option value="-None-">-None-</option>
+                        <option value="Attempted to Contact">Attempted to Contact</option>
+                        <option value="Contact in Future">Contact in Future</option>
+                        <option value="Contacted">Contacted</option>
+                        <option value="Junk Lead">Junk Lead</option>
+                        <option value="Lead Calificado">Lead Calificado</option>
+                        <option value="Lost Lead">Lost Lead</option>
+                        <option selected="selected" value="Not Contacted">Not Contacted</option>
+                        <option value="Not Qualified">Not Qualified</option>
+                        <option value="Pre-Qualified">Pre-Qualified</option>
+                        <option value="Profesional Evaluando">Profesional Evaluando</option>
+                      </select>
+                      <div class="zcwf_col_help"></div>
+                    </div>
+                  </div>
                   <div class="d-flex">
                     <div class="w-100 me-3 ms-4">
-                      <label data-section="footer" data-value="labelName" for="fullname" class="label-form mb-2">Nombre
+                      <label for="fullname" class="label-form mb-2">Nombre
                         y
                         apellido</label>
-                      <input type="text" class="form-control" id="fullname">
+                      <input type="text" id="First_Name" maxlength="40" name="First Name" value='' class="form-control">
                     </div>
                     <div class="w-100 me-4">
-                      <label class="label-form mb-2" data-section="footer" data-value="labelEmail"
-                        for="exampleFormControlInput1">Correo
+                      <label class="label-form mb-2" for="exampleFormControlInput1">Correo
                         electronico</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1"
+                      <input type="email" id='Email' name='Email' class="form-control" id="exampleFormControlInput1"
                         placeholder="name@example.com">
                     </div>
                   </div>
@@ -878,7 +920,8 @@
                     <label for="select country" data-section="footer" data-value="labelCountry"
                       class="label-form mb-2">País
                       del cuál es ciudadano</label>
-                    <select class="form-select label-form" aria-label="Default select example">
+                    <select id="LEADCF19" name="LEADCF19" class="form-select label-form"
+                      aria-label="Default select example">
                       <option selected>Selecciona un país</option>
                       <option value='Albania'>Albania</option>
                       <option value='Alemania'>Alemania</option>
@@ -943,7 +986,7 @@
                       class="d-block label-form mb-2">Ingrese
                       su
                       número de teléfono</label>
-                    <input class="form-control" id="phone" type="tel" name="phone">
+                    <input class="form-control" id='Phone' name='Phone' maxlength='30' type="tel">
                     <label data-section="footer" data-value="messagePhone" class="message-info-form"> Revise que su
                       número este escrito correctamente</label>
                   </div>
@@ -951,18 +994,14 @@
                     <label data-section="footer" data-value="labelHelp" for="help you" class="label-form mb-2">¿Cómo
                       podemos
                       ayudarlo?</label>
-                    <select class="form-select label-form" aria-label="Default select example">
-                      <option data-section="footer" data-value="option1" selected>Quiero invertir
-                        en una franquicia
+                    <select id='LEADCF26' name='LEADCF26' class="form-select label-form"
+                      aria-label="Default select example">
+                      <option value='Quiero&#x20;invertir&#x20;y&#x20;vivir&#x20;en&#x20;Estados&#x20;Unidos'>Quiero
+                        invertir y vivir en Estados Unidos</option>
+                      <option value='Quiero&#x20;comprar&#x20;una&#x20;franquicia'>Quiero comprar una franquicia
                       </option>
-                      <option data-section="footer" data-value="option2">Quiero invertir y vivir
-                        en Estados Unidos
-                      </option>
-                      <option data-section="footer" data-value="option3">Quiero un plan de
-                        negocios
-                      </option>
-                      <option data-section="footer" data-value="option4">Necesito más información
-                      </option>
+                      <option value='Quiero&#x20;un&#x20;plan&#x20;de&#x20;negocios'>Quiero un plan de negocios</option>
+                      <option value='Quiero&#x20;saber&#x20;m&aacute;s'>Quiero saber m&aacute;s</option>
                     </select>
                   </div>
                   <div class="form-group me-4 ms-4 mt-4">
@@ -970,9 +1009,88 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                   <div class="d-flex justify-content-end me-4 mt-4">
-                    <button data-section="footer" data-value="btnSend" class="btn-send-form mt-2" type="submit"> <i
-                        class="fa-solid fa-paper-plane me-2"></i> Enviar</button>
+                    <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'>
                   </div>
+                  <script>
+                    function validateEmail4219874000039954003() {
+                      var form = document.forms['WebToLeads4219874000039954003'];
+                      var emailFld = form.querySelectorAll('[ftype=email]');
+                      var i;
+                      for (i = 0; i < emailFld.length; i++) {
+                        var emailVal = emailFld[i].value;
+                        if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                          var atpos = emailVal.indexOf('@');
+                          var dotpos = emailVal.lastIndexOf('.');
+                          if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                            alert('Please enter a valid email address. ');
+                            emailFld[i].focus();
+                            return false;
+                          }
+                        }
+                      }
+                      return true;
+                    }
+
+                    function checkMandatory4219874000039954003() {
+                      var mndFileds = new Array('First Name', 'Last Name', 'Email', 'Phone', 'LEADCF19');
+                      var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Email', 'Phone', 'Nacionality');
+                      for (i = 0; i < mndFileds.length; i++) {
+                        var fieldObj = document.forms['WebToLeads4219874000039954003'][mndFileds[i]];
+                        if (fieldObj) {
+                          if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                            if (fieldObj.type == 'file') {
+                              alert('Please select a file to upload.');
+                              fieldObj.focus();
+                              return false;
+                            }
+                            alert(fldLangVal[i] + ' cannot be empty.');
+                            fieldObj.focus();
+                            return false;
+                          } else if (fieldObj.nodeName == 'SELECT') {
+                            if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                              alert(fldLangVal[i] + ' cannot be none.');
+                              fieldObj.focus();
+                              return false;
+                            }
+                          } else if (fieldObj.type == 'checkbox') {
+                            if (fieldObj.checked == false) {
+                              alert('Please accept  ' + fldLangVal[i]);
+                              fieldObj.focus();
+                              return false;
+                            }
+                          }
+                          try {
+                            if (fieldObj.name == 'Last Name') {
+                              name = fieldObj.value;
+                            }
+                          } catch (e) { }
+                        }
+                      }
+                      trackVisitor4219874000039954003();
+                      if (!validateEmail4219874000039954003()) { return false; }
+                      document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                    }
+
+                    function tooltipShow4219874000039954003(el) {
+                      var tooltip = el.nextElementSibling;
+                      var tooltipDisplay = tooltip.style.display;
+                      if (tooltipDisplay == 'none') {
+                        var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                        for (i = 0; i < allTooltip.length; i++) {
+                          allTooltip[i].style.display = 'none';
+                        }
+                        tooltip.style.display = 'block';
+                      } else {
+                        tooltip.style.display = 'none';
+                      }
+                    }
+                  </script>
+                  <script type='text/javascript'
+                    id='VisitorTracking'>var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: '0207e7e56768a4ee16c2c74837b4fc0703c27769a4f7b61e798854ab312152f4dfc2060e3cba99dc8bd26ff164d86899', values: {}, ready: function () { } }; var d = document; s = d.createElement('script'); s.type = 'text/javascript'; s.id = 'zsiqscript'; s.defer = true; s.src = 'https://salesiq.zoho.com/widget'; t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); function trackVisitor4219874000039954003() { try { if ($zoho) { var LDTuvidObj = document.forms['WebToLeads4219874000039954003']['LDTuvid']; if (LDTuvidObj) { LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid(); } var firstnameObj = document.forms['WebToLeads4219874000039954003']['First Name']; if (firstnameObj) { name = firstnameObj.value + ' ' + name; } $zoho.salesiq.visitor.name(name); var emailObj = document.forms['WebToLeads4219874000039954003']['Email']; if (emailObj) { email = emailObj.value; $zoho.salesiq.visitor.email(email); } } } catch (e) { } }</script>
+                  <!-- Do not remove this --- Analytics Tracking code starts -->
+                  <script id='wf_anal'
+                    src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=7167e9c0f82d3b54c23962ed6580835b191c04f072e92307ac0ee75f4675fba5gidc558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216egid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+                  <!-- Do not remove this --- Analytics Tracking code ends. -->
                 </form>
 
               </div>
