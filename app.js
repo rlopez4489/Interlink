@@ -108,7 +108,7 @@ const scrollToTop = () => {
 displayButton();
 scrollToTop();
 
-const phoneInputField = document.querySelector("#phone");
+const phoneInputField = document.getElementById("Phone");
 
 const phoneInput = window.intlTelInput(phoneInputField, {
   utilsScript:
