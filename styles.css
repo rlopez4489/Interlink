@@ -1200,13 +1200,7 @@ hr {
     padding: 30px 15px;
   }
 }
-@media (min-width: 768px) {
-  .container-subtitle-carousel-client {
-    display: flex;
-    position: initial;
-    justify-content: start;
-  }
-}
+
 
 @media (max-width: 700px) {
   .size-mobile {

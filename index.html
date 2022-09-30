@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="input-tel/css/intlTelInput.css">
   <script type="text/javascript"
     id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "0207e7e56768a4ee16c2c74837b4fc0703c27769a4f7b61e798854ab312152f4dfc2060e3cba99dc8bd26ff164d86899", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>
   <script src="https://cdn.pagesense.io/js/interlinkfbc/1ad394c3051345e396f8493a6734fa62.js"></script>
@@ -874,9 +873,11 @@
                   <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
                   <!-- Do not remove this code. -->
                   <div class='zcwf_row'>
-                    <div class='zcwf_col_lab d-none' style='font-size:12px; font-family: Arial;'><label for='Lead_Status'>Lead
+                    <div class='zcwf_col_lab d-none' style='font-size:12px; font-family: Arial;'><label
+                        for='Lead_Status'>Lead
                         Status</label></div>
-                    <div class='zcwf_col_fld d-none'><select class='zcwf_col_fld_slt' id='Lead_Status' name='Lead Status'>
+                    <div class='zcwf_col_fld d-none'><select class='zcwf_col_fld_slt' id='Lead_Status'
+                        name='Lead Status'>
                         <option value='-None-'>-None-</option>
                         <option selected value='Not&#x20;Contacted'>Not Contacted</option>
                         <option value='Attempted&#x20;to&#x20;Contact'>Attempted to Contact</option>
@@ -892,7 +893,8 @@
                     </div>
                   </div>
                   <div class='zcwf_row d-none'>
-                    <div class='zcwf_col_lab d-none' style='font-size:12px; font-family: Arial;'><label for='Lead_Source'>Lead
+                    <div class='zcwf_col_lab d-none' style='font-size:12px; font-family: Arial;'><label
+                        for='Lead_Source'>Lead
                         Source</label></div>
                     <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' id='Lead_Source' name='Lead Source'>
                         <option value='-None-'>-None-</option>
@@ -1020,7 +1022,9 @@
                     <textarea id='LEADCF44' name='LEADCF44' class="form-control" rows="3"></textarea>
                   </div>
                   <div class="d-flex justify-content-end me-4 mt-4">
-                    <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'>
+                    <button id='formsubmit' class="btn-send-form mt-2" type="submit"><i
+                        class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
+
                   </div>
                   <script>
                     function validateEmail4219874000039954003() {
@@ -1262,7 +1266,7 @@
                   </div>
                   <div class="ms-3 me-3 mt-4">
                     <label for="phone" class="label-form">Ingrese su número de teléfono</label>
-                    <input class="form-control" id="phone" type="tel" name="phone">
+                    <input class="form-control" id="phoneMobile" type="tel" name="phone">
                     <label class="message-info-form"> Revise que su número este escrito correctamente</label>
                   </div>
                   <div class="ms-3 me-3 mt-4">
@@ -1350,7 +1354,7 @@
         </div>
       </div>
     </section>
-
+    <script src="input-tel/js/intlTelInput.js"></script>
   </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
