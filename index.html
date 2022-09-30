@@ -914,12 +914,14 @@
                     <div class="w-100 me-3 ms-4">
                       <label for="fullname" class="label-form mb-2">Nombre
                       </label>
-                      <input type="text" id="First_Name" maxlength="40" name="First Name" value='' class="form-control">
+                      <input required type="text" id="First_Name" maxlength="40" name="First Name" value=''
+                        class="form-control">
                     </div>
                     <div class="w-100 me-3 ms-4">
                       <label for="fullname" class="label-form mb-2">Apellido
                       </label>
-                      <input type="text" maxlength="40" id='Last_Name' name='Last Name' value='' class="form-control">
+                      <input required type="text" maxlength="40" id='Last_Name' name='Last Name' value=''
+                        class="form-control">
                     </div>
 
                   </div>
@@ -927,14 +929,14 @@
                     <label class="label-form mb-2" for="exampleFormControlInput1">Correo
                       electronico</label>
                     <input type="email" id='Email' name='Email' class="form-control" id="exampleFormControlInput1"
-                      placeholder="name@example.com">
+                      placeholder="name@example.com" required>
                   </div>
                   <div class="me-4 ms-4 mt-4">
                     <label for="select country" data-section="footer" data-value="labelCountry"
                       class="label-form mb-2">País
                       del cuál es ciudadano</label>
                     <select id='LEADCF19' name='LEADCF19' class="form-select label-form"
-                      aria-label="Default select example">
+                      aria-label="Default select example" required>
                       <option selected>Selecciona un país</option>
                       <option value='Albania'>Albania</option>
                       <option value='Alemania'>Alemania</option>
@@ -999,7 +1001,7 @@
                       class="d-block label-form mb-2">Ingrese
                       su
                       número de teléfono</label>
-                    <input class="form-control" id='Phone' name='Phone' maxlength='30' type="tel">
+                    <input class="form-control" id='Phone' name='Phone' maxlength='30' type="tel" required>
                     <label data-section="footer" data-value="messagePhone" class="message-info-form"> Revise que su
                       número este escrito correctamente</label>
                   </div>
@@ -1046,57 +1048,10 @@
                     }
 
                     function checkMandatory4219874000039954003() {
-                      var mndFileds = new Array('First Name', 'Last Name', 'Email', 'Phone', 'LEADCF19');
-                      var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Email', 'Phone', 'Nacionality');
-                      for (i = 0; i < mndFileds.length; i++) {
-                        var fieldObj = document.forms['WebToLeads4219874000039954003'][mndFileds[i]];
-                        if (fieldObj) {
-                          if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                            if (fieldObj.type == 'file') {
-                              alert('Please select a file to upload.');
-                              fieldObj.focus();
-                              return false;
-                            }
-                            alert(fldLangVal[i] + ' cannot be empty.');
-                            fieldObj.focus();
-                            return false;
-                          } else if (fieldObj.nodeName == 'SELECT') {
-                            if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                              alert(fldLangVal[i] + ' cannot be none.');
-                              fieldObj.focus();
-                              return false;
-                            }
-                          } else if (fieldObj.type == 'checkbox') {
-                            if (fieldObj.checked == false) {
-                              alert('Please accept  ' + fldLangVal[i]);
-                              fieldObj.focus();
-                              return false;
-                            }
-                          }
-                          try {
-                            if (fieldObj.name == 'Last Name') {
-                              name = fieldObj.value;
-                            }
-                          } catch (e) { }
-                        }
-                      }
-                      trackVisitor4219874000039954003();
-                      if (!validateEmail4219874000039954003()) { return false; }
-                      document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-                    }
 
-                    function tooltipShow4219874000039954003(el) {
-                      var tooltip = el.nextElementSibling;
-                      var tooltipDisplay = tooltip.style.display;
-                      if (tooltipDisplay == 'none') {
-                        var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-                        for (i = 0; i < allTooltip.length; i++) {
-                          allTooltip[i].style.display = 'none';
-                        }
-                        tooltip.style.display = 'block';
-                      } else {
-                        tooltip.style.display = 'none';
-                      }
+                      trackVisitor4219874000039954003();
+
+                      document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                     }
                   </script>
                   <script type='text/javascript'
@@ -1245,26 +1200,26 @@
                   <div class="me-3 ms-4">
                     <label for="fullname" class="label-form mb-2">Nombre
                     </label>
-                    <input type="text" id="First_Name" maxlength="40" name="First Name" value='' class="form-control">
+                    <input required type="text" id="First_Name" maxlength="40" name="First Name" value='' class="form-control">
                   </div>
                   <div class="me-3 ms-4">
                     <label for="fullname" class="label-form mb-2">Apellido
                     </label>
-                    <input type="text" maxlength="40" id='Last_Name' name='Last Name' value='' class="form-control">
+                    <input required type="text" maxlength="40" id='Last_Name' name='Last Name' value='' class="form-control">
                   </div>
 
 
                   <div class="ms-4 mt-4 me-4">
                     <label class="label-form mb-2" for="exampleFormControlInput1">Correo
                       electronico</label>
-                    <input type="email" id='Email' name='Email' class="form-control" id="exampleFormControlInput1"
+                    <input required type="email" id='Email' name='Email' class="form-control" id="exampleFormControlInput1"
                       placeholder="name@example.com">
                   </div>
                   <div class="me-4 ms-4 mt-4">
                     <label for="select country" data-section="footer" data-value="labelCountry"
                       class="label-form mb-2">País
                       del cuál es ciudadano</label>
-                    <select id='LEADCF19' name='LEADCF19' class="form-select label-form"
+                    <select required id='LEADCF19' name='LEADCF19' class="form-select label-form"
                       aria-label="Default select example">
                       <option selected>Selecciona un país</option>
                       <option value='Albania'>Albania</option>
@@ -1330,7 +1285,7 @@
                       class="d-block label-form mb-2">Ingrese
                       su
                       número de teléfono</label>
-                    <input class="form-control" id='phoneMobile' name='phone' maxlength='30' type="tel">
+                    <input required class="form-control" id='phoneMobile' name='phone' maxlength='30' type="tel">
                     <label data-section="footer" data-value="messagePhone" class="message-info-form"> Revise que su
                       número este escrito correctamente</label>
                   </div>
