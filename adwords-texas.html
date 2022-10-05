@@ -324,39 +324,155 @@
         </section>
         <button id="btnUp" class="btn-up"><i class="fa-solid fa-angle-up"></i></button>
     </main>
-    <footer id="form">
+    <footer>
         <section class="footer-color">
             <div class="container position-form">
                 <div class="row">
                     <div class="col-sm-12 col-lg-6">
                         <div class="d-flex">
                             <div class="container-form">
-                                <form class="mt-4">
+                                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003
+                                    method='POST'
+                                    onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4219874000039954003()'
+                                    accept-charset='UTF-8' class="mt-4">
+                                    <input type='text' style='display:none;' name='xnQsjsdp'
+                                        value='c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e'></input>
+                                    <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+                                    <input type='text' style='display:none;' name='xmIwtLD'
+                                        value='7167e9c0f82d3b54c23962ed6580835b191c04f072e92307ac0ee75f4675fba5'></input>
+                                    <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+                                    <input type='text' style='display:none;' name='returnURL'
+                                        value='https&#x3a;&#x2f;&#x2f;interlinkfbc.netlify.app&#x2f;'> </input>
+                                    <!-- Do not remove this code. -->
+                                    <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
+                                    <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
+                                    <!-- Do not remove this code. -->
+                                    <div class='zcwf_row'>
+                                        <div class='zcwf_col_lab d-none' style='font-size:12px; font-family: Arial;'>
+                                            <label for='Lead_Status'>Lead
+                                                Status</label>
+                                        </div>
+                                        <div class='zcwf_col_fld d-none'><select class='zcwf_col_fld_slt'
+                                                id='Lead_Status' name='Lead Status'>
+                                                <option value='-None-'>-None-</option>
+                                                <option selected value='Not&#x20;Contacted'>Not Contacted</option>
+                                                <option value='Attempted&#x20;to&#x20;Contact'>Attempted to Contact
+                                                </option>
+                                                <option value='Contact&#x20;in&#x20;Future'>Contact in Future</option>
+                                                <option value='Contacted'>Contacted</option>
+                                                <option value='Professional&#x20;Evaluating'>Professional Evaluating
+                                                </option>
+                                                <option value='Pre-Qualified'>Pre-Qualified</option>
+                                                <option value='Qualified&#x20;Lead'>Qualified Lead</option>
+                                                <option value='Not&#x20;Qualified'>Not Qualified</option>
+                                                <option value='Junk&#x20;Lead'>Junk Lead</option>
+                                            </select>
+                                            <div class='zcwf_col_help'></div>
+                                        </div>
+                                    </div>
+                                    <div class='zcwf_row d-none'>
+                                        <div class='zcwf_col_lab d-none' style='font-size:12px; font-family: Arial;'>
+                                            <label for='Lead_Source'>Lead
+                                                Source</label>
+                                        </div>
+                                        <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' id='Lead_Source'
+                                                name='Lead Source'>
+                                                <option value='-None-'>-None-</option>
+                                                <option value='Adwords&#x20;Campaign'>Adwords Campaign</option>
+                                                <option value='Event'>Event</option>
+                                                <option value='Facebook'>Facebook</option>
+                                                <option value='Facebook&#x20;Ads'>Facebook Ads</option>
+                                                <option value='Instagram'>Instagram</option>
+                                                <option value='Not&#x20;Sure'>Not Sure</option>
+                                                <option value='Referral'>Referral</option>
+                                                <option selected value='Sitio&#x20;Web'>Sitio Web</option>
+                                            </select>
+                                            <div class='zcwf_col_help'></div>
+                                        </div>
+                                    </div>
                                     <div class="d-flex">
                                         <div class="w-100 me-3 ms-4">
-                                            <label data-section="footer" data-value="labelName" for="fullname"
-                                                class="label-form mb-2">Nombre
-                                                y
-                                                apellido</label>
-                                            <input type="text" class="form-control" id="fullname">
+                                            <label for="fullname" class="label-form mb-2">Nombre
+                                            </label>
+                                            <input required type="text" id="First_Name" maxlength="40" name="First Name"
+                                                value='' class="form-control">
                                         </div>
-                                        <div class="w-100 me-4">
-                                            <label class="label-form mb-2" data-section="footer" data-value="labelEmail"
-                                                for="exampleFormControlInput1">Correo
-                                                electronico</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                        <div class="w-100 me-3 ms-4">
+                                            <label for="fullname" class="label-form mb-2">Apellido
+                                            </label>
+                                            <input required type="text" maxlength="40" id='Last_Name' name='Last Name'
+                                                value='' class="form-control">
                                         </div>
+
+                                    </div>
+                                    <div class="ms-4 mt-4 me-4">
+                                        <label class="label-form mb-2" for="exampleFormControlInput1">Correo
+                                            electronico</label>
+                                        <input type="email" id='Email' name='Email' class="form-control"
+                                            id="exampleFormControlInput1" placeholder="name@example.com" required>
                                     </div>
                                     <div class="me-4 ms-4 mt-4">
                                         <label for="select country" data-section="footer" data-value="labelCountry"
                                             class="label-form mb-2">País
                                             del cuál es ciudadano</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
+                                        <select id='LEADCF19' name='LEADCF19' class="form-select label-form"
+                                            aria-label="Default select example" required>
                                             <option selected>Selecciona un país</option>
-                                            <option value="1">Mexico</option>
-                                            <option value="2">Argentina</option>
-                                            <option value="3">Colombia</option>
+                                            <option value='Albania'>Albania</option>
+                                            <option value='Alemania'>Alemania</option>
+                                            <option value='Argentina'>Argentina</option>
+                                            <option value='Armenia'>Armenia</option>
+                                            <option value='Australia'>Australia</option>
+                                            <option value='Austria'>Austria</option>
+                                            <option value='Azerbaiy&aacute;n'>Azerbaiy&aacute;n</option>
+                                            <option value='Bahr&eacute;in'>Bahr&eacute;in</option>
+                                            <option value='Bangladesh'>Bangladesh</option>
+                                            <option value='Bolivia'>Bolivia</option>
+                                            <option value='Bulgaria'>Bulgaria</option>
+                                            <option value='B&eacute;lgica'>B&eacute;lgica</option>
+                                            <option value='Camer&uacute;n'>Camer&uacute;n</option>
+                                            <option value='Canad&aacute;'>Canad&aacute;</option>
+                                            <option value='Chile'>Chile</option>
+                                            <option value='Colombia'>Colombia</option>
+                                            <option value='Corea&#x20;del&#x20;Sur'>Corea del Sur</option>
+                                            <option value='Costa&#x20;Rica'>Costa Rica</option>
+                                            <option value='Dinamarca'>Dinamarca</option>
+                                            <option value='Ecuador'>Ecuador</option>
+                                            <option value='Egipto'>Egipto</option>
+                                            <option value='Espa&ntilde;a'>Espa&ntilde;a</option>
+                                            <option value='Estonia'>Estonia</option>
+                                            <option value='Etiop&iacute;a'>Etiop&iacute;a</option>
+                                            <option value='Finlandia'>Finlandia</option>
+                                            <option value='Georgia'>Georgia</option>
+                                            <option value='Honduras'>Honduras</option>
+                                            <option value='Italia'>Italia</option>
+                                            <option value='Jamaica'>Jamaica</option>
+                                            <option value='Jordania'>Jordania</option>
+                                            <option value='Lituania'>Lituania</option>
+                                            <option value='Luxemburgo'>Luxemburgo</option>
+                                            <option value='Marrueco'>Marrueco</option>
+                                            <option value='Mexico'>Mexico</option>
+                                            <option value='Moldavia'>Moldavia</option>
+                                            <option value='Mongolia'>Mongolia</option>
+                                            <option value='Oman'>Oman</option>
+                                            <option value='Panama'>Panama</option>
+                                            <option value='Paquistan'>Paquistan</option>
+                                            <option value='Paraguay'>Paraguay</option>
+                                            <option value='Per&uacute;'>Per&uacute;</option>
+                                            <option value='Polonia'>Polonia</option>
+                                            <option value='Rumania'>Rumania</option>
+                                            <option value='Senegal'>Senegal</option>
+                                            <option value='Singapur'>Singapur</option>
+                                            <option value='Siri&#x20;Lanka'>Siri Lanka</option>
+                                            <option value='Switzerland'>Switzerland</option>
+                                            <option value='Tailandia'>Tailandia</option>
+                                            <option value='Togo'>Togo</option>
+                                            <option value='Trinidad&#x20;y&#x20;Tobago'>Trinidad y Tobago</option>
+                                            <option value='Turqu&iacute;a'>Turqu&iacute;a</option>
+                                            <option value='Ucrania'>Ucrania</option>
+                                            <option value='Uruguay'>Uruguay</option>
+                                            <option value='USA'>USA</option>
+                                            <option value='Venezuela'>Venezuela</option>
                                         </select>
 
                                     </div>
@@ -365,7 +481,8 @@
                                             class="d-block label-form mb-2">Ingrese
                                             su
                                             número de teléfono</label>
-                                        <input class="form-control" id="phone" type="tel" name="phone">
+                                        <input class="form-control" id='Phone' name='Phone' maxlength='30' type="tel"
+                                            required>
                                         <label data-section="footer" data-value="messagePhone"
                                             class="message-info-form"> Revise que su
                                             número este escrito correctamente</label>
@@ -375,41 +492,73 @@
                                             class="label-form mb-2">¿Cómo
                                             podemos
                                             ayudarlo?</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
-                                            <option data-section="footer" data-value="option1" selected>Quiero invertir
-                                                en una franquicia
+                                        <select id='LEADCF26' name='LEADCF26' class="form-select label-form"
+                                            aria-label="Default select example">
+                                            <option
+                                                value='Quiero&#x20;invertir&#x20;y&#x20;vivir&#x20;en&#x20;Estados&#x20;Unidos'>
+                                                Quiero
+                                                invertir y vivir en Estados Unidos</option>
+                                            <option value='Quiero&#x20;comprar&#x20;una&#x20;franquicia'>Quiero comprar
+                                                una franquicia
                                             </option>
-                                            <option data-section="footer" data-value="option2">Quiero invertir y vivir
-                                                en Estados Unidos
-                                            </option>
-                                            <option data-section="footer" data-value="option3">Quiero un plan de
-                                                negocios
-                                            </option>
-                                            <option data-section="footer" data-value="option4">Necesito más información
+                                            <option value='Quiero&#x20;un&#x20;plan&#x20;de&#x20;negocios'>Quiero un
+                                                plan de negocios</option>
+                                            <option value='Quiero&#x20;saber&#x20;m&aacute;s'>Quiero saber m&aacute;s
                                             </option>
                                         </select>
                                     </div>
                                     <div class="form-group me-4 ms-4 mt-4">
-                                        <label for="exampleFormControlTextarea1">Déjenos su mensaje</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        <label for="LEADCF44">Déjenos su mensaje</label>
+                                        <textarea id='LEADCF44' name='LEADCF44' class="form-control"
                                             rows="3"></textarea>
                                     </div>
                                     <div class="d-flex justify-content-end me-4 mt-4">
-                                        <button data-section="footer" data-value="btnSend" class="btn-send-form mt-2"
-                                            type="submit"> <i class="fa-solid fa-paper-plane me-2"></i> Enviar</button>
+                                        <button class="btn-send-form mt-2" type="submit"><i
+                                                class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
                                     </div>
+                                    <script>
+                                        function validateEmail4219874000039954003() {
+                                            var form = document.forms['WebToLeads4219874000039954003'];
+                                            var emailFld = form.querySelectorAll('[ftype=email]');
+                                            var i;
+                                            for (i = 0; i < emailFld.length; i++) {
+                                                var emailVal = emailFld[i].value;
+                                                if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                                                    var atpos = emailVal.indexOf('@');
+                                                    var dotpos = emailVal.lastIndexOf('.');
+                                                    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                                                        alert('Please enter a valid email address. ');
+                                                        emailFld[i].focus();
+                                                        return false;
+                                                    }
+                                                }
+                                            }
+                                            return true;
+                                        }
+
+                                        function checkMandatory4219874000039954003() {
+
+                                            trackVisitor4219874000039954003();
+
+                                            document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                                        }
+                                    </script>
+                                    <script type='text/javascript'
+                                        id='VisitorTracking'>var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: '0207e7e56768a4ee16c2c74837b4fc0703c27769a4f7b61e798854ab312152f4dfc2060e3cba99dc8bd26ff164d86899', values: {}, ready: function () { } }; var d = document; s = d.createElement('script'); s.type = 'text/javascript'; s.id = 'zsiqscript'; s.defer = true; s.src = 'https://salesiq.zoho.com/widget'; t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); function trackVisitor4219874000039954003() { try { if ($zoho) { var LDTuvidObj = document.forms['WebToLeads4219874000039954003']['LDTuvid']; if (LDTuvidObj) { LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid(); } var firstnameObj = document.forms['WebToLeads4219874000039954003']['First Name']; if (firstnameObj) { name = firstnameObj.value + ' ' + name; } $zoho.salesiq.visitor.name(name); var emailObj = document.forms['WebToLeads4219874000039954003']['Email']; if (emailObj) { email = emailObj.value; $zoho.salesiq.visitor.email(email); } } } catch (e) { } }</script>
+                                    <!-- Do not remove this --- Analytics Tracking code starts -->
+                                    <script id='wf_anal'
+                                        src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=7167e9c0f82d3b54c23962ed6580835b191c04f072e92307ac0ee75f4675fba5gidc558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216egid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+                                    <!-- Do not remove this --- Analytics Tracking code ends. -->
                                 </form>
-
                             </div>
-
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6">
-                        <div class="first-section">
+                        <div class="first-section mt-0 mt-lg-5 mt-sm-0">
                             <div class="d-flex mt-4 margin-colums">
                                 <hr class="hr-main">
                                 <div>
-                                    <h3 class="subtitle-carousel-clients mt-0 mb-0"> Comience hoy mismo</h3>
+                                    <h3 class="subtitle-carousel-clients mt-0 mb-0">Comience hoy mismo</h3>
                                     <span class="d-block title-carousel-clients">Programa su inversión y emigración a
                                         Estados Unidos con nuestro equipo de especialistas</span>
                                 </div>
@@ -455,13 +604,13 @@
                                                 style="color: white" class="fa-brands fa-instagram"></i></a></div>
                                 </div>
                             </div>
-                            <div class="d-flex contact-hour-terms ms-1 mt-5">
-                                <a class="me-1 me-lg-2 me-sm-1" href="aviso-legal.html#avisoLegal">Aviso Legal</a> | <a
-                                    class="ms-1 ms-lg-2 ms-sm-1 me-1 me-lg-2 me-sm-1"
-                                    href="aviso-legal.html#cookies">Política de
-                                    cookies</a> | <a class="ms-1 ms-lg-2 ms-sm-1"
-                                    href="aviso-legal.html#private">Política de
-                                    privacidad</a>
+                            <div>
+                                <div class="d-flex contact-hour-terms ms-1 mt-5">
+                                    <a class="me-2" href="aviso-legal.html#avisoLegal">Aviso Legal</a> | <a
+                                        class="ms-2 me-2" href="aviso-legal.html#cookies">Política de cookies</a> | <a
+                                        class="ms-2" href="aviso-legal.html#private">Política de
+                                        privacidad</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -479,66 +628,214 @@
                         <div class="d-flex mt-4">
                             <hr class="hr-main">
                             <div>
-                                <h3 class="subtitle-carousel-clients mt-0 mb-0"> Comience hoy mismo</h3>
+                                <h3 class="subtitle-carousel-clients mt-0 mb-0">Comience hoy mismo</h3>
                                 <span class="d-block title-carousel-clients">Programa su inversión y emigración a
                                     Estados Unidos con nuestro equipo de especialistas</span>
                             </div>
                         </div>
                         <div class="d-flex">
                             <div class="container-form">
-                                <form class="mt-4">
-
-                                    <div class="ms-3 me-3 mt-4">
-                                        <label for="fullname" class="label-form">Nombre y apellido</label>
-                                        <input type="text" class="form-control">
+                                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003
+                                    method='POST'
+                                    onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4219874000039954003()'
+                                    accept-charset='UTF-8' class="mt-4">
+                                    <input type='text' style='display:none;' name='xnQsjsdp'
+                                        value='c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e'></input>
+                                    <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+                                    <input type='text' style='display:none;' name='xmIwtLD'
+                                        value='7167e9c0f82d3b54c23962ed6580835b191c04f072e92307ac0ee75f4675fba5'></input>
+                                    <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+                                    <input type='text' style='display:none;' name='returnURL'
+                                        value='https&#x3a;&#x2f;&#x2f;interlinkfbc.netlify.app&#x2f;'> </input>
+                                    <!-- Do not remove this code. -->
+                                    <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
+                                    <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
+                                    <!-- Do not remove this code. -->
+                                    <div class='zcwf_row'>
+                                        <div class='zcwf_col_lab d-none' style='font-size:12px; font-family: Arial;'>
+                                            <label for='Lead_Status'>Lead
+                                                Status</label>
+                                        </div>
+                                        <div class='zcwf_col_fld d-none'><select class='zcwf_col_fld_slt'
+                                                id='Lead_Status' name='Lead Status'>
+                                                <option value='-None-'>-None-</option>
+                                                <option selected value='Not&#x20;Contacted'>Not Contacted</option>
+                                                <option value='Attempted&#x20;to&#x20;Contact'>Attempted to Contact
+                                                </option>
+                                                <option value='Contact&#x20;in&#x20;Future'>Contact in Future</option>
+                                                <option value='Contacted'>Contacted</option>
+                                                <option value='Professional&#x20;Evaluating'>Professional Evaluating
+                                                </option>
+                                                <option value='Pre-Qualified'>Pre-Qualified</option>
+                                                <option value='Qualified&#x20;Lead'>Qualified Lead</option>
+                                                <option value='Not&#x20;Qualified'>Not Qualified</option>
+                                                <option value='Junk&#x20;Lead'>Junk Lead</option>
+                                            </select>
+                                            <div class='zcwf_col_help'></div>
+                                        </div>
+                                    </div>
+                                    <div class='zcwf_row d-none'>
+                                        <div class='zcwf_col_lab d-none' style='font-size:12px; font-family: Arial;'>
+                                            <label for='Lead_Source'>Lead
+                                                Source</label>
+                                        </div>
+                                        <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' id='Lead_Source'
+                                                name='Lead Source'>
+                                                <option value='-None-'>-None-</option>
+                                                <option value='Adwords&#x20;Campaign'>Adwords Campaign</option>
+                                                <option value='Event'>Event</option>
+                                                <option value='Facebook'>Facebook</option>
+                                                <option value='Facebook&#x20;Ads'>Facebook Ads</option>
+                                                <option value='Instagram'>Instagram</option>
+                                                <option value='Not&#x20;Sure'>Not Sure</option>
+                                                <option value='Referral'>Referral</option>
+                                                <option selected value='Sitio&#x20;Web'>Sitio Web</option>
+                                            </select>
+                                            <div class='zcwf_col_help'></div>
+                                        </div>
                                     </div>
 
-                                    <div class="ms-3 me-3 mt-4">
-                                        <label for="exampleFormControlInput2">Correo electronico</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput2"
-                                            placeholder="name@example.com">
+                                    <div class="me-3 ms-4">
+                                        <label for="fullname" class="label-form mb-2">Nombre
+                                        </label>
+                                        <input required type="text" id="First_Name" maxlength="40" name="First Name"
+                                            value='' class="form-control">
                                     </div>
-                                    <div class="ms-3 me-3 mt-4">
-                                        <label for="select country" class="label-form">País del cuál es
-                                            ciudadano</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
+                                    <div class="me-3 ms-4">
+                                        <label for="fullname" class="label-form mb-2">Apellido
+                                        </label>
+                                        <input required type="text" maxlength="40" id='Last_Name' name='Last Name'
+                                            value='' class="form-control">
+                                    </div>
+
+
+                                    <div class="ms-4 mt-4 me-4">
+                                        <label class="label-form mb-2" for="exampleFormControlInput1">Correo
+                                            electronico</label>
+                                        <input required type="email" id='Email' name='Email' class="form-control"
+                                            id="exampleFormControlInput1" placeholder="name@example.com">
+                                    </div>
+                                    <div class="me-4 ms-4 mt-4">
+                                        <label for="select country" data-section="footer" data-value="labelCountry"
+                                            class="label-form mb-2">País
+                                            del cuál es ciudadano</label>
+                                        <select required id='LEADCF19' name='LEADCF19' class="form-select label-form"
+                                            aria-label="Default select example">
                                             <option selected>Selecciona un país</option>
-                                            <option value="1">Mexico</option>
-                                            <option value="2">Argentina</option>
-                                            <option value="3">Colombia</option>
+                                            <option value='Albania'>Albania</option>
+                                            <option value='Alemania'>Alemania</option>
+                                            <option value='Argentina'>Argentina</option>
+                                            <option value='Armenia'>Armenia</option>
+                                            <option value='Australia'>Australia</option>
+                                            <option value='Austria'>Austria</option>
+                                            <option value='Azerbaiy&aacute;n'>Azerbaiy&aacute;n</option>
+                                            <option value='Bahr&eacute;in'>Bahr&eacute;in</option>
+                                            <option value='Bangladesh'>Bangladesh</option>
+                                            <option value='Bolivia'>Bolivia</option>
+                                            <option value='Bulgaria'>Bulgaria</option>
+                                            <option value='B&eacute;lgica'>B&eacute;lgica</option>
+                                            <option value='Camer&uacute;n'>Camer&uacute;n</option>
+                                            <option value='Canad&aacute;'>Canad&aacute;</option>
+                                            <option value='Chile'>Chile</option>
+                                            <option value='Colombia'>Colombia</option>
+                                            <option value='Corea&#x20;del&#x20;Sur'>Corea del Sur</option>
+                                            <option value='Costa&#x20;Rica'>Costa Rica</option>
+                                            <option value='Dinamarca'>Dinamarca</option>
+                                            <option value='Ecuador'>Ecuador</option>
+                                            <option value='Egipto'>Egipto</option>
+                                            <option value='Espa&ntilde;a'>Espa&ntilde;a</option>
+                                            <option value='Estonia'>Estonia</option>
+                                            <option value='Etiop&iacute;a'>Etiop&iacute;a</option>
+                                            <option value='Finlandia'>Finlandia</option>
+                                            <option value='Georgia'>Georgia</option>
+                                            <option value='Honduras'>Honduras</option>
+                                            <option value='Italia'>Italia</option>
+                                            <option value='Jamaica'>Jamaica</option>
+                                            <option value='Jordania'>Jordania</option>
+                                            <option value='Lituania'>Lituania</option>
+                                            <option value='Luxemburgo'>Luxemburgo</option>
+                                            <option value='Marrueco'>Marrueco</option>
+                                            <option value='Mexico'>Mexico</option>
+                                            <option value='Moldavia'>Moldavia</option>
+                                            <option value='Mongolia'>Mongolia</option>
+                                            <option value='Oman'>Oman</option>
+                                            <option value='Panama'>Panama</option>
+                                            <option value='Paquistan'>Paquistan</option>
+                                            <option value='Paraguay'>Paraguay</option>
+                                            <option value='Per&uacute;'>Per&uacute;</option>
+                                            <option value='Polonia'>Polonia</option>
+                                            <option value='Rumania'>Rumania</option>
+                                            <option value='Senegal'>Senegal</option>
+                                            <option value='Singapur'>Singapur</option>
+                                            <option value='Siri&#x20;Lanka'>Siri Lanka</option>
+                                            <option value='Switzerland'>Switzerland</option>
+                                            <option value='Tailandia'>Tailandia</option>
+                                            <option value='Togo'>Togo</option>
+                                            <option value='Trinidad&#x20;y&#x20;Tobago'>Trinidad y Tobago</option>
+                                            <option value='Turqu&iacute;a'>Turqu&iacute;a</option>
+                                            <option value='Ucrania'>Ucrania</option>
+                                            <option value='Uruguay'>Uruguay</option>
+                                            <option value='USA'>USA</option>
+                                            <option value='Venezuela'>Venezuela</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="me-4 ms-4 mt-4">
+                                        <label data-section="footer" data-value="labelPhone" for="phone"
+                                            class="d-block label-form mb-2">Ingrese
+                                            su
+                                            número de teléfono</label>
+                                        <input required class="form-control" id='phoneMobile' name='Phone'
+                                            maxlength='30' type="tel">
+                                        <label data-section="footer" data-value="messagePhone"
+                                            class="message-info-form"> Revise que su
+                                            número este escrito correctamente</label>
+                                    </div>
+                                    <div class="me-4 ms-4 mt-4">
+                                        <label data-section="footer" data-value="labelHelp" for="help you"
+                                            class="label-form mb-2">¿Cómo
+                                            podemos
+                                            ayudarlo?</label>
+                                        <select id='LEADCF26' name='LEADCF26' class="form-select label-form"
+                                            aria-label="Default select example">
+                                            <option
+                                                value='Quiero&#x20;invertir&#x20;y&#x20;vivir&#x20;en&#x20;Estados&#x20;Unidos'>
+                                                Quiero
+                                                invertir y vivir en Estados Unidos</option>
+                                            <option value='Quiero&#x20;comprar&#x20;una&#x20;franquicia'>Quiero comprar
+                                                una franquicia
+                                            </option>
+                                            <option value='Quiero&#x20;un&#x20;plan&#x20;de&#x20;negocios'>Quiero un
+                                                plan de negocios</option>
+                                            <option value='Quiero&#x20;saber&#x20;m&aacute;s'>Quiero saber m&aacute;s
+                                            </option>
                                         </select>
                                     </div>
-                                    <div class="ms-3 me-3 mt-4">
-                                        <label for="phone" class="label-form">Ingrese su número de teléfono</label>
-                                        <input class="form-control" id="phone" type="tel" name="phone">
-                                        <label class="message-info-form"> Revise que su número este escrito
-                                            correctamente</label>
-                                    </div>
-                                    <div class="ms-3 me-3 mt-4">
-                                        <label for="help you" class="label-form">¿Cómo podemos ayudarlo?</label>
-                                        <select class="form-select label-form" aria-label="Default select example">
-                                            <option data-section="footer" data-value="option1" selected>Quiero invertir
-                                                en una franquicia
-                                            </option>
-                                            <option data-section="footer" data-value="option2">Quiero invertir y vivir
-                                                en Estados Unidos
-                                            </option>
-                                            <option data-section="footer" data-value="option3">Quiero un plan de
-                                                negocios
-                                            </option>
-                                            <option data-section="footer" data-value="option4">Necesito más información
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group ms-3 me-3 mt-4">
-                                        <label for="exampleFormControlTextarea1">Déjenos su mensaje</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                    <div class="form-group me-4 ms-4 mt-4">
+                                        <label for="LEADCF44">Déjenos su mensaje</label>
+                                        <textarea id='LEADCF44' name='LEADCF44' class="form-control"
                                             rows="3"></textarea>
                                     </div>
-                                    <div class="d-flex justify-content-end ms-3 me-3 mt-4">
+                                    <div class="d-flex justify-content-end me-4 mt-4">
                                         <button class="btn-send-form mt-2" type="submit"><i
                                                 class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
                                     </div>
+                                    <script>
+
+
+                                        function checkMandatory4219874000039954003() {
+
+                                            document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                                        }
+
+
+                                    </script>
+                                    <script type='text/javascript'
+                                        id='VisitorTracking'>var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: '0207e7e56768a4ee16c2c74837b4fc0703c27769a4f7b61e798854ab312152f4dfc2060e3cba99dc8bd26ff164d86899', values: {}, ready: function () { } }; var d = document; s = d.createElement('script'); s.type = 'text/javascript'; s.id = 'zsiqscript'; s.defer = true; s.src = 'https://salesiq.zoho.com/widget'; t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); function trackVisitor4219874000039954003() { try { if ($zoho) { var LDTuvidObj = document.forms['WebToLeads4219874000039954003']['LDTuvid']; if (LDTuvidObj) { LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid(); } var firstnameObj = document.forms['WebToLeads4219874000039954003']['First Name']; if (firstnameObj) { name = firstnameObj.value + ' ' + name; } $zoho.salesiq.visitor.name(name); var emailObj = document.forms['WebToLeads4219874000039954003']['Email']; if (emailObj) { email = emailObj.value; $zoho.salesiq.visitor.email(email); } } } catch (e) { } }</script>
+                                    <!-- Do not remove this --- Analytics Tracking code starts -->
+                                    <script id='wf_anal'
+                                        src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=7167e9c0f82d3b54c23962ed6580835b191c04f072e92307ac0ee75f4675fba5gidc558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216egid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+                                    <!-- Do not remove this --- Analytics Tracking code ends. -->
                                 </form>
 
                             </div>
@@ -604,7 +901,7 @@
                 </div>
             </div>
         </section>
-
+        <script src="input-tel/js/intlTelInput.js"></script>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
