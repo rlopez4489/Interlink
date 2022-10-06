@@ -42,6 +42,16 @@ a {
   width: 262px;
   height: auto;
 }
+.message-success-form {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.65px;
+  color: #058070;
+  position: absolute;
+}
 @keyframes zoomIn {
   from {
     transform: scale(1);
@@ -1202,7 +1212,6 @@ hr {
   }
 }
 
-
 @media (max-width: 700px) {
   .size-mobile {
     height: 300px;
@@ -1738,5 +1747,15 @@ hr {
     background-clip: padding-box;
     border: none;
     border-radius: 0.25rem;
+  }
+  .message-success-form {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.65px;
+    color: #058070;
+    position: absolute;
   }
 }

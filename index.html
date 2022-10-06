@@ -655,7 +655,7 @@
                                 <div>
                                   <div>
                                     <div name="fieldsdivSf" class="zcsffieldsdiv">
-                        
+
                                       <div class="d-flex">
                                         <div class="zcsffield me-2" fieldid="593667000000000023">
                                           <div>
@@ -996,7 +996,8 @@
           <div class="col-sm-12 col-lg-6">
             <div class="d-flex">
               <div class="container-form">
-                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003 method='POST'
+                <form id="formOne" action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003
+                  method='POST'
                   onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4219874000039954003()'
                   accept-charset='UTF-8' class="mt-4">
                   <input type='text' style='display:none;' name='xnQsjsdp'
@@ -1158,33 +1159,18 @@
                       <option value='Quiero&#x20;saber&#x20;m&aacute;s'>Quiero saber m&aacute;s</option>
                     </select>
                   </div>
-                  <div class="form-group me-4 ms-4 mt-4">
+                  <div class="form-group me-4 ms-4 mt-4 position-relative">
                     <label for="LEADCF44">Déjenos su mensaje</label>
                     <textarea id='LEADCF44' name='LEADCF44' class="form-control" rows="3"></textarea>
+                    <span id="success" class="d-block message-success-form mt-3 d-none">¡Gracias!
+                      Recibimos su email. <br> <span style="color:#1c2656"> Nos pondremos en contacto a la
+                        brevedad.</span></span>
                   </div>
                   <div class="d-flex justify-content-end me-4 mt-4">
-                    <button class="btn-send-form mt-2" type="submit"><i
+                    <button class="btn-send-form mt-2" id="btn-send" type="button"><i
                         class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
                   </div>
                   <script>
-                    function validateEmail4219874000039954003() {
-                      var form = document.forms['WebToLeads4219874000039954003'];
-                      var emailFld = form.querySelectorAll('[ftype=email]');
-                      var i;
-                      for (i = 0; i < emailFld.length; i++) {
-                        var emailVal = emailFld[i].value;
-                        if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-                          var atpos = emailVal.indexOf('@');
-                          var dotpos = emailVal.lastIndexOf('.');
-                          if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                            alert('Please enter a valid email address. ');
-                            emailFld[i].focus();
-                            return false;
-                          }
-                        }
-                      }
-                      return true;
-                    }
 
                     function checkMandatory4219874000039954003() {
 
@@ -1447,9 +1433,12 @@
                   <div class="form-group me-4 ms-4 mt-4">
                     <label for="LEADCF44">Déjenos su mensaje</label>
                     <textarea id='LEADCF44' name='LEADCF44' class="form-control" rows="3"></textarea>
+                    <span id="success" class="d-block message-success-form mt-1 d-none">¡Gracias!
+                      Recibimos su email. <br> <span style="color:#1c2656"> Nos pondremos en contacto a la
+                        brevedad.</span></span>
                   </div>
                   <div class="d-flex justify-content-end me-4 mt-4">
-                    <button class="btn-send-form mt-2" type="submit"><i
+                    <button class="btn-send-form mt-4" id="btn-send" type="button"><i
                         class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
                   </div>
                   <script>
@@ -1536,5 +1525,16 @@
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script src="app.js"></script>
+<script>
+  const btnSend = document.getElementById("btn-send");
+  btnSend.addEventListener("click", () => {
+    document.getElementById("success").classList.remove("d-none");
+    setTimeout(() => {
+      document.getElementById("formOne").submit()
+    }, 1500);
+  })
+
+
+</script>
 
 </html>
