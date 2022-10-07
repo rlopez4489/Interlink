@@ -215,9 +215,7 @@
                         <div class="d-flex">
                             <div class="container-form">
                                 <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003
-                                    method='POST'
-                                    onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4219874000039954003()'
-                                    accept-charset='UTF-8' class="mt-4">
+                                    method='POST' id="formDesktop" class="mt-4">
                                     <input type='text' style='display:none;' name='xnQsjsdp'
                                         value='c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e'></input>
                                     <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
@@ -384,34 +382,21 @@
                                             </option>
                                         </select>
                                     </div>
-                                    <div class="form-group me-4 ms-4 mt-4">
+                                    <div class="form-group me-4 ms-4 mt-4 position-relative">
                                         <label for="LEADCF44">Leave us your message</label>
                                         <textarea id='LEADCF44' name='LEADCF44' class="form-control"
                                             rows="3"></textarea>
+                                        <label id="messageSuccess" class="message-success-form d-none"
+                                            style="position: absolute;bottom: -40px;">
+                                            Thank you! We receive your email.<br> <span style="color:#1c2656">We will
+                                                contact the
+                                                brevity.</span></label>
                                     </div>
-                                    <div class="d-flex justify-content-end me-4 mt-4">
+                                    <div class="d-flex justify-content-end me-4 mt-2">
                                         <button class="btn-send-form mt-2" type="submit"><i
                                                 class="fa-solid fa-paper-plane me-2"></i>Send</button>
                                     </div>
                                     <script>
-                                        function validateEmail4219874000039954003() {
-                                            var form = document.forms['WebToLeads4219874000039954003'];
-                                            var emailFld = form.querySelectorAll('[ftype=email]');
-                                            var i;
-                                            for (i = 0; i < emailFld.length; i++) {
-                                                var emailVal = emailFld[i].value;
-                                                if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-                                                    var atpos = emailVal.indexOf('@');
-                                                    var dotpos = emailVal.lastIndexOf('.');
-                                                    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                                                        alert('Please enter a valid email address. ');
-                                                        emailFld[i].focus();
-                                                        return false;
-                                                    }
-                                                }
-                                            }
-                                            return true;
-                                        }
 
                                         function checkMandatory4219874000039954003() {
 
@@ -419,6 +404,12 @@
 
                                             document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                                         }
+                                        document.getElementById("formDesktop").addEventListener("submit", () => {
+                                            document.getElementById("messageSuccess").classList.remove("d-none");
+                                            setTimeout(() => {
+                                                checkMandatory4219874000039954003()
+                                            }, 1500);
+                                        })
                                     </script>
                                     <script type='text/javascript'
                                         id='VisitorTracking'>var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: '0207e7e56768a4ee16c2c74837b4fc0703c27769a4f7b61e798854ab312152f4dfc2060e3cba99dc8bd26ff164d86899', values: {}, ready: function () { } }; var d = document; s = d.createElement('script'); s.type = 'text/javascript'; s.id = 'zsiqscript'; s.defer = true; s.src = 'https://salesiq.zoho.com/widget'; t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); function trackVisitor4219874000039954003() { try { if ($zoho) { var LDTuvidObj = document.forms['WebToLeads4219874000039954003']['LDTuvid']; if (LDTuvidObj) { LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid(); } var firstnameObj = document.forms['WebToLeads4219874000039954003']['First Name']; if (firstnameObj) { name = firstnameObj.value + ' ' + name; } $zoho.salesiq.visitor.name(name); var emailObj = document.forms['WebToLeads4219874000039954003']['Email']; if (emailObj) { email = emailObj.value; $zoho.salesiq.visitor.email(email); } } } catch (e) { } }</script>
@@ -519,9 +510,7 @@
                         <div class="d-flex">
                             <div class="container-form">
                                 <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003
-                                    method='POST'
-                                    onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4219874000039954003()'
-                                    accept-charset='UTF-8' class="mt-4">
+                                    method='POST' id="formMobile" class="mt-4">
                                     <input type='text' style='display:none;' name='xnQsjsdp'
                                         value='c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e'></input>
                                     <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
@@ -686,34 +675,19 @@
                                             </option>
                                         </select>
                                     </div>
-                                    <div class="form-group me-4 ms-4 mt-4">
+                                    <div class="form-group me-4 ms-4 mt-4 position-relative">
                                         <label for="LEADCF44">Leave us your message</label>
                                         <textarea id='LEADCF44' name='LEADCF44' class="form-control"
                                             rows="3"></textarea>
+                                        <label id="messageSuccess" class="message-success-form d-none"
+                                            style="position: absolute;bottom: -40px;">
+                                            Thank you! <br>We receive your email.<br></label>
                                     </div>
-                                    <div class="d-flex justify-content-end me-4 mt-4">
+                                    <div class="d-flex justify-content-end me-4 mt-2">
                                         <button class="btn-send-form mt-2" type="submit"><i
                                                 class="fa-solid fa-paper-plane me-2"></i>Send</button>
                                     </div>
                                     <script>
-                                        function validateEmail4219874000039954003() {
-                                            var form = document.forms['WebToLeads4219874000039954003'];
-                                            var emailFld = form.querySelectorAll('[ftype=email]');
-                                            var i;
-                                            for (i = 0; i < emailFld.length; i++) {
-                                                var emailVal = emailFld[i].value;
-                                                if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-                                                    var atpos = emailVal.indexOf('@');
-                                                    var dotpos = emailVal.lastIndexOf('.');
-                                                    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                                                        alert('Please enter a valid email address. ');
-                                                        emailFld[i].focus();
-                                                        return false;
-                                                    }
-                                                }
-                                            }
-                                            return true;
-                                        }
 
                                         function checkMandatory4219874000039954003() {
 
@@ -721,6 +695,12 @@
 
                                             document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                                         }
+                                        document.getElementById("formMobile").addEventListener("submit", () => {
+                                            document.getElementById("messageSuccess").classList.remove("d-none");
+                                            setTimeout(() => {
+                                                checkMandatory4219874000039954003()
+                                            }, 1500);
+                                        })
                                     </script>
                                     <script type='text/javascript'
                                         id='VisitorTracking'>var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: '0207e7e56768a4ee16c2c74837b4fc0703c27769a4f7b61e798854ab312152f4dfc2060e3cba99dc8bd26ff164d86899', values: {}, ready: function () { } }; var d = document; s = d.createElement('script'); s.type = 'text/javascript'; s.id = 'zsiqscript'; s.defer = true; s.src = 'https://salesiq.zoho.com/widget'; t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); function trackVisitor4219874000039954003() { try { if ($zoho) { var LDTuvidObj = document.forms['WebToLeads4219874000039954003']['LDTuvid']; if (LDTuvidObj) { LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid(); } var firstnameObj = document.forms['WebToLeads4219874000039954003']['First Name']; if (firstnameObj) { name = firstnameObj.value + ' ' + name; } $zoho.salesiq.visitor.name(name); var emailObj = document.forms['WebToLeads4219874000039954003']['Email']; if (emailObj) { email = emailObj.value; $zoho.salesiq.visitor.email(email); } } } catch (e) { } }</script>

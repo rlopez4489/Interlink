@@ -51,6 +51,9 @@
   width: 322px;
   height: 48px;
 }
+.reviews {
+  margin-top: 100px;
+}
 @media (max-width: 700px) {
   .card-header-franchise {
     position: absolute;
@@ -102,10 +105,10 @@
     border-left: 4px solid #fff !important;
     background: #fff;
   }
-  .header-btn{
+  .header-btn {
     width: 275px;
   }
-  .mobile-btn{
+  .mobile-btn {
     width: 190px;
   }
 }

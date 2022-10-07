@@ -879,6 +879,15 @@ hr {
   letter-spacing: 0.65px;
   color: #058070;
 }
+.message-success-form {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.65px;
+  color: #058070;
+}
 .margin-colums {
   margin-left: 30px;
 }
@@ -1738,5 +1747,14 @@ hr {
     background-clip: padding-box;
     border: none;
     border-radius: 0.25rem;
+  }
+  .message-success-form {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.65px;
+    color: #058070;
   }
 }
