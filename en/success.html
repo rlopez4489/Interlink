@@ -32,18 +32,15 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="header-confirm">
             <div class="follow-container">
                 <div class="title-courses">Thank you for your request</div>
                 <div class="d-flex justify-content-center">
                     <div class="card-container">
                         <span class="description-confirm">
-
-                            Please, check your<span class="color-green-confirm">span box</span> and confirm your
-                            <br>
-                            <span class="color-green-confirm">subscription</span> request. <br><br> Remember
-                            that if you do not <span class="color-green-confirm">accept that email no <br>
-                                the e-book will arrive.</span>
+                            Please check your <span class="color-green-confirm">spam box</span> and confirm your <br>
+                            request for the e-book to arrive
+                        </span>
                     </div>
 
                 </div>
@@ -57,8 +54,10 @@
     </main>
 </body>
 <script>
-    window.addEventListener("load", function (event) {
-        console.log("La página ha terminado de cargar");
+    window.addEventListener("load", function () {
+        setTimeout(() => {
+            window.location = "/en/index.html"
+        }, 4000);
     });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
