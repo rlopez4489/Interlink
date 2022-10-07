@@ -1,0 +1,67 @@
+body{
+  height: 100%;
+  position: relative;
+}
+.header{
+  position: absolute;
+  background-color: #ffffff;
+  width: 100vw;
+}
+.header-confirm {
+  height: 100vh;
+  background-image: url("assets/images/confirm/1_SUSCRIPCIÓN_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-container {
+  width: 823px;
+  height: 164px;
+  background: rgba(217, 217, 217, 0.8);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.description-confirm {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.color-green-confirm {
+  color: #058070;
+  font-weight: 700;
+}
+.copyright {
+  font-size: 20px;
+  line-height: 23px;
+  position: absolute;
+  bottom: 15px;
+  color: #ffffff;
+}
+@media (max-width: 700px) {
+  body{
+    height: 100%;
+    position: relative;
+  }
+  .header{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100vw;
+  }
+  .card-container {
+    width: 95%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .header-confirm {
+    height: 100vh;
+    background-image: url("assets/images/confirm/1_mobileSUSCRIPCIÓN.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
