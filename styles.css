@@ -1211,8 +1211,7 @@ hr {
   }
 }
 
-
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .size-mobile {
     height: 300px;
   }
