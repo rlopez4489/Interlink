@@ -22,10 +22,10 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
-export const getPosts = () => getDocs(collection(db, "posts"));
+export const getPosts = () => getDocs(collection(db, "blogs"));
 
 export const getPost = async () => {
-  const docRef = doc(db, "posts", sessionStorage.getItem("id"));
+  const docRef = doc(db, "blogs", sessionStorage.getItem("id"));
   const docSnap = await getDoc(docRef);
 
   if (docSnap.exists()) {

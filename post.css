@@ -1,0 +1,26 @@
+hr {
+    width: 100% !important;
+    height: 0px !important;
+    border: 0.5px solid #cecece !important;
+    transform: rotate(180deg) !important;
+    background-color: #cecece !important;
+  }
+  .label-author {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #747474;
+  }
+  .container-social-networks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 240px;
+    right: 8px;
+    z-index: 99;
+  }
+  .box-icon-follow{
+    cursor: pointer;
+  }

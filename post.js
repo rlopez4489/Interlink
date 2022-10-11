@@ -1,37 +1,36 @@
 import { getPost } from "./firebase.js";
 const img = document.getElementById("principal-img");
 const data = document.getElementById("header-img");
+const headBody = document.getElementById("head-body");
+
 window.addEventListener("DOMContentLoaded", async () => {
   const querySnapshot = await getPost();
   const post = querySnapshot;
+  console.log(post);
   let header = "";
   let body = "";
-  header += `<img src="${post.urlImage}" alt="img" class="img-fluid">`;
-  body += `
-  
-                  <div style="border:1px solid red" class="col-lg-4 id-post col-sm-12 mt-4" >
-                  <div class="card-item" data-id="${post.id}">
-                      <img class="img-fluid" data-id="${post.id}" src=${
-    post.urlImage
-  } alt="">
-                      <span class="tab-name mt-2" data-id="${post.id}">${
-    post.tag
-  }</span>
-                      <span class="card-title-item mt-2" data-id="${post.id}">${
-    post.title
-  }</span>
-                      <span class="date-item mt-3" data-id="${post.id}">By - ${
-    post.owner
-  } | ${post.uploadDate}
-                      </span>
-                      <p class="description-card-item mt-3" data-id="${
-                        post.id
-                      }">${post.description.substr(0, 150)}...</p>
-                  </div>
-              </div>
-                  
-       
+  let headPrincipal = "";
+  let diaActual = new Intl.DateTimeFormat("es-ES", { day: "numeric" }).format(
+    new Date(post.timestamp.toDate())
+  );
+  let mesActual = new Intl.DateTimeFormat("es-ES", { month: "long" }).format(
+    new Date(post.timestamp.toDate())
+  );
+  let anioActual = new Intl.DateTimeFormat("es-ES", { year: "numeric" }).format(
+    new Date(post.timestamp.toDate())
+  );
+  console.log(`${diaActual} de ${mesActual} de ${anioActual}`);
+  header += `<img src="${post.headerImgUrl}" alt="img" class="img-fluid">`;
+  headPrincipal += `<div class="d-flex flex-column"><span class="subtitle-carousel-clients">${post.title}</span> 
+  <span class="title-carousel-clients">${post.subtitle}</span>
+  </div>
+  <div class="d-flex justify-content-end">
+  <span class="label-author">By - ${post.author} | ${diaActual} de ${mesActual} ${anioActual}</span>
+  </div>
+`;
+  body += `${post.body}
       `;
   img.innerHTML = header;
+  headBody.innerHTML = headPrincipal;
   data.innerHTML = body;
 });

@@ -1,17 +1,15 @@
-import { getPost, getPosts } from "./firebase.js";
+import { getPosts } from "./firebase.js";
 
 const firtsColumn = document.getElementById("first-column");
-const alls = document.getElementById("alls");
-const business = document.getElementById("business");
-const franchises = document.getElementById("franchices");
-const life = document.getElementById("life-usa");
 const loader = document.getElementById("loader");
+const headerBlog = document.getElementById("headerPrincipal");
 
 window.addEventListener("DOMContentLoaded", async () => {
   let postsList = [];
   let querySnapshot;
 
   let html = "";
+  let headerBlogContent = "";
 
   html += `
       <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -26,214 +24,96 @@ window.addEventListener("DOMContentLoaded", async () => {
   }
 
   querySnapshot?.forEach((doc) => {
-    postsList.push(doc.data());
-    const post = doc.data();
-    post.id = doc.id;
+    postsList.push({ ...doc.data(), id: doc.id });
+    postsList.sort(function (a, b) {
+      // Turn your strings into dates, and then subtract them
+      // to get a value that is either negative, positive, or zero.
+      return new Date(b.timestamp.toDate()) - new Date(a.timestamp.toDate());
+    });
+  });
+  const post = postsList[0];
+  let diaActual = new Intl.DateTimeFormat("es-ES", { day: "numeric" }).format(
+    new Date(post.timestamp.toDate())
+  );
+  let mesActual = new Intl.DateTimeFormat("es-ES", { month: "long" }).format(
+    new Date(post.timestamp.toDate())
+  );
+  let anioActual = new Intl.DateTimeFormat("es-ES", {
+    year: "numeric",
+  }).format(new Date(post.timestamp.toDate()));
 
+  headerBlogContent += `
+ 
+  <img class="img-fluid d-none d-lg-block d-sm-none"
+      src=${post.headerImgUrl} alt="Header franquicias">
+  <img class="img-fluid d-lg-none d-sm-block"
+      src="assets/images/franchise/Franquicias---keywords-franquicias-en-USA_mobile2.jpg"
+      alt="Header franquicias mobile">
+      <div class="container position-relative">
+      <div class="card-header-franchise">
+          <div class="d-flex title-margin ms-3 me-lg-5 me-3 ms-lg-5">
+              <div>
+                  <hr class="hr-main-white mt-2">
+              </div>
+              <div class="d-flex flex-column ms-4">
+                  <h1 class="titulo-portada-franchise">${post.title}
+                  </h1>
+                  <span class="subtitle-header-franchise mt-3">${
+                    post.subtitle
+                  }</span>
+                  <span class="title-paragraph mt-4">By - ${
+                    post.author
+                  } | ${diaActual} de ${mesActual} ${anioActual}
+                  </span>
+                  <p class="header-paragraph mt-3">${post.short_description.substr(
+                    0,
+                    150
+                  )}...
+                  </p>
+                  <span class="read-more">Leer más</span>
+              </div>
+              
+          </div>
+          
+      </div>
+     
+  </div>
+
+  
+  `;
+
+  let listPost = [...postsList];
+  listPost.slice(1, listPost.length).forEach((post) => {
     html += `
   
-                  <div class="col-lg-4 id-post col-sm-12 mt-4" >
-                  <a href="post.html" class="d-inline-block">
-                  <div class="card-item" data-id="${post.id}">
-                      <img class="img-fluid" data-id="${post.id}" src=${
-      post.urlImage
-    } alt="">
-                      <span class="tab-name mt-2" data-id="${post.id}">${
-      post.tag
-    }</span>
-                      <span class="card-title-item mt-2" data-id="${post.id}">${
-      post.title
-    }</span>
-                      <span class="date-item mt-3" data-id="${post.id}">By - ${
-      post.owner
-    } | ${post.uploadDate}
-                      </span>
-                      <p class="description-card-item mt-3" data-id="${
-                        post.id
-                      }">${post.description.substr(0, 150)}...</p>
-                  </div>
-                  </a>
-              </div>
-         
-       
-      `;
+<div class="col-lg-4 id-post col-sm-12 mt-4">
+<a href="post.html" class="d-inline-block">
+<div class="card-item" data-id="${post.id}">
+    <img class="img-fluid" data-id="${post.id}" src=${post.imgUrl} alt="">
+    <span class="tab-name mt-2" data-id="${post.id}">${post.category}</span>
+    <span class="card-title-item mt-2" data-id="${post.id}">${post.title}</span>
+    <span class="date-item mt-3" data-id="${post.id}">By - ${
+      post.author
+    } | ${post.timestamp.toDate().toLocaleDateString()}
+    </span>
+    <p class="description-card-item mt-3" data-id="${
+      post.id
+    }">${post.short_description.substr(0, 150)}...</p>
+</div>
+</a>
+</div>
+`;
   });
+
+  headerBlog.innerHTML = headerBlogContent;
   firtsColumn.innerHTML = html;
   setTimeout(() => {
     loader.classList.add("d-none");
     firtsColumn.classList.remove("d-none");
   }, 1000);
 
-  alls.addEventListener("click", (e) => {
-    e.preventDefault();
-    html = "";
-    alls.classList.add("active");
-    business.classList.remove("active");
-    franchises.classList.remove("active");
-    life.classList.remove("active");
-    postsList.forEach((post) => {
-      html += `
-  
-                  <div class="col-lg-4 id-post col-sm-12 mt-4" >
-                  <a href="post.html" class="d-inline-block">
-                  <div class="card-item" data-id="${post.id}">
-                      <img class="img-fluid" data-id="${post.id}" src=${
-        post.urlImage
-      } alt="">
-                      <span class="tab-name mt-2" data-id="${post.id}">${
-        post.tag
-      }</span>
-                      <span class="card-title-item mt-2" data-id="${post.id}">${
-        post.title
-      }</span>
-                      <span class="date-item mt-3" data-id="${post.id}">By - ${
-        post.owner
-      } | ${post.uploadDate}
-                      </span>
-                      <p class="description-card-item mt-3" data-id="${
-                        post.id
-                      }">${post.description.substr(0, 150)}...</p>
-                  </div>
-                  </a>
-              </div>
-         
-       
-      `;
-    });
-    firtsColumn.innerHTML = html;
-  });
-
-  business.addEventListener("click", (e) => {
-    e.preventDefault();
-    html = "";
-    alls.classList.remove("active");
-    business.classList.add("active");
-    franchises.classList.remove("active");
-    life.classList.remove("active");
-    const businessBody = postsList.filter(
-      (post) => post?.tag?.toLowerCase() === "negocios"
-    );
-    businessBody.forEach((post) => {
-      html += `
-  
-                  <div class="col-lg-4 id-post col-sm-12 mt-4" >
-                  <a href="post.html" class="d-inline-block">
-                  <div class="card-item" data-id="${post.id}">
-                      <img class="img-fluid" data-id="${post.id}" src=${
-        post.urlImage
-      } alt="">
-                      <span class="tab-name mt-2" data-id="${post.id}">${
-        post.tag
-      }</span>
-                      <span class="card-title-item mt-2" data-id="${post.id}">${
-        post.title
-      }</span>
-                      <span class="date-item mt-3" data-id="${post.id}">By - ${
-        post.owner
-      } | ${post.uploadDate}
-                      </span>
-                      <p class="description-card-item mt-3" data-id="${
-                        post.id
-                      }">${post.description.substr(0, 150)}...</p>
-                  </div>
-                  </a>
-              </div>
-         
-       
-      `;
-    });
-    firtsColumn.innerHTML = html;
-  });
-
-  franchises.addEventListener("click", (e) => {
-    e.preventDefault();
-    html = "";
-    alls.classList.remove("active");
-    business.classList.remove("active");
-    franchises.classList.add("active");
-    life.classList.remove("active");
-    const franchisesBody = postsList.filter(
-      (post) => post?.tag?.toLowerCase() === "franquicias"
-    );
-    franchisesBody.forEach((post) => {
-      html += `
-  
-                  <div class="col-lg-4 id-post col-sm-12 mt-4" >
-                  <a href="post.html" class="d-inline-block">
-                  <div class="card-item" data-id="${post.id}">
-                      <img class="img-fluid" data-id="${post.id}" src=${
-        post.urlImage
-      } alt="">
-                      <span class="tab-name mt-2" data-id="${post.id}">${
-        post.tag
-      }</span>
-                      <span class="card-title-item mt-2" data-id="${post.id}">${
-        post.title
-      }</span>
-                      <span class="date-item mt-3" data-id="${post.id}">By - ${
-        post.owner
-      } | ${post.uploadDate}
-                      </span>
-                      <p class="description-card-item mt-3" data-id="${
-                        post.id
-                      }">${post.description.substr(0, 150)}...</p>
-                  </div>
-                  </a>
-              </div>
-      `;
-    });
-    firtsColumn.innerHTML = html;
-  });
-
-  life.addEventListener("click", (e) => {
-    e.preventDefault();
-    html = "";
-    alls.classList.remove("active");
-    business.classList.remove("active");
-    franchises.classList.remove("active");
-    life.classList.add("active");
-    const lifeBody = postsList.filter(
-      (post) => post?.tag?.toLowerCase() === "vida en usa"
-    );
-    if (lifeBody.length > 0) {
-      lifeBody.forEach((post) => {
-        html += `
-    
-                    <div class="col-lg-4 id-post col-sm-12 mt-4" >
-                    <a href="post.html" class="d-inline-block">
-                    <div class="card-item" data-id="${post.id}">
-                        <img class="img-fluid" data-id="${post.id}" src=${
-          post.urlImage
-        } alt="">
-                        <span class="tab-name mt-2" data-id="${post.id}">${
-          post.tag
-        }</span>
-                        <span class="card-title-item mt-2" data-id="${
-                          post.id
-                        }">${post.title}</span>
-                        <span class="date-item mt-3" data-id="${
-                          post.id
-                        }">By - ${post.owner} | ${post.uploadDate}
-                        </span>
-                        <p class="description-card-item mt-3" data-id="${
-                          post.id
-                        }">${post.description.substr(0, 150)}...</p>
-                    </div>
-                    </a>
-                </div>
-           
-         
-        `;
-      });
-    } else {
-      html += `<div class="alert alert-info" role="alert">
-    No se encontraron resultados...
-  </div>`;
-    }
-
-    firtsColumn.innerHTML = html;
-  });
-
+ 
+ 
   const cardSelected = document.querySelectorAll(".id-post");
   cardSelected.forEach((post) => {
     post.addEventListener("click", async (e) => {
