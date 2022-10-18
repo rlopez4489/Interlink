@@ -26,8 +26,6 @@ window.addEventListener("DOMContentLoaded", async () => {
   querySnapshot?.forEach((doc) => {
     postsList.push({ ...doc.data(), id: doc.id });
     postsList.sort(function (a, b) {
-      // Turn your strings into dates, and then subtract them
-      // to get a value that is either negative, positive, or zero.
       return new Date(b.timestamp.toDate()) - new Date(a.timestamp.toDate());
     });
   });

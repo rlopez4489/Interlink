@@ -1,26 +1,77 @@
 hr {
-    width: 100% !important;
-    height: 0px !important;
-    border: 0.5px solid #cecece !important;
-    transform: rotate(180deg) !important;
-    background-color: #cecece !important;
-  }
-  .label-author {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #747474;
-  }
-  .container-social-networks {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 240px;
-    right: 8px;
-    z-index: 99;
-  }
-  .box-icon-follow{
-    cursor: pointer;
-  }
+  width: 100% !important;
+  height: 0px !important;
+  border: 0.5px solid #cecece !important;
+  transform: rotate(180deg) !important;
+  background-color: #cecece !important;
+}
+.label-author {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #747474;
+}
+.container-social-networks {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 240px;
+  right: 8px;
+  z-index: 99;
+}
+.box-icon-follow {
+  cursor: pointer;
+}
+.form-container {
+  width: 100%;
+  border: 1px solid rgba(190, 190, 190, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 27px 38px;
+  height: 344px;
+}
+.comment-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: #000000;
+}
+.general-footer {
+  margin-top: 10px;
+}
+textarea {
+  height: 126px !important;
+}
+.comment-container {
+  width: 100%;
+  border: 1px solid rgba(190, 190, 190, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 27px 38px;
+}
+.comments {
+  margin-top: 144px;
+}
+.send-comments {
+  margin-top: 60px;
+}
+.msg-success {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.65px;
+  color: #058070;
+  position: absolute;
+  bottom: -25px;
+}
+.letter-type {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+}

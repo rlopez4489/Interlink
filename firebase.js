@@ -5,6 +5,9 @@ import {
   getDocs,
   doc,
   getDoc,
+  updateDoc,
+  arrayUnion,
+  onSnapshot,
 } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -24,14 +27,33 @@ const db = getFirestore(app);
 
 export const getPosts = () => getDocs(collection(db, "blogs"));
 
-export const getPost = async () => {
-  const docRef = doc(db, "blogs", sessionStorage.getItem("id"));
-  const docSnap = await getDoc(docRef);
+export const getPost = () => {
+  const unSub = onSnapshot(
+    doc(db, "blogs", sessionStorage.getItem("id")),
+    (doc) => {
+      console.log(doc.data());
+    }
+  );
+  return unSub;
+};
 
-  if (docSnap.exists()) {
-    return docSnap.data();
-  } else {
-    // doc.data() will be undefined in this case
-    console.log("No such document!");
+export const updatePost = async (dataComment) => {
+  const washingtonRef = doc(db, "blogs", sessionStorage.getItem("id"));
+  const showMessage = document.getElementById("success");
+  try {
+    document.getElementById("fullname").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("comment").value = "";
+    // Set the "capital" field of the city 'DC'
+    await updateDoc(washingtonRef, { comments: arrayUnion(dataComment) });
+
+    showMessage.classList.remove("d-none");
+    setTimeout(() => {
+      showMessage.classList.add("d-none");
+    }, 3000);
+  } catch (err) {
+    console.log(err);
   }
 };
+
+export { doc, collection, onSnapshot, db };
