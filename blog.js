@@ -11,11 +11,6 @@ window.addEventListener("DOMContentLoaded", async () => {
   let html = "";
   let headerBlogContent = "";
 
-  html += `
-      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-      `;
-  loader.innerHTML = html;
-
   try {
     querySnapshot = await getPosts();
     html = "";
@@ -42,7 +37,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   headerBlogContent += `
  
-  <img class="img-fluid d-none d-lg-block d-sm-none"
+  <img loading="lazy" class="img-fluid d-none d-lg-block d-sm-none"
       src=${post.headerImgUrl} alt="Header franquicias">
   <img class="img-fluid d-lg-none d-sm-block"
       src="assets/images/franchise/Franquicias---keywords-franquicias-en-USA_mobile2.jpg"
@@ -87,7 +82,9 @@ window.addEventListener("DOMContentLoaded", async () => {
 <div class="col-lg-4 id-post col-sm-12 mt-4">
 <a href="post.html" class="d-inline-block">
 <div class="card-item" data-id="${post.id}">
-    <img class="img-fluid" data-id="${post.id}" src=${post.imgUrl} alt="">
+    <img loading="lazy" class="img-fluid" data-id="${post.id}" src=${
+      post.imgUrl
+    } alt="Image">
     <span class="tab-name mt-2" data-id="${post.id}">${post.category}</span>
     <span class="card-title-item mt-2" data-id="${post.id}">${post.title}</span>
     <span class="date-item mt-3" data-id="${post.id}">By - ${
@@ -106,16 +103,14 @@ window.addEventListener("DOMContentLoaded", async () => {
   headerBlog.innerHTML = headerBlogContent;
   firtsColumn.innerHTML = html;
   setTimeout(() => {
-    loader.classList.add("d-none");
-    firtsColumn.classList.remove("d-none");
+    loader.classList.toggle("loader2");
   }, 1000);
-
- 
- 
-  const cardSelected = document.querySelectorAll(".id-post");
-  cardSelected.forEach((post) => {
-    post.addEventListener("click", async (e) => {
-      sessionStorage.setItem("id", e.target.dataset.id);
-    });
+});
+const cardSelected = document.querySelectorAll(".id-post");
+cardSelected.forEach((post) => {
+  post.addEventListener("click", async (e) => {
+    sessionStorage.setItem("id", e.target.dataset.id);
   });
 });
+
+
