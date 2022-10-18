@@ -105,12 +105,10 @@ window.addEventListener("DOMContentLoaded", async () => {
   setTimeout(() => {
     loader.classList.toggle("loader2");
   }, 1000);
-});
-const cardSelected = document.querySelectorAll(".id-post");
-cardSelected.forEach((post) => {
-  post.addEventListener("click", async (e) => {
-    sessionStorage.setItem("id", e.target.dataset.id);
+  const cardSelected = document.querySelectorAll(".id-post");
+  cardSelected.forEach((post) => {
+    post.addEventListener("click", async (e) => {
+      sessionStorage.setItem("id", e.target.dataset.id);
+    });
   });
 });
-
-

@@ -5,7 +5,11 @@ const headBody = document.getElementById("head-body");
 const commentsHtml = document.getElementById("comments");
 
 window.addEventListener("DOMContentLoaded", async () => {
+  setTimeout(() => {
+    document.getElementById("loader").classList.toggle("loader2");
+  }, 2000);
   let post;
+
   onSnapshot(doc(db, "blogs", sessionStorage.getItem("id")), (doc) => {
     post = doc.data();
     let header = "";
