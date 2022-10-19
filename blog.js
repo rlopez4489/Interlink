@@ -60,44 +60,56 @@ window.addEventListener("DOMContentLoaded", async () => {
                   </span>
                   <p class="header-paragraph mt-3">${post.short_description.substr(
                     0,
-                    150
+                    450
                   )}...
                   </p>
                   <span class="read-more">Leer más</span>
               </div>
-              
           </div>
-          
       </div>
-     
   </div>
-
-  
   `;
 
   let listPost = [...postsList];
-  listPost.slice(1, listPost.length).forEach((post) => {
+  if (screen.width > 850) {
+    console.log("ES MAYOR");
+    listPost = listPost.slice(1, listPost.length);
+  } else {
+    listPost = [...postsList];
+  }
+
+  listPost.forEach((post) => {
+    let diaActual = new Intl.DateTimeFormat("es-ES", { day: "numeric" }).format(
+      new Date(post.timestamp.toDate())
+    );
+    let mesActual = new Intl.DateTimeFormat("es-ES", { month: "long" }).format(
+      new Date(post.timestamp.toDate())
+    );
+    let anioActual = new Intl.DateTimeFormat("es-ES", {
+      year: "numeric",
+    }).format(new Date(post.timestamp.toDate()));
     html += `
-  
-<div class="col-lg-4 id-post col-sm-12 mt-4">
-<a href="post.html" class="d-inline-block">
-<div class="card-item" data-id="${post.id}">
-    <img loading="lazy" class="img-fluid" data-id="${post.id}" src=${
+    <div class="col-lg-4 id-post col-sm-12 mt-4">
+    <a href="post.html" class="d-inline-block">
+    <div class="card-item" data-id="${post.id}">
+        <img loading="lazy" class="img-fluid" data-id="${post.id}" src=${
       post.imgUrl
     } alt="Image">
-    <span class="tab-name mt-2" data-id="${post.id}">${post.category}</span>
-    <span class="card-title-item mt-2" data-id="${post.id}">${post.title}</span>
-    <span class="date-item mt-3" data-id="${post.id}">By - ${
+        <span class="tab-name mt-2" data-id="${post.id}">${post.category}</span>
+        <span class="card-title-item mt-2" data-id="${post.id}">${
+      post.title
+    }</span>
+        <span class="date-item mt-3" data-id="${post.id}">By - ${
       post.author
-    } | ${post.timestamp.toDate().toLocaleDateString()}
-    </span>
-    <p class="description-card-item mt-3" data-id="${
-      post.id
-    }">${post.short_description.substr(0, 150)}...</p>
-</div>
-</a>
-</div>
-`;
+    } | ${diaActual} de ${mesActual} ${anioActual}
+        </span>
+        <p class="description-card-item mt-3" data-id="${
+          post.id
+        }">${post.short_description.substr(0, 150)}...</p>
+    </div>
+    </a>
+    </div>
+    `;
   });
 
   headerBlog.innerHTML = headerBlogContent;
