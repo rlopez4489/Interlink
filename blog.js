@@ -115,7 +115,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   headerBlog.innerHTML = headerBlogContent;
   firtsColumn.innerHTML = html;
   setTimeout(() => {
-    loader.classList.toggle("loader2");
+    loader.classList.toggle("d-none");
   }, 1000);
   const cardSelected = document.querySelectorAll(".id-post");
   cardSelected.forEach((post) => {
