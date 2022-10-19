@@ -6,8 +6,8 @@ const commentsHtml = document.getElementById("comments");
 
 window.addEventListener("DOMContentLoaded", async () => {
   setTimeout(() => {
-    document.getElementById("loader").classList.toggle("loader2");
-  }, 2000);
+    document.getElementById("loader").classList.toggle("d-none");
+  }, 1800);
   let post;
 
   onSnapshot(doc(db, "blogs", sessionStorage.getItem("id")), (doc) => {

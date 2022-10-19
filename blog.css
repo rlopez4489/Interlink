@@ -208,3 +208,8 @@
   transition: 0.8s ease-in-out;
   opacity: 0.99;
 }
+@media (max-width: 850px) {
+  .first-section-blog {
+    margin-top: 10px;
+  }
+}
