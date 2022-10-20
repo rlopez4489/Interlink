@@ -27,7 +27,7 @@ textarea {
 a {
   text-decoration: none !important;
   display: block !important;
-  color: inherit;
+  color: inherit !important;
 }
 .contain {
   margin: 0 auto;
@@ -128,7 +128,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 23px;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .btn-contact:hover {
   color: #ffffff;
