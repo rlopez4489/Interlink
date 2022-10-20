@@ -84,6 +84,9 @@
   font-size: 16px;
   line-height: 21px;
   color: #000000;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .firts-section-visa-e2 {
   margin-top: 162px;
@@ -110,9 +113,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
-  border: none;
+  color: #ffffff !important;
   margin-bottom: 5px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .faqs-visa-e2 {
   margin-top: 144px;

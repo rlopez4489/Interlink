@@ -314,7 +314,10 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
+  color: #ffffff !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .btn-contact-franchise {
   width: 184px;
@@ -329,6 +332,9 @@
   font-size: 16px;
   line-height: 21px;
   color: #000000;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .slider {
