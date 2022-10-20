@@ -85,6 +85,9 @@
   border: 0.5px solid #bebebe;
   border-radius: 3px;
   color: #000000;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .attention-details {
   margin-top: 144px;
@@ -107,7 +110,10 @@
   font-size: 16px;
   line-height: 21px;
   border: none;
-  color: #fff;
+  color: #fff !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .btn-contact-services {
   width: 184px;
@@ -138,7 +144,7 @@
   .attention-details {
     margin-top: 60px;
   }
-  .our-clients{
+  .our-clients {
     margin-top: 60px;
   }
 }
