@@ -29,9 +29,6 @@ a {
   display: block !important;
   color: inherit;
 }
-a:hover {
-  color: #fff;
-}
 .contain {
   margin: 0 auto;
   background: #fff;
@@ -133,9 +130,15 @@ a:hover {
   line-height: 23px;
   color: #ffffff;
 }
+.btn-contact:hover {
+  color: #ffffff;
+}
 .btn-want-to {
   width: 184px;
   height: 48px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   background: #ffffff;
   border-radius: 3px;
   border: none;
@@ -144,6 +147,9 @@ a:hover {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  color: #000000;
+}
+.btn-want-to:hover {
   color: #000000;
 }
 .nav-item {
