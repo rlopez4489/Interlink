@@ -1260,12 +1260,12 @@ hr {
     margin-top: 0;
   }
   .btn-contact {
-    width: 195px;
+    width: auto;
     height: 40px;
     padding: 0 5px;
   }
   .btn-want-to {
-    width: 110px;
+    width: auto;
     height: 40px;
     padding: 0 5px;
   }
