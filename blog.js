@@ -70,7 +70,6 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   let listPost = [...postsList];
   if (screen.width > 850) {
-    console.log("ES MAYOR");
     listPost = listPost.slice(1, listPost.length);
   } else {
     listPost = [...postsList];

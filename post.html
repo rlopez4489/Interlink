@@ -121,11 +121,11 @@
             </div>
         </div>
         <section>
-            <div class="d-lg-block d-sm-none" id="principal-img"></div>
+            <div class="d-none d-lg-block d-sm-none" id="principal-img"></div>
         </section>
         <section class="first-section-blog">
             <div class="container">
-                <div class="d-flex align-items-end justify-content-between" id="head-body"></div>
+                <div class="d-flex align-items-end justify-content-between flex-wrap" id="head-body"></div>
                 <hr>
                 <div class="mt-5">
                     <div id="header-img"></div>
@@ -148,7 +148,7 @@
                 <div class="form-container mt-3">
                     <form id="form-comments">
 
-                        <div class="row">
+                        <div class="row d-none d-lg-flex d-sm-none">
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="fullname" class="form-label">Nombre y apellido</label>
@@ -160,6 +160,16 @@
                                     <label for="email" class="form-label">Correo electrónico</label>
                                     <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com">
                                 </div>
+                            </div>
+                        </div>
+                        <div class="d-lg-none d-sm-flex">
+                            <div class="mb-3">
+                                <label for="fullname" class="form-label">Nombre y apellido</label>
+                                <input type="text" class="form-control" id="fullname" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com">
                             </div>
                         </div>
                         <div class="mb-3 position-relative">

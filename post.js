@@ -28,9 +28,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     console.log(`${diaActual} de ${mesActual} de ${anioActual}`);
     header += `<img src="${post.headerImgUrl}" alt="img" class="img-fluid">`;
     headPrincipal += `<div class="d-flex flex-column"><span class="subtitle-carousel-clients">${post.title}</span> 
-      <span class="title-carousel-clients">${post.subtitle}</span>
+      <span class="title-carousel-clients mt-2 mt-lg-0 mt-sm-2">${post.subtitle}</span>
       </div>
-      <div class="d-flex justify-content-end">
+      <div class="d-flex justify-content-end mt-3 mt-lg-0 mt-sm-3">
       <span class="label-author">By - ${post.author} | ${diaActual} de ${mesActual} ${anioActual}</span>
       </div>
     `;
