@@ -1262,10 +1262,12 @@ hr {
   .btn-contact {
     width: 195px;
     height: 40px;
+    padding: 0 5px;
   }
   .btn-want-to {
     width: 110px;
     height: 40px;
+    padding: 0 5px;
   }
   .box-icon {
     display: flex;
