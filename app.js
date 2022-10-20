@@ -87,7 +87,7 @@ const button = document.querySelector(".btn-up");
 const displayButton = () => {
   window.addEventListener("scroll", () => {
     if (window.scrollY > 100) {
-      button.style.display = "block";
+      button.style.display = "flex";
     } else {
       button.style.display = "none";
     }

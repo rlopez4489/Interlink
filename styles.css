@@ -273,6 +273,8 @@ hr {
 }
 .btn-up {
   display: none;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   position: fixed;
   bottom: 20px;
