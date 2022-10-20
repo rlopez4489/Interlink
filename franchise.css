@@ -49,8 +49,11 @@
   line-height: 21px;
   background: #058070;
   border-radius: 3px;
-  color: #ffffff;
+  color: #ffffff !important;
   border: none;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .description-card-franchise {
