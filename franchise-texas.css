@@ -46,7 +46,10 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
+  color: #ffffff !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .second-section-franchise {
   margin-top: 100px;
@@ -63,6 +66,9 @@
   font-size: 16px;
   line-height: 21px;
   color: #000000;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .brands {
   margin-top: 120px;
@@ -103,8 +109,10 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
-  border: none;
+  color: #ffffff !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .video-texas {
   width: 100%;
@@ -151,7 +159,7 @@
     font-size: 14px;
     line-height: 17px;
   }
-  .last-section{
+  .last-section {
     margin-top: 60px;
   }
   .video-texas {
