@@ -18,160 +18,350 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/blog.css">
+    <link rel="stylesheet" href="/post.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="/assets/images/home/INTERLINK FBC_CUADRO 1.png"
-                            class="d-inline-block align-top img-size-flag" alt="Logo Interlink FBC">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" data-section="nav" data-value="home"
-                                    href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-section="nav" data-value="us" href="about-us.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-section="nav" data-value="services"
-                                    href="services.html">Servicios</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-section="nav" data-value="resources" href="#"
-                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Recursos
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="franchise.html">Franquicias</a></li>
-                                    <li><a class="dropdown-item" href="investor-visa.html">Visas de inversionista</a>
-                                    </li>
-                                    <li><a class="dropdown-item active" href="#">Blog</a></li>
-                                    <li><a class="dropdown-item" href="faqs.html">FaQs</a></li>
-                                    <li><a class="dropdown-item" href="#">Cursos</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-section="nav" data-value="services"
-                                    href="contact.html">Contacto</a>
-                            </li>
-                            <li class="nav-item container-flags">
-                                <div class="flag" id="flags">
-                                    <div class="flags__item" data-language="es">
-                                        <img class="flags__img" src="/assets/images/home/spain.svg" alt="spain">
-                                    </div>
-                                    <div class="flags__item" data-language="en">
-                                        <img class="flags__img" src="/assets/images/home/us.svg" alt="England">
-                                    </div>
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/images/home/INTERLINK FBC_CUADRO 1.png"
+                        class="d-inline-block align-top img-size-flag" alt="InterlinkFBC logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" data-section="nav" data-value="home"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="us.html">Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
+                                        href="#">Franchises</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="franchise.html">Invest in franchises</a></li>
+                                        <li><a class="dropdown-item" href="franchise-texas.html">Franchises in Texas</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="franchise-california.html">Franchises in
+                                                California</a></li>
+                                        <li><a class="dropdown-item" href="franchise-florida.html">Franchises in
+                                                Florida</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Visas</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="investor-visa.html">Investor visas</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="visa-e-2.html">E-2 visa</a></li>
+                                        <li><a class="dropdown-item" href="visa-eb-5.html">EB-5 visa</a></li>
+                                        <li><a class="dropdown-item" href="visa-l-1.html">L-1 visa</a></li>
+                                        <li><a class="dropdown-item" href="visa-e-1.html">E-1 visa</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item active" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="faqs.html">FaQs</a></li>
+                                <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item container-flags">
+                            <div class="flag" id="flags">
+                                <div class="flags__item" data-language="es">
+                                    <img class="flags__img" src="/assets/images/home/spain.svg" alt="spain">
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
+                                <div class="flags__item" data-language="en">
+                                    <img class="flags__img" src="/assets/images/home/us.svg" alt="England">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
     </header>
     <main>
-        <section>
-            <div class="container" id="principal-img">
-
+        <div class="d-flex justify-content-center align-items-center loader-container" id="loader">
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+        </div>
+        <section>
+            <div class="d-none d-lg-block d-sm-none" id="principal-img"></div>
         </section>
         <section class="first-section-blog">
             <div class="container">
-       
-                <div class="mt-2">
-                    <div id="header-img" class="row"></div>
+                <div class="d-flex align-items-end justify-content-between flex-wrap" id="head-body"></div>
+                <hr>
+                <div class="mt-5">
+                    <div id="header-img"></div>
                 </div>
             </div>
         </section>
+        <section class="comments">
+            <div class="container">
+                <div class="mb-5">
+                    <hr>
+                </div>
+                <div id="comments">
 
+                </div>
+            </div>
+        </section>
+        <section class="send-comments">
+            <div class="container">
+                <span class="comment-title">¡Déjanos tu comentario!</span>
+                <div class="form-container mt-3">
+                    <form id="form-comments">
+
+                        <div class="row d-none d-lg-flex d-sm-none">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="fullname" class="form-label">Nombre y apellido</label>
+                                    <input type="text" class="form-control" id="fullname" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-lg-none d-sm-flex">
+                            <div class="mb-3">
+                                <label for="fullname" class="form-label">Nombre y apellido</label>
+                                <input type="text" class="form-control" id="fullname" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com">
+                            </div>
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <label for="comment" class="form-label">Déjenos su comentario</label>
+                            <textarea class="form-control" id="comment" rows="3"></textarea>
+                            <span class="msg-success mt-3 d-block d-none" id="success">¡Gracias! Recibimos su
+                                comentario. Responderemos a la
+                                brevedad.</span>
+                        </div>
+                        <div class=" d-flex justify-content-end">
+                            <button class="btn-send-form" type="submit"><i
+                                    class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
         <button id="btnUp" class="btn-up"><i class="fa-solid fa-angle-up"></i></button>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=12102189709&text=Hola" class="whatsapp-button"><i
+                class="fab fa-whatsapp"></i></a>
     </main>
     <footer class="general-footer">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-lg-6">
-      <div class="bg-world">
-                        <span class="contact-hour"><b> Horarios de atención:</b></span>
+                    <div class="bg-world ms-0">
+                        <span class="contact-hour"><b> Business Hours:</b></span>
                         <div class="pb-3 bar-color"> <span class="contact-hour-attention">
-                                Lunes a
-                                viernes - 9:00 hs a 18:00 hs | TX</span></div>
+                                Monday - Friday from 9:00am to 6:00pm | TX</span></div>
 
                         <div class="pt-4">
-                            <span class="contact-hour"><b> Email:</b> <br><span
-                                    class="contact-hour-attention">contacto@interlinktx.com</span></span>
+                            <span class="contact-hour"><b> Email:</b> <br> <a
+                                    href="mailto:contacto@interlinktx.com?subject=Evento%20Buenos%20Aires."><span
+                                        class="contact-hour-attention">contacto@interlinktx.com</span></a></span>
                         </div>
                         <div class="pt-4">
-                            <span class="contact-hour"><b> Teléfono: </b><br><span class="contact-hour-attention">+1
-                                    (210) 463 - 5037</span></span>
+                            <span class="contact-hour"><b> Phone number: </b><br><a href="tel:+12104635037"> <span
+                                        class="contact-hour-attention">+1
+                                        (210) 463 - 5037</span></a></span>
                         </div>
                         <div class="follow">
-                            <div class="d-flex mt-3">
-                                <div class="box-icon-follow"> <i style="color: white;"
-                                        class="fa-brands fa-linkedin-in"></i>
-                                </div>
-                                <div class="box-icon-follow"> <i style="color: white;" class="fa-brands fa-google"></i>
-                                </div>
-                                <div class="box-icon-follow"> <i style="color: white" class="fa-brands fa-youtube"></i>
-                                </div>
-                                <div class="box-icon-follow"> <i style="color: white"
-                                        class="fa-brands fa-facebook-f"></i>
-                                </div>
-                                <div class="box-icon-follow"> <i style="color: white"
-                                        class="fa-brands fa-instagram"></i>
-                                </div>
+                            <div class="d-flex  mt-3">
+                                <div class="box-icon-follow"><a target="_blank"
+                                        href="https://www.linkedin.com/company/interlinkfbc/"><i style="color: white;"
+                                            class="fa-brands fa-linkedin-in"></a></i></div>
+                                <div class="box-icon-follow"><a target="_blank"
+                                        href="https://www.google.com/maps/place/Interlink+-+Franchise+Consultants+in+EEUU./@29.5520254,-98.5109184,15z/data=!4m5!3m4!1s0x0:0xf81bf85d0476e2d6!8m2!3d29.5520254!4d-98.5109184"><i
+                                            style="color: white;" class="fa-brands fa-google"></i></a></div>
+                                <div class="box-icon-follow"><a target="_blank"
+                                        href="https://www.youtube.com/c/INTERLINKFBC"><i style="color: white"
+                                            class="fa-brands fa-youtube"></i></a></div>
+                                <div class="box-icon-follow"><a target="_blank"
+                                        href="https://www.facebook.com/Interlinkfbc"> <i style="color: white"
+                                            class="fa-brands fa-facebook-f"></i></a></div>
+                                <div class="box-icon-follow"><a target="_blank"
+                                        href="https://instagram.com/interlink_fbc?igshid=YmMyMTA2M2Y="><i
+                                            style="color: white" class="fa-brands fa-instagram"></i></a></div>
                             </div>
+                        </div>
+                        <div class="d-flex contact-hour-terms ms-1 mt-5">
+                            <a class="me-2" href="terms-conditions.html#legalWarning">Legal warning</a> | <a
+                                class="ms-2 me-2" href="terms-conditions.html#cookies">Cookies policy</a> | <a
+                                class="ms-2" href="terms-conditions.html#private">Politics of
+                                privacy</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-lg-6">
                     <div class="container-newslleter-footer">
-                        <span class="subtitle-newsletter-footer">Subscríbete para recibir nuestro E-book</span>
-                        <h5 class="title-newletter-footer">Aprende todo sobre las franquicias</h5>
+                        <span class="subtitle-newsletter-footer"> Subscribe to receive our E-book</span>
+                        <h5 class="title-newletter-footer mt-2 mt-lg-0 mt-sm-2"> Learn all about franchises
+                        </h5>
                     </div>
-                    <form class="mt-4">
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Nombre">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Apellido">
-                            </div>
-                        </div>
-                        <div class="input-group mt-lg-3">
-                            <button data-section="newsletter" data-value="btnSend" class="btn btn-outline-secondary"
-                                type="button" id="inputGroupFileAddon04"> <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="ejemplo@gmail.com">
+                    <form method="POST" id="zcampaignOptinForm"
+                        action="https://kfbc-cmpzourl.maillist-manage.com/weboptin.zc"
+                        class="form-newsletter mt-4 ms-0">
+                        <div id="SIGNUP_BODY_ALL" name="SIGNUP_BODY_ALL">
 
+                            <div id="SIGNUP_BODY" name="SIGNUP_BODY">
+                                <div>
+                                    <div>
+                                        <div name="fieldsdivSf" class="zcsffieldsdiv">
+
+                                            <div class="row">
+                                                <div class="col pe-0 pe-lg-0 pe-sm-0">
+                                                    <div class="zcsffield" fieldid="593667000000000023">
+                                                        <div>
+                                                            <div class="d-none" name="SIGNUP_FORM_LABEL">
+                                                                Nombre&nbsp;</div>
+                                                            <div>
+                                                                <!-- check to mark emailid field as type email, and other mandatory fields as type required -->
+                                                                <input class="form-control w-100"
+                                                                    placeholder="First name" name="FIRSTNAME"
+                                                                    changeitem="SIGNUP_FORM_FIELD" maxlength="100"
+                                                                    type="text" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="zcsffield " fieldid="593667000000000025">
+                                                        <div>
+                                                            <div class="d-none" name="SIGNUP_FORM_LABEL">
+                                                                Apellidos&nbsp;</div>
+                                                            <div>
+                                                                <!-- check to mark emailid field as type email, and other mandatory fields as type required -->
+                                                                <input class="form-control w-100"
+                                                                    placeholder="Last name" name="LASTNAME"
+                                                                    changeitem="SIGNUP_FORM_FIELD" maxlength="100"
+                                                                    type="text" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-none" name="SIGNUP_FORM_LABEL">
+                                                    Correo electrónico de
+                                                    contacto&nbsp;
+                                                    <span name="SIGNUP_REQUIRED">*</span>
+                                                </div>
+                                                <div>
+                                                    <div class="input-group mt-3">
+                                                        <!-- check to mark emailid field as type email, and other mandatory fields as type required -->
+                                                        <input placeholder="example@gmail.com" class="form-control"
+                                                            name="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD"
+                                                            maxlength="100" type="email" required="true" value="">
+
+                                                        <button class="btn btn-outline-secondary" type="submit"
+                                                            action="Save" id="zcWebOptin" name="SIGNUP_SUBMIT_BUTTON"
+                                                            changetype="SIGNUP_SUBMIT_BUTTON_TEXT">
+                                                            <i class="fa-solid fa-paper-plane"></i>
+                                                            Send</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- Captcha for Signup -->
+                                        <div class="recapDivlight recaptcha" id="recapDiv">
+                                        </div>
+                                        <input type="hidden" id="secretid"
+                                            value="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs">
+                                        <!-- Captcha for Signup End-->
+                                        <!-- Other Lists Subscription Start-->
+                                        <!-- Other Lists Subscription End-->
+                                        <div></div>
+                                        <div class="d-none" id="REQUIRED_FIELD_TEXT" changetype="REQUIRED_FIELD_TEXT"
+                                            name="SIGNUP_REQUIRED">*Required Fields</div>
+                                        <div>
+
+                                        </div>
+                                        <!-- Do not edit the below Zoho Campaigns hidden tags -->
+                                        <input type="hidden" id="fieldBorder" value="">
+                                        <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW"
+                                            onload="">
+                                        <input type="hidden" name="viewFrom" id="viewFrom" value="URL_ACTION">
+                                        <input type="hidden" id="submitType" name="submitType" value="optinCustomView">
+                                        <input type="hidden" id="lD" name="lD" value="183d20fdbbacdbb6">
+                                        <input type="hidden" name="emailReportId" id="emailReportId" value="">
+                                        <input type="hidden" name="zx" id="cmpZuid" value="12ce9b4e1">
+                                        <input type="hidden" name="zcvers" value="3.0">
+                                        <input type="hidden" name="oldListIds" id="allCheckedListIds" value="">
+                                        <input type="hidden" id="mode" name="mode" value="OptinCreateView">
+                                        <input type="hidden" id="zcld" name="zcld" value="183d20fdbbacdbb6">
+                                        <input type="hidden" id="zctd" name="zctd" value="183d20fdb9dfcc41">
+                                        <input type="hidden" id="document_domain" value="">
+                                        <input type="hidden" id="zc_Url" value="kfbc-cmpzourl.maillist-manage.com">
+                                        <input type="hidden" id="new_optin_response_in" value="1">
+                                        <input type="hidden" id="duplicate_optin_response_in" value="1">
+                                        <input type="hidden" id="zc_formIx" name="zc_formIx"
+                                            value="3zca72675df0a3653daf982a7fc9b98c1d88a58430bbf89daed2a7dc5cf6c1e439">
+                                        <!-- End of the campaigns hidden tags -->
+                                    </div>
+                                </div>
+                                <input type="hidden" id="isCaptchaNeeded" value="false">
+                                <input type="hidden" id="superAdminCap" value="0">
+                            </div>
+                            <div class="d-none" id="privacyNotes" identity="privacyNotes">
+                                <span>Nota: Es nuestra responsabilidad proteger su privacidad y
+                                    le garantizamos
+                                    que sus datos serán completamente confidenciales.</span>
+                            </div>
                         </div>
+                        <input type="hidden" id="scriptless" name="scriptless" value="yes">
                     </form>
                 </div>
             </div>
-            <div class="copyright">
-                <span>© 2022 Interlink - Sitio Web. All Rights Reserved. </span>
+            <div class="copyright mt-5 mt-sm-5">
+                <span>© 2022 Interlink - Sitio Web. All Rights Reserved. <a class="d-inline-block" target="_blank"
+                        href="https://www.linkedin.com/in/rubenlopez4489/"> Made by RL</a> </span>
             </div>
         </div>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="/app.js"></script>
-    <script type="module" src="post.js"></script>
+    <script type="module" src="/post.js"></script>
 
 
 </body>

@@ -1696,10 +1696,11 @@ hr {
     height: 40px;
     font-size: 20px;
     right: 18px;
+    bottom: 140px;
   }
   .whatsapp-button {
     position: fixed;
-    bottom: 80px;
+    bottom: 190px;
     right: 15px;
     width: 48px !important;
     height: 48px !important;
@@ -1731,7 +1732,7 @@ hr {
     line-height: 45px !important;
   }
   .zsiq_floatmain {
-    bottom: 140px !important;
+    bottom: 250px !important;
     right: 7px !important;
   }
   .contact-hour-terms {
