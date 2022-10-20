@@ -27,12 +27,22 @@ window.addEventListener("DOMContentLoaded", async () => {
     }).format(new Date(post.timestamp.toDate()));
     console.log(`${diaActual} de ${mesActual} de ${anioActual}`);
     header += `<img src="${post.headerImgUrl}" alt="img" class="img-fluid">`;
-    headPrincipal += `<div class="d-flex flex-column"><span class="subtitle-carousel-clients">${post.title}</span> 
-      <span class="title-carousel-clients mt-2 mt-lg-0 mt-sm-2">${post.subtitle}</span>
-      </div>
-      <div class="d-flex justify-content-end mt-3 mt-lg-0 mt-sm-3">
-      <span class="label-author">By - ${post.author} | ${diaActual} de ${mesActual} ${anioActual}</span>
-      </div>
+    headPrincipal += `
+    <div class="row">
+    <div class="col-lg-6 col-sm-12">
+    <div class="d-flex flex-column"><span class="subtitle-carousel-clients mt-4 mt-lg-0 mt-sm-4">${post.title}</span> 
+    <span class="title-carousel-clients mt-2 mt-lg-0 mt-sm-2">${post.subtitle}</span>
+    </div>
+    </div>
+    <div class="col-lg-6 col-sm-12 d-flex align-items-end justify-content-lg-end justify-content-sm-start">
+    <div class="d-flex justify-content-end mt-3 mt-lg-0 mt-sm-3">
+    <span class="label-author">By - ${post.author} | ${diaActual} de ${mesActual} ${anioActual}</span>
+    </div>
+    </div>
+    </div>
+    
+ 
+     
     `;
     body += `${post.body}
           `;
