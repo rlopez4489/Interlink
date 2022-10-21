@@ -1,5 +1,5 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)([^/])$ http://%{HTTP_HOST}/$1$2/ [L,R=301]
+RewriteRule ^(.*)$ https://www.interlinkfbc.com/$1$2/ [L,R=301]
 
