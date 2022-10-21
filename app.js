@@ -4,7 +4,7 @@ const textsToChange = document.querySelectorAll("[data-section]");
 
 const changeLanguage = async (language) => {
   if (language === "en") {
-    if (location.pathname === "/nosotros.html") {
+    if (location.pathname === "/nosotros") {
       return (location.href = "./en/us.html");
     } else if (location.pathname === "/services.html") {
       return (location.href = "./en/services.html");
@@ -41,7 +41,7 @@ const changeLanguage = async (language) => {
     }
   } else {
     if (location.pathname === "/en/us.html") {
-      return (location.href = "/nosotros.html");
+      return (location.href = "/nosotros");
     } else if (location.pathname === "/en/services.html") {
       return (location.href = "/services.html");
     } else if (location.pathname === "/en/franchise.html") {
