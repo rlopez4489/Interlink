@@ -3,3 +3,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([a-z]+)/?$ $1.html [NC]
 RewriteRule ^nosotros/(.*)$ /$1 [R=301,NC,L]
+RewriteRule ^blog/(.*)$ /$1 [R=301,NC,L]
