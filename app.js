@@ -37,7 +37,7 @@ const changeLanguage = async (language) => {
     } else if (location.pathname === "/contacto") {
       return (location.href = "./en/contact");
     } else if (location.pathname === "/") {
-      return (location.href = "./en/index");
+      return (location.href = "./en/home");
     }
   } else {
     if (location.pathname === "/en/us") {
@@ -70,7 +70,7 @@ const changeLanguage = async (language) => {
       return (location.href = "/cursos");
     } else if (location.pathname === "/en/contact") {
       return (location.href = "/contacto");
-    } else if (location.pathname === "/en/index") {
+    } else if (location.pathname === "/en/home") {
       return (location.href = "/");
     }
   }
@@ -99,22 +99,10 @@ const scrollToTop = () => {
       left: 0,
       behavior: "smooth",
     });
-    console.log(event);
   });
 };
 
 displayButton();
 scrollToTop();
 
-var input = document.getElementById("Phone");
-var inputMobile = document.getElementById("phoneMobile");
-window.intlTelInput(input, {
-  autoHideDialCode: false,
-  nationalMode: false,
-  preferredCountries: ["us"],
-});
-window.intlTelInput(inputMobile, {
-  autoHideDialCode: false,
-  nationalMode: false,
-  preferredCountries: ["us"],
-});
+
