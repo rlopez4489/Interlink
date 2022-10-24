@@ -16,7 +16,7 @@ const changeLanguage = async (language) => {
       return (location.href = "./en/franchise-florida");
     } else if (location.pathname === "/franquicias-en-california") {
       return (location.href = "./en/franchise-california");
-    } else if (location.pathname === "/visas-de-inversionistas") {
+    } else if (location.pathname === "/visas-de-inversionista") {
       return (location.href = "./en/investor-visa");
     } else if (location.pathname === "/investor-visa") {
       return (location.href = "./en/investor-visa");
@@ -53,7 +53,7 @@ const changeLanguage = async (language) => {
     } else if (location.pathname === "/en/franchise-california") {
       return (location.href = "/franquicias-en-california");
     } else if (location.pathname === "/en/investor-visa") {
-      return (location.href = "/visas-de-inversionistas");
+      return (location.href = "/visas-de-inversionista");
     } else if (location.pathname === "/en/visa-e-2") {
       return (location.href = "/visa-e-2");
     } else if (location.pathname === "/en/visa-e-1") {
