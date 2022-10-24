@@ -17,14 +17,14 @@ window.addEventListener("DOMContentLoaded", async () => {
     let headPrincipal = "";
     let commentsBody = "";
     let diaActual = new Intl.DateTimeFormat("es-ES", { day: "numeric" }).format(
-      new Date(post.timestamp.toDate())
+      new Date(post?.timestamp?.toDate())
     );
     let mesActual = new Intl.DateTimeFormat("es-ES", { month: "long" }).format(
-      new Date(post.timestamp.toDate())
+      new Date(post.timestamp?.toDate())
     );
     let anioActual = new Intl.DateTimeFormat("es-ES", {
       year: "numeric",
-    }).format(new Date(post.timestamp.toDate()));
+    }).format(new Date(post.timestamp?.toDate()));
     console.log(`${diaActual} de ${mesActual} de ${anioActual}`);
     header += `<img src="${post.headerImgUrl}" alt="img" class="img-fluid">`;
     headPrincipal += `
