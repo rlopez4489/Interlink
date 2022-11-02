@@ -75,6 +75,22 @@ textarea {
   font-style: normal;
   font-weight: 500;
 }
+.body-content-post{
+  font-family: "Roboto" !important;
+  font-style: normal !important;
+}
+.body-content-post li {
+  list-style:square;
+}
+.body-content-post img{
+  display: block;
+  margin: auto;
+}
+.body-content-post a{
+  display: inline-block !important;
+  color: blue !important;
+}
+
 @media (max-width: 850px) {
   .form-container {
     height: auto;

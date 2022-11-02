@@ -11,13 +11,13 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCh9IUdN4Y66KewSbgyETZoMICHjKANvgw",
-  authDomain: "blog-interlinkfbc.firebaseapp.com",
-  projectId: "blog-interlinkfbc",
-  storageBucket: "blog-interlinkfbc.appspot.com",
-  messagingSenderId: "760124531343",
-  appId: "1:760124531343:web:eccd752479c6b1ac0b86fa",
-  measurementId: "G-Q55MHQWGT2",
+  apiKey: "AIzaSyCqEv7rvJrGmBFrHOcjmmZ6dtXeoIE4Vjw",
+  authDomain: "interlink-fbc---blog.firebaseapp.com",
+  projectId: "interlink-fbc---blog",
+  storageBucket: "interlink-fbc---blog.appspot.com",
+  messagingSenderId: "474665747667",
+  appId: "1:474665747667:web:1ce1969dc94161a8c30026",
+  measurementId: "G-C2774ZZ392",
 };
 
 // Initialize Firebase

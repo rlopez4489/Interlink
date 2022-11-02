@@ -92,7 +92,9 @@ window.addEventListener("DOMContentLoaded", async () => {
         <img loading="lazy" class="img-fluid" data-id="${post.id}" src=${
       post.imgUrl
     } alt="Image">
-        <span class="tab-name mt-2" data-id="${post.id}">${post.category}</span>
+      <div class="d-block mt-2">
+        <span class="tab-name" data-id="${post.id}">${post.category}</span>
+      </div>
         <span class="card-title-item mt-2" data-id="${post.id}">${
       post.title
     }</span>
