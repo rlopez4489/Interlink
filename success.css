@@ -1,15 +1,15 @@
-body{
+body {
   height: 100%;
   position: relative;
 }
-.header{
+.header {
   position: absolute;
   background-color: #ffffff;
   width: 100vw;
 }
 .header-confirm {
   height: 100vh;
-  background-image: url("assets/images/confirm/1_SUSCRIPCIÓN_2.jpg");
+  background-image: url('assets/images/confirm/1_SUSCRIPCIÓN_2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@ body{
   margin-top: 60px;
 }
 .description-confirm {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -43,12 +43,21 @@ body{
   bottom: 15px;
   color: #ffffff;
 }
+.description-confirm-ads {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 23px;
+  text-align: center;
+  color: #f4f4f7;
+}
 @media (max-width: 700px) {
-  body{
+  body {
     height: 100%;
     position: relative;
   }
-  .header{
+  .header {
     position: absolute;
     background-color: #ffffff;
     width: 100vw;
@@ -60,7 +69,7 @@ body{
   }
   .header-confirm {
     height: 100vh;
-    background-image: url("assets/images/confirm/1_mobileSUSCRIPCIÓN.jpg");
+    background-image: url('assets/images/confirm/1_mobileSUSCRIPCIÓN.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
