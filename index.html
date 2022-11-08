@@ -1140,11 +1140,11 @@
                     </select>
                   </div>
                   <div class="me-4 ms-4 mt-4">
-                    <label for="phone" class="d-block label-form mb-2">Ingrese
+                    <label for="Phone" class="d-block label-form mb-2">Ingrese
                       su
                       número de teléfono</label>
-                    <input class="form-control" id='Phone' name='Phone' minlength="12" maxlength='30' type="tel"
-                      required>
+                    <input pattern=".{12,}" required class="form-control" id='Phone' name='Phone' maxlength='30'
+                      type="tel">
                     <label class="message-info-form"> Revise que su
                       número este escrito correctamente</label>
                   </div>
@@ -1181,10 +1181,8 @@
                       document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                     }
                     document.getElementById("formDesktop").addEventListener("submit", () => {
-                      document.getElementById("messageSuccess").classList.remove("d-none");
-                      setTimeout(() => {
-                        checkMandatory4219874000039954003()
-                      }, 1500);
+
+                      checkMandatory4219874000039954003()
                     })
                   </script>
                   <script type='text/javascript'
@@ -1410,10 +1408,10 @@
                     </select>
                   </div>
                   <div class="me-4 ms-4 mt-4">
-                    <label for="phone" class="d-block label-form mb-2">Ingrese
+                    <label for="Phone" class="d-block label-form mb-2">Ingrese
                       su
                       número de teléfono</label>
-                    <input minlength="12" required class="form-control" id='phoneMobile' name='Phone' maxlength='30'
+                    <input pattern=".{12,}" required class="form-control" id='PhoneMobile' name='Phone' maxlength='30'
                       type="tel">
                     <label class="message-info-form"> Revise que su
                       número este escrito correctamente</label>

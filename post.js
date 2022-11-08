@@ -5,12 +5,23 @@ const headBody = document.getElementById("head-body");
 const commentsHtml = document.getElementById("comments");
 
 window.addEventListener("DOMContentLoaded", async () => {
+  //Se obtiene el valor de la URL desde el navegador
+  var actual = window.location + "";
+  //Se realiza la división de la URL
+  var split = actual.split("=");
+  //Se obtiene el ultimo valor de la URL
+  var id = split[split.length - 1];
+ 
+
   setTimeout(() => {
     document.getElementById("loader").classList.toggle("d-none");
   }, 1800);
   let post;
 
-  onSnapshot(doc(db, "blogs", sessionStorage.getItem("id")), (doc) => {
+  const paramUrl = window.location;
+  console.log(paramUrl);
+
+  onSnapshot(doc(db, "blogs", id), (doc) => {
     post = doc.data();
     let header = "";
     let body = "";
@@ -52,7 +63,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     const { comments } = post;
 
-    comments.forEach((comment) => {
+    comments?.forEach((comment) => {
       let diaActual = new Intl.DateTimeFormat("es-ES", {
         day: "numeric",
       }).format(new Date(comment.timestamp.toDate()));
@@ -65,6 +76,15 @@ window.addEventListener("DOMContentLoaded", async () => {
 
       const commentsExist = (comment) => {
         if (comment) {
+          let diaActualResponse = new Intl.DateTimeFormat("es-ES", {
+            day: "numeric",
+          }).format(new Date(comment[0]?.timestamp.toDate()));
+          let mesActualResponse = new Intl.DateTimeFormat("es-ES", {
+            month: "long",
+          }).format(new Date(comment[0]?.timestamp.toDate()));
+          let anioActualResponse = new Intl.DateTimeFormat("es-ES", {
+            year: "numeric",
+          }).format(new Date(comment[0]?.timestamp.toDate()));
           return `<div class="ms-5 mt-4">
               <div class="d-flex align-items-center">
                 <div class="me-3">
@@ -72,15 +92,16 @@ window.addEventListener("DOMContentLoaded", async () => {
                 </div>
                 <div class="d-flex flex-column">
                   <span class="letter-type">
-                    ${comment?.response ? comment?.response[0]?.author : ""}
+                    ${comment[0]?.author}
                   </span>
+                  <span class="letter-type">${diaActualResponse} ${mesActualResponse} ${anioActualResponse} </span>
                   <span class="letter-type"></span>
                 </div>
               </div>
               <span class="d-block mt-2 letter-type">
-                ${comment?.response ? comment?.response[0]?.message : ""}
+                ${comment[0]?.message}
               </span>
-            </div>;`;
+            </div>`;
         } else return "";
       };
       commentsBody += `

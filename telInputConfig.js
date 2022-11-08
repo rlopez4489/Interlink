@@ -1,5 +1,5 @@
 var input = document.getElementById("Phone");
-var inputMobile = document.getElementById("phoneMobile");
+var inputMobile = document.getElementById("PhoneMobile")
 window.intlTelInput(input, {
   autoHideDialCode: false,
   nationalMode: false,

@@ -34,7 +34,18 @@ window.addEventListener("DOMContentLoaded", async () => {
   let anioActual = new Intl.DateTimeFormat("es-ES", {
     year: "numeric",
   }).format(new Date(post.timestamp.toDate()));
+  // leemos los enlaces, en tu caso deberás usar un selector más específico
+  var enlaces = document.querySelectorAll("a");
+  // leemos la dirección de la página y comprobamos si tiene ?
+  var url = window.location.href;
+  var conector = url.indexOf("?") < 0 ? "?" : "&";
 
+  // para cada enlace
+  for (var x = 0; x < enlaces.length; x++) {
+    // reemplazamos su href por la URL + el parámetro con el conector correcto
+    enlaces[x].href =
+      url + enlaces[x].getAttribute("href")?.replace("?", conector);
+  }
   headerBlogContent += `
  
   <img loading="lazy" class="img-fluid d-none d-lg-block d-sm-none"
@@ -58,9 +69,11 @@ window.addEventListener("DOMContentLoaded", async () => {
               350
             )}...
             </p>
-            <a href="post.html" class="d-inline-block"><span class="read-more" data-id="${
+            <a href="post.html?id=${
               post.id
-            }">Leer más</span></a>
+            } " class="d-inline-block"><span class="read-more" data-id="${
+    post.id
+  }">Leer más</span></a>
           </div>
         </div>
       </div>

@@ -75,18 +75,18 @@ textarea {
   font-style: normal;
   font-weight: 500;
 }
-.body-content-post{
+.body-content-post {
   font-family: "Roboto" !important;
   font-style: normal !important;
 }
 .body-content-post li {
-  list-style:square;
+  list-style: square;
 }
-.body-content-post img{
+.body-content-post img {
   display: block;
   margin: auto;
 }
-.body-content-post a{
+.body-content-post a {
   display: inline-block !important;
   color: blue !important;
 }
@@ -95,5 +95,12 @@ textarea {
   .form-container {
     height: auto;
     padding: 10px;
+  }
+  .body-content-post iframe {
+    width: 100%;
+    height: auto;
+  }
+  .body-content-post img {
+    width: 100% !important;
   }
 }
