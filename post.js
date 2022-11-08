@@ -6,37 +6,35 @@ const commentsHtml = document.getElementById("comments");
 
 window.addEventListener("DOMContentLoaded", async () => {
   //Se obtiene el valor de la URL desde el navegador
-  var actual = window.location + "";
+  let actual = window.location + "";
   //Se realiza la división de la URL
-  var split = actual.split("=");
+  let split = actual.split("=");
   //Se obtiene el ultimo valor de la URL
-  var id = split[split.length - 1];
- 
+  let id = split[split.length - 1];
+
+  sessionStorage.setItem("idPost", id);
 
   setTimeout(() => {
     document.getElementById("loader").classList.toggle("d-none");
   }, 1800);
   let post;
-
-  const paramUrl = window.location;
-  console.log(paramUrl);
-
+  console.log(sessionStorage.getItem("id"));
   onSnapshot(doc(db, "blogs", id), (doc) => {
     post = doc.data();
     let header = "";
     let body = "";
     let headPrincipal = "";
     let commentsBody = "";
-    let diaActual = new Intl.DateTimeFormat("es-ES", { day: "numeric" }).format(
-      new Date(post?.timestamp?.toDate())
-    );
-    let mesActual = new Intl.DateTimeFormat("es-ES", { month: "long" }).format(
-      new Date(post.timestamp?.toDate())
-    );
+    let diaActual = new Intl.DateTimeFormat("es-ES", {
+      day: "numeric",
+    }).format(new Date(post?.timestamp?.toDate()));
+    let mesActual = new Intl.DateTimeFormat("es-ES", {
+      month: "long",
+    }).format(new Date(post.timestamp?.toDate()));
     let anioActual = new Intl.DateTimeFormat("es-ES", {
       year: "numeric",
     }).format(new Date(post.timestamp?.toDate()));
-    console.log(`${diaActual} de ${mesActual} de ${anioActual}`);
+    window.history.replaceState({}, "", `post.html?name=${post.title}?id=${id}`);
     header += `<img src="${post.headerImgUrl}" alt="img" class="img-fluid">`;
     headPrincipal += `
     <div class="row">
