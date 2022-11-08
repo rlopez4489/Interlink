@@ -18,7 +18,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("loader").classList.toggle("d-none");
   }, 1800);
   let post;
-  console.log(sessionStorage.getItem("id"));
   onSnapshot(doc(db, "blogs", id), (doc) => {
     post = doc.data();
     let header = "";
@@ -34,7 +33,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     let anioActual = new Intl.DateTimeFormat("es-ES", {
       year: "numeric",
     }).format(new Date(post.timestamp?.toDate()));
-    window.history.replaceState({}, "", `post.html?name=${post.title}?id=${id}`);
+
     header += `<img src="${post.headerImgUrl}" alt="img" class="img-fluid">`;
     headPrincipal += `
     <div class="row">

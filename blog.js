@@ -46,6 +46,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     enlaces[x].href =
       url + enlaces[x].getAttribute("href")?.replace("?", conector);
   }
+
+  let titleAux = post.title;
+  console.log(titleAux.replace(/\s/g, " ").split(" ").join("-"));
   headerBlogContent += `
  
   <img loading="lazy" class="img-fluid d-none d-lg-block d-sm-none"
@@ -69,9 +72,9 @@ window.addEventListener("DOMContentLoaded", async () => {
               350
             )}...
             </p>
-            <a href="post.html?id=${
-              post.id
-            } " class="d-inline-block"><span class="read-more" data-id="${
+            <a href="post.html?${post.url}?id=${
+    post.id
+  } " class="d-inline-block"><span class="read-more" data-id="${
     post.id
   }">Leer más</span></a>
           </div>
