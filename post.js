@@ -85,7 +85,7 @@ window.addEventListener("DOMContentLoaded", async () => {
           return `<div class="ms-5 mt-4">
               <div class="d-flex align-items-center">
                 <div class="me-3">
-                  <i style="font-size: 30px;" class="fa-solid fa-user"></i>
+                  <img width="30px" src="assets/images/INTERLINK_BLOG.png" >
                 </div>
                 <div class="d-flex flex-column">
                   <span class="letter-type">
