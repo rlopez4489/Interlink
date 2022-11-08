@@ -103,7 +103,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }).format(new Date(post.timestamp.toDate()));
     html += `
     <div class="col-lg-4 id-post col-sm-12 mt-4">
-    <a href="post.html" class="d-inline-block">
+    <a href="post.html?${post.url}?id=${post.id}" class="d-inline-block">
     <div class="card-item" data-id="${post.id}">
         <img loading="lazy" class="img-fluid" data-id="${post.id}" src=${
       post.imgUrl
