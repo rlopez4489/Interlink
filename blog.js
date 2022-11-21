@@ -35,13 +35,13 @@ window.addEventListener("DOMContentLoaded", async () => {
     year: "numeric",
   }).format(new Date(post.timestamp.toDate()));
   // leemos los enlaces, en tu caso deberás usar un selector más específico
-  var enlaces = document.querySelectorAll("a");
+  let enlaces = document.getElementsByClassName("blog-id");
   // leemos la dirección de la página y comprobamos si tiene ?
-  var url = window.location.href;
-  var conector = url.indexOf("?") < 0 ? "?" : "&";
+  let url = window.location.href;
+  let conector = url.indexOf("?") < 0 ? "?" : "&";
 
   // para cada enlace
-  for (var x = 0; x < enlaces.length; x++) {
+  for (let x = 0; x < enlaces.length; x++) {
     // reemplazamos su href por la URL + el parámetro con el conector correcto
     enlaces[x].href =
       url + enlaces[x].getAttribute("href")?.replace("?", conector);
@@ -72,7 +72,7 @@ window.addEventListener("DOMContentLoaded", async () => {
               350
             )}...
             </p>
-            <a href="post.html?${post.url}?id=${
+            <a class="blog-id" href="post.html?${post.url}?id=${
     post.id
   } " class="d-inline-block"><span class="read-more" data-id="${
     post.id
@@ -103,7 +103,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }).format(new Date(post.timestamp.toDate()));
     html += `
     <div class="col-lg-4 id-post col-sm-12 mt-4">
-    <a href="post.html?${post.url}?id=${post.id}" class="d-inline-block">
+    <a class="blog-id" href="post.html?${post.url}?id=${post.id}" class="d-inline-block">
     <div class="card-item" data-id="${post.id}">
         <img loading="lazy" class="img-fluid" data-id="${post.id}" src=${
       post.imgUrl
