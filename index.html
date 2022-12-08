@@ -994,7 +994,7 @@
       </div>
     </section>
     <button id="btnUp" class="btn-up"><i class="fa-solid fa-angle-up"></i></button>
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=12102189709&text=Hola" class="whatsapp-button"><i
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=12102189709&text=Hola Interlink FBC" class="whatsapp-button"><i
         class="fab fa-whatsapp"></i></a>
   </main>
   <footer id="contact-form">
@@ -1518,6 +1518,27 @@
         </div>
       </div>
     </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="homeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button id="btnCloseModal" type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://api.whatsapp.com/send?phone=12102189709&text=Hola Interlink FBC" target="_blank">
+              <img id="imgModal" class="img-fluid" src="" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </footer>
   <script src="input-tel/js/intlTelInput.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -1525,6 +1546,7 @@
     crossorigin="anonymous"></script>
   <script src="app.js"></script>
   <script src="telInputConfig.js"></script>
+  <script type="module" src="modal.js"></script>
 </body>
 
 </html>

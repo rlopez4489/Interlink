@@ -1196,6 +1196,13 @@ hr {
   line-height: 50px !important;
 }
 
+.modal-header {
+  border-bottom: none !important;
+  padding-bottom: 0px !important;
+}
+.modal-content {
+  background-color: #E0E0E0 !important;
+}
 @media (max-width: 1366px) {
   .card-motive {
     width: auto;
