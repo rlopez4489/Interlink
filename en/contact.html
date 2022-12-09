@@ -250,7 +250,8 @@
                                         value='7167e9c0f82d3b54c23962ed6580835b191c04f072e92307ac0ee75f4675fba5'></input>
                                     <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
                                     <input type='text' style='display:none;' name='returnURL'
-                                        value='https&#x3a;&#x2f;&#x2f;www.interlinkfbc.com/contact-thank-you.html'> </input>
+                                        value='https&#x3a;&#x2f;&#x2f;www.interlinkfbc.com/contact-thank-you.html'>
+                                    </input>
                                     <!-- Do not remove this code. -->
                                     <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
                                     <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
@@ -545,7 +546,8 @@
                                         value='7167e9c0f82d3b54c23962ed6580835b191c04f072e92307ac0ee75f4675fba5'></input>
                                     <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
                                     <input type='text' style='display:none;' name='returnURL'
-                                        value='https&#x3a;&#x2f;&#x2f;www.interlinkfbc.com/contact-thank-you.html'> </input>
+                                        value='https&#x3a;&#x2f;&#x2f;www.interlinkfbc.com/contact-thank-you.html'>
+                                    </input>
                                     <!-- Do not remove this code. -->
                                     <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
                                     <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
@@ -798,7 +800,45 @@
                 </div>
             </div>
         </section>
+        <!-- General Modal -->
+        <div class="modal fade" id="allsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="btnCloseModal" type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="https://api.whatsapp.com/send?phone=12102189709&text=Hola Interlink FBC"
+                            target="_blank">
+                            <img id="generalImgModal" class="img-fluid" src="" alt="">
 
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="contactoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="btnCloseModal" type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="https://api.whatsapp.com/send?phone=12102189709&text=Hola Interlink FBC"
+                            target="_blank">
+                            <img id="imgModal" class="img-fluid" src="" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="../input-tel/js/intlTelInput.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -806,6 +846,7 @@
         crossorigin="anonymous"></script>
     <script src="/telInputConfig.js"></script>
     <script src="../app.js"></script>
+    <script type="module" src="../modalEN.js"></script>
 </body>
 
 </html>
