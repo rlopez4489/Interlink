@@ -150,6 +150,12 @@ window.addEventListener("DOMContentLoaded", async () => {
             let modalAlls = new bootstrap.Modal(
               document.getElementById("allsModal")
             );
+            document.getElementById(
+              "generalImgModal"
+            ).src = `${data.imgUrlPopup}`;
+            document.getElementById(
+              "generalImgModal"
+            ).alt = `${data.altImgPopup}`;
             if (data.active && !sessionStorage.getItem("open")) {
               modalAlls.show();
             }
