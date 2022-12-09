@@ -5,7 +5,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     collection(db, "popUp"),
     (snapshot) => {
       snapshot.docs.forEach((doc) => {
-        console.log(doc.data());
         let data = doc.data();
         document.getElementById("imgModal").src = `${data.imgUrlPopup}`;
         document.getElementById("imgModal").alt = `${data.altImgPopup}`;
@@ -129,6 +128,22 @@ window.addEventListener("DOMContentLoaded", async () => {
             );
             if (data.active && !sessionStorage.getItem("open")) {
               modalContacto.show();
+            }
+            break;
+          case "texasAds":
+            let modalTexasAds = new bootstrap.Modal(
+              document.getElementById("texasAdsModal")
+            );
+            if (data.active && !sessionStorage.getItem("open")) {
+              modalTexasAds.show();
+            }
+            break;
+          case "floridaAds":
+            let modalFloridaAds = new bootstrap.Modal(
+              document.getElementById("floridaAdsModal")
+            );
+            if (data.active && !sessionStorage.getItem("open")) {
+              modalFloridaAds.show();
             }
             break;
           case "alls":
