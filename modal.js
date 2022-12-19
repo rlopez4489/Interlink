@@ -8,7 +8,12 @@ window.addEventListener("DOMContentLoaded", async () => {
         let data = doc.data();
         document.getElementById("imgModal").src = `${data.imgUrlPopup}`;
         document.getElementById("imgModal").alt = `${data.altImgPopup}`;
-
+        document.getElementById(
+          "urlModalRedirect"
+        ).href = `${data.linkToRedirect}`;
+        document.getElementById(
+          "urlModalRedirectG"
+        ).href = `${data.linkToRedirect}`;
         switch (data.pageSelected) {
           case "home":
             let modalHome = new bootstrap.Modal(
@@ -157,7 +162,9 @@ window.addEventListener("DOMContentLoaded", async () => {
               "generalImgModal"
             ).alt = `${data.altImgPopup}`;
             if (data.active && !sessionStorage.getItem("open")) {
-              modalAlls.show();
+              setTimeout(() => {
+                modalAlls.show();
+              }, 1000);
             }
             break;
           default:
