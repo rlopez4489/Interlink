@@ -415,29 +415,12 @@
                     }
                     return true;
                 }
-                function validateEmail4219874000039954003() {
-                    var form = document.forms['WebToLeads4219874000039954003'];
-                    var emailFld = form.querySelectorAll('[ftype=email]');
-                    var i;
-                    for (i = 0; i < emailFld.length; i++) {
-                        var emailVal = emailFld[i].value;
-                        if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-                            var atpos = emailVal.indexOf('@');
-                            var dotpos = emailVal.lastIndexOf('.');
-                            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                                alert('Please enter a valid email address. ');
-                                emailFld[i].focus();
-                                return false;
-                            }
-                        }
-                    }
-                    return true;
-                }
+               
 
                 function checkMandatory4219874000039954003() {
 
                     trackVisitor4219874000039954003();
-                    if (!validateEmail4219874000039954003()) { return false; }
+                  
 
                     if (!reCaptchaAlert4219874000039954003()) { return false; }
                     document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
