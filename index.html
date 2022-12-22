@@ -25,6 +25,16 @@
   <script type="text/javascript"
     id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "0207e7e56768a4ee16c2c74837b4fc0703c27769a4f7b61e798854ab312152f4dfc2060e3cba99dc8bd26ff164d86899", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>
   <script src="https://cdn.pagesense.io/js/interlinkfbc/1ad394c3051345e396f8493a6734fa62.js"></script>
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1215230, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -1171,19 +1181,61 @@
                       Recibimos su email. <br> <span style="color:#1c2656">Nos pondremos en contacto a la
                         brevedad.</span></label>
                   </div>
+                  <div class='zcwf_row'>
+                    <div class='zcwf_col_lab'></div>
+                    <div class='zcwf_col_fld'>
+                      <div class='g-recaptcha' data-sitekey='6Lccsp0jAAAAABDiz33Oy5K5DGKJh3cgJowfKZOY'
+                        data-theme='light' data-callback='rccallback4219874000039954003' captcha-verified='false'
+                        id='recap4219874000039954003'></div>
+                      <div id='recapErr4219874000039954003' style='font-size:12px;color:red;visibility:hidden;'>Captcha
+                        validation failed. If you are not a robot then please try again.</div>
+                    </div>
+                  </div>
                   <div class=" d-flex justify-content-end me-4 mt-2">
                     <button class="btn-send-form mt-2" type="submit"><i
                         class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
                   </div>
                   <script>
+                    /* Do not remove this code. */
+                    function rccallback4219874000039954003() {
+                      if (document.getElementById('recap4219874000039954003') != undefined) {
+                        document.getElementById('recap4219874000039954003').setAttribute('captcha-verified', true);
+                      }
+                      if (document.getElementById('recapErr4219874000039954003') != undefined && document.getElementById('recapErr4219874000039954003').style.visibility == 'visible') {
+                        document.getElementById('recapErr4219874000039954003').style.visibility = 'hidden';
+                      }
+                    }
+                    function reCaptchaAlert4219874000039954003() {
+                      var recap = document.getElementById('recap4219874000039954003');
+                      if (recap != undefined && recap.getAttribute('captcha-verified') == 'false') {
+                        document.getElementById('recapErr4219874000039954003').style.visibility = 'visible';
+                        return false;
+                      }
+                      return true;
+                    }
                     function checkMandatory4219874000039954003() {
                       trackVisitor4219874000039954003();
                       document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                      if (!reCaptchaAlert4219874000039954003()) { return false; }
+
                     }
                     document.getElementById("formDesktop").addEventListener("submit", () => {
 
                       checkMandatory4219874000039954003()
                     })
+                    function tooltipShow4219874000039954003(el) {
+                      var tooltip = el.nextElementSibling;
+                      var tooltipDisplay = tooltip.style.display;
+                      if (tooltipDisplay == 'none') {
+                        var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                        for (i = 0; i < allTooltip.length; i++) {
+                          allTooltip[i].style.display = 'none';
+                        }
+                        tooltip.style.display = 'block';
+                      } else {
+                        tooltip.style.display = 'none';
+                      }
+                    }
                   </script>
                   <script type='text/javascript'
                     id='VisitorTracking'>var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: '0207e7e56768a4ee16c2c74837b4fc0703c27769a4f7b61e798854ab312152f4dfc2060e3cba99dc8bd26ff164d86899', values: {}, ready: function () { } }; var d = document; s = d.createElement('script'); s.type = 'text/javascript'; s.id = 'zsiqscript'; s.defer = true; s.src = 'https://salesiq.zoho.com/widget'; t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); function trackVisitor4219874000039954003() { try { if ($zoho) { var LDTuvidObj = document.forms['WebToLeads4219874000039954003']['LDTuvid']; if (LDTuvidObj) { LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid(); } var firstnameObj = document.forms['WebToLeads4219874000039954003']['First Name']; if (firstnameObj) { name = firstnameObj.value + ' ' + name; } $zoho.salesiq.visitor.name(name); var emailObj = document.forms['WebToLeads4219874000039954003']['Email']; if (emailObj) { email = emailObj.value; $zoho.salesiq.visitor.email(email); } } } catch (e) { } }</script>
