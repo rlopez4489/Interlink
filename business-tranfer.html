@@ -435,44 +435,11 @@
                 }
 
                 function checkMandatory4219874000039954003() {
-                    var mndFileds = new Array('First Name', 'Last Name', 'Email', 'Phone', 'Lead Source', 'LEADCF19');
-                    var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Email', 'Phone', 'Lead\x20Source', 'Nacionality');
-                    for (i = 0; i < mndFileds.length; i++) {
-                        var fieldObj = document.forms['WebToLeads4219874000039954003'][mndFileds[i]];
-                        if (fieldObj) {
-                            if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                                if (fieldObj.type == 'file') {
-                                    alert('Please select a file to upload.');
-                                    fieldObj.focus();
-                                    return false;
-                                }
-                                alert(fldLangVal[i] + ' cannot be empty.');
-                                fieldObj.focus();
-                                return false;
-                            } else if (fieldObj.nodeName == 'SELECT') {
-                                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                                    alert(fldLangVal[i] + ' cannot be none.');
-                                    fieldObj.focus();
-                                    return false;
-                                }
-                            } else if (fieldObj.type == 'checkbox') {
-                                if (fieldObj.checked == false) {
-                                    alert('Please accept  ' + fldLangVal[i]);
-                                    fieldObj.focus();
-                                    return false;
-                                }
-                            }
-                            try {
-                                if (fieldObj.name == 'Last Name') {
-                                    name = fieldObj.value;
-                                }
-                            } catch (e) { }
-                        }
-                    }
+
                     trackVisitor4219874000039954003();
                     if (!validateEmail4219874000039954003()) { return false; }
 
-                 
+                    if (!reCaptchaAlert4219874000039954003()) { return false; }
                     document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                 }
 
