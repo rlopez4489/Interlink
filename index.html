@@ -1193,8 +1193,8 @@
                         validation failed. If you are not a robot then please try again.</div>
                     </div>
                     <div style="display: flex; flex: 1;justify-content: flex-end; align-items: flex-end;">
-                      <button class="btn-send-form mt-2" type="submit"><i
-                          class="fa-solid fa-paper-plane me-2"></i>Enviar</button>
+                      <input type='submit' id='formsubmit' class='formsubmit zcwf_button'
+                      value='Submit' title='Submit'>
                     </div>
                   </div>
 
@@ -1225,7 +1225,7 @@
                       trackVisitor4219874000039954003();
 
 
-                      if (!reCaptchaAlert4219874000039954003()) { console.log("RECAPTACHA"); return false; }
+                      if (!reCaptchaAlert4219874000039954003()) { return false; }
                       document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                     }
 
