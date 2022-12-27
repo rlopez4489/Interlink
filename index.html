@@ -1223,7 +1223,7 @@
                       trackVisitor4219874000039954003();
 
 
-                      if (!reCaptchaAlert4219874000039954003()) { return false; }
+
                       document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                     }
 
@@ -1256,7 +1256,10 @@
                     document.getElementById("contact-form").addEventListener('submit', (e) => {
                       const isValidate = validateInput();
                       console.log(isValidate);
-                      isValidate ? checkMandatory4219874000039954003() : e.preventDefault()
+                      if (!reCaptchaAlert4219874000039954003() && !isValidate) { e.preventDefault(); return false; } else {
+                        checkMandatory4219874000039954003()
+                      }
+
                     })
                   </script>
                   <script type='text/javascript'
