@@ -1207,14 +1207,15 @@
                         document.getElementById('recapErr4219874000039954003').style.visibility = 'hidden';
                       }
                     }
-                    function reCaptchaAlert4219874000039954003() {
+                    function reCaptchaAlert4219874000039954003(e) {
                       var recap = document.getElementById('recap4219874000039954003');
                       console.log(recap.getAttribute('captcha-verified'))
                       if (recap != undefined && recap.getAttribute('captcha-verified') === 'false') {
                         document.getElementById('recapErr4219874000039954003').style.visibility = 'visible';
-                        return false;
+                        e.preventDefault();
+
                       }
-                      return true;
+
                     }
 
 
@@ -1223,13 +1224,14 @@
                       trackVisitor4219874000039954003();
 
 
-                      if (!reCaptchaAlert4219874000039954003()) { return false; }
+
                       document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                     }
 
-                    function validateInput(e) {
+
+
+                    document.getElementById("contact-form").addEventListener('submit', (e) => {
                       let isValidate = false;
-                 
                       const nameInput = document.getElementById("First_Name")
                       const lastnameInput = document.getElementById("Last_Name")
                       if (nameInput.value.trim() === "") {
@@ -1247,13 +1249,13 @@
                       } else {
                         isValidate = true;
                       }
-
-                      return isValidate;
-                    }
-
-                    document.getElementById("contact-form").addEventListener('submit', (e) => {
-                      const isValidate = validateInput(e);
-                      if (isValidate) checkMandatory4219874000039954003()
+                      reCaptchaAlert4219874000039954003(e)
+                      if (!isValidate) {
+                        e.preventDefault();
+                        
+                      } else {
+                        checkMandatory4219874000039954003(e)
+                      }
                     })
                   </script>
                   <script type='text/javascript'
