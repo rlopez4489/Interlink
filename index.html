@@ -1015,8 +1015,7 @@
           <div class="col-sm-12 col-lg-6">
             <div class="d-flex">
               <div class="container-form">
-                <form onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4219874000039954003()'
-                  action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003 method='POST'
+                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003 method='POST'
                   class="mt-4">
                   <input type='text' style='display:none;' name='xnQsjsdp'
                     value='c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e'></input>
@@ -1222,18 +1221,23 @@
                     function checkMandatory4219874000039954003(e) {
                       const nameInput = document.getElementById("First_Name")
                       trackVisitor4219874000039954003();
+
+
+                      if (!reCaptchaAlert4219874000039954003()) { return false; }
+                      document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                    }
+
+                    document.addEventListener('submit', (e) => {
                       if (nameInput.value.trim() === "") {
                         e.preventDefault();
                         nameInput.classList.add("is-invalid");
                         setTimeout(() => {
                           nameInput.classList.remove("is-invalid")
                         }, 2000);
+                      } else {
+                        checkMandatory4219874000039954003()
                       }
-
-                      if (!reCaptchaAlert4219874000039954003()) { return false; }
-                      document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-                    }
-
+                    })
 
                   </script>
                   <script type='text/javascript'
