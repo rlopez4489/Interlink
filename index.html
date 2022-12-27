@@ -1207,15 +1207,15 @@
                         document.getElementById('recapErr4219874000039954003').style.visibility = 'hidden';
                       }
                     }
-                    function reCaptchaAlert4219874000039954003(e) {
+                    function reCaptchaAlert4219874000039954003() {
                       var recap = document.getElementById('recap4219874000039954003');
-                      console.log(recap.getAttribute('captcha-verified'))
+
                       if (recap != undefined && recap.getAttribute('captcha-verified') === 'false') {
                         document.getElementById('recapErr4219874000039954003').style.visibility = 'visible';
-                        e.preventDefault();
 
+                        return false;
                       }
-
+                      return true;
                     }
 
 
@@ -1249,12 +1249,12 @@
                       } else {
                         isValidate = true;
                       }
-                      reCaptchaAlert4219874000039954003(e)
-                      if (!isValidate) {
+                      if (!isValidate || !reCaptchaAlert4219874000039954003()) {
                         e.preventDefault();
-                        
+                        console.log(isValidate)
+                        console.log(reCaptchaAlert4219874000039954003())
                       } else {
-                        checkMandatory4219874000039954003(e)
+                        checkMandatory4219874000039954003()
                       }
                     })
                   </script>
