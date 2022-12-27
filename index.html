@@ -1227,20 +1227,20 @@
                       document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                     }
 
-                    function validateInput(e) {
+                    function validateInput() {
                       let isValidate = false;
-                     
+
                       const nameInput = document.getElementById("First_Name")
                       const lastnameInput = document.getElementById("Last_Name")
                       if (nameInput.value.trim() === "") {
-                        e.preventDefault();
+
                         nameInput.classList.add("is-invalid");
                         setTimeout(() => {
                           nameInput.classList.remove("is-invalid")
                         }, 3000);
                         isValidate = false;
                       } else if (lastnameInput.value.trim() === "") {
-                        e.preventDefault();
+
                         lastnameInput.classList.add("is-invalid");
                         setTimeout(() => {
                           lastnameInput.classList.remove("is-invalid")
@@ -1254,8 +1254,9 @@
                     }
 
                     document.getElementById("contact-form").addEventListener('submit', (e) => {
-                      const isValidate = validateInput(e);
-                      if (isValidate) checkMandatory4219874000039954003()
+                      const isValidate = validateInput();
+                      console.log(isValidate);
+                      isValidate ? checkMandatory4219874000039954003() : e.preventDefault()
                     })
                   </script>
                   <script type='text/javascript'
