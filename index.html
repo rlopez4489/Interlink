@@ -1219,10 +1219,11 @@
                     }
 
 
-                    function checkMandatory4219874000039954003() {
+                    function checkMandatory4219874000039954003(e) {
                       const nameInput = document.getElementById("First_Name")
                       trackVisitor4219874000039954003();
                       if (nameInput.value.trim() === "") {
+                        e.preventDefault();
                         nameInput.classList.add("is-invalid");
                         setTimeout(() => {
                           nameInput.classList.remove("is-invalid")
