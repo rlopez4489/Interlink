@@ -1223,24 +1223,22 @@
                       trackVisitor4219874000039954003();
 
 
-
+                      if (!reCaptchaAlert4219874000039954003()) { return false; }
                       document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                     }
 
-                    function validateInput() {
+                    function validateInput(e) {
                       let isValidate = false;
-
+                 
                       const nameInput = document.getElementById("First_Name")
                       const lastnameInput = document.getElementById("Last_Name")
                       if (nameInput.value.trim() === "") {
-
                         nameInput.classList.add("is-invalid");
                         setTimeout(() => {
                           nameInput.classList.remove("is-invalid")
                         }, 3000);
                         isValidate = false;
                       } else if (lastnameInput.value.trim() === "") {
-
                         lastnameInput.classList.add("is-invalid");
                         setTimeout(() => {
                           lastnameInput.classList.remove("is-invalid")
@@ -1254,12 +1252,8 @@
                     }
 
                     document.getElementById("contact-form").addEventListener('submit', (e) => {
-                      const isValidate = validateInput();
-                      console.log(isValidate);
-                      if (!reCaptchaAlert4219874000039954003() && !isValidate) { e.preventDefault(); return false; } else {
-                        checkMandatory4219874000039954003()
-                      }
-
+                      const isValidate = validateInput(e);
+                      if (isValidate) checkMandatory4219874000039954003()
                     })
                   </script>
                   <script type='text/javascript'
