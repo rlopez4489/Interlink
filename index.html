@@ -1229,16 +1229,18 @@
 
                     function validateInput(e) {
                       let isValidate = false;
-                      e.preventDefault();
+                     
                       const nameInput = document.getElementById("First_Name")
                       const lastnameInput = document.getElementById("Last_Name")
                       if (nameInput.value.trim() === "") {
+                        e.preventDefault();
                         nameInput.classList.add("is-invalid");
                         setTimeout(() => {
                           nameInput.classList.remove("is-invalid")
                         }, 3000);
                         isValidate = false;
                       } else if (lastnameInput.value.trim() === "") {
+                        e.preventDefault();
                         lastnameInput.classList.add("is-invalid");
                         setTimeout(() => {
                           lastnameInput.classList.remove("is-invalid")
