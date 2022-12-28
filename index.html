@@ -1014,8 +1014,8 @@
         <div class="row">
           <div class="col-sm-12 col-lg-6">
             <div class="d-flex">
-              <div class="container-form">
-                <form id="contact-form" action='https://crm.zoho.com/crm/WebToLeadForm'
+              <div class="container-form crmWebToEntityForm" id='crmWebToEntityForm'>
+                <form id="contact-form-desktop" action='https://crm.zoho.com/crm/WebToLeadForm'
                   name=WebToLeads4219874000039954003 method='POST' class="mt-4">
                   <input type='text' style='display:none;' name='xnQsjsdp'
                     value='c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e'></input>
@@ -1230,7 +1230,7 @@
 
 
 
-                    document.getElementById("contact-form").addEventListener('submit', (e) => {
+                    document.getElementById("contact-form-desktop").addEventListener('submit', (e) => {
                       let isValidate = false;
                       const nameInput = document.getElementById("First_Name")
                       const lastnameInput = document.getElementById("Last_Name")
@@ -1343,7 +1343,7 @@
               </div>
             </div>
             <div class="d-flex">
-              <div class="container-form">
+              <div class="container-form crmWebToEntityForm" id='crmWebToEntityForm'>
                 <form id="contact-form-mobile" action='https://crm.zoho.com/crm/WebToLeadForm'
                   name=WebToLeads4219874000039954003 method='POST' class="mt-4">
                   <input type='text' style='display:none;' name='xnQsjsdp'
