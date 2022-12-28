@@ -1559,7 +1559,7 @@
 
                     document.getElementById("contact-form-mobile").addEventListener('submit', (e) => {
                       let isValidate = false;
-                      console.log("SE EJECUTA")
+
                       const nameInput = document.getElementById("First_Name_mobile")
                       const lastnameInput = document.getElementById("Last_Name_mobile")
                       if (nameInput.value.trim() === "") {
@@ -1578,11 +1578,11 @@
                         isValidate = true;
                       }
                       if (!isValidate || !reCaptchaAlert4219874000039954003()) {
-                        console.log("ENTRA IF")
+
                         e.preventDefault();
                         reCaptchaAlert4219874000039954003()
                       } else {
-                        console.log("se EJECUTA ELSE")
+
                         checkMandatoryMobile4219874000039954003()
                       }
                     })
