@@ -1185,7 +1185,7 @@
                   <div class='d-flex me-4 ms-4 mt-4'>
                     <div class="d-flex flex-column">
                       <div class='g-recaptcha' data-sitekey='6Lccsp0jAAAAABDiz33Oy5K5DGKJh3cgJowfKZOY'
-                        data-theme='light' data-callback='rccallback4219874000039954003' captcha-verified='false'
+                        data-theme='light' data-callback='rccallbackDesktop4219874000039954003' captcha-verified='false'
                         id='recap4219874000039954003'></div>
                       <div id='recapErr4219874000039954003' style='font-size:12px;color:red;visibility:hidden;'>
                         Por favor, valida el captcha para enviar el formulario.</div>
@@ -1199,7 +1199,7 @@
                   <script>
 
                     /* Do not remove this code. */
-                    function rccallback4219874000039954003() {
+                    function rccallbackDesktop4219874000039954003() {
                       if (document.getElementById('recap4219874000039954003') != undefined) {
                         document.getElementById('recap4219874000039954003').setAttribute('captcha-verified', true);
                       }
@@ -1207,7 +1207,7 @@
                         document.getElementById('recapErr4219874000039954003').style.visibility = 'hidden';
                       }
                     }
-                    function reCaptchaAlert4219874000039954003() {
+                    function reCaptchaAlertDesktop4219874000039954003() {
                       var recap = document.getElementById('recap4219874000039954003');
 
                       if (recap != undefined && recap.getAttribute('captcha-verified') === 'false') {
@@ -1249,8 +1249,9 @@
                       } else {
                         isValidate = true;
                       }
-                      if (!isValidate || !reCaptchaAlert4219874000039954003()) {
+                      if (!isValidate || !reCaptchaAlertDesktop4219874000039954003()) {
                         e.preventDefault();
+                        reCaptchaAlertDesktop4219874000039954003();
                       } else {
                         checkMandatory4219874000039954003()
                       }
