@@ -47,6 +47,7 @@
 
         gtag('config', 'UA-125047017-1');
     </script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 
 <body>
@@ -240,9 +241,9 @@
                 <div class="row">
                     <div class="col-sm-12 col-lg-6">
                         <div class="d-flex">
-                            <div class="container-form">
-                                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003
-                                    method='POST' id="formDesktop" class="mt-4">
+                            <div class="container-form crmWebToEntityForm" id='crmWebToEntityForm'>
+                                <form id="contact-form-desktop" action='https://crm.zoho.com/crm/WebToLeadForm'
+                                    name=WebToLeads4219874000039954003 method='POST' class="mt-4">
                                     <input type='text' style='display:none;' name='xnQsjsdp'
                                         value='c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e'></input>
                                     <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
@@ -420,23 +421,81 @@
                                                 contact the
                                                 brevity.</span></label>
                                     </div>
-                                    <div class="d-flex justify-content-end me-4 mt-2">
-                                        <button class="btn-send-form mt-2" type="submit"><i
-                                                class="fa-solid fa-paper-plane me-2"></i>Send</button>
+                                    <div class='d-flex me-4 ms-4 mt-4'>
+                                        <div class="d-flex flex-column">
+                                            <div class='g-recaptcha'
+                                                data-sitekey='6Lccsp0jAAAAABDiz33Oy5K5DGKJh3cgJowfKZOY'
+                                                data-theme='light' data-callback='rccallbackDesktop4219874000039954003'
+                                                captcha-verified='false' id='recap4219874000039954003'></div>
+                                            <div id='recapErr4219874000039954003'
+                                                style='font-size:12px;color:red;visibility:hidden;'>
+                                                Please, validate the captcha to submit the form.</div>
+                                        </div>
+                                        <div class="flex-grow-1 d-flex justify-content-end align-items-end">
+                                            <button class="btn-send-form" type="submit"><i
+                                                    class="fa-solid fa-paper-plane me-2"></i>Send</button>
+                                        </div>
                                     </div>
+
                                     <script>
+
+                                        /* Do not remove this code. */
+                                        function rccallbackDesktop4219874000039954003() {
+                                            if (document.getElementById('recap4219874000039954003') != undefined) {
+                                                document.getElementById('recap4219874000039954003').setAttribute('captcha-verified', true);
+                                            }
+                                            if (document.getElementById('recapErr4219874000039954003') != undefined && document.getElementById('recapErr4219874000039954003').style.visibility == 'visible') {
+                                                document.getElementById('recapErr4219874000039954003').style.visibility = 'hidden';
+                                            }
+                                        }
+                                        function reCaptchaAlertDesktop4219874000039954003() {
+                                            var recap = document.getElementById('recap4219874000039954003');
+
+                                            if (recap != undefined && recap.getAttribute('captcha-verified') === 'false') {
+                                                document.getElementById('recapErr4219874000039954003').style.visibility = 'visible';
+
+                                                return false;
+                                            }
+                                            return true;
+                                        }
+
 
                                         function checkMandatory4219874000039954003() {
 
                                             trackVisitor4219874000039954003();
 
+
+
                                             document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                                         }
-                                        document.getElementById("formDesktop").addEventListener("submit", () => {
-                                            document.getElementById("messageSuccess").classList.remove("d-none");
-                                            setTimeout(() => {
+
+
+
+                                        document.getElementById("contact-form-desktop").addEventListener('submit', (e) => {
+                                            let isValidate = false;
+                                            const nameInput = document.getElementById("First_Name")
+                                            const lastnameInput = document.getElementById("Last_Name")
+                                            if (nameInput.value.trim() === "") {
+                                                nameInput.classList.add("is-invalid");
+                                                setTimeout(() => {
+                                                    nameInput.classList.remove("is-invalid")
+                                                }, 3000);
+                                                isValidate = false;
+                                            } else if (lastnameInput.value.trim() === "") {
+                                                lastnameInput.classList.add("is-invalid");
+                                                setTimeout(() => {
+                                                    lastnameInput.classList.remove("is-invalid")
+                                                }, 3000);
+                                                isValidate = false;
+                                            } else {
+                                                isValidate = true;
+                                            }
+                                            if (!isValidate || !reCaptchaAlertDesktop4219874000039954003()) {
+                                                e.preventDefault();
+                                                reCaptchaAlertDesktop4219874000039954003();
+                                            } else {
                                                 checkMandatory4219874000039954003()
-                                            }, 1500);
+                                            }
                                         })
                                     </script>
                                     <script type='text/javascript'
@@ -536,9 +595,9 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <div class="container-form">
-                                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4219874000039954003
-                                    method='POST' id="formMobile" class="mt-4">
+                            <div class="container-form crmWebToEntityForm" id='crmWebToEntityForm'>
+                                <form id="contact-form-mobile" action='https://crm.zoho.com/crm/WebToLeadForm'
+                                    name=WebToLeads4219874000039954003 method='POST' class="mt-4">
                                     <input type='text' style='display:none;' name='xnQsjsdp'
                                         value='c558560fe9a62d4a86fb372a80703ce4a53efa413201d383b89e78c8ba01216e'></input>
                                     <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
@@ -598,14 +657,14 @@
                                     <div class="ms-4 mt-4 me-4">
                                         <label for="First name" class="label-form mb-2">First name
                                         </label>
-                                        <input required type="text" id="First_Name" maxlength="40" name="First Name"
-                                            value='' class="form-control">
+                                        <input required type="text" id="First_Name_mobile" maxlength="40"
+                                            name="First Name" value='' class="form-control">
                                     </div>
                                     <div class="ms-4 mt-4 me-4">
                                         <label for="Last name" class="label-form mb-2">Last name
                                         </label>
-                                        <input required type="text" maxlength="40" id='Last_Name' name='Last Name'
-                                            value='' class="form-control">
+                                        <input required type="text" maxlength="40" id='Last_Name_mobile'
+                                            name='Last Name' value='' class="form-control">
                                     </div>
                                     <div class="ms-4 mt-4 me-4">
                                         <label class="label-form mb-2" for="exampleFormControlInput1">Email</label>
@@ -712,23 +771,84 @@
                                             style="position: absolute;bottom: -40px;">
                                             Thank you! <br>We receive your email.<br></label>
                                     </div>
-                                    <div class="d-flex justify-content-end me-4 mt-2">
-                                        <button class="btn-send-form mt-2" type="submit"><i
-                                                class="fa-solid fa-paper-plane me-2"></i>Send</button>
+                                    <div class='d-flex flex-column me-4 ms-4 mt-4'>
+                                        <div class="d-flex flex-column">
+                                            <div class='g-recaptcha'
+                                                data-sitekey='6Lccsp0jAAAAABDiz33Oy5K5DGKJh3cgJowfKZOY'
+                                                data-theme='light' data-callback='rccallback4219874000039954003'
+                                                captcha-verified='false' id='recap4219874000039954003-mobile'></div>
+                                            <div id='recapErr4219874000039954003-mobile'
+                                                style='font-size:12px;color:red;visibility:hidden;'>
+                                                Please, validate the captcha to submit the form.</div>
+                                        </div>
+                                        <div class="flex-grow-1 d-flex justify-content-end align-items-end mt-2">
+                                            <button class="btn-send-form" type="submit"><i
+                                                    class="fa-solid fa-paper-plane me-2"></i>Send</button>
+                                        </div>
                                     </div>
                                     <script>
 
-                                        function checkMandatory4219874000039954003() {
+                                        /* Do not remove this code. */
+                                        function rccallback4219874000039954003() {
+                                            if (document.getElementById('recap4219874000039954003-mobile') != undefined) {
+                                                document.getElementById('recap4219874000039954003-mobile').setAttribute('captcha-verified', true);
+                                            }
+                                            if (document.getElementById('recapErr4219874000039954003-mobile') != undefined && document.getElementById('recapErr4219874000039954003-mobile').style.visibility == 'visible') {
+                                                document.getElementById('recapErr4219874000039954003-mobile').style.visibility = 'hidden';
+                                            }
+                                        }
+                                        function reCaptchaAlert4219874000039954003() {
+                                            var recap = document.getElementById('recap4219874000039954003-mobile');
+
+                                            if (recap != undefined && recap.getAttribute('captcha-verified') === 'false') {
+
+                                                document.getElementById('recapErr4219874000039954003-mobile').style.visibility = 'visible';
+
+                                                return false;
+                                            }
+                                            return true;
+                                        }
+
+
+                                        function checkMandatoryMobile4219874000039954003() {
 
                                             trackVisitor4219874000039954003();
 
+
+
                                             document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                                         }
-                                        document.getElementById("formMobile").addEventListener("submit", () => {
-                                            document.getElementById("messageSuccess").classList.remove("d-none");
-                                            setTimeout(() => {
-                                                checkMandatory4219874000039954003()
-                                            }, 1500);
+
+
+
+                                        document.getElementById("contact-form-mobile").addEventListener('submit', (e) => {
+                                            let isValidate = false;
+
+                                            const nameInput = document.getElementById("First_Name_mobile")
+                                            const lastnameInput = document.getElementById("Last_Name_mobile")
+                                            if (nameInput.value.trim() === "") {
+                                                nameInput.classList.add("is-invalid");
+                                                setTimeout(() => {
+                                                    nameInput.classList.remove("is-invalid")
+                                                }, 3000);
+                                                isValidate = false;
+                                            } else if (lastnameInput.value.trim() === "") {
+                                                lastnameInput.classList.add("is-invalid");
+                                                setTimeout(() => {
+                                                    lastnameInput.classList.remove("is-invalid")
+                                                }, 3000);
+                                                isValidate = false;
+                                            } else {
+                                                isValidate = true;
+                                            }
+                                            if (!isValidate || !reCaptchaAlert4219874000039954003()) {
+
+                                                e.preventDefault();
+                                                reCaptchaAlert4219874000039954003()
+                                            } else {
+
+                                                checkMandatoryMobile4219874000039954003()
+                                            }
                                         })
                                     </script>
                                     <script type='text/javascript'
